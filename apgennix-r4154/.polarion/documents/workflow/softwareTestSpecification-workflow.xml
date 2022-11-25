@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow initial-status="draft" prototype="Module">
+    <transitions>
+        <transition action="publish" from="draft" to="published"/>
+        <transition action="mark_obsolete" from="draft" to="obsolete"/>
+        <transition action="mark_obsolete" from="published" to="obsolete"/>
+        <transition action="rework" from="obsolete" to="draft"/>
+        <transition action="rework" from="published" to="draft"/>
+    </transitions>
+    <actions>
+        <action id="rework" name="Rework"/>
+        <action id="publish" name="Publish">
+            <signatures>
+                <auto-signature/>
+            </signatures>
+            <functions>
+                <function name="ScriptFunction">
+                    <param name="engine " value="js"/>
+                    <param name="script" value="baselineb.js"/>
+                </function>
+            </functions>
+        </action>
+        <action id="mark_obsolete" name="Mark Obsolete"/>
+    </actions>
+</workflow>

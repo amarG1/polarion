@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">admin</field>
+    <field id="created">2022-11-04 11:30:20.518 +0530</field>
+    <field id="priority">50.0</field>
+    <field id="reqType" type="enum:subtype">functional</field>
+    <field id="severity">should_have</field>
+    <field id="status">draft</field>
+    <field id="title">test</field>
+    <field id="type">softwarerequirement</field>
+</work-item>

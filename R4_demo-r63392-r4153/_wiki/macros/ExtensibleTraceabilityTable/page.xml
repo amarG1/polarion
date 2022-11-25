@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>lsampson</author>
+<created>20140731115459</created>
+<type>content</type>
+<content><![CDATA[#set($maxItems = 1000)
+
+#macro(TraceabilityTable $queries $linkRoles $sorts)
+  #set($_currentIndex = 0)
+  #set($_currentTree = [])
+  #set($_treeStack = [])
+  #set($hitLimit = false)
+  {pre}
+  #createTree($queries $linkRoles $sorts false)
+  {/pre}
+  #set($_currentLevel = 1)
+  #set($_needsRow = true)
+  #if($hitLimit)
+    #warning("Limit exceeded - showing first $maxItems items.")
+  #end
+  <table border="1" style="empty-cells:show;width:100%">
+  #printHeader($queries $linkRoles $sorts)
+  #printTree($_currentTree $queries.size())
+  </table>
+#end
+
+#macro(createTree $queries $linkRoles $sorts $parent)
+  #if($_currentIndex < $queries.size())
+    #set($_query = $queries.get($_currentIndex))
+    #if($_query.isEmpty())
+      #set($_query = "ALL:ALL_VALUE")
+    #end
+    #set($_sort = $sorts.get($_currentIndex))
+    #if($parent)
+      
+      ##Using more complex way to get project and work item ID to avoid resolving the object (faster and safer)
+
+      #set($_parentId = "$item.getContextId().getContextName()/$item.getObjectId().getLocalId().getObjectName()")
+      #set($_query =  "($_query) AND ")
+      #set($_rolesIndex = $_currentIndex - 1)
+      #set($_currentRoles = $linkRoles.get($_rolesIndex))
+      #if($_currentRoles.size() > 0)
+         #set($_query = "${_query}(")
+         #foreach($role in $_currentRoles)
+           #set($_query = "${_query}linkedWorkItems:$role=$_parentId OR ")
+         #end
+         #set($_query = "${_query} id:nevermatchanything)") 
+      #else
+         #set($_query = "${_query}linkedWorkItems:$_parentId")
+      #end
+    #end
+    #set($_items = $trackerService.queryWorkItems($_query, $_sort))
+    #if($_items.size() > $maxItems)
+      #set($hitLimit = true)
+      #set($_items = $_items.subList(0,$maxItems))
+    #end
+    #foreach($item in $_items)
+      #set($_subTree = [])
+      #set($void = $_currentTree.add($item))
+      #set($void = $_currentTree.add(0))
+      #set($void = $_currentTree.add($_subTree))
+      #pushTree() 
+      #set($_currentTree = $_subTree)
+      #set($_currentIndex = $_currentIndex + 1)
+      #createTree($queries $linkRoles $sorts $item)
+      #popTree()
+      #set($_currentIndex = $_currentIndex - 1)
+    #end
+  #end
+
+  #calculateCount()
+#end
+
+#macro(calculateCount)
+  #set($_currentStackIndex = $_treeStack.size() - 1)
+  #set($_parentStackIndex = $_currentStackIndex - 1)
+  #if($_parentStackIndex >= 0)
+    #set($_current = $_treeStack.get($_currentStackIndex))
+    #set($_parent = $_treeStack.get($_parentStackIndex))
+    #set($_currentCountIndex = $_current.size() - 2)
+    #set($_currentCount = $_current.get($_currentCountIndex))
+    #if($_currentCount == 0)
+      #set($_currentCount = 1)
+      #updateCount($_current 1)
+    #end
+    #updateCount($_parent $_currentCount)
+  #end
+#end
+
+
+#macro(updateCount $tree $inc)
+  #set($_countIndex = $tree.size() - 2)
+  #set($_newCount = $tree.get($_countIndex) + $inc)
+  #set($void = $tree.set($_countIndex, $_newCount))
+#end
+
+#macro(pushTree)
+  #set($void = $_treeStack.add($_currentTree))
+#end
+
+#macro(popTree)
+  #set($_removeIndex = $_treeStack.size() - 1)
+  #set($_currentTree = $_treeStack.remove($_removeIndex))
+#end
+
+#macro(printHeader $queries $linkRoles $sorts)
+
+<tr>
+#foreach($query in $queries)
+  #set($_sortIndex = $velocityCount - 1)
+  #if($velocityCount > 1)
+    #set($_rolesIndex = $velocityCount - 2)
+    #set($_roles = $linkRoles.get($_rolesIndex))
+  #end
+<th>#renderHeader($query $_roles $sorts.get($_sortIndex))</th>
+#end
+</tr>
+#end
+
+#macro(printTree $tree $maxDepth)
+  #set($_item = false)
+  #set($_count = false)
+  #set($_subtree = false)
+  #foreach($node in $tree)
+    #if($node.id)
+      #set($_item = $node)
+    #elseif($node.size())
+      #set($_subtree = $node)
+    #else
+      #set($_count = $node)
+    #end
+    #if($_item && $_subtree && $_count)
+      #if($_needsRow)#set($_needsRow = false)<tr>#end
+      <td  #if($_count > 0)rowspan="$_count"#end>#renderItem($_item $_currentLevel)</td>
+      #set($_currentLevel = $_currentLevel + 1)
+      #printTree($node $maxDepth)
+      #set($_currentLevel = $_currentLevel - 1)
+      #set($_missingTd = $maxDepth - $_currentLevel)
+      #if(!$_needsRow)
+        #if($_missingTd > 0)
+          <td colspan="$_missingTd"></td>
+        #end
+        </tr>
+      #end
+      #set($_needsRow = true)
+    #end
+
+  #end
+#end
+
+#if($page.name == "ExtensibleTraceabilityTable")
+
+#info("this page contains macros to display a traceability table.\\ *ATTENTION*: you should make the __first query as detailed as possible__. \\ *RECOMMENDATION:* Always add the project scope to first query, otherwise calculation is done on repository scope which will take some time. For large queries make sure you have enough memory on the server for the java process.")
+
+1.1 How to Use
+
+Include this page into your wiki page:
+#set($h = '#')
+<div class="code">${h}includeMacros("/macros.ExtensibleTraceabilityTable")</div>
+
+Define following macros on your page to define how the table is rendered:
+{code}
+#macro(renderHeader $query $roles $sort)
+  ##Render the content of a single header cell here.
+\#end
+
+#macro(renderItem $item $level)
+  ##Render a single Work Item here.
+\#end
+{code}
+
+Call the macro on your page:
+{code}
+#TraceabilityTable($queries $linkRoles $sorts)
+{code}
+*Parameters*:
+* *queries*: A list of queries to be used for each column of the traceability table.
+* *linkRoles*: A list containing lists of link roles that are followed between the corresponding levels (link roles specified in element 1 of the list are used for traceability betweeen colum 1 and column 2, ...). If a list for s specific level is empty all link roles are valid. Size of the list has to be $queries.size() - 1.  Use a null value to ignore.
+* *sorts*: Work Item field that will be used to sort each column. Use a null value to ignore.
+
+1.1 Example
+{code}
+#macro(renderHeader $query $roles $sort)
+$query
+#end
+
+#macro(renderItem $item $level)
+  {workitem:$item.getContextId().getContextName()/$item.getObjectId().getLocalId().getObjectName()|#if($level==3)fields=severity#else display=long#end}
+#end
+
+#set($queries = ["type:userstory AND project.id:$page.space.projectId", "type:testcase", "type:defect"])
+#set($linkRoles = [["verifies"], []])
+#set($sorts = ["id","id","severity"])
+
+#TraceabilityTable($queries $linkRoles $sorts)
+{code}
+
+The example will render User Stories in the current project in the first column. The second column will contain test cases linked to the user story with the role "verifies", the third column will contain defects linked to the test cases (with any role).
+
+#end]]></content>
+</wiki-page>

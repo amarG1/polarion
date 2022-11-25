@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>lsampson</author>
+<created>20170720223757</created>
+<title>TestRunResults</title>
+<type>content</type>
+<content><![CDATA[#if(!$document)
+1 Test Run Results
+
+This wiki page provides the implementation of the Test Run Results. 
+
+{code}
+\{includeForm:macros.TestRunResults}
+{code}
+#else
+
+#set($ds =  $trackerService.getDataService())
+#set($showPending = true)
+
+
+### Macros
+#macro(panelTitle $t)
+<div style="color: \#003366;font-weight: bold;line-height: 1.2;font-family: Arial, Helvetica, sans-serif;margin: 0 0 0.41em;font-size:16px">$t</div>
+#end
+   
+#macro(renderProperties $testRunName)
+  #panelTitle("Test Run Results Summary")
+ #set ($testRun = $testManagementService.getTestRun($document.project.id,$testRunName) )
+  <table cellpadding=1>
+    <tr>
+      <td align="left">
+        Test Run Verdict: 
+      </td>
+      <td>
+         <img src=$testRun.status.getProperty("iconURL") /> 
+          *$testRun.status.name*
+      </td>
+    </tr>
+    <tr>
+      <td align="left">
+        Test cases included: 
+      </td>
+      <td>
+        <b>$testRun.getAllRecords().size()</b>
+      </td>
+    </tr>
+    <tr>
+    <tr>
+      <td align="left">
+        Test cases executed: 
+      </td>
+      <td>
+        <b>$testRun.getRecordsCount()</b>
+      </td>
+    </tr>
+    <tr>
+    <tr>
+      <td align="left">
+        Test cases passing: 
+      </td>
+      <td>
+        <b>$testRun.getRecordsCount("passed")</b>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">
+        Test cases failing: 
+      </td>
+      <td>
+        <b>$testRun.getRecordsCount("failed")</b>
+      </td>
+    </tr>
+    <tr>
+  </table>
+#end
+
+#macro(TestRunResults $testRunName ) 
+
+### render
+<div style="border:0px solid lightgray;padding:20px">
+  #renderProperties($testRunName)
+</div>
+
+#end
+#end]]></content>
+</wiki-page>

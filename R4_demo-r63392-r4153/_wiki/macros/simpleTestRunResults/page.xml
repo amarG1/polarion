@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>lsampson</author>
+<created>20170719204951</created>
+<title>simpleTestRunResults</title>
+<type>content</type>
+<content><![CDATA[#macro (simpleTestRunResults $testRunId $result)
+## $testRunId = Id of test run to pull records from
+## $result =    Id of result option of records to pull. Can take the following values:
+##              all - all records (including waiting)
+##              executed - only those that have been executed
+##              anything else - any other value that is the id of a test record result opt
+
+#set ($testRun = $testManagementService.getTestRun($page.project, $testRunId))
+
+#if ($result.equals("all"))
+    #set ($records = $testRun.getAllRecords())
+#elseif ($result.equals("executed"))
+    #set ($records = $testRun.getRecords())
+#else
+    #set ($records = $testRun.getRecordsForResult($result))
+#end
+
+<table class="itemsTable">
+<tr>
+<th> Test Case </th>
+#if ($result.equals("all") || $result.equals("executed"))
+    <th> Result </th>
+#end
+<th> Defect </th>
+</tr>
+
+#foreach ($record in $records)
+
+<tr>
+<td> {workitem:$record.getTestCase().getId()| display=long} </td>
+#if ($result.equals("all") || $result.equals("executed"))
+    #if (!$record.getResult().getId())
+        <td> &nbsp;&nbsp;&nbsp;&nbsp; Waiting </td>
+    #else
+        <td> <img src='$record.getResult().getProperty("iconURL")'> $record.getResult().getName() </td>
+    #end
+#end
+<td> #if ($record.getDefect()) {workitem:$record.getDefect().getId()} #end </td>
+</tr>
+
+#end
+
+</table>
+
+#end
+
+#simpleTestRunResults("IFU002" "all")]]></content>
+</wiki-page>

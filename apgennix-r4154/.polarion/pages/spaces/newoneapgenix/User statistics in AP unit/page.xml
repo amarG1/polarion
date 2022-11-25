@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2022-09-13 17:33:52.308 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">User statistics in AP unit</h1>
+  <div id="polarion_client2" class="polarion-rp-widget-part" data-widget="com.polarion.table">
+    <span class="polarion-rp-widget-parameters" style="display: none;">
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="subtype">ap</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;">HAS_VALUE:user.KEY</sub>
+        <sub id="children">
+          <sub id="columns">
+            <sub>
+              <sub id="id">user</sub>
+            </sub>
+            <sub>
+              <sub id="id">gr</sub>
+            </sub>
+            <sub>
+              <sub id="id">pr</sub>
+            </sub>
+          </sub>
+          <sub id="sortBy">
+            <sub>
+              <sub id="id">user</sub>
+              <sub id="descending">false</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="propertiesSidebarFields"></sub>
+      <sub id="advanced">
+        <sub id="top">50</sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_hardcoded_1"></p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_client1"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2"></p>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <p id="polarion_hardcoded_3">
+    <span class="polarion-rp-inline-widget" data-widget="com.polarion.scriptInline"><span class="polarion-rp-widget-parameters"></span></span>
+  </p>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+    <field id="title">User statistics in AP unit</field>
+</rich-page>

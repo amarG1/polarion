@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="secureApprovalCommentId">1</item>
+                <item id="status">approved</item>
+                <item id="user">Kaushik</item>
+            </struct>
+        </list>
+    </field>
+    <field id="assignee">Kaushik</field>
+    <field id="author">Kaushik</field>
+    <field id="created">2022-09-13 12:15:43.423 +0000</field>
+    <field id="description" text-type="text/html">Testing the work item to check the notifications</field>
+    <field id="previousStatus">in_approval</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">pre_approval</field>
+    <field id="teststeps" type="struct:TestSteps">
+        <struct>
+            <item id="keys">
+                <list>
+                    <item>testStep</item>
+                    <item>description</item>
+                    <item>expectedResult</item>
+                </list>
+            </item>
+            <item id="steps">
+                <list>
+                    <struct>
+                        <item id="values">
+                            <list>
+                                <item text-type="text/html">1</item>
+                                <item text-type="text/html">test</item>
+                                <item text-type="text/html">Pass</item>
+                            </list>
+                        </item>
+                    </struct>
+                    <struct>
+                        <item id="values">
+                            <list>
+                                <item text-type="text/html">2</item>
+                                <item text-type="text/html">TestStep2</item>
+                                <item text-type="text/html">Fail</item>
+                            </list>
+                        </item>
+                    </struct>
+                </list>
+            </item>
+        </struct>
+    </field>
+    <field id="testtype" type="enum:csv_testtype">robust_scripted</field>
+    <field id="title">TestIQ for Notification</field>
+    <field id="type">test_script_IQ</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

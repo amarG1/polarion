@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>meeran</author>
+<created>20190913142734</created>
+<title>bootstrapCss</title>
+<type>content</type>
+<content><![CDATA[* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid #ddd;
+}]]></content>
+</wiki-page>

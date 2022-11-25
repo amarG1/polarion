@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-run>
+    <field id="author">anuragk@complianceg.com</field>
+    <field id="created">2022-11-07 20:06:28.823 +0000</field>
+    <field id="environmentDescription" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 26 Sep 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;Windows&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="records">
+        <list>
+            <struct>
+                <item id="testCase">RD-3788</item>
+            </struct>
+            <struct>
+                <item id="testCase">RD-3789</item>
+            </struct>
+        </list>
+    </field>
+    <field id="selectTestCasesBy">manualSelection</field>
+    <field id="status">inProgress</field>
+    <field id="template">CSV_Test</field>
+    <field id="title">Demo test Run</field>
+    <field id="type">manual</field>
+    <field id="useReportFromTemplate">true</field>
+</test-run>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<read-only>
+    <status id="_default">
+        <field id="RRR"/>
+        <field id="RT"/>
+        <field id="version"/>
+        <field id="status"/>
+    </status>
+
+    <status id="approved">
+        <field id="@all"/>
+        <field id="-status"/>
+    </status>
+
+</read-only>

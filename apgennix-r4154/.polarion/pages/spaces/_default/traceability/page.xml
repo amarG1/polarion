@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2022-09-15 14:14:45.333 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">traceability</h1>
+  <p id="polarion_hardcoded_1"></p>
+  <div id="polarion_client1" class="polarion-rp-widget-part" data-widget="traceabilitytable">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;"></sub>
+        <sub id="children">
+          <sub id="sortBy"></sub>
+          <sub id="mainSidebarConfig">
+            <sub>
+              <sub id="id">assignee</sub>
+            </sub>
+            <sub>
+              <sub id="id">severity</sub>
+            </sub>
+            <sub>
+              <sub id="id">priority</sub>
+            </sub>
+            <sub>
+              <sub id="id">status</sub>
+            </sub>
+            <sub>
+              <sub id="id">resolution</sub>
+            </sub>
+            <sub>
+              <sub id="id">linkedWorkItems</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="settings">
+        <sub id="linkedItemTypes">
+          <sub id="values">
+            <sub>testcase</sub>
+          </sub>
+        </sub>
+        <sub id="linkedRoles">
+          <sub id="values">
+            <sub>verifies</sub>
+          </sub>
+        </sub>
+        <sub id="filterByCoverage">
+          <sub id="values">
+            <sub>hideNotCovered</sub>
+          </sub>
+        </sub>
+        <sub id="linkedSidebarConfig">
+          <sub>
+            <sub id="id">assignee</sub>
+          </sub>
+          <sub>
+            <sub id="id">severity</sub>
+          </sub>
+          <sub>
+            <sub id="id">priority</sub>
+          </sub>
+          <sub>
+            <sub id="id">status</sub>
+          </sub>
+          <sub>
+            <sub id="id">resolution</sub>
+          </sub>
+          <sub>
+            <sub id="id">linkedWorkItems</sub>
+          </sub>
+        </sub>
+        <sub id="defectItemTypes">
+          <sub id="values">
+            <sub>defect</sub>
+          </sub>
+        </sub>
+        <sub id="defectRoles">
+          <sub id="values">
+            <sub>triggered_by</sub>
+          </sub>
+        </sub>
+        <sub id="linkedToLinkedSidebarConfig">
+          <sub>
+            <sub id="id">severity</sub>
+          </sub>
+          <sub>
+            <sub id="id">status</sub>
+          </sub>
+          <sub>
+            <sub id="id">linkedWorkItems</sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="advanced">
+        <sub id="collapseLimit">0</sub>
+        <sub id="sourceItemColumnTitle">Use Case</sub>
+        <sub id="linkedItemColumnTitle">Test Case</sub>
+        <sub id="defectItemColumnTitle">Defect</sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2"></p>
+  <div id="polarion_client2" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">#set($projectId =$page.getReference().projectId())
+#set($query = &quot;project.id:$projectId AND type:ap&quot;) 
+#set($workitems = $transaction.workItems().search().query(&quot;$query&quot;))
+
+&lt;table border=&quot;2&quot;&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;thead&quot;&gt;
+&lt;th style=&quot;color:cyan; background:grey; &quot;&gt;ID&lt;/th&gt;
+&lt;th style=&quot;color:cyan; background:grey; &quot;&gt;TITLE&lt;/th&gt;
+&lt;/tr&gt; 
+&lt;/thead&gt;
+#foreach($wi in $workitems )
+&lt;tr&gt;
+&lt;td&gt;$wi.fields().id().render()&lt;/td&gt;
+&lt;td&gt;$wi.fields().title().render()&lt;/td&gt;
+&lt;/tr&gt;
+#end
+&lt;/table&gt;
+
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <p id="polarion_hardcoded_3"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+    <field id="title">traceability</field>
+</rich-page>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option description="Tool is designed for this intended use for the medical device industry, and all use cases required are included and tracked in supplier development process." iconURL="/polarion/widget-resource/global/tqktraceabilitytable/resources/ALMAS_Icon_1.png" id="tr1" name="TR1" sortOrder="1"/>
+    <option description="Tool is designed for this intended use for the medical device industry, but confirmation that use cases required are included cannot be confirmed." iconURL="/polarion/widget-resource/global/tqktraceabilitytable/resources/ALMAS_Icon_2.png" id="tr2" name="TR2" sortOrder="2"/>
+    <option description="Tool was not designed for this intended use." iconURL="/polarion/widget-resource/global/tqktraceabilitytable/resources/ALMAS_Icon_3.png" id="tr3" name="TR3" sortOrder="3"/>
+</enumeration>

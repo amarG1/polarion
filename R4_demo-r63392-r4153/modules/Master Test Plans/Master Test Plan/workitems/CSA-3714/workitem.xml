@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+        
+    <field id="author">sameeullas@complianceg.com</field>
+        
+    <field id="created">2021-11-11 14:58:24.288 +0000</field>
+        
+    <field id="linkedWorkItems">
+                
+        <list>
+                        
+            <struct>
+                                
+                <item id="revision">17707</item>
+                                
+                <item id="role">relates_to</item>
+                                
+                <item id="workItem">BMRAM$CSV-211</item>
+                            
+            </struct>
+                    
+        </list>
+            
+    </field>
+        
+    <field id="priority">50.0</field>
+        
+    <field id="severity">normal</field>
+        
+    <field id="status">in_draft</field>
+        
+    <field id="title">Test Execution</field>
+        
+    <field id="type">heading</field>
+    
+</work-item>

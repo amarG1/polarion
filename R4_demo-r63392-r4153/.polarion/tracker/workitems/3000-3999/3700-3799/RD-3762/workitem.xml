@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="assignee">
+        <list>
+            <item>jagadishk@complianceg.com</item>
+            <item>Kaushik</item>
+        </list>
+    </field>
+    <field id="author">Shruti</field>
+    <field id="created">2022-09-14 05:27:30.620 +0000</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">in_draft</field>
+    <field id="testtype" type="enum:csv_testtype">robust_scripted</field>
+    <field id="title">Check email notifications-edit</field>
+    <field id="type">test_script_OQ</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option default="true" id="passed" name="Passed" sortOrder="1"/>
+    <option id="invalid" name="Invalid" sortOrder="2"/>
+    <option id="later" name="Later" sortOrder="3"/>
+    <option id="duplicate" name="Duplicate" sortOrder="4"/>
+</enumeration>

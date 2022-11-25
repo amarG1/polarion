@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option color="#ff999" description="Software that supports the direct implementation of a quality system activity that is defined in a regulation. For example, an automated CAPA or manufacturing (MES) system." iconURL="/polarion/icons/default/enums/priority_highest.gif" id="high" name="High" sortOrder="1"/>
+    <option color="#ffffb2" description="Software that supports the indirect implementation of a quality system activity that is defined in a regulation.  For example, a spreadsheet that helps managers review the training assigned to their employees (the system that directly implements the quality system activity is Learning Management System)." iconURL="/polarion/icons/default/enums/priority_medium.gif" id="med" name="Medium" sortOrder="2"/>
+    <option color="#99cc99" description="Software that supports the implementation of a quality system activity but the activity is not defined in a regulation. " iconURL="/polarion/icons/default/enums/priority_lowest.gif" id="low" name="Low" sortOrder="3"/>
+    <option description="Field has not yet been evaluated" iconURL="/polarion/icons/default/enums/variation_optional.gif" id="unanalyzed" name="Unanalyzed" sortOrder="4"/>
+</enumeration>

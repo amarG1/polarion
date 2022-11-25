@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow initial-action="rework" initial-status="draft" prototype="WorkItem">
+    <transitions>
+        <transition action="reject" from="draft" to="rejected"/>
+        <transition action="reject" from="reviewed" to="rejected"/>
+        <transition action="approve" from="reviewed" to="approved"/>
+        <transition action="review" from="draft" to="reviewed"/>
+        <transition action="rework" from="reviewed" to="draft"/>
+        <transition action="rework" from="rejected" to="draft"/>
+        <transition action="approve" from="draft" to="approved"/>
+        <transition action="obsolete" from="reviewed" to="obsolete"/>
+        <transition action="obsolete" from="draft" to="obsolete"/>
+        <transition action="newrevision" from="approved" to="draft"/>
+        <transition action="reject" from="obsolete" to="rejected"/>
+    </transitions>
+    <actions>
+        <action id="reject" name="Reject">
+            <required>
+                <field name="resolution"/>
+            </required>
+            <functions>
+                <function name="ResetApprovalsState">
+                    <param name="status" value="Rejected"/>
+                </function>
+            </functions>
+        </action>
+        <action id="rework" name="Rework">
+            <cleared>
+                <field name="resolution"/>
+            </cleared>
+            <conditions>
+                <condition name="ApprovalState">
+                    <param name="approvals" value="approved"/>
+                </condition>
+            </conditions>
+        </action>
+        <action id="review" name="Review"/>
+        <action id="approve" name="Approve">
+            <required>
+                <field name="resolution"/>
+            </required>
+            <conditions>
+                <condition name="ApprovalState">
+                    <param name="approvals" value="approved"/>
+                </condition>
+            </conditions>
+        </action>
+        <action id="obsolete" name="Obsolete"/>
+        <action id="newrevision" name="New revision">
+            <cleared>
+                <field name="resolution"/>
+            </cleared>
+            <functions>
+                <function name="ScriptFunction">
+                    <param name="engine" value="js"/>
+                    <param name="script" value="iv.js"/>
+                </function>
+            </functions>
+        </action>
+    </actions>
+</workflow>

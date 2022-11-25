@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">approved</item>
+                <item id="user">111</item>
+            </struct>
+            <struct>
+                <item id="status">waiting</item>
+                <item id="user">shbj</item>
+            </struct>
+            <struct>
+                <item id="status">approved</item>
+                <item id="user">admin</item>
+            </struct>
+        </list>
+    </field>
+    <field id="author">Ashfaq</field>
+    <field id="created">2022-11-01 18:48:33.882 +0530</field>
+    <field id="linkedWorkItems">
+        <list>
+            <struct>
+                <item id="role">relates_to</item>
+                <item id="workItem">RD-3769</item>
+            </struct>
+        </list>
+    </field>
+    <field id="previousStatus">rejected</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">pre_approval</field>
+    <field id="teststeps" type="struct:TestSteps">
+        <struct>
+            <item id="keys">
+                <list>
+                    <item>testStep</item>
+                    <item>description</item>
+                    <item>expectedResult</item>
+                </list>
+            </item>
+            <item id="steps">
+                <list>
+                    <struct>
+                        <item id="values">
+                            <list>
+                                <item text-type="text/html">1</item>
+                                <item text-type="text/html">test</item>
+                                <item text-type="text/html">pass</item>
+                            </list>
+                        </item>
+                    </struct>
+                </list>
+            </item>
+        </struct>
+    </field>
+    <field id="testtype" type="enum:csv_testtype">limited_scripted</field>
+    <field id="title">test USER REQ</field>
+    <field id="type">test_script_IQ</field>
+    <field id="version" type="string">2.0</field>
+</work-item>

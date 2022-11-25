@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">Syed.Hussaini@bd.com</field>
+    <field id="created">2021-07-19 11:37:24.009 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">Change Request Aging Report</h1>
+  <p id="polarion_hardcoded_1"></p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_hardcoded_2"></p><p id="polarion_client2"></p><p id="polarion_client3"></p><p id="polarion_client4"></p><p id="polarion_client5"></p>
+  <div id="polarion_client1" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">######################## GLOBALS START ###########################
+#set($projectId = $page.getReference().projectId())
+#set($changeReqs = $transaction.workItems().search().query(&quot;project.id:$projectId AND type:changerequest&quot;))
+#set($ageSet = $objectFactory.newSet())
+#set($ageList = [])
+######################## GLOBALS END ###########################
+
+######################## MACROS START ###########################
+#macro(getCreatedDate $wi $statusFilterId $createdDate)
+	#set($createdDateList = [])
+	#set($wiHistory = $wi.history())
+    #foreach($wih in $wiHistory)
+    	#set($actualRevision = $wih.actualRevision())
+        #set($actualRevisionWorkItem = $wih.getFromRevision($transaction, $actualRevision))
+        #set($actualRevisionWorkItemStatus = $actualRevisionWorkItem.fields().status().get().id())
+        #if($actualRevisionWorkItemStatus.equals($statusFilterId))
+        	#set($void = $createdDateList.add($actualRevisionWorkItem.fields().updated().get()))
+        #end
+    #end
+    #if($createdDateList.size() &gt; 0)
+    	#set($createdDateListLastIndex = $math.sub($createdDateList.size(), 1))
+		#set($createdDate = $createdDateList.get($createdDateListLastIndex))
+    #else
+		#set($createdDate = $wi.fields().created().get())
+    #end
+#end
+
+#macro(getWorkItemAge $createdDateObj $age)
+	#set($createdTime = $createdDateObj.getTime())
+    #set($currentDateObj = $date.getDate())
+    #set($currentTime = $currentDateObj.getTime())
+    #set($timeDifference = $math.sub($currentTime, $createdTime))
+    #set($days = $math.div($timeDifference, 86400000))
+    #set($age = $math.mod($days, 365))
+    #set($void = $ageSet.add($age))
+    #set($void = $ageList.add($age))
+    #if($age &gt; 1)
+        #set($age = &quot;$age Days&quot;) 
+    #else
+        #set($age = &quot;$age Day&quot;) 
+    #end
+#end
+
+#macro(createMaxDays)
+    #set($ageSet = $sorter.sort($ageSet))
+    #set($ageList = $sorter.sort($ageList))
+    #set($ageSetLastIndex = $math.sub($ageSet.size(), 1))
+    #if($ageSetLastIndex &gt; -1)
+    	#set($max = $ageSet.get($ageSetLastIndex))
+        &lt;input type=&quot;hidden&quot; id=&quot;inp_max_days&quot; value=&quot;$max&quot; /&gt;
+        &lt;input type=&quot;hidden&quot; id=&quot;inp_age&quot; value=&quot;$ageList.toString()&quot; /&gt;
+    #end
+#end
+######################## MACROS END ###########################
+
+################## BUSINESS LOGICS START #######################
+&lt;style&gt;
+    input, button {
+        outline: none;
+        border: none;
+        background: 0 0;
+    }
+
+    .textbox{
+    	position: relative;
+        width: 25%;
+        box-sizing: border-box;
+        font-size: 1em;
+        line-height: 2em;
+        padding-left: 1em;
+        border: 1px solid #e7e7e7;
+        color: #6d7072;
+        background-color: white;
+        height: 50px;
+    }
+    
+    .textbox:focus{
+    	border-color: #005F87;
+    }
+
+    .button-custom{
+        font-size: 16px;
+        border-radius: 4px;
+        transition: all 0.5s;
+        font-weight: bold;
+        color: #717171;
+        text-shadow: 1px 1px 0px white;
+        border: 1px solid #C5C5C5;
+        background: #e5e5e5;
+        cursor: pointer;
+        height: 50px;
+        width: 100px;
+    }
+
+    .table-wrapper-L1 {
+        width: 100%;
+        font-family: &quot;Segoe UI&quot;, &quot;Selawik&quot;, &quot;Open Sans&quot;, Arial, sans-serif;
+    }
+
+    .table-wrapper {
+        position: relative;
+        padding-top: 60px;
+        background-color: #fff;
+    }
+
+    .table-wrapper.main {
+        overflow: hidden;
+    }
+
+    .table-wrapper.main th {
+        font-weight: bold;
+        font-size: 18px;
+        color: #fff;
+        background-color: #005F87;
+    }
+
+    .table-wrapper.main td {
+        font-size: 15px;
+        color: gray;
+        line-height: 1.4;
+    }
+
+
+    .table-wrapper-head th {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .column1 {
+        width: 10%;
+        padding-left: 30px;
+    }
+
+    .column2 {
+        width: 35%;
+    }
+
+    .column3 {
+        width: 17%;
+    }
+
+    .column4 {
+        width: 16%;
+    }
+
+    .column5 {
+        width: 12%;
+    }
+
+    .column6 {
+        width: 10%;
+    }
+
+    .table-wrapper-body {
+        max-height: 600px;
+        overflow-y: scroll;
+        padding-top: 10px;
+    }
+
+    .table-wrapper-body tr:nth-child(even) {
+        background-color: #f8f6ff;
+    }
+
+    .table-wrapper-body td {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    
+    ::placeholder { 
+        color: black;
+        opacity: 1;
+      }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+&lt;/style&gt;
+&lt;div id=&quot;main-report&quot;&gt;
+     &lt;div id=&quot;pieContainer&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;
+        &lt;input id=&quot;search-inp&quot; class=&quot;textbox&quot; type=&quot;text&quot; name=&quot;name&quot; placeholder=&quot;Search in table...&quot; autocomplete=&quot;off&quot; style=&quot;display: inline;&quot; /&gt;
+        &lt;!--input type=&quot;button&quot; class=&quot;button-custom&quot; value=&quot;PDF&quot; style=&quot;display: inline;float: right;&quot; onclick=&quot;exportPDF();&quot; /&gt;
+        &lt;p style=&quot;display: inline;float: right;color:#fff&quot;&gt;t&lt;/p&gt;
+        &lt;input type=&quot;button&quot; class=&quot;button-custom&quot; value=&quot;Excel&quot; style=&quot;display: inline;float: right;&quot; onclick=&quot;exportExcel();&quot; / --&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;table_data_div&quot; class=&quot;table-wrapper-L1&quot; style=&quot;margin-top: 5px;&quot;&gt;
+        &lt;div class=&quot;table-wrapper main&quot;&gt;
+            &lt;div class=&quot;table-wrapper-head&quot;&gt;
+                &lt;table id=&quot;main-table-head&quot; style=&quot;width: 100%;border-collapse: collapse;&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th class=&quot;column1&quot; style=&quot;text-align: left;font-weight: unset;padding-right: 10px;&quot;&gt;ID&lt;/th&gt;
+                            &lt;th class=&quot;column2&quot; style=&quot;text-align: left;font-weight: unset;padding-right: 10px;&quot;&gt;Title&lt;/th&gt;
+                            &lt;th class=&quot;column3&quot; style=&quot;text-align: left;font-weight: unset;padding-right: 10px;&quot;&gt;Change By Type&lt;/th&gt;
+                            &lt;th class=&quot;column4&quot; style=&quot;text-align: left;font-weight: unset;padding-right: 10px;&quot;&gt;Change By Severity&lt;/th&gt;
+                            &lt;th class=&quot;column5&quot; style=&quot;text-align: left;font-weight: unset;padding-right: 10px;&quot;&gt;Status&lt;/th&gt;
+                            &lt;th class=&quot;column6&quot; style=&quot;text-align: left;font-weight: unset;padding-right: 10px;&quot;&gt;Age&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;table-wrapper-body&quot;&gt;
+                &lt;table id=&quot;main-table&quot; style=&quot;width: 100%;border-collapse: collapse;&quot;&gt;
+                    &lt;tbody&gt;
+                        #foreach($cr in $changeReqs)
+                            ##if(!$cr.fields().status().get().id().equals(&quot;approved&quot;))
+                                #getCreatedDate($cr &quot;in_draft&quot; $createdDateObj)
+                                #getWorkItemAge($createdDateObj $age)
+                                &lt;tr&gt;
+                                    &lt;td class=&quot;column1&quot; style=&quot;font-weight: unset;padding-right: 10px;&quot;&gt;$cr.fields().id().render().withLinks()&lt;/td&gt;
+                                    &lt;td class=&quot;column2&quot; style=&quot;font-weight: unset;padding-right: 10px;&quot;&gt;$cr.fields().title().render()&lt;/td&gt;
+                                    &lt;td class=&quot;column3&quot; style=&quot;font-weight: unset;padding-right: 10px;&quot;&gt;$cr.fields().change_type.render()&lt;/td&gt;
+                                    &lt;td class=&quot;column4&quot; style=&quot;font-weight: unset;padding-right: 10px;&quot;&gt;$cr.fields().change_severity.render()&lt;/td&gt;
+                                    &lt;td class=&quot;column5&quot; style=&quot;font-weight: unset;padding-right: 10px;&quot;&gt;$cr.fields().status().render()&lt;/td&gt;
+                                    #if($cr.fields().status().get().id().equals(&quot;approved&quot;))
+                                    	&lt;td class=&quot;column6&quot; style=&quot;font-weight: unset;padding-right: 10px;&quot;&gt;&lt;b&gt;N/A&lt;/b&gt;&lt;/td&gt;
+                                    #else
+                                    	&lt;td class=&quot;column6&quot; style=&quot;font-weight: unset;padding-right: 10px;&quot;&gt;&lt;b&gt;$age&lt;/b&gt;&lt;/td&gt;
+                                    #end
+                                &lt;/tr&gt;
+                            ##end
+                        #end
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  
+    #createMaxDays()
+    &lt;script&gt;
+        var age = $(&quot;#inp_age&quot;).val();
+        age = age.replaceAll(&quot; &quot;, &quot;&quot;);
+        age = age.substring(1, age.length - 1);
+        age = age.split(&quot;,&quot;);
+
+        var origMaxDays = parseInt($(&quot;#inp_max_days&quot;).val());
+        var maxDays = origMaxDays;
+        var daysArray = [];
+        var decrementValue = maxDays/5;
+        daysArray.push(origMaxDays);
+        for(var x=0; x&lt;4; x++){
+            maxDays = maxDays - decrementValue;
+            daysArray.push(Math.round(maxDays));
+        }
+        daysArray = daysArray.reverse();
+        
+        var chartData = [];
+        for(var x=0; x&lt;daysArray.length; x++){
+            if(x === 0){
+                var yAxis = age.filter(function(ag){
+                    return parseInt(ag) &gt;= 0 &amp;&amp; parseInt(ag) &lt;= daysArray[x]
+                });
+                chartData.push({
+                    name: &quot;0 - &quot; + daysArray[x] + &quot; Days&quot;,
+                    y: yAxis.length
+                });
+            } else {
+                var yAxis = age.filter(function(ag){
+                    return parseInt(ag) &gt;= (daysArray[x - 1] + 1) &amp;&amp; parseInt(ag) &lt;= daysArray[x]
+                });
+                chartData.push({
+                    name: (daysArray[x - 1] + 1) + &quot; - &quot; + daysArray[x] + &quot; Days&quot;,
+                    y: yAxis.length
+                });
+            }
+        }
+        
+        var options = {
+            chart: {
+                type: &#39;pie&#39;,
+                renderTo: &#39;pieContainer&#39;
+            },
+            title: {
+                text: &#39;&#39;
+            },
+            tooltip: {
+                pointFormat: &#39;{series.name}: &lt;b&gt;{point.y}&lt;/b&gt;&#39;
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: &#39;pointer&#39;,
+                    dataLabels: {
+                        enabled: true,
+                        format: &#39;&lt;b&gt;{point.name}&lt;/b&gt;: {point.y}&#39;
+                    }
+                }
+            },
+            exporting: {
+                enabled: false
+            },
+            series: [
+                {
+                    name: &#39;No Of WorkItems&#39;,
+                    colorByPoint: true,
+                    data: chartData
+                }
+            ]
+        };
+        new Highcharts.Chart(options);
+
+        $(document).ready(function(){
+            $(&quot;#search-inp&quot;).on(&quot;keyup&quot;, function () {
+                var value = $(this).val().toLowerCase();
+                $(&quot;#main-table tr&quot;).filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) &gt; -1)
+                });
+            });
+            $(&quot;#main-report&quot;).find(&quot;.polarion-Hyperlink&quot;).each(function(){
+                var hostURL = window.location.origin;
+                var link = $(this).attr(&quot;href&quot;);
+                var linkToOpen = hostURL + link;
+                $(this).click(function(e){
+                    e.preventDefault();
+                    window.open(linkToOpen, &quot;_blank&quot;);
+                });
+            });
+            $(&quot;text&quot;).each(function(){
+            	if($(this).text() === &quot;Highcharts.com&quot;){
+                	$(this).hide();
+                }
+            });
+        });
+    &lt;/script&gt;
+&lt;/div&gt;</sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+    <field id="title">Change Request Aging Report</field>
+</rich-page>

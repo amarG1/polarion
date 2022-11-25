@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">111</field>
+    <field id="created">2022-09-09 18:49:34.971 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">Status check</h1>
+  <p id="polarion_client3">
+    <span class="polarion-rp-inline-widget" data-widget="com.polarion.scriptInline">
+      <span class="polarion-rp-widget-parameters">
+        <sub id="script">
+          <sub id="script" style="white-space:pre;">## Reported By
+#set($infoText = &quot;Reported by $transaction.users().getBy().id($securityService.getCurrentUser()).render()&lt;br/&gt;$date.long&quot;)
+#if($widgetContext.target().isEditor())
+	&lt;div style=&quot;color: grey; text-align: left;&quot;&gt;$infoText&lt;div&gt;
+#elseif($widgetContext.target().isPdf())
+	&lt;div style=&quot;color: grey; text-align: right; position: absolute; top: 22px; right: 10px;&quot;&gt;$infoText&lt;div&gt;
+#elseif($widgetContext.target().isPrint())		
+	&lt;div style=&quot;text-align: right; position: absolute; top: 35px; right: 10px;&quot;&gt;$infoText&lt;div&gt;
+#end</sub>
+        </sub>
+      </span>
+    </span>
+  </p>
+  <div id="polarion_client18" class="polarion-rp-widget-part" data-widget="com.polarion.separateByPieChart">
+    <span class="polarion-rp-widget-parameters" style="display: none;">
+      <sub id="title"> </sub>
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="subtype">st</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;">HAS_VALUE:status</sub>
+        <sub id="children">
+          <sub id="separateBy">
+            <sub id="field">status</sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="showDataLabels">true</sub>
+      <sub id="showZeroValues">false</sub>
+      <sub id="advanced">
+        <sub id="height">400</sub>
+        <sub id="width"> </sub>
+      </sub>
+    </span>
+  </div>
+  <h2 id="polarion_client19">status check by status</h2>
+  <p id="polarion_client16"></p>
+  <div id="polarion_client2" class="polarion-rp-widget-part" data-widget="itemsbystatustiles">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="subtype">st</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;"></sub>
+      </sub>
+      <sub id="displayChart">true</sub>
+      <sub id="align">
+        <sub id="values">
+          <sub>center</sub>
+        </sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_client1"></p><p id="polarion_hardcoded_1"></p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 55.3365%;">
+  <p id="polarion_hardcoded_2"></p>
+  <div id="polarion_client12" class="polarion-rp-widget-part" data-widget="com.polarion.multiSetTrendChart">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title"></sub>
+      <sub id="data">
+        <sub id="elements">
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="subtype">st</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;"></sub>
+            <sub id="children">
+              <sub id="name">Total status check</sub>
+              <sub id="color">rgb(205,160,204)</sub>
+            </sub>
+          </sub>
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="subtype">st</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">status:approved</sub>
+            <sub id="children">
+              <sub id="name">Total Approved status check</sub>
+              <sub id="color">rgb(0,160,204)</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="timeAxis">
+        <sub id="from">
+          <sub id="relative">-30</sub>
+        </sub>
+        <sub id="to">
+          <sub id="relative">0</sub>
+        </sub>
+        <sub id="scaleType">day</sub>
+        <sub id="baseDate">1</sub>
+      </sub>
+      <sub id="advanced">
+        <sub id="height"></sub><sub id="width"></sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_client10"></p><p id="polarion_client11"></p>
+</div>
+<div class="polarion-rp-column" style="width: 44.663486%;">
+  <p id="polarion_hardcoded_3"></p>
+  <div id="polarion_client5" class="polarion-rp-widget-part" data-widget="com.polarion.multiSetTrendChart">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title">Status check in Process</sub>
+      <sub id="data">
+        <sub id="elements">
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="subtype">st</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">status:(reviewed approved)</sub>
+            <sub id="children">
+              <sub id="name">Total status check In Process</sub>
+              <sub id="color">rgb(250,100,200)</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="timeAxis">
+        <sub id="from">
+          <sub id="relative">-30</sub>
+        </sub>
+        <sub id="to">
+          <sub id="relative">0</sub>
+        </sub>
+        <sub id="scaleType">day</sub>
+        <sub id="baseDate">1</sub>
+      </sub>
+      <sub id="advanced">
+        <sub id="height"></sub><sub id="width"></sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_client6"></p>
+  <div id="polarion_client13" class="polarion-rp-widget-part" data-widget="com.polarion.intervalFieldChart">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title"></sub>
+      <sub id="data">
+        <sub id="elements">
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="subtype">st</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;"></sub>
+            <sub id="children">
+              <sub id="intervalField">
+                <sub id="field">created</sub>
+              </sub>
+              <sub id="name">Total created status</sub>
+              <sub id="color">rgb(300,0,0)</sub>
+            </sub>
+          </sub>
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="subtype">st</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">status:approved</sub>
+            <sub id="children">
+              <sub id="intervalField">
+                <sub id="field">created</sub>
+              </sub>
+              <sub id="name">Total Approved status</sub>
+              <sub id="color">rgb(0,0,300)</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="timeAxis">
+        <sub id="from">
+          <sub id="relative">-30</sub>
+        </sub>
+        <sub id="to">
+          <sub id="relative">0</sub>
+        </sub>
+        <sub id="scaleType">day</sub>
+        <sub id="baseDate">1</sub>
+      </sub>
+      <sub id="advanced">
+        <sub id="height"></sub><sub id="width"></sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_client8"></p><p id="polarion_client15"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_client4"></p><p id="polarion_client9"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+    <field id="title">Statistics of status check</field>
+</rich-page>

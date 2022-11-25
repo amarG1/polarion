@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">waiting</item>
+                <item id="user">shbj</item>
+            </struct>
+        </list>
+    </field>
+    <field id="assignee">111</field>
+    <field id="author">111</field>
+    <field id="categories">
+        <list>
+            <item>administration</item>
+        </list>
+    </field>
+    <field id="created">2022-09-08 18:43:52.905 +0530</field>
+    <field id="previousStatus">draft</field>
+    <field id="priority">50.0</field>
+    <field id="severity">should_have</field>
+    <field id="status">reviewed</field>
+    <field id="tc" type="enum:technicalComponents">application</field>
+    <field id="title">testing cr</field>
+    <field id="type">changerequest</field>
+</work-item>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formLayout xmlns="http://polarion.com/schema/WorkItems/FormLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://polarion.com/schema/WorkItems/FormLayout">
+	<horizontal>
+		<vertical>
+			<section>
+				<field id="type"/>
+				<field id="severity"/>
+				<field id="project"/>
+				<field id="author"/>
+				<field id="categories"/>
+			</section>
+		</vertical>
+		<vertical>
+			<section>
+				<field id="assignee"/>
+				<field id="priority"/>
+				<field id="status"/>
+				<field id="resolution"/>
+			</section>
+		</vertical>
+         
+	</horizontal>
+<panel color="blue" description="Technical Components">
+		<field id="@allCustomFields"/> 
+	</panel>
+	<field id="description"/>
+	<field id="comments"/>
+	<field id="approvals"/>
+	<field id="linkedRevisions"/>
+	<field id="linkedWorkItems"/>
+	<field id="hyperlinks"/>
+	<field id="attachments"/>
+	<field id="watches"/>
+</formLayout>

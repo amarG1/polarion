@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">meeran</field>
+    <field id="created">2021-10-08 11:43:53.668 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=CSA-3113"></h1><p id="polarion_4"></p><div id="polarion_wiki macro name=toc"></div><p id="polarion_24"></p><div id="polarion_wiki macro name=page_break|uid=polarion_35" contentEditable="false" data-is-landscape="false"></div><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3097"></h2><p id="polarion_21">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">This Validation Summary Report (VSR) is created to summarize testing results for the following Siemens Polarion initiatives in the QA environment for </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt;</span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">: </span>
+</p><p id="polarion_26" style="margin-left: 40px;">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       New Polarion implementation for </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt;</span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">.</span>
+</p><p id="polarion_36" style="margin-left: 40px;">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       Polarion infrastructure and software version upgrade (from 18.3 to 21R1) for </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt;</span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">.</span>
+</p><p id="polarion_37">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Initial version of this document includes qualification results in the QA environment.</span>
+</p><p id="polarion_38">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The acceptance criteria, as defined in the Polarion </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt; </span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Validation Plan and Polarion </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt; </span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Qualification Protocol established the requirements to be met prior to the closure of the qualification activities.  This document is an Interim VSR and will be revised to version 2.0 to capture IQ testing results in the Production environment.</span>
+</p><p id="polarion_39">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Polarion </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt; </span>is/<span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">are qualified for their intended use and when the </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt; </span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">IT change request is approved, cutover activities can be started within the approved planned window.  Note, the version 2.0 VSR must be approved before the production system can go live.</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3098"></h2><p id="polarion_40">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The following acceptance criteria defined in the Validation Plan and Qualification Protocol have been met:</span>
+</p><p id="polarion_41" style="margin-left: 40px;">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       All QA testing has been executed and documented in this Validation Summary Report</span>
+</p><p id="polarion_42" style="margin-left: 40px;">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       The </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt; </span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">IT Change Management Work Instruction is being followed for this implementation   </span>
+</p><p id="polarion_43">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;"> </span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3099"></h2><p id="polarion_44">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">As defined in the Validation Plan, the scope of this validation was to:</span>
+</p><p id="polarion_45">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       Validate Polarion </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt; </span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">for its intended use.</span>
+</p><p id="polarion_46">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       Regression test of Polarion.</span>
+</p><p id="polarion_20"></p><div id="polarion_wiki macro name=page_break|uid=polarion_52" contentEditable="false" data-is-landscape="false"></div><p id="polarion_2"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3100"></h2><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3101"></h3><p id="polarion_47">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All validation deliverables included in the Validation Plan have been completed as defined. The following table includes a listing of all validation deliverables generated during this validation:</span>
+</p><table id="polarion_48" style="width: 509pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #DBE5F1;text-align: left;vertical-align: top;width: 149pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;color: #000000;">Deliverable / Activity</span><br/>
+      </th>
+      <th style="background-color: #DBE5F1;text-align: left;vertical-align: top;width: 360pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;color: #000000;">Status</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Validation Plan<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Approved<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Requirements Specification [System Requirements Specification (SRS)]<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Approved<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">System Risk Assessment<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Approved<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">21 CFR Part 11 Assessment [GxP &amp; ERES Applicability Assessment]<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Approved<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Design Specification<br/>
+        [Design Configuration Specification]<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Approved<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Functional Risk Assessment <br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Functional risk ratings are included within the requirement level and Risk-based Test Strategy report. This deliverable is a validated live report. Therefore it is not approved as a document in Polarion.<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Design Review Summary Report<br/>
+        [Design Review]<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Approved<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Risk Based Test Strategy Report<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">A live report in Polarion which includes a summary of requirements and their associated risk ratings and testing types. This deliverable is a validated live report. Therefore it is not approved as a document in Polarion.<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Qualification Protocol<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Approved<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Installation Qualification (IQ) test cases <br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">See Polarion CSA <br/>
+        <a href="https://bdpolarion-entprd.bdx.com/polarion/#/project/BDMDSCSA/workitems?query=type%3A%28test_script_IQ%20test_script_OQ%20test_script_UAT%29" target="_blank" class="descriptionLink">COmCoTest cases</a> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Operation Qualification (OQ) test cases<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">See Polarion CSA<br/>
+        3Test cases <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Performance Qualification (PQ) / UAT test cases<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">See Polarion CSA<br/>
+        <a href="https://bdpolarion-entprd.bdx.com/polarion/#/project/BDMDSCSA/workitems?query=type%3A%28test_script_IQ%20test_script_OQ%20test_script_UAT%29" target="_blank" class="descriptionLink">5Test cases</a> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Defects, as applicable<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">See Polarion CSA<br/>
+        <a href="https://bdpolarion-entprd.bdx.com/polarion/#/project/BDMDSCSA/workitems?query=type%3A%28test_script_IQ%20test_script_OQ%20test_script_UAT%29" target="_blank" class="descriptionLink">5Test cases</a> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 149pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Traceability Matrix<br/>
+      </td>
+      <td style="vertical-align: top;width: 360pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">A live report in Polarion for mapping requirements to the corresponding design documents and test cases. This deliverable is a validated live report.  This report has been exported and is attached to this VSR. Any text not displayed in full in the exported report is available within the live report / work item Polarion.<br/>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_22"></p><div id="polarion_wiki macro name=page_break|uid=polarion_53" contentEditable="false" data-is-landscape="false"></div><p id="polarion_49">
+  <span style="font-size: 11pt;line-height: 1.5;"> </span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3102"></h2><p id="polarion_50">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All testing has been completed successfully for Polarion </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name&gt;</span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">. The following table includes a summary of this qualification testing:</span>
+</p><p id="polarion_51">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;"> </span>
+</p><table id="polarion_25" style="margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #DBE5F1;text-align: left;vertical-align: top;width: 118pt;height: 21pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Test Cycle</span><br/>
+      </th>
+      <th style="background-color: #DBE5F1;text-align: left;vertical-align: top;width: 140pt;height: 21pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Execution Status</span><br/>
+      </th>
+      <th style="background-color: #DBE5F1;text-align: left;vertical-align: top;width: 131pt;height: 21pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Number of Tests</span><br/>
+      </th>
+    </tr>
+    <tr>
+      <td colspan="3" style="background-color: #DBE5F1;vertical-align: top;width: 388pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;color: #00B050;">&lt;Company Name&gt;</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: top;width: 118pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">IQ</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Passed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">3</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Failed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">0</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: top;width: 118pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">OQ</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Passed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">13</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Failed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">3</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: top;width: 118pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">OQ Retest</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Passed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">4</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Failed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">0</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: top;width: 118pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">PQ / UAT</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Passed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">11</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Failed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">2</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: top;width: 118pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">PQ / UAT Retest</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Passed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">2</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Failed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">0</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 1pt;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">IQ - Prod</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Passed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">3</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Failed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">0</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" style="background-color: #DBE5F1;vertical-align: top;width: 388pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;color: #00B050;">&lt;Company Name&gt;</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: top;width: 118pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">IQ</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Passed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">6</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Failed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">0</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: top;width: 118pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">OQ</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Passed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">29</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Failed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">0</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: top;width: 118pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">PQ / UAT</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Passed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">24</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Failed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">0</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 1pt;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">IQ - Prod</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Passed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">4</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Failed</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">0</span>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_27"></p><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3103"></h3><p id="polarion_54">See Polarion CSA</p><p id="polarion_28">
+            <span class="polarion-rte-link" data-type="polarion" id="fake" data-custom-label="Test Runs" data-url="/testruns"></span> 
+</p><p id="polarion_56">See Polarion CSA</p><p id="polarion_57">
+  <span class="polarion-rte-link" data-type="polarion" id="fake" data-custom-label="Test Runs" data-url="/testruns"></span> 
+</p><p id="polarion_29"></p><p id="polarion_30"></p><p id="polarion_1"></p><div id="polarion_wiki macro name=page_break|uid=polarion_55" contentEditable="false" data-is-landscape="false"></div><p id="polarion_5"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3104"></h2><p id="polarion_58">
+  <span style="font-weight: bold;color: #00B050;">&lt;Company Name&gt;</span>: Thirty-four (34) defects were found during the execution of qualification testing. Two (2) Defects will remain Open.
+</p><p id="polarion_59">
+          <a href="https://bdpolarion-entprd.bdx.com/polarion/#/project/BDMDSCSA/workitems/defect?query=NOT%20HAS_VALUE%3Aresolution" target="_blank" class="descriptionLink">11Defects</a> 
+</p><p id="polarion_31">
+          <span style="font-weight: bold;color: #00B050;">&lt;Company Name&gt;</span>: Twelve (12) defects were found during the execution of qualification testing. One (1) Defect will remain Open.
+</p><p id="polarion_61">
+  <span style="font-size: 11pt;line-height: 1.5;">        </span><a href="https://bdpolarion-entprd.bdx.com/polarion/#/project/BDPICSA/workitems/defect?query=NOT%20HAS_VALUE%3Aresolution" target="_blank" class="descriptionLink">12Defects</a><span style="font-size: 11pt;line-height: 1.5;"> </span>
+</p><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3105"></h3><p id="polarion_62">  </p><table id="polarion_32" style="margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #DBE5F1;text-align: left;vertical-align: top;width: 76pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">  </span><span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Defect ID</span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;"> </span>
+        </div>
+      </th>
+      <th style="background-color: #DBE5F1;text-align: left;vertical-align: top;width: 103pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">OQ</span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;"> </span>
+        </div>
+      </th>
+      <th style="background-color: #DBE5F1;text-align: left;vertical-align: top;width: 125pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;"> </span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;"> </span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-weight: bold;color: #000000;">Description</span> 
+        </div>
+      </th>
+      <th style="background-color: #DBE5F1;text-align: left;vertical-align: top;width: 160pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Rationale for production use</span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;"> </span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 76pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">3459</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 103pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">OQ_User Needs, Intended Use, Marketing Claims and Regulatory Management</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 125pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">OQ Failure for Permissions Issue and Workflow Configuration in User Needs, Intended Use, Marketing Claims and Regulatory Management.</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 160pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The issue will be fixed during Hypercare and does not have a business impact.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 76pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">3458</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 103pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">OQ_Test Method Management</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 125pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">OQ Failure for Permissions Issue and Wokrflow Configuration in Test Method Management.</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 160pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The issue will be fixed during Hypercare and does not have a business impact.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 76pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">3209</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 103pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">N/A.</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 125pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;background-color: #FFFFFF;">Exported PDF doesn&#39;t have company logo.</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 160pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The issue will be fixed during Hypercare and does not have a business impact. This is a known issue during QA and the scripts to fix will be updated Post GoLive.</span><br/>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_67">
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3106"></h2><ul id="polarion_7">
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The Design Review document uploaded into Polarion did not take checkboxes for (Yes/No/N/A) in the Deliverables Summary. The three listed Deliverables (System Risk Assessment, GxP Applicability Assessment, System Requirements Specification) are all completed and approved.</span></li>
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The current version of System Requirements Specification (SRS) does not include Requirement IDs in its printable view. However, every requirement in the document has a unique, system generated Requirement ID which appears in work item view and the Traceability Matrix. This current “display” setting will be updated to show Requirement ID by each system requirement specification and the document with Requirement IDs will be routed for review.  The version 2.0 SRS will be approved before the version 2.0 VSR is approved.</span></li>
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Validation Plan included an incorrect Test Rating and Testing Type table. This was an inadvertent authoring error by the Validation Lead. Polarion CSA template does have accurate risk rating and testing type configurations, which was what  were used for test execution. See Appendix 1 for corrected Test Rating and Testing Type Table.</span></li>
+</ul><p id="polarion_3"></p><div id="polarion_wiki macro name=page_break|uid=polarion_60" contentEditable="false" data-is-landscape="false"></div><p id="polarion_9"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3107"></h2><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3108"></h3><p id="polarion_68">The Validation Plan may be closed through a version 2.0 VSR once the following conditions are satisfied.  Note, the version 2.0 VSR must be approved before the production system can go live.</p><ul id="polarion_10">
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All Validation deliverables identified in the Validation Plan have been completed and approved. Any exceptions and / or clarifications have been documented appropriately in the version 2.0 VSR. </span></li>
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All documentation has been reviewed and approved, including the version 2.0 SRS with Requirement IDs</span></li>
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All training materials have been created and user training is complete.</span></li>
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All standard operating procedures and/or work instructions have been written and approved</span></li>
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The IT Change Management Work Instruction is being followed for this implementation</span></li>
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The version 2.0 VSR has been written and approved with justifications and / or rationale for fit for intended use, as applicable. </span></li>
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All users who will have access to the production system at go live, have had hands-on training and are experienced users of the system (have been using the System both in Dev and QA environments and were involved in testing the configuration content).  New users will be required to train on the Polarion work instruction for basic access to the system, as well as hands-on training prior to project access/assignments. </span></li>
+  <li>All work instructions have been written and approved.  On the advice of document control, a standard operating procedure was not written. </li>
+  <ul>
+    <ul>
+      <li><span style="color: #000000;">Polarion Use for </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name&gt;</span></li>
+      <li><span style="color: #000000;">Polarion Configuration and Administration</span></li>
+    </ul>
+  </ul>
+</ul><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3109"></h3><ul id="polarion_11">
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All required IQ testing was successfully completed.</span></li>
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All required OQ / UAT testing was successfully completed.</span></li>
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All testing related issues / defects during IQ/OQ/UAT qualification have been logged and resolved except for the 2 open defects documented in section 6.1.</span></li>
+</ul><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3110"></h3><ul id="polarion_33">
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All required IQ testing in Production was successfully completed.</span></li>
+  <li><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">All testing related issues / defects during IQ Production qualification have been logged and resolved except for the 3 open defects documented in section 6.1.</span></li>
+</ul><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3111"></h2><p id="polarion_78">Approval of this document concludes this version of this document validation effort in Qualification (QA) environment and when the IT change request is approved, cutover activities can be started within the approved planned window.</p><p id="polarion_34">       Approval of this version 2 of Report will allow the systems for continued Business use.</p><p id="polarion_23"></p><div id="polarion_wiki macro name=page_break|uid=polarion_63" contentEditable="false" data-is-landscape="false"></div><p id="polarion_13"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3112"></h2><p id="polarion_79">Attachment 1: CSA_Template_Reports_Requirement_Traceability_Matrix.pdf</p><p id="polarion_12"></p><p id="polarion_17">
+  <br/>
+</p><p id="polarion_14"></p><p id="polarion_15"></p><p id="polarion_16"></p><p id="polarion_80">
+  <br/>
+</p><div id="polarion_wiki macro name=page_break|uid=polarion_64" contentEditable="false" data-is-landscape="false"></div><p id="polarion_81"> </p><p id="polarion_18"></p><p id="polarion_69">Appendix 1</p><p id="polarion_19"></p><p id="polarion_83">
+  <span style="font-weight: bold;">Step 1</span> – Determine test rating of the component using the table below:
+</p><p id="polarion_84"> </p><table id="polarion_85" style="width: 387pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th rowspan="2" style="background-color: #C4BC96;text-align: left;vertical-align: top;width: 99pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Patient / Product Quality Impact</span>
+        </div>
+      </th>
+      <th colspan="3" style="background-color: #BFBFBF;text-align: left;vertical-align: top;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;color: #000000;line-height: 1.5;">Test Rating Method</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 81pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;color: #000000;line-height: 1.5;">Out of the Box</span><br/>
+      </td>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 77pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;color: #000000;line-height: 1.5;">Configured</span><br/>
+      </td>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;color: #000000;line-height: 1.5;">Custom</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 99pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="color: #000000;">Direct</span><br/>
+      </td>
+      <td style="background-color: #FFC000;vertical-align: top;width: 81pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="color: #000000;">3</span><br/>
+      </td>
+      <td style="background-color: #E36C0A;vertical-align: top;width: 77pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="color: #000000;">4</span><br/>
+      </td>
+      <td style="background-color: #FF0000;vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="color: #000000;">5</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 99pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="color: #000000;">Indirect</span><br/>
+      </td>
+      <td style="background-color: #FFFF00;vertical-align: top;width: 81pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="color: #000000;">2</span><br/>
+      </td>
+      <td style="background-color: #FFC000;vertical-align: top;width: 77pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="color: #000000;">3</span><br/>
+      </td>
+      <td style="background-color: #E36C0A;vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="color: #000000;">4</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 99pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="color: #000000;">None</span><br/>
+      </td>
+      <td style="background-color: #92D050;vertical-align: top;width: 81pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="color: #000000;">1</span><br/>
+      </td>
+      <td style="background-color: #FFFF00;vertical-align: top;width: 77pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="color: #000000;">2</span><br/>
+      </td>
+      <td style="background-color: #FFC000;vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="color: #000000;">3</span><br/>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_86"> </p><p id="polarion_87">
+  <span style="font-weight: bold;">Step 2</span> – Determine testing type of the component based on its test rating. Following table identifies the testing type matrix:
+</p><p id="polarion_88"> </p><table id="polarion_89" style="width: 383pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th colspan="2" style="background-color: #BFBFBF;text-align: left;vertical-align: top;width: 383pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">FUNCTIONAL TESTING TYPE</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="background-color: #8EAADB;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 11pt;color: #000000;line-height: 1.5;">Test Rating</span><br/>
+      </td>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-weight: bold;font-size: 11pt;color: #000000;line-height: 1.5;">Testing Types</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #FF0000;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;color: #000000;">5</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Functionality validated through Robust Scripted Testing<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #E36C0A;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;color: #000000;">4</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Functionality validated through Limited Scripted Testing<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFC000;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;color: #000000;">3</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Functionality validated through Unscripted Testing with Error Guessing<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFFF00;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;color: #000000;">2</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Functionality validated through Unscripted Testing with exploratory scenarios<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #92D050;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;color: #000000;">1</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">Relies on vendor audit and assurance based on market use of the tool<br/>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_90"></p><div id="polarion_wiki macro name=page_break|uid=polarion_65" contentEditable="false" data-is-landscape="false"></div><p id="polarion_8">
+  <span style="font-weight: bold;font-size: 12pt;line-height: 1.5;"> </span>
+</p><h5 id="polarion_wiki macro name=module-workitem;params=id=CSA-3114"></h5><div id="polarion_editor_html_block1" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div><p id="polarion_35"></p><p id="polarion_75"></p><p id="polarion_6"></p>]]>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">Validation Summary Report</field>
+    <field id="type">validation_plan</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

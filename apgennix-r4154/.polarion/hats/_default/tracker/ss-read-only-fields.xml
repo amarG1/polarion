@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<read-only>
+    <status id="_default">
+        <field id="-description"/>
+        <field id="priority"/>
+    </status>
+
+    <status id="done">
+        <field id="-description"/>
+    </status>
+
+    <status id="inprogress">
+        <field id="-approvals"/>
+    </status>
+
+    <status id="open">
+        <field id="approvals"/>
+    </status>
+
+</read-only>

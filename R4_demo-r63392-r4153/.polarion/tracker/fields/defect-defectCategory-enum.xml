@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option iconURL="/polarion/icons/project/CSAR4/compu.png" id="applicationSoftware" name="Application Software"/>
+    <option iconURL="/polarion/icons/project/CSAR4/folder.png" id="data" name="Data"/>
+    <option iconURL="/polarion/icons/project/CSAR4/document.png" id="doc" name="Documentation"/>
+    <option iconURL="/polarion/icons/project/CSAR4/window.png" id="env" name="Environment"/>
+    <option iconURL="/polarion/icons/project/CSAR4/exam.png" id="tester" name="Tester"/>
+</enumeration>

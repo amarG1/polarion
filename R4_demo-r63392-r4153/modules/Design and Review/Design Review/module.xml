@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">meeran</field>
+    <field id="created">2021-10-08 11:50:36.795 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<p id="polarion_2" style="text-align: center;">
+  <span style="font-weight: bold;font-size: 14pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Table of Contents</span>
+</p><div id="polarion_wiki macro name=toc"></div><p id="polarion_12"></p><div id="polarion_wiki macro name=page_break|uid=polarion_23" contentEditable="false" data-is-landscape="false"></div><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3133"></h2><p id="polarion_3" style="margin-left: 40px;">
+  <span style="font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">The Design Review is used to capture the Business Owner’s/Sponsors and any additional User Representative’s acceptance of the system functionality as meeting the System Requirements Specification upon a review/demonstration of the Polarion system application.</span>
+</p><p id="polarion_5" style="margin-left: 40px;">
+  <span style="font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Successful completion of this Design Review demonstrates that system development is completed, the Polarion implementation for </span><span style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;color: #00B050;">&lt;Company Name or Site Name&gt;</span><span style="font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">, is ready for qualification.</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3134"></h2><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3135"></h3><p id="polarion_6" style="margin-left: 40px;">
+  <span style="font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">The scope of this Design Review is to demonstrate system functionality and user acceptance of the Polarion implementation for </span><span style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;color: #00B050;">&lt;Company Name or Site Name&gt;</span><span style="font-size: 11pt;font-family: Arial, Helvetica, sans-serif;color: #000000;line-height: 1.5;">.</span>
+</p><ul id="polarion_8">
+  <li><span style="font-family: Arial, Helvetica, sans-serif;">Requirements Management</span></li>
+  <li><span style="font-family: Arial, Helvetica, sans-serif;">Risk Analysis and Risk Management</span></li>
+  <li><span style="font-family: Arial, Helvetica, sans-serif;">Test and Test methods validation</span></li>
+  <li><span style="font-family: Arial, Helvetica, sans-serif;">Production Control</span></li>
+  <ul>
+    <li><span style="font-family: Arial, Helvetica, sans-serif;">e-signatures for review and approval of tasks</span></li>
+  </ul>
+</ul><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3136"></h2><p id="polarion_10" style="margin-left: 40px;">
+  <span style="font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">A summary of the Design Review Meeting results for the Polarion implementation for </span><span style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;color: #00B050;">&lt;Company Name or Site Name&gt;</span><span style="font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">, including the names of the participants, issues, major decisions, acceptance decision, and dates of the activities is provided in the following table(s):</span>
+</p><p id="polarion_43" style="margin-left: 40px;">
+  <br/>
+</p><table id="polarion_44" style="margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="text-align: left;vertical-align: top;width: 127pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;">Date</span><br/>
+        </th>
+      <th style="text-align: left;vertical-align: top;width: 378pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-weight: bold;">XXth October 20XX</span><br/>
+        </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 127pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;">Summary of Review</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 378pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">A summary of the key system functionality in accordance with the System Requirements Specification was reviewed .</span><br/>
+        <span style="font-family: Arial, Helvetica, sans-serif;color: #000000;"> </span><br/>
+        <span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Two issues were observed and are addressed below:</span><br/>
+        
+        <div style="margin-left: 40px;">
+          <span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">i)</span><span style="font-size: 8pt;color: #000000;line-height: 1.5;">                </span><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;"> Error when using Work item tracker</span> 
+        </div>
+        
+        <div style="margin-left: 40px;">
+          <span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">ii)</span><span style="font-size: 8pt;color: #000000;line-height: 1.5;">              </span><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;"> Polarion document linkage to MasterControl</span> 
+        </div>
+        <span style="font-family: Arial, Helvetica, sans-serif;color: #000000;"> </span><br/>
+        </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_45" style="margin-left: 40px;">
+  <br/>
+</p><p id="polarion_46" style="margin-left: 40px;">
+  <br/>
+</p><p id="polarion_14"></p><div id="polarion_wiki macro name=page_break|uid=polarion_24" contentEditable="false" data-is-landscape="false"></div><p id="polarion_18"></p><table id="polarion_19" style="margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;width: 127pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;"> </span> 
+        </div>
+        </th>
+      <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;width: 306pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;"> </span> 
+        </div>
+        </th>
+      <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;width: 72pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;"> </span> 
+        </div>
+        </th>
+    </tr>
+    <tr>
+      <td style="background-color: #D9D9D9;vertical-align: top;width: 127pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;color: #000000;">Role</span> 
+        </div>
+        </td>
+      <td style="background-color: #D9D9D9;vertical-align: top;width: 306pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;color: #000000;">Approvals</span> 
+        </div>
+        </td>
+      <td style="background-color: #D9D9D9;vertical-align: top;width: 72pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;color: #000000;">Attended (Y/N)</span> 
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 127pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;">Business Process Owner /Sponsor –</span><br/>
+        <span style="font-weight: bold;">WW VP QM</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 306pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 72pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 127pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;">Project Lead</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 306pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 72pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 127pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;">Solutions Architect - Siemens</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 306pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 72pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 127pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;">All Attendees</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 306pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 72pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 127pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;">Major Decisions</span><br/>
+        </td>
+      <td colspan="2" style="vertical-align: top;width: 378pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;"> </span><br/>
+        <br/>
+        <span style="font-family: Arial, Helvetica, sans-serif;"> </span><br/>
+        </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_20"></p><p id="polarion_21"></p><div id="polarion_wiki macro name=page_break|uid=polarion_26" contentEditable="false" data-is-landscape="false"></div><p id="polarion_11" style="margin-left: 40px;">
+  <br/>
+</p><table id="polarion_22" style="margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th rowspan="3" style="text-align: left;vertical-align: top;width: 127pt;height: 12pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;">Issue #1</span><br/>
+        </th>
+      <th style="text-align: left;vertical-align: top;width: 378pt;height: 12pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-weight: bold;">Issue Description:</span> <br/>
+        Work Item Tracker: Error observed when top row of a search in Polarion is an unviewable item<br/>
+         <br/>
+        </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 378pt;height: 12pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-weight: bold;">Root Cause:</span><br/>
+        Unviewable items triggering an error and preventing the information from being sorted<br/>
+        <span style="font-weight: bold;"> </span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 378pt;height: 12pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-weight: bold;">Resolution/Rationale For Acceptance:</span><br/>
+        The error can be resolved by selecting a viewable item from the outputted data <br/>
+        <br/>
+        Additionally, the default tracker has been adjusted to set to ‘sort by ID’ which will minimize opportunity for the defect to occur.<br/>
+         <br/>
+        The issue will be monitored in Phase I and additional functionality may be included for Phase II, as necessary.<br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 127pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;">Acceptance</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 378pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;">The following acceptance criteria have been met:</span><br/>
+        
+        <ul>
+          <li><span style="font-family: Arial, Helvetica, sans-serif;">All deliverables required have been completed.</span></li>
+          <li><span style="font-family: Arial, Helvetica, sans-serif;">All issues have been dispositioned, mitigated, and/or closed.</span></li>
+          <li><span style="font-family: Arial, Helvetica, sans-serif;">The system functionality has been reviewed and is ready for qualification.</span></li>
+        </ul>
+        <span style="font-family: Arial, Helvetica, sans-serif;"> </span><br/>
+        </td>
+    </tr>
+  </tbody>
+</table><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3137"></h2><p id="polarion_13" style="margin-left: 40px;" data-keep-next="true">
+  <span style="font-family: Arial, Helvetica, sans-serif;">A summary of the deliverables created for the Design Reviews is provided in the following table:</span>
+</p><table id="polarion_15" style="width: 501pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #E6E6E6;text-align: left;vertical-align: top;width: 374pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Deliverable Name</span> 
+        </div>
+        </th>
+      <th colspan="3" style="background-color: #E6E6E6;text-align: left;vertical-align: top;width: 127pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Completed?</span> 
+        </div>
+        </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 374pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">Polarion System Risk Assessment.</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 41pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">Yes</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 36pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">No</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 50pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">N/A</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 374pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">Polarion GxP Applicability Assessment.</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 41pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">Yes</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 36pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">No</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 50pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">N/A</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 374pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">Polarion System Requirements Specification</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 41pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">Yes</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 36pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">No</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 50pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;padding: 4pt;"><span style="font-family: Arial, Helvetica, sans-serif;">N/A</span><br/>
+        </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_16"></p><p id="polarion_17">Note: Functional Risk Assessment will be approved and maintained in the CSA template in Polarion</p><p id="polarion_105"></p><div id="polarion_wiki macro name=page_break|uid=polarion_40" contentEditable="false" data-is-landscape="false"></div><p id="polarion_39">
+  <br/>
+</p><p id="polarion_60">
+  <span style="font-weight: bold;font-size: 14pt;line-height: 1.5;">Appendix I   Agenda and Overview</span><span style="font-weight: bold;font-size: 14pt;line-height: 1.5;"></span>
+</p><p id="polarion_68">
+            <img src="attachment:5-screenshot-20211111-121358.png" style="max-width: 650px;"/>
+</p><div id="polarion_wiki macro name=page_break|uid=polarion_41" contentEditable="false" data-is-landscape="false"></div><p id="polarion_111"></p><p id="polarion_70">
+  <img src="attachment:6-screenshot-20211111-121358.png" style="max-width: 650px;"/>
+</p><p id="polarion_89">
+  <img src="attachment:7-screenshot-20211111-121358.png" style="max-width: 650px;"/>
+</p><p id="polarion_115">
+    <img src="attachment:8-screenshot-20211111-121358.png" style="max-width: 650px;"/>
+</p><p id="polarion_118">
+  <br/>
+</p><div id="polarion_wiki macro name=page_break|uid=polarion_42" contentEditable="false" data-is-landscape="false"></div><p id="polarion_99">
+  <br/>
+</p><p id="polarion_47"></p><div id="polarion_editor_html_block1" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div><p id="polarion_100">
+  <br/>
+</p>]]>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">Design Review</field>
+    <field id="type">generic</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

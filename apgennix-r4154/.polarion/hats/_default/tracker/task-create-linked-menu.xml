@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu>
+	<item label="Implemented Work Package" role="implements" type="workpackage"/>
+	<item label="Mitigated Risk" role="mitigates" type="risk"/>
+	<item label="Related" role="relates_to"/>
+</menu>

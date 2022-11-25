@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>admin</author>
+<created>20221104105134</created>
+<title>ap</title>
+<type>content</type>
+<content><![CDATA[1 To get list of requirement WI
+
+
+
+{regiontitle}
+#info("SystemRequirement")
+{regiontitle}
+
+{workitems:type:systemrequirement | 
+ top=10 | fields=id, title, status, timePoint}
+
+
+{regiontitle}
+ApUnit
+{regiontitle}
+----
+
+{workitems:type:ap AND status:open| 
+ top=10 | fields=id, title, status, timePoint}
+----
+
+{style:type=div|border=2px solid cyan|
+width=100px|height=200px|color=black}
+{users:@all|project=apgennix|fields=id, name}
+
+{style}
+----
+{createprojectbutton}
+----
+$platformService.getPolarionProductName() - $platformService.getPolarionVersion()
+
+{table}
+Title 1 | Title 2
+Word 1 | Word 2
+{table}
+
+{table:bold=1}
+Category | Sales (K?)
+Category 1 | 100
+Category 2 | 50
+Category 3 | 50
+Total | =sum(B2:B4)
+{table}
+
+{section}
+{column:width=50% | padding=15px}
+ap
+{column}
+{section}
+
+{section}
+ 
+{column:width=30%}
+This is the first column
+{column}
+ 
+{column:width=70%}
+This is the second column
+{column}
+ 
+{section}
+
+{image:http://www.polarion.com/img/logos/polarion_logo_60x68.gif}
+
+{code:xml} <hello> <world>Cool!</world> </hello> {code}
+1 Recently created workitems
+{recently-modified-workitems:project=@current}
+
+
+
+{pages:group=@all|top=10|sortby=name}
+
+{project: @current}
+
+*Projects*: {projectgroup-property:location}
+
+#highchartStart("This is area" "area" 400 300)
+#setHighchartCategories("1995:2000:2005:2010")
+#addHighchartDataSet("Apple" "10:20:30:25")
+#addHighchartDataSet("Orange" "20:15:30:35")
+#addHighchartDataSet("Kiwi" "30:20:20:10")
+#highchartEnd()
+
+]]></content>
+</wiki-page>

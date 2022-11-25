@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu>
+	<item label="Assessed" role="assesses"/>
+	<item label="Blocking" role="depends_on"/>
+	<item label="Related" role="relates_to"/>
+</menu>

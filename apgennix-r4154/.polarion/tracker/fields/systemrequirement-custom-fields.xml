@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field description="Select the Target Version for the planned Requirement" id="targetVersion" name="Target Version" type="enum:version"/>
+    <field default="false" id="noSoftwareCoverage" name="Not Covered by Software Requirements" type="boolean"/>
+    <field description="Linked item of it" id="parentid" name="Parent Id" type="string"/>
+</fields>

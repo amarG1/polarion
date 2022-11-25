@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="addr" text-type="text/plain" type="text">Beijing</field>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">approved</item>
+                <item id="user">admin</item>
+            </struct>
+            <struct>
+                <item id="status">approved</item>
+                <item id="user">shbj</item>
+            </struct>
+        </list>
+    </field>
+    <field id="assignee">111</field>
+    <field id="author">admin</field>
+    <field id="country" type="enum:country">2</field>
+    <field id="created">2022-09-12 12:02:23.915 +0530</field>
+    <field id="description" text-type="text/html">&lt;br/&gt;</field>
+    <field id="name" text-type="text/plain" type="text">Chen nuo</field>
+    <field id="previousStatus">open</field>
+    <field id="priority">50.0</field>
+    <field id="severity">nice_to_have</field>
+    <field id="state" type="enum:states">7</field>
+    <field id="status">inprogress</field>
+    <field id="title">test...</field>
+    <field id="type">sr</field>
+</work-item>

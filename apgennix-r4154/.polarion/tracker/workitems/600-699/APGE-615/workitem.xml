@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">admin</field>
+    <field id="created">2022-11-04 10:29:06.003 +0530</field>
+    <field id="description" text-type="text/html">Jira to polarion</field>
+    <field id="hyperlinks">
+        <list>
+            <struct>
+                <item id="role">ref_ext</item>
+                <item id="uri">http://localhost:8087/browse/JIRA-17</item>
+            </struct>
+        </list>
+    </field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">To Do</field>
+    <field id="title">morning jira to polarion test</field>
+    <field id="type">task</field>
+</work-item>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>admin</author>
+<created>20071209000414</created>
+<title>macros</title>
+<type>active</type>
+<content><![CDATA[{includeForm:macros.macros}
+
+1 Welcome to the Swan Valley Medical Template project
+
+#clearFloats()
+
+<center>
+
+#spacePanel("US Regulatory>US Regulatory.Home" "FDA_60.jpg" "Here you will find all design control documents necessary for US regulatory submissions")
+#spacePanel("EU Regulatory>EU Regulatory.Home" "ISO_60.jpg" "Here you will find all design control documents necessary for the EU regulatory submissions")
+#spacePanel("Inputs>Inputs.Home" "Input_50.jpeg" "Here you can find all the resources related to the product definition including product vision, and approved requirements etc.")
+#spacePanel("Outputs>Outputs.Home" "Out_50.jpeg" "Here you can find all the resources related to the software system architecture (SRS), design outputs (DMR), and product realization plan etc.")
+#spacePanel("Risk Management File>Risk Management File.Home" "risk.png|60px" "Choose this option to review and perform FMEA Risk Assessments. Identifying all possible failures (as risk items), and plan tasks to mitigate the potential Risk.")
+#spacePanel("Testing>Testing.Home" "testing.png" "Select this space if you need to browse the latest test run executions, or if you are interested how well  the product has been tested.")
+</center>
+]]></content>
+</wiki-page>

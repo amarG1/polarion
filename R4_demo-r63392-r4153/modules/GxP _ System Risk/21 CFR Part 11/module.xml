@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">meeran</field>
+    <field id="created">2019-09-04 14:55:16.780 +0000</field>
+    <field id="crossReferenceMappingData">csv_10/CSV-520=csv_10/CSV-719,csv_10/CSV-530=csv_10/CSV-715,csv_10/CSV-522=csv_10/CSV-726,csv_10/CSV-521=csv_10/CSV-724,csv_10/CSV-524=csv_10/CSV-720,dcb8954b-0a000004-27103726-f62bd229=SiemensCSV/SCSV-2586,csv_10/CSV-523=csv_10/CSV-725,csv_10/CSV-526=csv_10/CSV-722,csv_10/CSV-525=csv_10/CSV-721,csv_10/CSV-517=csv_10/CSV-716,csv_10/CSV-528=csv_10/CSV-728,dcb8954b-0a000004-27103726-b40a7e52=SiemensCSV/SCSV-2583,csv_10/CSV-527=csv_10/CSV-723,csv_10/CSV-519=csv_10/CSV-718,dcb8954b-0a000004-27103726-8d08b2bc=SiemensCSV/SCSV-2580,csv_10/CSV-518=csv_10/CSV-717,csv_10/CSV-529=csv_10/CSV-727,dcb8954b-0a000004-27103726-a7216633=SiemensCSV/SCSV-2587,dcb8954b-0a000004-27103726-9c7a70b6=SiemensCSV/SCSV-2582,dcb8954b-0a000004-27103726-d35c6178=SiemensCSV/SCSV-2579,dcb8954b-0a000004-27103726-b316630f=SiemensCSV/SCSV-2588,dcb8954b-0a000004-27103726-a38d2695=SiemensCSV/SCSV-2584,dcb8954b-0a000004-27103726-8505dd06=SiemensCSV/SCSV-2585,dcb8954b-0a000004-27103726-33ac9fd8=SiemensCSV/SCSV-2581</field>
+    <field id="headingSidebarFields">severity,status</field>
+    <field id="homePageContent" text-type="text/html"><![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=CSV-715"></h1><p id="polarion_template_0">
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-716"></h2><p id="polarion_1"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-717"></h2><p id="polarion_2" class="linktoamn">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=20141201y1.34" target="_top">Link to an amendment published at 79 FR 71291, Dec. 1, 2014.</a>
+</p><p id="polarion_3">(a) The regulations in this part set forth the criteria under which the agency considers electronic records, electronic signatures, and handwritten signatures executed to electronic records to be trustworthy, reliable, and generally equivalent to paper records and handwritten signatures executed on paper.</p><p id="polarion_4">(b) This part applies to records in electronic form that are created, modified, maintained, archived, retrieved, or transmitted, under any records requirements set forth in agency regulations. This part also applies to electronic records submitted to the agency under requirements of the Federal Food, Drug, and Cosmetic Act and the Public Health Service Act, even if such records are not specifically identified in agency regulations. However, this part does not apply to paper records that are, or have been, transmitted by electronic means.</p><p id="polarion_5">(c) Where electronic signatures and their associated electronic records meet the requirements of this part, the agency will consider the electronic signatures to be equivalent to full handwritten signatures, initials, and other general signings as required by agency regulations, unless specifically excepted by regulation(s) effective on or after August 20, 1997.</p><p id="polarion_6">(d) Electronic records that meet the requirements of this part may be used in lieu of paper records, in accordance with §11.2, unless paper records are specifically required.</p><p id="polarion_7">(e) Computer systems (including hardware and software), controls, and attendant documentation maintained under this part shall be readily available for, and subject to, FDA inspection.</p><p id="polarion_8">(f) This part does not apply to records required to be established or maintained by §§1.326 through 1.368 of this chapter. Records that satisfy the requirements of part 1, subpart J of this chapter, but that also are required under other applicable statutory provisions or regulations, remain subject to this part.</p><p id="polarion_9">(g) This part does not apply to electronic signatures obtained under §101.11(d) of this chapter.</p><p id="polarion_10">(h) [Reserved]</p><p id="polarion_11">(i) This part does not apply to records required to be established or maintained by part 117 of this chapter. Records that satisfy the requirements of part 117 of this chapter, but that also are required under other applicable statutory provisions or regulations, remain subject to this part.</p><p id="polarion_12">(j) This part does not apply to records required to be established or maintained by part 507 of this chapter. Records that satisfy the requirements of part 507 of this chapter, but that also are required under other applicable statutory provisions or regulations, remain subject to this part.</p><p id="polarion_13">(k) This part does not apply to records required to be established or maintained by part 112 of this chapter. Records that satisfy the requirements of part 112 of this chapter, but that also are required under other applicable statutory provisions or regulations, remain subject to this part.</p><p id="polarion_14">(l) This part does not apply to records required to be established or maintained by subpart L of part 1 of this chapter. Records that satisfy the requirements of subpart L of part 1 of this chapter, but that also are required under other applicable statutory provisions or regulations, remain subject to this part.</p><p id="polarion_15">(m) This part does not apply to records required to be established or maintained by subpart M of part 1 of this chapter. Records that satisfy the requirements of subpart M of part 1 of this chapter, but that also are required under other applicable statutory provisions or regulations, remain subject to this part.</p><p id="polarion_16">(n) This part does not apply to records required to be established or maintained by subpart O of part 1 of this chapter. Records that satisfy the requirements of subpart O of part 1 of this chapter, but that also are required under other applicable statutory provisions or regulations, remain subject to this part.</p><p id="polarion_17">(o) This part does not apply to records required to be established or maintained by part 121 of this chapter. Records that satisfy the requirements of part 121 of this chapter, but that also are required under other applicable statutory provisions or regulations, remain subject to this part.</p><p id="polarion_18" class="cita">[62 FR 13464, Mar. 20, 1997, as amended at 69 FR 71655, Dec. 9, 2004; 79 FR 71253, Dec. 1, 2014; 80 FR 71253, June 19, 2015; 80 FR 56144, 56336, Sept. 17, 2015; 80 FR 74352, 74547, 74667, Nov. 27, 2015; 81 FR 20170, Apr. 6, 2016; 81 FR 34218, May 27, 2016]</p><p id="polarion_19">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=pt21.1.11&rgn=div5#_top" target="_top">&lt;Image: ret-arrow-generic-grey.gif&gt; Back to Top</a><br/>
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-718"></h2><p id="polarion_20">(a) For records required to be maintained but not submitted to the agency, persons may use electronic records in lieu of paper records or electronic signatures in lieu of traditional signatures, in whole or in part, provided that the requirements of this part are met.</p><p id="polarion_21">(b) For records submitted to the agency, persons may use electronic records in lieu of paper records or electronic signatures in lieu of traditional signatures, in whole or in part, provided that:</p><p id="polarion_22">(1) The requirements of this part are met; and</p><p id="polarion_23">(2) The document or parts of a document to be submitted have been identified in public docket No. 92S-0251 as being the type of submission the agency accepts in electronic form. This docket will identify specifically what types of documents or parts of documents are acceptable for submission in electronic form without paper records and the agency receiving unit(s) (e.g., specific center, office, division, branch) to which such submissions may be made. Documents to agency receiving unit(s) not specified in the public docket will not be considered as official if they are submitted in electronic form; paper forms of such documents will be considered as official and must accompany any electronic records. Persons are expected to consult with the intended agency receiving unit for details on how (e.g., method of transmission, media, file formats, and technical protocols) and whether to proceed with the electronic submission.</p><p id="polarion_24">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=pt21.1.11&rgn=div5#_top" target="_top">&lt;Image: ret-arrow-generic-grey.gif&gt; Back to Top</a><br/>
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-719"></h2><p id="polarion_25">(a) The definitions and interpretations of terms contained in section 201 of the act apply to those terms when used in this part.</p><p id="polarion_26">(b) The following definitions of terms also apply to this part:</p><p id="polarion_27">
+  (1) <span style="font-weight: bold;"><span style="font-style: italic;">Act</span> </span>means the Federal Food, Drug, and Cosmetic Act (secs. 201-903 (21 U.S.C. 321-393)).
+</p><p id="polarion_28">
+  (2) <span style="font-weight: bold;"><span style="font-style: italic;">Agency</span> </span>means the Food and Drug Administration.
+</p><p id="polarion_29">
+  (3) <span style="font-weight: bold;"><span style="font-style: italic;">Biometrics</span> </span>means a method of verifying an individual&#39;s identity based on measurement of the individual&#39;s physical feature(s) or repeatable action(s) where those features and/or actions are both unique to that individual and measurable.
+</p><p id="polarion_30">
+  (4) <span style="font-weight: bold;font-style: italic;">Closed system</span> means an environment in which system access is controlled by persons who are responsible for the content of electronic records that are on the system.
+</p><p id="polarion_31">
+  (5) <span style="font-weight: bold;font-style: italic;">Digital signature</span> means an electronic signature based upon cryptographic methods of originator authentication, computed by using a set of rules and a set of parameters such that the identity of the signer and the integrity of the data can be verified.
+</p><p id="polarion_32">
+  (6) <span style="font-weight: bold;font-style: italic;">Electronic record</span> means any combination of text, graphics, data, audio, pictorial, or other information representation in digital form that is created, modified, maintained, archived, retrieved, or distributed by a computer system.
+</p><p id="polarion_33">
+  (7) <span style="font-weight: bold;"><span style="font-style: italic;">Electronic signature</span> </span>means a computer data compilation of any symbol or series of symbols executed, adopted, or authorized by an individual to be the legally binding equivalent of the individual&#39;s handwritten signature.
+</p><p id="polarion_34">
+  (8) <span style="font-weight: bold;font-style: italic;">Handwritten signature</span> means the scripted name or legal mark of an individual handwritten by that individual and executed or adopted with the present intention to authenticate a writing in a permanent form. The act of signing with a writing or marking instrument such as a pen or stylus is preserved. The scripted name or legal mark, while conventionally applied to paper, may also be applied to other devices that capture the name or mark.
+</p><p id="polarion_35">
+  (9) <span style="font-weight: bold;font-style: italic;">Open system</span> means an environment in which system access is not controlled by persons who are responsible for the content of electronic records that are on the system.
+</p><p id="polarion_36">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=pt21.1.11&rgn=div5#_top" target="_top">&lt;Image: ret-arrow-generic-grey.gif&gt; Back to Top</a><br/>
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-720"></h2><p id="polarion_37">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=pt21.1.11&rgn=div5#_top" target="_top">&lt;Image: ret-arrow-generic-grey.gif&gt; Back to Top</a><br/>
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-721"></h2><div id="polarion_wiki macro name=module-workitem;params=id=SCSV-2579|layout=1|external=true|project=SiemensCSV|anchor=dcb8954b-0a000004-27103726-d35c6178"></div><p id="polarion_38"></p><p id="polarion_39">Such procedures and controls shall include the following:</p><p id="polarion_40">(a) Validation of systems to ensure accuracy, reliability, consistent intended performance, and the ability to discern invalid or altered records.</p><p id="polarion_41">(b) The ability to generate accurate and complete copies of records in both human readable and electronic form suitable for inspection, review, and copying by the agency. Persons should contact the agency if there are any questions regarding the ability of the agency to perform such review and copying of the electronic records.</p><p id="polarion_42">(c) Protection of records to enable their accurate and ready retrieval throughout the records retention period.</p><p id="polarion_43">(d) Limiting system access to authorized individuals.</p><p id="polarion_44">(e) Use of secure, computer-generated, time-stamped audit trails to independently record the date and time of operator entries and actions that create, modify, or delete electronic records. Record changes shall not obscure previously recorded information. Such audit trail documentation shall be retained for a period at least as long as that required for the subject electronic records and shall be available for agency review and copying.</p><p id="polarion_45">(f) Use of operational system checks to enforce permitted sequencing of steps and events, as appropriate.</p><p id="polarion_46">(g) Use of authority checks to ensure that only authorized individuals can use the system, electronically sign a record, access the operation or computer system input or output device, alter a record, or perform the operation at hand.</p><p id="polarion_47">(h) Use of device (e.g., terminal) checks to determine, as appropriate, the validity of the source of data input or operational instruction.</p><p id="polarion_48">(i) Determination that persons who develop, maintain, or use electronic record/electronic signature systems have the education, training, and experience to perform their assigned tasks.</p><p id="polarion_49">(j) The establishment of, and adherence to, written policies that hold individuals accountable and responsible for actions initiated under their electronic signatures, in order to deter record and signature falsification.</p><p id="polarion_50">(k) Use of appropriate controls over systems documentation including:</p><p id="polarion_51">(1) Adequate controls over the distribution of, access to, and use of documentation for system operation and maintenance.</p><p id="polarion_52">(2) Revision and change control procedures to maintain an audit trail that documents time-sequenced development and modification of systems documentation.</p><p id="polarion_53">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=pt21.1.11&rgn=div5#_top" target="_top">&lt;Image: ret-arrow-generic-grey.gif&gt; Back to Top</a><br/>
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-722"></h2><div id="polarion_wiki macro name=module-workitem;params=id=SCSV-2580|layout=1|external=true|project=SiemensCSV|anchor=dcb8954b-0a000004-27103726-8d08b2bc"></div><p id="polarion_54"></p><div id="polarion_wiki macro name=module-workitem;params=id=SCSV-2581|layout=1|external=true|project=SiemensCSV|anchor=dcb8954b-0a000004-27103726-33ac9fd8"></div><p id="polarion_55">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=pt21.1.11&rgn=div5#_top" target="_top">&lt;Image: ret-arrow-generic-grey.gif&gt; Back to Top</a><br/>
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-723"></h2><div id="polarion_wiki macro name=module-workitem;params=id=SCSV-2582|layout=1|external=true|project=SiemensCSV|anchor=dcb8954b-0a000004-27103726-9c7a70b6"></div><p id="polarion_56">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=pt21.1.11&rgn=div5#_top" target="_top">&lt;Image: ret-arrow-generic-grey.gif&gt; Back to Top</a><br/>
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-724"></h2><div id="polarion_wiki macro name=module-workitem;params=id=SCSV-2583|layout=1|external=true|project=SiemensCSV|anchor=dcb8954b-0a000004-27103726-b40a7e52"></div><p id="polarion_57">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=pt21.1.11&rgn=div5#_top" target="_top">&lt;Image: ret-arrow-generic-grey.gif&gt; Back to Top</a><br/>
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-725"></h2><p id="polarion_58">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=pt21.1.11&rgn=div5#_top" target="_top">&lt;Image: ret-arrow-generic-grey.gif&gt; Back to Top</a><br/>
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-726"></h2><div id="polarion_wiki macro name=module-workitem;params=id=SCSV-2584|layout=1|external=true|project=SiemensCSV|anchor=dcb8954b-0a000004-27103726-a38d2695"></div><div id="polarion_wiki macro name=module-workitem;params=id=SCSV-2585|layout=1|external=true|project=SiemensCSV|anchor=dcb8954b-0a000004-27103726-8505dd06"></div><div id="polarion_wiki macro name=module-workitem;params=id=SCSV-2586|layout=1|external=true|project=SiemensCSV|anchor=dcb8954b-0a000004-27103726-f62bd229"></div><p id="polarion_59">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=pt21.1.11&rgn=div5#_top" target="_top">&lt;Image: ret-arrow-generic-grey.gif&gt; Back to Top</a><br/>
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-727"></h2><div id="polarion_wiki macro name=module-workitem;params=id=SCSV-2587|layout=1|external=true|project=SiemensCSV|anchor=dcb8954b-0a000004-27103726-a7216633"></div><p id="polarion_60">
+  <a href="http://www.ecfr.gov/cgi-bin/text-idx?SID=7423aa5e030729ab903f1a7f64fa3193&mc=true&node=pt21.1.11&rgn=div5#_top" target="_top">&lt;Image: ret-arrow-generic-grey.gif&gt; Back to Top</a><br/>
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-728"></h2><div id="polarion_wiki macro name=module-workitem;params=id=SCSV-2588|layout=1|external=true|project=SiemensCSV|anchor=dcb8954b-0a000004-27103726-b316630f"></div><p id="polarion_template_1"></p><p id="polarion_template_2"></p>]]></field>
+    <field id="renderingLayouts">
+        <list>
+            <struct>
+                <item id="label">GxP &amp; Part 11 Assessment</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                            <item id="value">id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                            <item id="value">status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEndAsTable</item>
+                        </struct>
+                        <struct>
+                            <item id="key">hidden</item>
+                        </struct>
+                        <struct>
+                            <item id="key">noPageBreak</item>
+                        </struct>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">severity,status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">typeNotInProject</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">gxp_part11_assessment</item>
+            </struct>
+            <struct>
+                <item id="label">Use Case</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">hidden</item>
+                            <item id="value">true</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">usecase</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="type">cfr_part11</field>
+    <field id="usesOutlineNumbering">true</field>
+</module>

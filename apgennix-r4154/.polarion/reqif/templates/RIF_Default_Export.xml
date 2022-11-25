@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<specificationTemplate>
+    <forImport>false</forImport>
+    <forRIF>true</forRIF>
+    <mappingConfiguration>
+        <mappingGroups direction="EXPORT" polarionType="heading" reqIfType="CREATE-TYPE-FOR-heading">
+            <fieldMappings polarionField="title" reqIfAttribute="Object Heading"/>
+            <fieldMappings polarionField="description" reqIfAttribute="Object Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="systemrequirement" reqIfType="CREATE-TYPE-FOR-systemrequirement">
+            <fieldMappings polarionField="title" reqIfAttribute="Object Heading"/>
+            <fieldMappings polarionField="description" reqIfAttribute="Object Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="systemtestcase" reqIfType="CREATE-TYPE-FOR-systemtestcase">
+            <fieldMappings polarionField="title" reqIfAttribute="Object Heading"/>
+            <fieldMappings polarionField="description" reqIfAttribute="Object Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="softwarerequirement" reqIfType="CREATE-TYPE-FOR-softwarerequirement">
+            <fieldMappings polarionField="title" reqIfAttribute="Object Heading"/>
+            <fieldMappings polarionField="description" reqIfAttribute="Object Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="softwaretestcase" reqIfType="CREATE-TYPE-FOR-softwaretestcase">
+            <fieldMappings polarionField="title" reqIfAttribute="Object Heading"/>
+            <fieldMappings polarionField="description" reqIfAttribute="Object Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="risk" reqIfType="CREATE-TYPE-FOR-risk">
+            <fieldMappings polarionField="title" reqIfAttribute="Object Heading"/>
+            <fieldMappings polarionField="description" reqIfAttribute="Object Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="changerequest" reqIfType="CREATE-TYPE-FOR-changerequest">
+            <fieldMappings polarionField="title" reqIfAttribute="Object Heading"/>
+            <fieldMappings polarionField="description" reqIfAttribute="Object Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="workpackage" reqIfType="CREATE-TYPE-FOR-workpackage">
+            <fieldMappings polarionField="title" reqIfAttribute="Object Heading"/>
+            <fieldMappings polarionField="description" reqIfAttribute="Object Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="task" reqIfType="CREATE-TYPE-FOR-task">
+            <fieldMappings polarionField="title" reqIfAttribute="Object Heading"/>
+            <fieldMappings polarionField="description" reqIfAttribute="Object Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="issue" reqIfType="CREATE-TYPE-FOR-issue">
+            <fieldMappings polarionField="title" reqIfAttribute="Object Heading"/>
+            <fieldMappings polarionField="description" reqIfAttribute="Object Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="unittestcase" reqIfType="CREATE-TYPE-FOR-unittestcase">
+            <fieldMappings polarionField="title" reqIfAttribute="Object Heading"/>
+            <fieldMappings polarionField="description" reqIfAttribute="Object Text"/>
+        </mappingGroups>
+    </mappingConfiguration>
+</specificationTemplate>

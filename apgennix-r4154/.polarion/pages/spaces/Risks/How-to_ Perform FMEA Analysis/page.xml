@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2017-06-21 14:35:50.663 +0200</field>
+    <field id="homePageContent" text-type="text/html"><![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">How-to: Perform FMEA Analysis</h1>
+  <p id="polarion_client40"></p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <div id="polarion_wiki macro name=toc"></div>
+  <p id="polarion_client30">
+    <br/>
+    Product development and operations managers can run a <span style="font-weight: bold;">failure modes and effects analysis (FMEA)</span> to analyze potential failure risks within systems, classifying them according to severity and likelihood, based on past experience with similar products or processes. The FMEA objective is to help design identified failures out of the system with the least cost in terms of time and money.
+  </p>
+  <p id="polarion_client2">
+    FMEA defines the term <span style="font-style: italic;">failure mode</span> to identify issues or errors, potential or actual, in a product design or process, with emphasis on those affecting the customer or end user.
+  </p>
+  <p id="polarion_client3">
+    A <span style="font-style: italic;">failure effect</span> is the result of a failure mode on the product or system function as perceived by the user. Failure effects can be described in terms of what the end user may see or experience. The study of consequences of identified failures is called <span style="font-style: italic;">effects analysis</span>.
+  </p>
+  <p id="polarion_client4">
+    FMEA prioritizes failures according to <span style="font-style: italic;">severity</span>, <span style="font-style: italic;">frequency</span>, and <span style="font-style: italic;">detectability</span>. Severity describes the seriousness of failure consequences. Frequency describes how often failures can occur. Detectability refers to degree of difficulty in detecting failures. FMEA also involves documenting current knowledge about failure risks.
+  </p>
+  <p id="polarion_client5">FMEA seeks to mitigate risk at all levels with resulting prioritized actions that prevent failures or at least reduce their severity and/or probability of occurrence. It also defines and aids in selecting remedial activities that mitigate the impact and consequences of failures.</p>
+  <p id="polarion_client6">FMEA can be employed from the earliest design and conceptual stages onward through development and testing processes, into process control during ongoing operations throughout the life of the product or system.</p>
+  <h2 id="polarion_client8">Step 1: Identify Potential Failures and Effects</h2>
+  <p id="polarion_client1">The first FMEA step is to analyze functional requirements and their effects to identify all failure modes.</p>
+  <p id="polarion_client9">Examples: warping, electrical short circuit, oxidation, fracture.</p>
+  <p id="polarion_client10">Remember that failure modes in one component can induce them in others. List all failure modes per function in technical terms, considering the ultimate effect(s) of each failure mode and noting the failure effect(s).</p>
+  <p id="polarion_client11">Examples of failure effects include: overheating, noise, abnormal shutdown, user injury.</p>
+  <h2 id="polarion_client14">Step 2: Determine Severity</h2>
+  <p id="polarion_client12">Severity is the seriousness of failure consequences of failure effects. Usual practice rates failure effect severity (S) on a scale of 1 to 10 where 1 is lowest severity and 10 is highest. The following table shows typical FMEA severity ratings and their meanings:</p>
+  <table id="polarion_wiki macro name=table;params=uid=client69" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;">
+    <tbody>
+      <tr>
+        <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 54.0167px;height: 17px;border: 1px solid #CCCCCC;padding: 5px;">Rating</th>
+        <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 690.583px;height: 17px;border: 1px solid #CCCCCC;padding: 5px;">Meaning</th>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;width: 54.0167px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">1</td>
+        <td style="text-align: left;vertical-align: top;width: 690.583px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">No effect, no danger</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;width: 54.0167px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">2</td>
+        <td style="text-align: left;vertical-align: top;width: 690.583px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">Very minor – usually noticed only by discriminating or very observant users</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;width: 54.0167px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">3</td>
+        <td style="text-align: left;vertical-align: top;width: 690.583px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">Minor – only minor part of the system affected; noticed by average users</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;width: 54.0167px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">4-6</td>
+        <td style="text-align: left;vertical-align: top;width: 690.583px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">Moderate – most users are inconvenienced and/or annoyed</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;width: 54.0167px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">7-8</td>
+        <td style="text-align: left;vertical-align: top;width: 690.583px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">High - loss of primary function; users are dissatisfied</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;width: 54.0167px;height: 36px;border: 1px solid #CCCCCC;padding: 5px;">9-10</td>
+        <td style="text-align: left;vertical-align: top;width: 690.583px;height: 36px;border: 1px solid #CCCCCC;padding: 5px;">Very high – hazardous. Product becomes inoperative, customers angered. Failure constitutes a safety hazard and can cause injury or death.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 id="polarion_client20">Step 3: Gauge Likelihood of Occurrence</h2>
+  <p id="polarion_client16">Examine cause(s) of each failure mode and how often failure occurs. Look at similar processes or products and their documented failure modes. All potential failure causes should be identified and documented in technical terms. Failure causes are often indicative of weaknesses in the design.</p>
+  <p id="polarion_client21">Examples of causes include: incorrect algorithm, insufficient or excess voltage, operating environment too hot, cold, humid etc.</p>
+  <p id="polarion_client22">Failure modes are assigned an occurrence ranking (O), again from 1–10, as shown in the following table.</p>
+  <table id="polarion_wiki macro name=table;params=uid=client30" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;">
+    <tbody>
+      <tr>
+        <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rating</th>
+        <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Meaning</th>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">1</td>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">No documented failures on similar products/processes</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">2-3</td>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Low – relatively few failures</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">4-6</td>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Moderate – some occasional failures</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">7-8</td>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">High – repeated failures</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">9-10</td>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Very high – failure is almost certain</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 id="polarion_client32">Step 4: Failure Detection</h2>
+  <p id="polarion_client28">After determining remedial actions, they should be tested for efficacy and efficiency. Also, the design should be verified and inspections procedures specified.</p>
+  <ol id="polarion_client34">
+    <li>Engineers inspect current system controls that prevent failure mode occurrence, or detect failures before they impact the user/customer.  </li>
+    <li>Identify techniques used with similar products/systems to detect failures.  </li>
+  </ol>
+  <p id="polarion_client36">These steps enable engineers to determine the likelihood of identifying or detecting failures. Then, each combination from Steps 1 and 2 is assigned a detection value (D), which indicates how likely it is that failures will be detected, and ranks the ability of identified actions to remedy or remove issues or detect failures. The higher the value of D, the more likely the failure will not be detected.</p>
+  <table id="polarion_wiki macro name=table;params=uid=client38" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;">
+    <tbody>
+      <tr>
+        <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rating</th>
+        <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Meaning</th>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">1</td>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Fault is certain be caught by testing</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">2</td>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Fault almost certain to be caught by testing</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">3</td>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">High probability that tests will catch fault</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">4-6</td>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Moderate probability that tests will catch fault</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">7-8</td>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Low probability that tests will catch fault</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">9-10</td>
+        <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Fault will be passed undetected to user/customer</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 id="polarion_client41">Risk Priority Number (RPN)</h2>
+  <p id="polarion_client29">After the foregoing basic steps, risk assessors calculate Risk Priority Numbers (RPN). These influence the choice of action against failure modes. RPN is calculated from the values of S, O and D as follows:</p>
+<pre id="polarion_client43">RPN = S * O * D (or RPN = S × O × D)</pre>
+  <p id="polarion_client45">
+    <br/>
+    RPN should be calculated for the entire design and/or process and documented in the FMEA. Results should reveal the most problematic areas, and the highest RPNs should get highest priority for corrective measures. These measures can include a variety of actions: new inspections, tests, or procedures, design changes, different components, added redundancy, modified limits, etc. Goals of corrective measures include, in order of desirability:
+  </p>
+  <ul id="polarion_client47">
+    <li>Eliminate failure modes (some are more preventable than others)</li>
+    <li>Minimize the severity of failure modes</li>
+    <li>Reduce the occurrence of failure modes</li>
+    <li>Improve detection of failure modes</li>
+  </ul>
+  <p id="polarion_client49">When corrective measures are implemented, RPN is calculated again and the results documented in the FMEA.</p>
+  <p id="polarion_client39"></p>
+  <div id="polarion_client7" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">&lt;div style=&quot;font-size: smaller; margin: 1em 2em; background: #EEEEEE; padding: 1em; width: 70%;&quot;&gt;
+	&lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;
+		&lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width: 0;&quot; src=&quot;http://i.creativecommons.org/l/by-sa/3.0/80x15.png&quot;/&gt;
+	&lt;/a&gt;
+	&lt;br/&gt;
+	&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; style=&quot;font-size: smaller;&quot; href=&quot;http://purl.org/dc/dcmitype/Text&quot; property=&quot;dct:title&quot; rel=&quot;dct:type&quot;&gt;
+		FMEA How-To
+	&lt;/span&gt;
+	 by 
+	&lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; style=&quot;font-size: smaller;&quot; href=&quot;http://www.polarion.com/resources/index.php?cat=docs&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;
+		Polarion Software
+	&lt;/a&gt;
+	 is licensed under a 
+	&lt;a rel=&quot;license&quot; style=&quot;font-size: smaller;&quot; href=&quot;http://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;
+		Creative Commons Attribution-ShareAlike 3.0 Unported License
+	&lt;/a&gt;
+	.
+	&lt;br/&gt;
+	Based on a work at &lt;a xmlns:dct=&quot;http://purl.org/dc/terms/&quot; style=&quot;font-size: smaller;&quot; href=&quot;http://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis&quot; rel=&quot;dct:source&quot;&gt;en.wikipedia.org&lt;/a&gt;.
+&lt;/div&gt;</sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <h2 id="polarion_client23">Process</h2>
+  <p id="polarion_1">
+    <img src="attachment:FMEA.png" data-lastmodified="2017-06-22T15:34:38.958+02:00"/>
+  </p>
+  <h2 id="polarion_client64">When to use FMEA</h2>
+  <ul id="polarion_client66">
+    <li>When a process, product or service is being designed or redesigned, after quality function deployment.</li>
+    <li>When an existing process, product or service is being applied in a new way.</li>
+    <li>Before developing control plans for a new or modified process.</li>
+    <li>When improvement goals are planned for an existing process, product or service.</li>
+    <li>When analyzing failures of an existing process, product or service.</li>
+    <li>Periodically throughout the life of the process, product or service</li>
+  </ul>
+</div>
+<div class="polarion-rp-row-separator"></div>]]></field>
+    <field id="title">How-to: Perform FMEA Analysis</field>
+</rich-page>

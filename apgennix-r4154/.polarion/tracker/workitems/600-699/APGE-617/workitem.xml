@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">admin</field>
+    <field id="created">2022-11-04 11:16:31.624 +0530</field>
+    <field id="description" text-type="text/html">polarion to jira</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">open</field>
+    <field id="title">shoeb polarion to jira</field>
+    <field id="type">task</field>
+</work-item>

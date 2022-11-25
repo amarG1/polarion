@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2022-10-28 15:09:47.305 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">custom</h1>
+  <p id="polarion_hardcoded_1"></p><p id="polarion_client1"></p>
+  <div id="polarion_client4" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">#set($projectid=$page.getReference().projectId())
+#set($f=$pageParameters.ap.values())
+#set($dem=$f.toArrayList())
+#set($query=&quot;project.id:$projectid AND type:ap&quot;)
+#set($custom=$transaction.workItems().search().query($query))
+#foreach($d in $dem)
+
+#set($test= $d)
+$test
+#end
+
+
+
+
+
+
+
+&lt;table border=1&gt;
+&lt;tr&gt;
+&lt;th&gt;Workitem Id&lt;/th&gt;
+&lt;th&gt;a&lt;/th&gt;
+&lt;th&gt;b&lt;/th&gt;
+&lt;th&gt;Multiply&lt;/th&gt;
+
+
+##&lt;th&gt;Categories&lt;/th&gt;
+##&lt;th&gt;Author&lt;/th&gt;
+&lt;/tr&gt;
+#foreach($cus in $custom)
+&lt;tr&gt;
+&lt;td&gt;$cus.getOldApi().getId()&lt;/td&gt;
+#if($test.contains(&quot;a&quot;) )
+&lt;td&gt;$!cus.getOldApi().getCustomField( &quot;a&quot;)&lt;/td&gt;#end
+&lt;td&gt;$!cus.getOldApi().getCustomField(&quot;b&quot;)&lt;/td&gt;
+&lt;td&gt;$!cus.getOldApi().getCustomField(&quot;res&quot;)&lt;/td&gt;
+
+
+##&lt;td&gt;$cus.getOldApi().getCustomField($f).geName()&lt;/td&gt;
+##&lt;td&gt;$cus.getOldApi().getAuthor().getName()&lt;/td&gt;
+&lt;/tr&gt;
+#end
+
+
+
+&lt;/table&gt;</sub>
+      </sub>
+    </span>
+  </div>
+  <div id="polarion_client2" class="polarion-rp-widget-part" data-widget="com.polarion.pageParametersForm">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title">Amar poddar</sub>
+      <sub id="content">
+        <sub>ap</sub>
+      </sub>
+      <sub id="width">500</sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2"></p>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <p id="polarion_hardcoded_3"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<span id="polarion-rp-parameters">
+  <sub id="ap" data-label="ap" data-type="CustomEnumeration">
+    <sub id="values">
+      <sub>a</sub>
+      <sub>b</sub>
+      <sub>res</sub>
+    </sub>
+    <sub id="enumerations">
+      <sub>
+        <sub id="itemValue">a</sub>
+        <sub id="itemName">A</sub>
+      </sub>
+      <sub>
+        <sub id="itemValue">b</sub>
+        <sub id="itemName">B</sub>
+      </sub>
+      <sub>
+        <sub id="itemValue">res</sub>
+        <sub id="itemName">Sum</sub>
+      </sub>
+    </sub>
+    <sub id="allowNoValue">false</sub>
+    <sub id="allowMultipleValues">true</sub>
+  </sub>
+</span>]]>
+    </field>
+    <field id="title">custom</field>
+</rich-page>

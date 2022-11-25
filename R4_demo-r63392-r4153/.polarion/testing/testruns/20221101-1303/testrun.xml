@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-run>
+    <field id="author">Ashfaq</field>
+    <field id="created">2022-11-01 13:03:55.793 +0000</field>
+    <field id="environmentDescription" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 26 Sep 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;Windows&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="finishedOn">2022-11-01 13:11:24.912 +0000</field>
+    <field id="records">
+        <list>
+            <struct>
+                <item id="duration">29.0</item>
+                <item id="executed">2022-11-01 13:09:29.599 +0000</item>
+                <item id="executedBy">Ashfaq</item>
+                <item id="result">blocked</item>
+                <item id="signed">true</item>
+                <item id="testCase">RD-3773</item>
+                <item id="testCaseRevision">59579</item>
+                <item id="testStepResults">
+                    <list>
+                        <struct>
+                            <item id="comment" text-type="text/html">blocked</item>
+                            <item id="result">blocked</item>
+                        </struct>
+                    </list>
+                </item>
+            </struct>
+            <struct>
+                <item id="defect">RD-3777</item>
+                <item id="duration">28.0</item>
+                <item id="executed">2022-11-01 13:08:49.535 +0000</item>
+                <item id="executedBy">Ashfaq</item>
+                <item id="result">failed</item>
+                <item id="signed">true</item>
+                <item id="testCase">RD-3774</item>
+                <item id="testCaseRevision">59583</item>
+                <item id="testStepResults">
+                    <list>
+                        <struct>
+                            <item id="comment" text-type="text/html">failed</item>
+                            <item id="result">failed</item>
+                        </struct>
+                    </list>
+                </item>
+            </struct>
+            <struct>
+                <item id="duration">80.0</item>
+                <item id="executed">2022-11-01 13:08:11.942 +0000</item>
+                <item id="executedBy">Ashfaq</item>
+                <item id="result">passed</item>
+                <item id="signed">true</item>
+                <item id="testCase">RD-3772</item>
+                <item id="testCaseRevision">59574</item>
+                <item id="testStepResults">
+                    <list>
+                        <struct>
+                            <item id="comment" text-type="text/html">same as expected</item>
+                            <item id="result">passed</item>
+                        </struct>
+                    </list>
+                </item>
+            </struct>
+        </list>
+    </field>
+    <field id="selectTestCasesBy">manualSelection</field>
+    <field id="status">passed</field>
+    <field id="template">CSV_Test</field>
+    <field id="title">Demo TestRun</field>
+    <field id="type">manual</field>
+    <field id="useReportFromTemplate">true</field>
+</test-run>

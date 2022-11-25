@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">sameeullas@complianceg.com</field>
+    <field id="created">2021-11-10 08:03:33.492 +0000</field>
+    <field id="crossReferenceMappingData">8c2442fc-0a000004-35c9e3b9-bda97c73=CSV_DEV9/CSVD9-238,BMRAM/CSV-269=johnsonandjohnson/CSA-3642,BMRAM/CSV-278=johnsonandjohnson/CSA-3645,BMRAM/CSV-245=johnsonandjohnson/CSA-3646,BMRAM/CSV-147=johnsonandjohnson/CSA-3631,BMRAM/CSV-268=johnsonandjohnson/CSA-3632,BMRAM/CSV-279=johnsonandjohnson/CSA-3638,BMRAM/CSV-276=johnsonandjohnson/CSA-3636,BMRAM/CSV-277=johnsonandjohnson/CSA-3637,BMRAM/CSV-274=johnsonandjohnson/CSA-3635,BMRAM/CSV-275=johnsonandjohnson/CSA-3643,BMRAM/CSV-272=johnsonandjohnson/CSA-3634,BMRAM/CSV-273=johnsonandjohnson/CSA-3644,BMRAM/CSV-270=johnsonandjohnson/CSA-3633,BMRAM/CSV-281=johnsonandjohnson/CSA-3640,BMRAM/CSV-271=johnsonandjohnson/CSA-3641,BMRAM/CSV-280=johnsonandjohnson/CSA-3639</field>
+    <field id="headingSidebarFields">id</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=CSA-3631"></h1>
+<p id="polarion_1">
+  <span style="font-weight: bold;font-size: 14pt;line-height: 1.5;">Table of Contents</span>
+</p>
+<div id="polarion_wiki macro name=toc"></div>
+<div id="polarion_wiki macro name=page_break;params=uid=1" contentEditable="false"></div>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3632"></h2>
+<p id="polarion_27" class="BodyText1">
+  This is the Functional Requirements Specification (FRS) for <span style="color: #33CCFF;"><span style="font-style: italic;">&lt;System Name&gt;</span>. <span style="font-style: italic;">[Identify where the system will be used and who the prospective users are.]</span></span>
+</p>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3633"></h2>
+<p id="polarion_28" class="BodyText1">
+  <span style="font-style: italic;color: #33CCFF;">[The scope defines the range of the requirements for the system, interfaces, configurations of hardware and software, specialized instrumentation, and business systems affected.]</span>
+</p>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3634"></h2>
+<p id="polarion_29" class="BodyText1">This section defines the abbreviations, acronyms, terms, and definitions that are specific to this document.</p>
+<p id="polarion_30" style="margin-left: 63.35pt;" class="TableCaption1">
+  Table 1:<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">     </span>Abbreviations, Acronyms, Terms, and Definitions
+</p>
+<table id="polarion_31" style="margin-left: auto;margin-right: auto;border: none;">
+  <thead>
+    <tr>
+      <td style="background-color: #E6E6E6;width: 153pt;border: 1pt solid windowtext;border-top: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: 1pt solid windowtext;padding: 0in 5.4pt;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Abbreviations, Acronyms and Terms</span> 
+        </div>
+        </td>
+      <td style="background-color: #E6E6E6;width: 4.25in;border-top: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: none;padding: 0in 5.4pt;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Definition</span> 
+        </div>
+        </td>
+    </tr>
+  </thead> <tbody>
+    <tr>
+      <td style="width: 153pt;border-top: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: 1pt solid windowtext;padding: 0in 5.4pt;"><span style="color: #33CCFF;"> SOP<br/>
+          </span></td>
+      <td style="width: 4.25in;border-top: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: none;padding: 0in 5.4pt;"><span style="color: #33CCFF;"> Standard Operating Procedure<br/>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="width: 153pt;border-top: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: 1pt solid windowtext;padding: 0in 5.4pt;"> RS<br/>
+        </td>
+      <td style="width: 4.25in;border-top: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: none;padding: 0in 5.4pt;"> Requirements Specification<br/>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3635"></h2>
+<p id="polarion_32" class="BodyText1">
+  <span style="font-style: italic;color: #33CCFF;">[Adjust the list of Referenced documents to reflect the proper controlling authority.  Example: The following documents were used in the development of this specification:]</span>
+</p>
+<table id="polarion_33" style="margin-left: auto;margin-right: auto;border: none;">
+  <thead>
+    <tr>
+      <td style="background-color: #E6E6E6;width: 153pt;border: 1pt solid windowtext;border-top: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: 1pt solid windowtext;padding: 0in 5.4pt;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Document #</span> 
+        </div>
+        </td>
+      <td style="background-color: #E6E6E6;width: 4.25in;border-top: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: none;padding: 0in 5.4pt;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Title</span> 
+        </div>
+        </td>
+    </tr>
+  </thead> <tbody>
+    <tr>
+      <td style="width: 153pt;border-top: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: 1pt solid windowtext;padding: 0in 5.4pt;"> <span style="color: #FF0000;"> </span><br/>
+        </td>
+      <td style="width: 4.25in;border-top: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: none;padding: 0in 5.4pt;"> <span style="color: #FF0000;"> </span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="width: 153pt;border-top: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: 1pt solid windowtext;padding: 0in 5.4pt;">  <br/>
+        </td>
+      <td style="width: 4.25in;border-top: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;border-left: none;padding: 0in 5.4pt;">  <br/>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3636"></h2>
+<p id="polarion_34" style="margin-left: 0.25in;" class="MsoNormal">
+  <span style="font-style: italic;color: #33CCFF;">&lt;Identify the software components of the system, basic mode/method/technology of operation. For complex systems, organize the Major Components list in a Tabular format.&gt;</span>
+</p>
+<p id="polarion_35" style="margin-left: 0.25in;" class="MsoNormal">
+  <span style="font-style: italic;color: #33CCFF;"> Example: The Complaint Tracking system shall consist of the following software components: </span>
+</p>
+<p id="polarion_36" style="margin-left: 81.35pt;" class="MsoListParagraph">
+  <span style="font-style: italic;font-size: 12pt;color: #33CCFF;line-height: 1.5;">1.<span style="font-style: normal;font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">     </span>Complaint Tracking Application Software</span>
+</p>
+<p id="polarion_37" style="margin-left: 81.35pt;" class="MsoListParagraph">
+  <span style="font-style: italic;font-size: 12pt;color: #33CCFF;line-height: 1.5;">2.<span style="font-style: normal;font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">     </span>Dedicated PC Server</span>
+</p>
+<p id="polarion_38" style="margin-left: 81.35pt;" class="MsoListParagraph">
+  <span style="font-style: italic;font-size: 12pt;color: #33CCFF;line-height: 1.5;">3.<span style="font-style: normal;font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">     </span>Printer</span>
+</p>
+<p id="polarion_39" style="margin-left: 81.35pt;" class="MsoListParagraph">
+  <span style="font-style: italic;font-size: 12pt;color: #33CCFF;line-height: 1.5;">4.<span style="font-style: normal;font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">     </span>Document Scanner</span>
+</p>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3637"></h2>
+<p id="polarion_40" style="margin-left: 22.5pt;" class="MsoNormal">
+  <span style="font-style: italic;color: #33CCFF;">&lt;The functions described in this document support the system User Requirements specification document and provide an outline on how each of the User Requirements is met. The functional requirements may be structured in the form of “inputà processà output”. The process flow diagrams may be included for better illustration of the requirements.&gt;</span>
+</p>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3638"></h3>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3639"></h3>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3640"></h3>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3641"></h3>
+<p id="polarion_44" class="MsoBodyText2">
+  <span style="color: #33CCFF;">[<span style="font-style: italic;">List all requirements needed to meet 21 CFR Part 11 Regulations. Common requirements are included in the following table.  These requirements should be edited as needed:]</span></span>
+</p>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3642"></h3>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3643"></h3>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3644"></h3>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3645"></h2>
+<p id="polarion_49" class="BodyText1">N/A</p>
+<div id="polarion_wiki macro name=page_break;params=uid=2" contentEditable="false"></div>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3646"></h2>
+<div id="polarion_editor_html_block17" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div>
+<p id="polarion_25"></p>
+<p id="polarion_26"></p>
+<p id="polarion_3">
+  <br/>
+</p>
+<p id="polarion_2">
+  <br/>
+</p>
+<p id="polarion_4">
+  <br/>
+</p>
+<p id="polarion_5">
+  <br/>
+</p>
+]]>
+    </field>
+    <field id="renderingLayouts">
+        <list>
+            <struct>
+                <item id="label">Functional Requirement</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                            <item id="value">id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                            <item id="value">severity</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEndAsTable</item>
+                            <item id="value">true</item>
+                        </struct>
+                        <struct>
+                            <item id="key">hidden</item>
+                        </struct>
+                        <struct>
+                            <item id="key">noPageBreak</item>
+                        </struct>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">severity</item>
+                        </struct>
+                        <struct>
+                            <item id="key">typeNotInProject</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">functional_requirement</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">relates_to</field>
+    <field id="title">Functional Requirements Specification</field>
+    <field id="type">functional_requirements_specification</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

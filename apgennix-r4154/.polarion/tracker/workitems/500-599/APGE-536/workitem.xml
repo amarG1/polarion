@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="assignee">111</field>
+    <field id="author">admin</field>
+    <field id="created">2022-09-13 13:09:11.971 +0530</field>
+    <field id="linkedWorkItems">
+        <list>
+            <struct>
+                <item id="role">relates_to</item>
+                <item id="workItem">APGE-524</item>
+            </struct>
+        </list>
+    </field>
+    <field id="previousStatus">active</field>
+    <field id="priority">50.0</field>
+    <field id="severity">basic</field>
+    <field id="status">draft</field>
+    <field id="testSteps" type="struct:TestSteps">
+        <struct>
+            <item id="keys">
+                <list>
+                    <item>step</item>
+                    <item>description</item>
+                    <item>expectedResult</item>
+                </list>
+            </item>
+            <item id="steps">
+                <list>
+                    <struct>
+                        <item id="values">
+                            <list>
+                                <item text-type="text/html">1st</item>
+                                <item text-type="text/html">desc</item>
+                                <item text-type="text/html">hello there</item>
+                            </list>
+                        </item>
+                    </struct>
+                </list>
+            </item>
+        </struct>
+    </field>
+    <field id="testType" type="enum:testtype">manual</field>
+    <field id="title">new test</field>
+    <field id="type">testcase</field>
+</work-item>

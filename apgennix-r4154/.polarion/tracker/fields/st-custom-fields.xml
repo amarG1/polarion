@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field description="version of workitem" id="version" name="Version" type="float"/>
+</fields>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item-workflow-signature>
+    <field id="signatureState">done</field>
+    <field id="signatures">
+        <list>
+            <struct>
+                <item id="signedBy">Ashfaq</item>
+                <item id="signedRevision">59558</item>
+                <item id="verdict">signed</item>
+                <item id="verdictTime">2022-10-31 13:12:13.287 +0000</item>
+            </struct>
+        </list>
+    </field>
+    <field id="targetStatusId">approved</field>
+    <field id="transitionDataRevision">59558</field>
+</work-item-workflow-signature>

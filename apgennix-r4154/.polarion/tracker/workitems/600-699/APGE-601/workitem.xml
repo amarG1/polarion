@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">admin</field>
+    <field id="created">2022-11-03 18:23:02.457 +0530</field>
+    <field id="hyperlinks">
+        <list>
+            <struct>
+                <item id="role">ref_ext</item>
+                <item id="uri">http://localhost:8087/browse/JIRA-6</item>
+            </struct>
+        </list>
+    </field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">open</field>
+    <field id="title">one more</field>
+    <field id="type">task</field>
+</work-item>

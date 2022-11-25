@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>lsampson</author>
+<created>20160405152000</created>
+<title>PFMEA</title>
+<type>content</type>
+<content><![CDATA[#*
+PFMEA renders the PFMEA Report - 04/05/2016
+*#
+
+#macro (hasWorkItemOfLinkRole $workItem $lRole $hasWorkItem)
+    #set ($hasWorkItem = "FALSE")
+    #set($directWILinks = $workItem.getLinkedWorkItemsStructsDirect())
+    #foreach($parent in $directWILinks)
+        #if($parent.getLinkRole().getId().equals($lRole))
+            #set ($hasWorkItem = "TRUE")
+        #end
+    #end
+#end
+
+#macro (PFMEATable $query $calcType $wiDescription)
+
+    #set($iContext = $trackerService.getTrackerProject($page.project).getContextId() )
+    #set($iEnumType = $polarionTool.typeFactory.getEnumType("p2Occurrence") )
+    #set($enum = $trackerService.getDataService().getEnumerationForEnumId($iEnumType,$iContext) )
+    #set($options = $enum.getAllOptions() )
+    #set($p2List = [] )
+
+    #foreach ($option in $options)
+        #set ($icon = $option.getProperty("iconURL") )
+        #set ($foo = $p2List.add("<img src=$icon/> $option.getName()") )
+    #end
+
+    #set($iContext = $trackerService.getTrackerProject($page.project).getContextId() )
+    #set($iEnumType = $polarionTool.typeFactory.getEnumType("pOccurrence") )
+    #set($enum = $trackerService.getDataService().getEnumerationForEnumId($iEnumType,$iContext) )
+    #set($options = $enum.getAllOptions() )
+    #set($pList = [] )
+
+    #foreach ($option in $options)
+        #set ($icon = $option.getProperty("iconURL") )
+        #set ($foo = $pList.add("<img src=$icon/> $option.getName()") )
+    #end
+
+    ## Table Definition
+    <table border="1" cellpadding="4" width="1400px">
+    ## Table Headers
+    <tr>
+      <th rowspan="2" style="background-color: #428DA6;" width="200px"><font color="#FFFFFF">PROCESS</font></th>
+      <th rowspan="2" style="background-color: #428DA6;" width="200px"><font color="#FFFFFF">EFFECT / HAZARDOUS SITUATION</font></th>
+      <th rowspan="2" style="background-color: #5D7B9D;" width="100px"><font color="#FFFFFF">ROOT CAUSE(S)</font></th>
+      <th rowspan="2" style="background-color: #5D7B9D;" width="100px"><font color="#FFFFFF">MITIGATION / CONTROL</font></th>
+      <th colspan="4" style="background-color: #5D7B9D;" align="center"><font color="#FFFFFF">PRE-MITIGATION</font></th>
+      <th colspan="3" style="background-color: #5D7B9D;" align="center"><font color="#FFFFFF">POST-MITIGATION</font></th>
+    </tr>
+
+    <tr>
+      <th style="background-color: #5D7B9D;" width="60px" align="center"><font color="#FFFFFF">SEV</font></th>
+      <th style="background-color: #5D7B9D;" width="60px" align="center"><font color="#FFFFFF">Occurrence</font></th>
+      <th style="background-color: #5D7B9D;" width="60px" align="center"><font color="#FFFFFF">RISK INDEX</font></th>
+      <th style="background-color: #5D7B9D;" width="100px"><font color="#FFFFFF">OCCURRENCE RATIONAL</font></th>
+      <th style="background-color: #5D7B9D;" width="60px" align="center"><font color="#FFFFFF">Occurrence</font></th>
+      <th style="background-color: #5D7B9D;" width="60px" align="center"><font color="#FFFFFF">RISK INDEX</font></th>
+      <th style="background-color: #5D7B9D;" width="100px"><font color="#FFFFFF">OCCURRENCE RATIONAL</font></th>
+    </tr>
+
+    ##  Process Definition Loop
+    ##  Populate the process list
+    #set ($processWorkItems = $wi.getLinkedWorkItemsStructsBack() )
+
+    #set($int = 0)	
+    #set($processWorkItems = $trackerService.queryWorkItems($query, "id") )
+    #set($projHazard = "")
+    #set($hazardText = "")
+
+    #set($processText = "")
+
+    #foreach ($wi in $processWorkItems)
+
+        ## </tr>$processText</tr>
+        ## Retrieve Process Instance Information
+        #set ($processId = $wi.getId())
+        #set ($processTitle = $wi.getTitle())
+        ## Determine Process Instance Display Text
+        #set ($projProcess = $wi.getProjectId())
+        #set ($processText = "{workitem:${projProcess}/${processId}|display=long|expand=no}<br/>")
+
+        #set($hazardText = "")
+        #set($FMEASeverity = "")
+        #set($FMEASeverityURL = "")
+        #set($FMEASeverityValue = "")\
+                
+        ##  Populate the hazardousSituation list
+        #set ($hsWorkItems = $wi.getLinkedWorkItemsStructsBack() )
+
+        #foreach ($h_wiStruct in $hsWorkItems)
+
+	        #set($h_wi = $h_wiStruct.getLinkedItem())
+     	    #set($h_wi_id = $h_wi.getId())
+	        #set($h_wi_title = $h_wi.getTitle())
+
+          #if($h_wi.getCustomField("FMEAType"))
+            #set($FMEAType = $h_wi.getCustomField("FMEAType"))
+            #set($FMEATypeValue = $FMEAType.getId())
+            #set ($FMEATypeURL = $FMEAType.getProperty("iconURL") )	
+            #if ($FMEATypeURL != "")
+              #set ($FMEAType = "<img src=${FMEATypeURL} /> $!FMEAType.getName()" )
+            #end
+            
+          #end
+
+          #if(($FMEATypeValue == "3"))
+
+            ## Retrieve Hazard Instance Information
+            #set ($hazardId = $h_wi.getValue("workItem").getId())
+            #set ($hazardTitle = $h_wi.getValue("workItem").getTitle())
+
+            ## Determine Hazard Instance Display Text
+            #set ($projHazard = $h_wi.getProjectId())
+            #set ($hazardText = "{workitem:${projHazard}/${h_wi_id}|display=long|expand=no}<br/>")
+
+            ## Retrieve Risk Severity from work item
+            #if($h_wi.getCustomField("FMEASeverity"))
+
+                #set ($FMEASeverity = $h_wi.getCustomField("FMEASeverity"))
+                #set ($FMEASeverityValue = $FMEASeverity.getId() )
+                #set ($FMEASeverityURL = $FMEASeverity.getProperty("iconURL") )
+                #if ($FMEASeverity.getName() == "")
+                    #set ($FMEASeverityText = $FMEASeverity.getId())
+                #else
+                    #set ($FMEASeverityText = $FMEASeverity.getName())
+                #end
+                #if ($FMEASeverityURL != "")
+                    #set ($FMEASeverity = "<img src=${FMEASeverityURL} /> $!FMEASeverityText" )
+                #else
+                    #set ($FMEASeverity = "$!FMEASeverityText")
+                #end
+            #end
+            ##<td>$FMEASeverity</td>
+
+            #set($occur_pre = "")
+            #set($occur_preValue = "")
+            #set($occur_pre_URL = "")
+            #set($occur_post = "")
+            #set($occur_postValue = "")
+            #set($occur_post_URL = "")
+            #set($FMEAOccurPre_text = "")
+            #set($FMEAOccurPost_text = "")
+            #set($proj = "")
+            ## #set($hazardText = "")
+            #set($source = "")
+            #set($occurrenceRationale = "")
+            #set($postOccurrenceRational = "")
+            #set($userSafety = "")
+            #set($FMEAType_URL = $FMEAType.getProperty("iconURL"))
+
+            #if ($FMEAType_URL != "")
+                #set ($FMEAType_text = "<img src=${FMEAType_URL} /> $!FMEAType.getName()")
+            #end
+               
+            #if($h_wi.getCustomField("FMEAOccurPre"))
+                #set($occur_pre = $h_wi.getCustomField("FMEAOccurPre") )
+                #set($occur_pre_URL = $occur_pre.getProperty("iconURL") )
+                #set($occur_preValue = $occur_pre.getId() )
+
+                #if ($occur_pre_URL != "")
+                    #set($FMEAOccurPre_text = "<img src=${occur_pre_URL} /> $!occur_pre.getName()" )
+                #end
+            #end
+
+            #if($h_wi.getCustomField("FMEAOccurPost"))
+                #set($occur_post = $h_wi.getCustomField("FMEAOccurPost"))
+                #set($occur_post_URL = $occur_post.getProperty("iconURL") )
+                #set($occur_postValue = $occur_post.getId() )
+
+                #if ($occur_post_URL != "")
+                    #set($FMEAOccurPost_text = "<img src=${occur_post_URL} /> $!occur_post.getName()" )
+                #end
+            #end
+
+            #if($h_wi.getCustomField("occurrenceRational"))
+                #set($occurrenceRational = $h_wi.getCustomField("occurrenceRational").getContent())
+            #end
+
+            #if($h_wi.getCustomField("postOccurrenceRational"))
+                #set($postOccurrenceRational = $h_wi.getCustomField("postOccurrenceRational").getContent())
+            #end
+
+            #set($riskRational = "")
+            #set($icon = $h_wi.getType().getProperty("iconURL") )
+            ## #set($hazardText = "<font color=grey><img src=$icon> ~~$wi_id - $wi_title~~</font>")
+            #set($icon = $h_wi.getType().getProperty("iconURL") )
+            #set($hazaredText = "<font color=grey><img src=$icon> ~~$hazardId - $hazardTitle~~</font>")
+            ##set ($hazardText = "<font color=grey>{workitem:${projHazard}/${h_wi_id}|${hazardId}|display=long|expand=no}<br/>")
+            #set($retRPL = "")
+            #set($bgcolor = "")
+            #set($retRPL_post = "")
+            #set($bgcolor_post = "")
+            #set($causalItems = "")
+          
+      			##  Causal definition loop
+      			#set ($causalItems = $h_wi.getLinkedWorkItemsBack() )
+      			#set ($causalText = "")
+      			#set ($h_wi_type = $h_wi.getType().getId())
+            #set($l2Role = "causes")
+            
+            #if ($causalItems.size() > 0) 
+				      #foreach ($cause_wi in $causalItems)
+
+                #set ($hasWorkItemOfLink = "FALSE")
+                #hasWorkItemOfLinkRole ($cause_wi $l2Role $hasWorkItemOfLink)
+                ## <td>$hasWorkItemOfLink</td>
+  			        #if ($hasWorkItemOfLink.equals("TRUE"))				
+  					      #set ($projCauses = $cause_wi.getProjectId() )
+  					      #set ($causes_id = $cause_wi.getId() )
+
+                
+  					      ##
+  					      ##  Causal instance display text
+  					      ##
+  					      #set ($causalText = "$causalText {workitem:${projCauses}/${causes_id}|display=long|expand=no}<br/>" )
+
+                  ##
+                  ##  Mitigation definition loop
+                  ##
+
+                  #set ($mitigatingItems = $cause_wi.getLinkedWorkItemsBack() )
+                  #set ($h_wi_type = $h_wi.getType().getId())			
+                  #set ($mitigatingText = "")
+                  #set($lRole = "mitigates")
+                  #if ($mitigatingItems.size() > 0)
+
+                     #foreach ($mit_wi in $mitigatingItems)
+                        ##set ($mitigatingText = "$")
+                        #set ($hasWorkItemOfLink = "FALSE")
+                        #hasWorkItemOfLinkRole ($mit_wi $lRole $hasWorkItemOfLink)
+
+                        #if ($hasWorkItemOfLink.equals("TRUE"))
+                          ##set ($mitigatingText = "^")
+                          #set ($proj = $mit_wi.getProjectId() )
+                          #set ($id = $mit_wi.getId() )
+
+                          ##  Mitigation instance display text
+                          #set ($mitigatingText = "$mitigatingText {workitem:${proj}/${id}|display=long|expand=no}<br/>" )
+                        #end
+
+                      #end  ##  End Mitigation For Loop
+                    #end  ## End Mitigation size If
+				          #end  ##End of Causal If loop for link true
+
+			          #end  ##  End Causal Loop
+
+              #end  ## Loop ends at the end of Hazard Loop
+            #end  ##   End FMEA Type if statement
+
+
+##set($mitigatingText = "")
+                <td>$processText</td>
+                <td>$hazardText</td>
+                <td>$causalText</td>
+                <td>$mitigatingText</td>
+                <td align="left">$FMEASeverity</td>
+                <td align="left">$FMEAOccurPre_text</td>
+                <td align="left" $bgcolor>$!{retRPL}</td>
+                <td>$occurrenceRational</td>
+                <td align="left">$FMEAOccurPost_text</td>
+                <td align="left" $bgcolor_post>$!{retRPL_post}</td>
+                <td>$postOccurrenceRational</td>
+
+                </tr>	
+        
+                #set($occurrenceRational = "")
+                #set($postOccurrenceRational = "")
+
+
+        #end  ##  End Hazard Loop
+    #end  ##  End Process Loop
+
+
+
+
+
+    </table>
+
+#end  ##macro HarmHazardTable]]></content>
+</wiki-page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">111</field>
+    <field id="created">2022-09-15 12:07:02.905 +0530</field>
+    <field id="priority">50.0</field>
+    <field id="severity">should_have</field>
+    <field id="status">draft</field>
+    <field id="title">111: testingpresave</field>
+    <field id="type">st</field>
+</work-item>

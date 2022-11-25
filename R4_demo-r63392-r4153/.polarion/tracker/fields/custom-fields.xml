@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field id="rel" multi="true" name="Release" type="enum:rel"/>
+    <field default="1.0" id="version" name="Version" type="string"/>
+</fields>

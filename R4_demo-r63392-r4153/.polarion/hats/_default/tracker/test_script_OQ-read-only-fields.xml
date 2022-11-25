@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<read-only>
+    <status id="pre_approval">
+        <field id="@all"/>
+        <field id="-status"/>
+    </status>
+
+    <status id="post_approved">
+        <field id="@all"/>
+        <field id="-status"/>
+    </status>
+
+    <status id="in_draft">
+        <field id="approvals"/>
+        <field id="version"/>
+    </status>
+
+    <status id="in_approval">
+        <field id="@all"/>
+        <field id="-approvals"/>
+        <field id="-comments"/>
+    </status>
+
+    <status id="obsolete">
+        <field id="@all"/>
+        <field id="-status"/>
+    </status>
+
+    <status id="rejected">
+        <field id="@all"/>
+        <field id="-status"/>
+        <field id="-linkedWorkItems"/>
+    </status>
+
+</read-only>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">Syed.Hussaini@bd.com</field>
+    <field id="created">2021-07-23 09:14:12.023 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">WorkItem Churn</h1>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_hardcoded_2"></p>
+  <div id="polarion_client2" class="polarion-rp-widget-part" data-widget="com.polarion.pageParametersForm">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title">Report Criteria</sub>
+      <sub id="content">
+        <sub>WorkItemType</sub>
+        <sub>user</sub>
+      </sub>
+      <sub id="width">300</sub>
+    </span>
+  </div>
+  <p id="polarion_client3"></p>
+  <div id="polarion_client4" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">#set($projectId = $page.getReference.projectId())
+#set($project = $trackerService.getProjectsService().getProject($projectId))
+
+#set($user = $pageParameters.user.toLucene())
+#set($lastIndex = $user.length() - 1)
+#set($userId = $user.substring(1, $lastIndex))
+#set($workItemType = $pageParameters.WorkItemType.toLucene())
+#set($lastIndex = $workItemType.length() - 1)
+#set($wiType = $workItemType.substring(1, $lastIndex))
+
+#set($workItemsQuery = &quot;NOT HAS_VALUE:resolution AND type:$workItemType AND project.id:$projectId&quot;)
+#set($workItems = $transaction.workItems().search().query(&quot;$workItemsQuery&quot;))
+
+#macro(getCustomFieldNameById $customFieldId $customFieldName)
+    #set($contextId = $project.getContextId())
+    #set($customField = $trackerService.getDataService().getCustomFieldsService().getCustomField($customFieldId, &quot;WorkItem&quot;, $contextId, $wiType))
+    #set($customFieldName = $customField.getName())
+#end
+
+&lt;style&gt;
+    #main_table h5, #main_table h4 {
+        margin: 0;
+    }
+&lt;/style&gt;
+
+&lt;script&gt;
+    $(document).ready(function(){
+        $(&quot;.polarion-rp-widget-part&quot;).each(function(){
+            if($(this).attr(&quot;data-widget&quot;) === &quot;com.polarion.pageParametersForm&quot;){
+                $(this).css(&quot;position&quot;, &quot;relative&quot;);
+                $(this).children().each(function(){
+                    if($(this).hasClass(&quot;polarion-rp-parameters-form-editor-panel&quot;)){
+                        $(this).css({
+                            &#39;position&#39;: &#39;relative&#39;,
+                            &#39;width&#39;: &#39;&#39;,
+                            &#39;height&#39;: &#39;80px&#39;
+                        });
+                        var merginLeft = 0;
+                        $(this).children().each(function(){
+                            if(!$(this).hasClass(&quot;polarion-rpe-pageParametersForm-title&quot;)){
+                                $(this).css({
+                                    &#39;position&#39;: &#39;absolute&#39;,
+                                    &#39;width&#39;: &#39;300px&#39;,
+                                    &#39;margin-left&#39;: merginLeft + &#39;px&#39;
+                                });
+                                merginLeft += 320;
+                            }
+                        });
+                    }
+                });
+            }
+        });
+        $(&quot;div.gwt-Label&quot;).each(function(){
+            if($(this).text().trim() === &quot;Save as Default&quot;){
+                $(this).css(&quot;margin-left&quot;, &quot;-210px&quot;);
+            }
+        });
+    });
+&lt;/script&gt;
+
+&lt;div id=&quot;mainReport&quot;&gt;
+    &lt;table id=&quot;main_table&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;10&quot; width=&quot;100%&quot;&gt;
+        &lt;thead&gt;
+            &lt;th&gt;Field Name&lt;/th&gt;
+            &lt;th colspan=&quot;2&quot;&gt;Removed&lt;/th&gt;
+            &lt;th colspan=&quot;2&quot;&gt;Added&lt;/th&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            #foreach($workItem in $workItems)
+                #set($currentWorkItem = $trackerService.findWorkItem($projectId, $workItem.fields().id().get()))
+                #set($ignoredFields = $objectFactory.newSet())
+                #set($workItemHistory = $trackerService.getDataService().getDiffManager().generateHistory($currentWorkItem, $ignoredFields))
+                #foreach($change in $workItemHistory)
+                    #set($author = $change.getUser())
+                    #if($author.equals($userId))
+                        #if(!$change.isEmpty())
+                            #set($diffs = $change.getDiffs())
+                            &lt;tr bgcolor=&quot;#EBF0F5&quot;&gt;
+                                &lt;td&gt;&lt;b&gt;WorkItem ID:&lt;/b&gt; $workItem.fields().id().render().withLinks()&lt;/td&gt;
+                                &lt;td&gt;&lt;b&gt;Author:&lt;/b&gt; $trackerService.getTrackerUser($change.getUser()).getName()&lt;/td&gt;
+                                &lt;td colspan=&quot;2&quot; style=&quot;white-space: nowrap;&quot;&gt;&lt;b&gt;Timestamp:&lt;/b&gt; $change.getTime()&lt;/td&gt;
+                                &lt;td&gt;&lt;b&gt;Revision ID:&lt;/b&gt; $change.getRevision()&lt;/td&gt;
+                            &lt;/tr&gt;
+                            #foreach($currentDiff in $diffs)
+                                #if($currentDiff.isCollection())
+                                    #set($removed = $currentDiff.getRemoved())
+                                    #set($added = $currentDiff.getAdded())
+                                    &lt;tr&gt;
+                                        &lt;td&gt;
+                                            #getCustomFieldNameById($currentDiff.getFieldName() $customFieldName)
+                                            #if($customFieldName.isEmpty())
+                                                &lt;h4 align=&quot;center&quot;&gt;$currentDiff.getFieldName()&lt;/h4&gt;
+                                            #else
+                                                &lt;h4 align=&quot;center&quot;&gt;$customFieldName&lt;/h4&gt;
+                                            #end
+                                        &lt;/td&gt;
+                                        &lt;td colspan=&quot;2&quot;&gt;
+                                            #if($removed.isEmpty())
+                                                &lt;h4 align=&quot;center&quot;&gt;&lt;/h4&gt;
+                                            #else
+                                                #set($removedArray = $removed.toArray())
+                                                #foreach($r in $removedArray)
+                                                    #if($r.getName())
+                                                        &lt;h5 align=&quot;center&quot;&gt;$r.getName()&lt;/h5&gt;
+                                                    #else
+                                                        &lt;h5 align=&quot;center&quot;&gt;$r&lt;/h5&gt;
+                                                    #end
+                                                #end
+                                            #end
+                                        &lt;/td&gt;
+                                        &lt;td colspan=&quot;2&quot;&gt;
+                                            #if($added.isEmpty())
+                                                &lt;h4 align=&quot;center&quot;&gt;&lt;/h4&gt;
+                                            #else
+                                                #set($addedArray = $added.toArray())
+                                                #foreach($a in $addedArray)
+                                                    #if($a.getName())
+                                                        &lt;h5 align=&quot;center&quot;&gt;$a.getName()&lt;/h5&gt;
+                                                    #else
+                                                        &lt;h5 align=&quot;center&quot;&gt;$a&lt;/h5&gt;
+                                                    #end
+                                                #end
+                                            #end
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                #else
+                                    #if(!$currentDiff.getFieldName().equals(&quot;updated&quot;))
+                                        &lt;tr class=&quot;wi_data&quot;&gt;
+                                            &lt;td&gt;
+                                                #getCustomFieldNameById($currentDiff.getFieldName() $customFieldName)
+                                                #if($customFieldName.isEmpty())
+                                                    &lt;h4 align=&quot;center&quot;&gt;$currentDiff.getFieldName()&lt;/h4&gt;
+                                                #else
+                                                    &lt;h4 align=&quot;center&quot;&gt;$customFieldName&lt;/h4&gt;
+                                                #end
+                                            &lt;/td&gt;
+                                            &lt;td colspan=&quot;2&quot;&gt;
+                                                #if($currentDiff.getBefore())
+                                                	#if($currentDiff.getBefore().getName())
+                                                        &lt;h5 align=&quot;center&quot;&gt;$currentDiff.getBefore().getName()&lt;/h5&gt;
+                                                    #else
+                                                        &lt;h5 align=&quot;center&quot;&gt;$currentDiff.getBefore()&lt;/h5&gt;
+                                                    #end
+                                                #else
+                                                    &lt;h5 align=&quot;center&quot;&gt;&lt;/h5&gt;
+                                                #end
+                                            &lt;/td&gt;
+                                            &lt;td colspan=&quot;2&quot;&gt;
+                                                #if($currentDiff.getAfter())
+                                                    #if($currentDiff.getAfter().getName())
+                                                        &lt;h5 align=&quot;center&quot;&gt;$currentDiff.getAfter().getName()&lt;/h5&gt;
+                                                    #else
+                                                        &lt;h5 align=&quot;center&quot;&gt;$currentDiff.getAfter()&lt;/h5&gt;
+                                                    #end
+                                                #else
+                                                    &lt;h5 align=&quot;center&quot;&gt;&lt;/h5&gt;
+                                                #end
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    #end
+                                #end
+                            #end
+                        #end
+                    #end
+                #end
+            #end
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<span id="polarion-rp-parameters">
+  <sub id="user" data-label="User" data-type="Enumeration">
+    <sub id="values">
+      <sub>admin</sub>
+    </sub>
+    <sub id="enumId">@user</sub>
+    <sub id="allowNoValue">false</sub>
+    <sub id="allowMultipleValues">false</sub>
+    <sub id="loadForAllTypes">true</sub>
+  </sub>
+  <sub id="WorkItemType" data-label="WorkItem Type" data-type="Enumeration">
+    <sub id="values">
+      <sub>user_requirement</sub>
+    </sub>
+    <sub id="enumId">workitem-type</sub>
+    <sub id="allowNoValue">false</sub>
+    <sub id="allowMultipleValues">false</sub>
+    <sub id="loadForAllTypes">true</sub>
+  </sub>
+</span>]]>
+    </field>
+    <field id="title">WorkItem Churn</field>
+</rich-page>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">Ashfaq</field>
+    <field id="created">2022-10-31 13:07:56.245 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=RD-3768"></h1>
+<div id="polarion_wiki macro name=module-workitem;params=id=RD-3769"></div>
+<div id="polarion_wiki macro name=module-workitem;params=id=RD-3779|level=1|layout=1">RD-3779</div>
+<div id="polarion_wiki macro name=module-workitem;params=id=RD-3771|layout=1"></div>
+<div id="polarion_wiki macro name=module-workitem;params=id=RD-3770|layout=2"></div>
+<p id="polarion_1"></p>
+]]>
+    </field>
+    <field id="renderingLayouts">
+        <list>
+            <struct>
+                <item id="label">User Requirement</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                            <item id="value">id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                            <item id="value">status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">severity,status</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">user_requirement</item>
+            </struct>
+            <struct>
+                <item id="label">Functional Requirement</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">severity,status,id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                            <item id="value">id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                            <item id="value">status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEndAsTable</item>
+                            <item id="value">false</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">functional_requirement</item>
+            </struct>
+            <struct>
+                <item id="label">Design Specification</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">severity,status,id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                            <item id="value">id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                            <item id="value">status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEndAsTable</item>
+                            <item id="value">false</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">designspecification</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">approved</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">Polarion Demo CSA</field>
+    <field id="type">generic</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1</field>
+</module>

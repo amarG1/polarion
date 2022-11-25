@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2017-01-17 10:05:43.640 +0100</field>
+    <field id="homePageContent" text-type="text/html"><![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">Dashboard</h1>
+  <p id="polarion_1">
+    <span class="polarion-rp-inline-widget" data-widget="com.polarion.scriptInline">
+      <span class="polarion-rp-widget-parameters">
+        <sub id="script">
+          <sub id="script" style="white-space:pre;">## Reported By
+#set($infoText = &quot;Reported by $transaction.users().getBy().id($securityService.getCurrentUser()).render()&lt;br/&gt;$date.long&quot;)
+#if($widgetContext.target().isEditor())
+	&lt;div style=&quot;color: grey; text-align: left;&quot;&gt;$infoText&lt;div&gt;
+#elseif($widgetContext.target().isPdf())
+	&lt;div style=&quot;color: grey; text-align: right; position: absolute; top: 22px; right: 10px;&quot;&gt;$infoText&lt;div&gt;
+#elseif($widgetContext.target().isPrint())		
+	&lt;div style=&quot;text-align: right; position: absolute; top: 35px; right: 10px;&quot;&gt;$infoText&lt;div&gt;
+#end</sub>
+        </sub>
+      </span>
+    </span>
+  </p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <h2 id="polarion_client35">Issue Activity (1 year)</h2>
+  <p id="polarion_client1"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <div id="polarion_client21" class="polarion-rp-widget-part" data-widget="com.polarion.intervalFieldChart">
+    <span class="polarion-rp-widget-parameters" style="display: none;">
+      <sub id="title"></sub>
+      <sub id="data">
+        <sub id="elements">
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="subtype">issue</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;"></sub>
+            <sub id="children">
+              <sub id="intervalField">
+                <sub id="field">created</sub>
+              </sub>
+              <sub id="name">New Issues</sub>
+              <sub id="color">rgb(155, 89, 182)</sub>
+            </sub>
+          </sub>
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="subtype">issue</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">status:verified</sub>
+            <sub id="children">
+              <sub id="intervalField">
+                <sub id="field">created</sub>
+              </sub>
+              <sub id="name">New Verified Issues</sub>
+              <sub id="color">rgb(0, 128, 0)</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="timeAxis">
+        <sub id="from">
+          <sub id="relative">-365</sub>
+        </sub>
+        <sub id="to">
+          <sub id="relative">0</sub>
+        </sub>
+        <sub id="scaleType">month</sub>
+        <sub id="baseDate">31</sub>
+      </sub>
+      <sub id="advanced">
+        <sub id="height">250px</sub>
+        <sub id="width"></sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <div id="polarion_client4" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters" style="display: none;">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">#info(&quot;Issues that are In Progress, Reopened or Done.&quot;)</sub>
+      </sub>
+    </span>
+  </div>
+  <div id="polarion_client22" class="polarion-rp-widget-part" data-widget="com.polarion.multiSetTrendChart">
+    <span class="polarion-rp-widget-parameters" style="display: none;">
+      <sub id="title">Issues in Process</sub>
+      <sub id="data">
+        <sub id="elements">
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="subtype">issue</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">status:(inprogress reopened done)</sub>
+            <sub id="children">
+              <sub id="name">Total Issues in Process</sub>
+              <sub id="color">rgb(163, 0, 0)</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="timeAxis">
+        <sub id="from">
+          <sub id="relative">-365</sub>
+        </sub>
+        <sub id="to">
+          <sub id="relative">0</sub>
+        </sub>
+        <sub id="scaleType">month</sub>
+        <sub id="baseDate">31</sub>
+      </sub>
+      <sub id="advanced">
+        <sub id="height">200px</sub>
+        <sub id="width"></sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <h2 id="polarion_client45">Change Requests Activity (1 year)</h2>
+  <p id="polarion_client2"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <div id="polarion_client31" class="polarion-rp-widget-part" data-widget="com.polarion.intervalFieldChart">
+    <span class="polarion-rp-widget-parameters" style="display: none;">
+      <sub id="title"></sub>
+      <sub id="data">
+        <sub id="elements">
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="subtype">changerequest</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;"></sub>
+            <sub id="children">
+              <sub id="intervalField">
+                <sub id="field">created</sub>
+              </sub>
+              <sub id="name">New Change Requests</sub>
+              <sub id="color">rgb(155, 89, 182)</sub>
+            </sub>
+          </sub>
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="subtype">changerequest</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">status:verified\-done</sub>
+            <sub id="children">
+              <sub id="intervalField">
+                <sub id="field">created</sub>
+              </sub>
+              <sub id="name">New Verified Change Requests</sub>
+              <sub id="color">rgb(0, 128, 0)</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="timeAxis">
+        <sub id="from">
+          <sub id="relative">-365</sub>
+        </sub>
+        <sub id="to">
+          <sub id="relative">0</sub>
+        </sub>
+        <sub id="scaleType">month</sub>
+        <sub id="baseDate">31</sub>
+      </sub>
+      <sub id="advanced">
+        <sub id="height">250px</sub>
+        <sub id="width"></sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <div id="polarion_client19" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters" style="display: none;">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">#info(&quot;Change Requests that are either Reviewed or Approved.&quot;)</sub>
+      </sub>
+    </span>
+  </div>
+  <div id="polarion_client30" class="polarion-rp-widget-part" data-widget="com.polarion.multiSetTrendChart">
+    <span class="polarion-rp-widget-parameters" style="display: none;">
+      <sub id="title">Change Requests in Process</sub>
+      <sub id="data">
+        <sub id="elements">
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="subtype">changerequest</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">status:(reviewed approved)</sub>
+            <sub id="children">
+              <sub id="name">Total Change Requests in Process</sub>
+              <sub id="color">rgb(163, 0, 0)</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="timeAxis">
+        <sub id="from">
+          <sub id="relative">-365</sub>
+        </sub>
+        <sub id="to">
+          <sub id="relative">0</sub>
+        </sub>
+        <sub id="scaleType">month</sub>
+        <sub id="baseDate">31</sub>
+      </sub>
+      <sub id="advanced">
+        <sub id="height">200px</sub>
+        <sub id="width"></sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_client28"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <h2 id="polarion_client49">Project Activity (60 days)</h2>
+  <p id="polarion_client3"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <div id="polarion_client37" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters" style="display: none;">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">#info(&quot;Daily trend of all created and updated Work Items.&quot;)</sub>
+      </sub>
+    </span>
+  </div>
+  <div id="polarion_client39" class="polarion-rp-widget-part" data-widget="com.polarion.intervalFieldChart">
+    <span class="polarion-rp-widget-parameters" style="display: none;">
+      <sub id="title"></sub>
+      <sub id="data">
+        <sub id="elements">
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">NOT type:heading</sub>
+            <sub id="children">
+              <sub id="intervalField">
+                <sub id="field">updated</sub>
+              </sub>
+              <sub id="name">Updated Work Items</sub>
+              <sub id="color">orange</sub>
+            </sub>
+          </sub>
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">NOT type:heading</sub>
+            <sub id="children">
+              <sub id="intervalField">
+                <sub id="field">created</sub>
+              </sub>
+              <sub id="name">Created Work Items</sub>
+              <sub id="color">green</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="timeAxis">
+        <sub id="from">
+          <sub id="relative">-60</sub>
+        </sub>
+        <sub id="to">
+          <sub id="relative">0</sub>
+        </sub>
+        <sub id="scaleType">day</sub>
+        <sub id="baseDate">1</sub>
+      </sub>
+      <sub id="advanced">
+        <sub id="height">250px</sub>
+        <sub id="width"></sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_client12"></p><p id="polarion_client40"></p><p id="polarion_client41"></p>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <div id="polarion_client38" class="polarion-rp-widget-part" data-widget="com.polarion.separateByPieChart">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title">Work Items by Type</sub>
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;"></sub>
+        <sub id="children">
+          <sub id="separateBy">
+            <sub id="field">type</sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="showDataLabels">true</sub>
+      <sub id="showZeroValues">false</sub>
+      <sub id="advanced">
+        <sub id="height">250px</sub>
+        <sub id="width"></sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>]]></field>
+    <field id="title">Dashboard</field>
+</rich-page>

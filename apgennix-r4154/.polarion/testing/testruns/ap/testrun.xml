@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-run>
+    <field id="author">admin</field>
+    <field id="created">2022-09-19 11:10:47.482 +0530</field>
+    <field id="description" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 26 Z&amp;aacute;ř 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;span style="font-style: italic;"&gt;Click "Properties" and provide a short description of the software being tested and the test design itself.&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="environmentDescription" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 27 Sep 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;b&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="finishedOn">2022-09-26 11:11:23.242 +0530</field>
+    <field id="goal" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 26 Z&amp;aacute;ř 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;span style="font-style: italic;"&gt;Describe the hi-level goals of this test and pass/fail criteria.&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="groupId">234</field>
+    <field id="platform" type="enum:platform">windows</field>
+    <field id="query">type:testcase AND status:active</field>
+    <field id="records">
+        <list>
+            <struct>
+                <item id="defect">APGE-569</item>
+                <item id="duration">5.733</item>
+                <item id="executed">2022-09-19 11:22:01.140 +0530</item>
+                <item id="executedBy">admin</item>
+                <item id="result">failed</item>
+                <item id="signed">true</item>
+                <item id="testCase">APGE-561</item>
+                <item id="testCaseRevision">871</item>
+                <item id="testStepResults">
+                    <list>
+                        <struct>
+                            <item id="comment" text-type="text/plain">failed</item>
+                            <item id="result">failed</item>
+                        </struct>
+                    </list>
+                </item>
+            </struct>
+        </list>
+    </field>
+    <field id="selectTestCasesBy">dynamicQueryResult</field>
+    <field id="status">failed</field>
+    <field id="template">Release Test</field>
+    <field id="title">EGge</field>
+    <field id="type">manual</field>
+    <field id="useReportFromTemplate">true</field>
+</test-run>

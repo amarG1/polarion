@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="a" type="float">30.0</field>
+    <field id="assignee">111</field>
+    <field id="author">admin</field>
+    <field id="b" type="float">39.0</field>
+    <field id="created">2022-09-16 17:57:44.553 +0530</field>
+    <field id="description" text-type="text/html">gc</field>
+    <field id="gr" multi="true" type="enum:gr">
+        <list>
+            <item>admin</item>
+        </list>
+    </field>
+    <field id="previousStatus">open</field>
+    <field id="priority">50.0</field>
+    <field id="severity">should_have</field>
+    <field id="status">inprogress</field>
+    <field id="title">System Administrator:fbfdd</field>
+    <field id="type">ap</field>
+</work-item>

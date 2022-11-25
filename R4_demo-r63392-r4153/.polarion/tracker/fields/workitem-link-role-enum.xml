@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option description="Used to express relations between Work Items." id="parent" name="has parent" oppositeName="is parent of" parent="true" sortOrder="1">
+        <rule from="functional_requirement" to="user_requirement"/>
+        <rule from="designspecification" to="user_requirement, functional_requirement"/>
+        <rule from="test_script_IQ" to="user_requirement, functional_requirement, designspecification"/>
+        <rule from="test_script_OQ" to="user_requirement, functional_requirement, designspecification"/>
+        <rule from="test_script_UAT" to="user_requirement, functional_requirement, designspecification"/>
+        <rule from="defect" to="user_requirement, functional_requirement, designspecification, test_script_IQ, test_script_OQ, test_script_UAT"/>
+        <rule from="changecontrol" to="user_requirement, functional_requirement"/>
+        <rule from="gxp_part11_assessment"/>
+        <rule from="user_requirement" sameType="true"/>
+        <rule from="user_requirement" to="designspecification"/>
+    </option>
+
+    <option default="true" description="A generic relation type, more concrete link should be used where possible" id="relates_to" name="relates to" oppositeName="is related to" sortOrder="2"/>
+    <option id="is_parent_of" name="is parent of" oppositeName="has parent" sortOrder="3">
+        <rule from="functional_requirement" to="test_script_IQ, test_script_OQ"/>
+    </option>
+
+    <option id="verifies" name="verifies" oppositeName="is verified by" parent="true" sortOrder="4">
+        <rule from="test_script_IQ, test_script_OQ, test_script_UAT" to="user_requirement"/>
+    </option>
+
+    <option description="Used for Exceptions automatically generated during testing." id="triggered_by" name="is triggered by" oppositeName="triggers" parent="true" sortOrder="6">
+        <rule from="defect" to="test_script_IQ, test_script_OQ, test_script_UAT"/>
+    </option>
+
+    <option description="Used for creating Tool Chains." id="system_risk" name="is part of system validation" oppositeName="consists of" parent="true" sortOrder="8">
+        <rule from="gxp_part11_assessment" to="system_risk"/>
+    </option>
+
+    <option description="Used to mark duplicate Work Items." id="duplicates" name="duplicates" oppositeName="is duplicated by" sortOrder="9">
+        <rule from="user_requirement, test_script_OQ, test_script_UAT, defect, test_script_IQ" sameType="true"/>
+    </option>
+
+    <option description="Used for creating system validation" id="system_assesment" name="is part of validation" oppositeName="consists of" parent="true" sortOrder="10">
+        <rule from="gxp_part11_assessment" to="system_risk"/>
+    </option>
+
+</enumeration>

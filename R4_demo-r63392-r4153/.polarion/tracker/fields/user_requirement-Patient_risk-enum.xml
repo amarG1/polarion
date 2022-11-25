@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option id="H" name="Direct" sortOrder="1"/>
+    <option id="M" name="Indirect" sortOrder="2"/>
+    <option default="true" id="L" name="None" sortOrder="3"/>
+</enumeration>

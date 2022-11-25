@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field description="Target Risk Priority Level of the product developed by this Tool Chain." id="targetAsil" name="Target RPL" type="enum:asil"/>
+    <field description="A general Qualification Report for the Tool Chain." id="qualificationReport" name="Qualification Report" type="enum:@document[NOT title:Template]"/>
+    <field description="Calculated field that aggregates the Time Spent from all children Tools and their Methods." id="timeSpentOnTools" name="Time Spent on Tools" type="date-time"/>
+    <field id="bc" name="Business Criticality" type="string"/>
+    <field id="sc" name="System Complexity" type="string"/>
+    <field id="bc1" name="Could the system impact patient safety?" type="enum:boolean"/>
+    <field id="bc2" name="Could the system impact product quality?" type="enum:boolean"/>
+    <field id="bc3" name="Does the system have direct regulatory impact?" type="enum:boolean"/>
+    <field id="sc1" name="Bespoke system developed/coded to meet BRS?" type="enum:boolean"/>
+    <field id="sc2" name="OOB functions configured to meet BRS?" type="enum:boolean"/>
+    <field id="srr" name="System Risk Rating" type="string"/>
+    <field id="sysName" name="System Name" type="string"/>
+    <field id="systemGAMPCategorization" name="System GAMP Categorization" type="string"/>
+</fields>

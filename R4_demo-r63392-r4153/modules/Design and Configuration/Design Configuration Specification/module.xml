@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">meeran</field>
+    <field id="created">2021-10-08 11:39:10.527 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=CSA-3088"></h1><p id="polarion_template_0">
+  <br/>
+</p><div id="polarion_wiki macro name=toc"></div><div id="polarion_wiki macro name=page_break|uid=polarion_3" contentEditable="false" data-is-landscape="false"></div><p id="polarion_1"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3089"></h2><p id="polarion_13">
+  The configuration &amp; Design specification captures the details of the Siemens Polarion initiatives implementation for <span style="font-weight: bold;color: #00B050;">&lt;Company name or Site name&gt;</span>. The Configuration and Design described in this document supports the System Requirements.
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3090"></h2><p id="polarion_14">
+  The Configuration and Design Specification applies to <span style="font-weight: bold;color: #00B050;">&lt;Company name or Site name&gt;</span> . Polarion is a 21 CFR Part 11 compliant ALM system with wide adoption in Medical Device industry. It is developed by industry leading software manufacturer Siemens Digital Industries Software (SISW).
+</p><p id="polarion_15"> </p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3091"></h2><p id="polarion_16">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> FDA Code of Federal Regulations (CFR) Title 21 Part 11
+</p><p id="polarion_17">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> ISPE GAMP Good Practice Guide – Data Integrity by Design
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3092"></h2><p id="polarion_20"></p><table id="polarion_21" style="width: 474pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #DEEAF6;text-align: left;vertical-align: top;width: 144pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;color: #000000;line-height: 1.5;">Acronym / Term</span>
+        </div>
+      </th>
+      <th style="background-color: #DEEAF6;text-align: left;vertical-align: top;width: 330pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;color: #000000;line-height: 1.5;">Definition</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 144pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;color: #000000;line-height: 1.5;">FDA</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 330pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Food and Drug Administration</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 144pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;color: #000000;line-height: 1.5;">Polarion</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 330pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Off the shelf Application Lifecycle Management software manufactured by Siemens</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 144pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">SISW</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 330pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Siemens Industries Software</span><br/>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_22"> </p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3093"></h2><p id="polarion_23">
+  <span style="font-weight: bold;color: #00B050;">&lt;Company Name&gt;</span>validation will be planned, directed, and executed by a team of qualified individuals to ensure that all the deliverables and tasks are properly completed.
+</p><p id="polarion_24">
+  The roles and responsibilities are defined in <span style="font-weight: bold;color: #00B050;">&lt;Company Name&gt; </span>Polarion Validation plan.  
+</p><div id="polarion_wiki macro name=page_break|uid=polarion_6" contentEditable="false" data-is-landscape="false"></div><p id="polarion_26"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3094"></h2><p id="polarion_9">
+  The project configuration report can be located here, <span style="font-weight: bold;color: #00B050;">&lt;Located Path&gt;</span>.
+</p><p id="polarion_10"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3095"></h2><p id="polarion_11">
+  <span style="color: #00B050;">&lt;Hazard Report</span> <span style="color: #00B050;">uFMEA, dFMEA, pFMEA spreadsheets, etc. &gt;</span>
+</p><p id="polarion_12"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3096"></h2><p id="polarion_4">
+  <span style="color: #00B050;">&lt;Add Attachment details, if any&gt;</span>
+</p><div id="polarion_wiki macro name=page_break|uid=polarion_27" contentEditable="false" data-is-landscape="false"></div><p id="polarion_8" style="text-align: center;"></p><p id="polarion_28">
+  <span style="font-weight: bold;font-size: 12pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #003366;line-height: 1.5;">Document Properties</span>
+</p><div id="polarion_editor_html_block1" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div><p id="polarion_25"></p>]]>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">Design Configuration Specification</field>
+    <field id="type">generic</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

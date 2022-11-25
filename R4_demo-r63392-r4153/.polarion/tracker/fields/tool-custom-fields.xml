@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field description="CMMI" id="toolImpact" name="System Impact" type="enum:toolimpact"/>
+    <field description="TR" id="toolErrorDetection" name="System Readiness" type="enum:toolerrordetection"/>
+    <field description="Derived from TI and TD." id="toolConfidenceLevel" name="System Confidence Level" type="enum:toolconfidencelevel"/>
+    <field description="A priority level of the risks associated with the Tool." id="asil" name="Risk Priority Level" type="enum:asil"/>
+    <field description="Tool Type." id="toolType" name="System Type" type="enum:tooltype"/>
+    <field description="Evaluated tool's version number." id="version" name="System Version" type="string"/>
+    <field description="A description of a tool’s planned configuration while it is in use." id="configurationSettings" name="Configuration Settings" type="text/html"/>
+    <field description="The environment in which the software tool is executed." id="environment" name="Environment" type="enum:environment"/>
+    <field description="Version of the used operating system." id="environmentDetails" name="Environment Details" type="string"/>
+    <field default="false" description="Used to prevent Polarion from creating the associated documents when a Work Item is created." id="doNotCreateDocuments" name="Do Not Create Documents" type="boolean"/>
+    <field description="A general Qualification Report for the Tool. Select an existing Qualification Report when creating a new Tool to reuse it." id="qualificationReport" name="Qualification Report" type="enum:@document[NOT title:Template AND title:&quot;Tool Qualification Report&quot;]"/>
+    <field description="A specification defining the basic Use Cases required when using the Tool in the production process. Select an existing Use Case Specification to reuse it." id="useCaseSpecification" name="Use Case Specification" type="enum:@document[NOT title:Template AND title:&quot;Tool Qualification Report&quot;]"/>
+    <field description="Description of the tool's intended purpose." id="intendedPurpose" name="Intended Purpose" type="text/html"/>
+    <field description="A calculated field that aggregates the Time Spent from all children Methods." id="timeSpentOnMethods" name="Time Spent on System" type="date-time"/>
+    <field description="A collection of all responses from the questionnaire." id="questionnaire" name="Questionnaire Results" type="string"/>
+    <field description="How often must the validation be redone." id="validationFrequency" name="Validation Frequency" type="enum:validationfrequency"/>
+    <field description="The intended use of the software consist of three main elements (Purpose and intent, Software use requirements or User Needs and Software requirements) which will be included in the validation as applicable." id="intendedUseStatement" name="Intended Use of the System" type="text"/>
+    <field description="Defining the parts of the process that are to be automated through software (boundaries within the process) and the places where software interfaces exist (boundaries with other software) facilitates the effectiveness and efficiency of the validation efforts." id="softwareBoundaryConditions" name="Software Boundary Conditions" type="text"/>
+    <field description="Specifies the skill levels of the users." id="userTypes" name="User Types" type="enum:usertypes"/>
+    <field description="Specifies the amount of users." id="userQuantity" name="Estimated User Base" type="enum:numberofusers"/>
+    <field description="Specifies when the next validation should take place." id="nextValidation" name="Next Validation Date" type="date"/>
+    <field default="No" id="gxp_q1" name="Does the system control the quality of product during its development, manufacturing, testing, and/or handling processes?" type="enum:boolean"/>
+    <field id="gxp_q2" name="Does the system create, modify, maintain, archive, retrieve, or transmit data used to prove the safety, efficacy, and quality of the product formulations?" type="enum:boolean"/>
+    <field id="gxp_q3" name="Does the system provide information of which decisions are made affecting fitness for the purpose of the product?" type="enum:boolean"/>
+    <field id="gxp_q4" name="Is the computer system involved in the environmental control processes of facilities used for the manufacture, processing, packaging, holding or distribution of products?" type="enum:boolean"/>
+    <field id="gxp_q5" name="Is the computer system used in the collection, analysis or storage of data from clinical trials?" type="enum:boolean"/>
+    <field id="gxp_q6" name="Is the computer system used for distribution of information in the event of a commercial product recall, or a patient follow up of clinical trials?" type="enum:boolean"/>
+    <field id="gxp_q7" name="Does the system, create, modify, maintain, archive, retrieve, or transmit records that must be available for inspection by a regulatory agency?" type="enum:boolean"/>
+    <field id="gxp_q8" name="Is the computer system used to produce or process data that may be used in regulatory submissions?" type="enum:boolean"/>
+    <field id="gxp_q9" name="Does the system generate data or reports that are sent to regulatory agencies?" type="enum:boolean"/>
+    <field id="21cfr_q1" name="Is the system used to create, modify, maintain, archive, retrieve, or transmit electronic records that are used to satisfy a FDA requirement/guidance? " type="enum:boolean"/>
+    <field id="21cfr_q2" name="Does the system include the use of electronic signatures?" type="enum:boolean"/>
+    <field id="21cfr_q3" name="Is Audit Trail used in lieu of an electronic signature to track operator identification? " type="enum:boolean"/>
+    <field id="21cfr_comments" name="Comments" type="text/html"/>
+    <field id="gxpapp" name="GxP Applicability" type="string"/>
+    <field id="sysName" name="System Name" type="string"/>
+    <field id="sysType" name="System Type" type="string"/>
+    <field id="hostedIn" name="Hosted In" type="string"/>
+    <field id="internalExternalUse" name="Internal / External Use" type="string"/>
+</fields>

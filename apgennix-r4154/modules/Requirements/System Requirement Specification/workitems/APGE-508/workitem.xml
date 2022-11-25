@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+        
+    <field id="author">admin</field>
+        
+    <field id="created">2017-08-12 08:49:24.792 +0200</field>
+        
+    <field id="previousStatus">open</field>
+        
+    <field id="priority">50.0</field>
+        
+    <field id="severity">should_have</field>
+        
+    <field id="status">open</field>
+        
+    <field id="title">System Requirement Specification</field>
+        
+    <field id="type">heading</field>
+    
+</work-item>

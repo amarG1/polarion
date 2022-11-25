@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">admin</field>
+    <field id="created">2022-09-14 13:46:27.461 +0530</field>
+    <field id="previousStatus">reviewed</field>
+    <field id="priority">50.0</field>
+    <field id="resolution">invalid</field>
+    <field id="resolvedOn">2022-09-15 11:24:35.529 +0530</field>
+    <field id="severity">should_have</field>
+    <field id="status">approved</field>
+    <field id="title">ttt</field>
+    <field id="type">st</field>
+</work-item>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<enumeration>
+    <option iconURL="/polarion/icons/default/enums/document_electrical_requirement2.png" id="systemReqSpecification" name="System Requirement Specification" sortOrder="1"/>
+    <option iconURL="/polarion/icons/default/enums/document_specification.png" id="softwareReqSpecification" name="Software Requirement Specification" sortOrder="2"/>
+    <option iconURL="/polarion/icons/default/enums/document_electrical_testcase.png" id="systemTestSpecification" name="System Test Case Specification" sortOrder="3"/>
+    <option iconURL="/polarion/icons/default/enums/document_test.png" id="softwareTestSpecification" name="Software Test Case Specification" sortOrder="4"/>
+    <option iconURL="/polarion/icons/default/enums/document_risk.png" id="riskSpecification" name="Risk Specification" sortOrder="5"/>
+    <option iconURL="/polarion/icons/default/enums/document_task.png" id="validationAndVerificationPlan" name="Validation and Verification Plan" sortOrder="6"/>
+    <option default="true" iconURL="/polarion/icons/default/enums/document_generic.png" id="generic" name="Generic" sortOrder="7"/>
+</enumeration>

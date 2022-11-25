@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<read-only>
+    <status id="in_draft">
+        <field id="sysName"/>
+        <field id="sysType"/>
+        <field id="internalExternalUse"/>
+        <field id="hostedIn"/>
+        <field id="gxpapp"/>
+        <field id="userQuantity"/>
+        <field id="version"/>
+        <field id="approvals"/>
+    </status>
+
+    <status id="approved">
+        <field id="@all"/>
+        <field id="-status"/>
+    </status>
+
+    <status id="_default">
+        <field id="@all"/>
+        <field id="-approvals"/>
+        <field id="-comments"/>
+    </status>
+
+</read-only>

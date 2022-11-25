@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu>
+	<item childInModule="true" copyFields="categories"/>
+	<item copyFields="categories" label="Implementing Work Package" role="implements" titlePrefix="Implement: " type="workpackage"/>
+	<item copyFields="categories" label="Implementing Issue" role="implements" type="issue"/>
+	<item copyFields="categories" label="Refining Software Requirement" role="refines" type="softwarerequirement"/>
+	<item copyFields="categories" label="Verifying System Test Case" role="verifies" titlePrefix="Test: " type="systemtestcase"/>
+	<item copyFields="categories" label="Assessing Risk" role="assesses" type="risk"/>
+	<separator/>
+	<item label="Dependent" role="depends_on"/>
+	<item label="Related" role="relates_to"/>
+</menu>

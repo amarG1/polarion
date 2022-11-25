@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">111</field>
+    <field id="created">2022-09-09 11:32:55.104 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">Status of  AP unit </h1>
+  <div id="polarion_client9" class="polarion-rp-widget-part" data-widget="traceabilitytable">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="subtype">ap</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;"></sub>
+        <sub id="children">
+          <sub id="sortBy"></sub>
+          <sub id="mainSidebarConfig">
+            <sub>
+              <sub id="id">assignee</sub>
+            </sub>
+            <sub>
+              <sub id="id">severity</sub>
+            </sub>
+            <sub>
+              <sub id="id">priority</sub>
+            </sub>
+            <sub>
+              <sub id="id">status</sub>
+            </sub>
+            <sub>
+              <sub id="id">resolution</sub>
+            </sub>
+            <sub>
+              <sub id="id">linkedWorkItems</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="settings">
+        <sub id="linkedItemTypes">
+          <sub id="values">
+            <sub>testcase</sub>
+          </sub>
+        </sub>
+        <sub id="linkedRoles">
+          <sub id="values">
+            <sub>verifies</sub>
+          </sub>
+        </sub>
+        <sub id="filterByCoverage"></sub>
+        <sub id="linkedSidebarConfig">
+          <sub>
+            <sub id="id">assignee</sub>
+          </sub>
+          <sub>
+            <sub id="id">severity</sub>
+          </sub>
+          <sub>
+            <sub id="id">priority</sub>
+          </sub>
+          <sub>
+            <sub id="id">status</sub>
+          </sub>
+          <sub>
+            <sub id="id">resolution</sub>
+          </sub>
+          <sub>
+            <sub id="id">linkedWorkItems</sub>
+          </sub>
+        </sub>
+        <sub id="defectItemTypes">
+          <sub id="values">
+            <sub>defect</sub>
+          </sub>
+        </sub>
+        <sub id="defectRoles">
+          <sub id="values">
+            <sub>triggered_by</sub>
+          </sub>
+        </sub>
+        <sub id="linkedToLinkedSidebarConfig">
+          <sub>
+            <sub id="id">severity</sub>
+          </sub>
+          <sub>
+            <sub id="id">status</sub>
+          </sub>
+          <sub>
+            <sub id="id">linkedWorkItems</sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="advanced">
+        <sub id="collapseLimit">0</sub>
+        <sub id="sourceItemColumnTitle">Use Case</sub>
+        <sub id="linkedItemColumnTitle">Test Case</sub>
+        <sub id="defectItemColumnTitle">Defect</sub>
+      </sub>
+    </span>
+  </div>
+  <div id="polarion_client4" class="polarion-rp-widget-part" data-widget="com.polarion.separateByPieChart">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title"></sub>
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="subtype">ap</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;"></sub>
+        <sub id="children">
+          <sub id="separateBy">
+            <sub id="field">status</sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="showDataLabels">true</sub>
+      <sub id="showZeroValues">false</sub>
+      <sub id="advanced">
+        <sub id="height">400</sub>
+        <sub id="width"></sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_client1"></p><p id="polarion_hardcoded_1"></p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_client5"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_client8"></p>
+  <h2 id="polarion_client12">Getting users </h2>
+  <p id="polarion_client6"></p>
+  <div id="polarion_client10" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">#set($projectId =$page.getReference().projectId())
+
+&lt;!-- #set($pid= &quot;project.id:$projectId&quot;) --&gt;
+#set($query = &quot;project.id:$projectId AND type:ap &quot;) 
+#set($workitems = $transaction.workItems().search().query(&quot;$query&quot;))
+#set($user = $projectService.getUsers())
+
+&lt;div id=&quot;table&quot;&gt;
+    &lt;table border=&quot;2&quot; id=&quot;t&quot;&gt;
+    &lt;thead&gt;
+    &lt;tr class=&quot;thead&quot;&gt;
+    &lt;th&gt;ID&lt;/th&gt;
+    
+    &lt;th &gt;Title&lt;/th&gt;
+    &lt;/tr&gt; 
+    &lt;/thead&gt;
+    #foreach($u in $user )
+    
+    &lt;tr class=&quot;thead&quot;&gt;
+    &lt;td style=&quot;text-align: center;&quot; &gt;$u.getLoginName()&lt;/td&gt;
+    &lt;td style=&quot;text-align: center;&quot; &gt;$u.getLabel()&lt;/td&gt;    
+    
+    &lt;/tr&gt;
+    #end
+    &lt;/table&gt;
+    
+&lt;/div&gt;
+
+
+
+
+
+        </sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_1"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <h2 id="polarion_client16">System requirement approved Workitems with condition desc==HEllo</h2>
+  <div id="polarion_client14" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">&lt;hr&gt;
+#set($projectId =$page.getReference().projectId())
+#set($query = &quot;project.id:$projectId AND type:systemrequirement AND status:approved AND HAS_VALUE:description&quot;) 
+#set($workitems = $transaction.workItems().search().query(&quot;$query&quot;))
+
+
+
+
+&lt;div id=&quot;table&quot;&gt;
+&lt;table border=&quot;2&quot; id=&quot;t&quot;&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;thead&quot;&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;status&lt;/th&gt;
+&lt;!-- &lt;th style=&quot;color:cyan; background:black; &quot;&gt;Assignee&lt;/th&gt;
+&lt;th &gt;Created&lt;/th&gt;
+&lt;th &gt;Last-updated&lt;/th&gt; --&gt;
+&lt;/tr&gt; 
+&lt;/thead&gt;
+#foreach($wi in $workitems )
+#set($des = $wi.getOldApi().getDescription().getContent())
+#set($title = $wi.getOldApi().getTitle())
+#set($id = $wi.getOldApi().getId())
+#set($status = $trackerService.getWorkItem(&quot;$projectId&quot;,&quot;$id&quot;).getStatus().getName())
+
+
+
+##if($des.equals(&quot;HEllo&quot;))
+&lt;tr class=&quot;thead&quot;&gt;
+&lt;td  &gt;$wi.fields().id().render().withLinks()&lt;/td&gt;
+&lt;td style=&quot;text-align: center;&quot; &gt;$title&lt;/td&gt;
+
+&lt;td style=&quot;text-align: center;&quot; &gt;$des&lt;/td&gt;
+&lt;td &gt;$status&lt;/td&gt;
+
+&lt;!-- &lt;td &gt;$wi.fields().assignee().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().created().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().updated().render()&lt;/td&gt; --&gt;
+
+
+&lt;/tr&gt;
+##end
+#end
+&lt;/table&gt;
+
+&lt;/div&gt;
+
+
+
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_client2"></p>
+  <h2 id="polarion_client7">Displaying AP unit linked Workitems</h2>
+  <div id="polarion_client3" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">&lt;hr&gt;
+#set($projectId =$page.getReference().projectId())
+#set($query = &quot;project.id:$projectId AND type:ap AND  HAS_VALUE:linkedWorkItems&quot;) 
+#set($query1 = &quot;project.id:$projectId AND type:ap&quot;) 
+#set($workitems = $transaction.workItems().search().query(&quot;$query&quot;))
+#set($Awi = $transaction.workItems().search().query(&quot;$query1&quot;))
+#set($users = $transaction.users().search().query(&quot;$query&quot;).getBy())
+&lt;!-- #set($LWI = $transaction.workItems().count().query(&quot;$query&quot;).size()) --&gt;
+&lt;style&gt;
+    #t{
+        padding: 2px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px cyan;
+    }
+    #table{
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        margin-top: 13px;
+        margin-bottom: 13px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        padding: 3px;
+    }
+    .thead th{
+        padding: 10px;
+        color: aliceblue;
+        background: aqua;
+        transition:all .2s ease-in-out;
+    }
+    .thead th:hover{
+        
+        color:aqua;
+        background: black;
+        
+    }
+    .thead td{
+        padding: 10px;
+        background-color: aliceblue;
+    }
+    .thead td:hover{
+        
+        box-shadow: 0px 2px 2px black;
+    }
+    .n{
+        background-color: aliceblue;
+        padding: 2px;
+        border-radius: 10px;
+        transition:all .1s ease-in-out;
+    }
+    .n:hover{
+        box-shadow: 0px 0px 10px cyan;
+
+    }
+&lt;/style&gt;
+
+&lt;h1  class=&quot;n&quot;  align=&quot;center&quot;&gt;AllWorkitems in Ap unit:($Awi.size()) &lt;/h1&gt;
+&lt;h1  class=&quot;n&quot; align=&quot;center&quot;&gt;LinkedWorkitemspresent:($workitems.size()) &lt;/h1&gt;
+
+&lt;div id=&quot;table&quot;&gt;
+&lt;table border=&quot;2&quot; id=&quot;t&quot;&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;thead&quot;&gt;
+&lt;th &gt;ID&lt;/th&gt;
+&lt;th &gt;Title&lt;/th&gt;
+&lt;th &gt;status&lt;/th&gt;
+&lt;th &gt;Assignee&lt;/th&gt;
+&lt;th &gt;Linkedworkitem&lt;/th&gt;
+&lt;th &gt;Created&lt;/th&gt;
+&lt;th &gt;Last-updated&lt;/th&gt;
+&lt;/tr&gt; 
+&lt;/thead&gt;
+#foreach($wi in $workitems )
+
+&lt;tr class=&quot;thead&quot;&gt;
+&lt;td  &gt;$wi.fields().id().render().withLinks()&lt;/td&gt;
+&lt;td style=&quot;text-align: center;&quot; &gt;$wi.fields().title().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().status().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().assignee().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().linkedWorkItems().render().withLinks()&lt;/td&gt;
+&lt;td &gt;$wi.fields().created().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().updated().render()&lt;/td&gt;
+
+
+&lt;/tr&gt;
+#end
+&lt;/table&gt;
+
+&lt;/div&gt;
+
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+    <field id="title">status Ap</field>
+</rich-page>

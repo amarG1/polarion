@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2022-09-22 12:52:17.559 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">GettingAu</h1>
+  <p id="polarion_hardcoded_1">This Page has no content yet</p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2"></p>
+  <div id="polarion_client1" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">
+    &lt;style&gt;
+
+        .maindiv{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            overflow: auto;
+
+            gap: 4rem;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+      .hide {
+        display: none;
+        margin-top: 50px;
+        margin-left: 120px;
+        transition: all 1s ease-in-out;
+        border-radius: 20px;
+      }
+
+      .myDIV:hover + .hide {
+        display: block;
+        color: white;
+        background-color: black;
+        position: absolute;
+        padding: 10px;
+        transition: all 2s ease-in-out;
+      }
+      .myDIV {
+        color: black;
+        background-color: aqua;
+        position: absolute;
+        padding: 10px;
+        border-radius: 20px;
+      }
+      .myDIV:hover {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+      }
+    &lt;/style&gt;
+  
+ 
+    &lt;div class=&quot;maindiv&quot;&gt;
+      &lt;div&gt;
+        &lt;div class=&quot;myDIV&quot;&gt;Hover over me.&lt;/div&gt;
+        &lt;div class=&quot;hide&quot;&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. &lt;br /&gt;
+          Unde doloremque totam veritatis repellendus libero accusamus eaque
+          fugit, iure, obcaecati debitis, &lt;br /&gt;
+          sapiente quibusdam voluptas quaerat illo incidunt odio ex ipsum
+          assumenda?
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div&gt;
+        &lt;div class=&quot;myDIV&quot;&gt;Hover over me.&lt;/div&gt;
+        &lt;div class=&quot;hide&quot;&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. &lt;br /&gt;
+          Unde doloremque totam veritatis repellendus libero accusamus eaque
+          fugit, iure, obcaecati debitis, &lt;br /&gt;
+          sapiente quibusdam voluptas quaerat illo incidunt odio ex ipsum
+          assumenda?
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div&gt;
+        &lt;div class=&quot;myDIV&quot;&gt;Hover over me.&lt;/div&gt;
+        &lt;div class=&quot;hide&quot;&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. &lt;br /&gt;
+          Unde doloremque totam veritatis repellendus libero accusamus eaque
+          fugit, iure, obcaecati debitis, &lt;br /&gt;
+          sapiente quibusdam voluptas quaerat illo incidunt odio ex ipsum
+          assumenda?
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <p id="polarion_hardcoded_3"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+    <field id="title">GettingAu</field>
+</rich-page>

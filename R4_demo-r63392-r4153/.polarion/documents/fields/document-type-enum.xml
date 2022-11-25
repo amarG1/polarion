@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option iconURL="/polarion/icons/default/enums/document_electrical_requirement2.png" id="req_specification" name="Requirements Specification" sortOrder="1"/>
+    <option default="true" iconURL="/polarion/icons/default/enums/document_generic.png" id="generic" name="Generic" sortOrder="2"/>
+    <option iconURL="/polarion/icons/default/enums/document_electrical_requirement.png" id="system_risk_assessment" name="System Risk Assessment" sortOrder="3"/>
+    <option iconURL="/polarion/icons/default/enums/document_changerequest.png" id="validation_plan" name="Validation Summary Plan" sortOrder="4"/>
+    <option iconURL="/polarion/icons/default/enums/document_electrical_requirement2.png" id="user_requirements_specification" name="User Requirements Specification " sortOrder="5"/>
+    <option iconURL="/polarion/icons/default/enums/document_mechanical_requirement2.png" id="functional_requirements_specification" name="Functional Requirements Specification" sortOrder="6"/>
+    <option iconURL="/polarion/icons/default/enums/document_software_requirement2.png" id="system_design_document" name="System Design Document " sortOrder="7"/>
+    <option iconURL="/polarion/icons/default/enums/document_specification.png" id="functional_risk_assessment" name="Functional Risk Assessment " sortOrder="8"/>
+    <option iconURL="/polarion/icons/default/enums/document_mechanical_testcase.png" id="test_plan" name="Validation Protocol" sortOrder="9"/>
+    <option iconURL="/polarion/icons/default/enums/document_package.png" id="data_migration_plan" name="Data Migration Plan" sortOrder="10"/>
+    <option iconURL="/polarion/icons/default/enums/document_task.png" id="gxp_part11_assessment" name="Gxp Applicability Assessment" sortOrder="13"/>
+    <option iconURL="/polarion/icons/default/enums/document_software_requirement2.png" id="qualification_documentation" name="Qualification Documentation" sortOrder="14"/>
+    <option iconURL="/polarion/icons/default/enums/document_test_specification.png" id="use_case_specification" name="Use Case Specification" sortOrder="15"/>
+    <option iconURL="/polarion/icons/default/enums/document_electrical_testcase.png" id="test_case_specification" name="Test Case Specification" sortOrder="16"/>
+    <option iconURL="/polarion/icons/default/enums/document_mechanical_requirement.png" id="cfr_part11" name="21 CFR Part 11 " sortOrder="17"/>
+    <option iconURL="/polarion/icons/default/enums/document_software_testcase.png" id="validation_report" name="Validation Summary Report"/>
+    <option iconURL="/polarion/icons/default/enums/document_test_specification.png" id="testCase" name="Test Case Template"/>
+</enumeration>

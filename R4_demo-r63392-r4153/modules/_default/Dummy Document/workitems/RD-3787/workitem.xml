@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">anuragk@complianceg.com</field>
+    <field id="created">2022-11-07 22:00:50.300 +0530</field>
+    <field id="description" text-type="text/html">test IQ</field>
+    <field id="previousStatus">in_draft</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">in_approval</field>
+    <field id="testtype" type="enum:csv_testtype">unscripted_error_guessing</field>
+    <field id="type">test_script_IQ</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

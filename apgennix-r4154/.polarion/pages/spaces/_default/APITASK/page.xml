@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">111</field>
+    <field id="created">2022-10-20 11:18:48.937 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">APITASK</h1>
+  <div id="polarion_client4" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters"></span>
+  </div>
+  <p id="polarion_hardcoded_1"></p><p id="polarion_client1"></p>
+  <div id="polarion_client2" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">#set($projectId =$page.getReference().projectId())
+#set($project =$projectService.getProject($projectId))
+&lt;style&gt;
+    #main{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+&lt;/style&gt;
+&lt;div id=&quot;main&quot;&gt;
+&lt;div&gt;
+&lt;h1&gt;Projectservice&lt;/h1&gt;
+
+#set($user = $projectService.getUsers())
+&lt;div id=&quot;table&quot;&gt;
+    &lt;table border=&quot;2&quot; id=&quot;t&quot;&gt;
+    &lt;thead&gt;
+    &lt;tr class=&quot;thead&quot;&gt;
+    &lt;th&gt;ID&lt;/th&gt;
+    
+    &lt;th &gt;Title&lt;/th&gt;
+    &lt;/tr&gt; 
+    &lt;/thead&gt;
+    #foreach($u in $user )
+    
+    &lt;tr class=&quot;thead&quot;&gt;
+    &lt;td style=&quot;text-align: center;&quot; &gt;$u.getLoginName()&lt;/td&gt;
+    &lt;td style=&quot;text-align: center;&quot; &gt;$u.getLabel()&lt;/td&gt;    
+    
+    &lt;/tr&gt;
+    #end
+    &lt;/table&gt;
+    
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h1&gt;Trackerservices&lt;/h1&gt;
+&lt;select&gt;
+#set($spaces = $trackerService.getFolderManager().getFolders($projectId))
+#foreach($s in $spaces)
+
+&lt;option value=&quot;&quot;&gt;$s.getName()&lt;/option&gt;
+#set($loc = $s.getName())
+#end
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h1&gt;IModule&lt;/h1&gt;
+&lt;select&gt;
+#set($l = $project.location.getLocation($loc))
+#set($Document = $trackerService.getModuleManager().getModules($project, $l))
+#foreach($d in $Document)
+&lt;option value=&quot;&quot;&gt;$d.getModuleName()&lt;/option&gt;
+    
+#end
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h1&gt;Iworkitem&lt;/h1&gt;
+#set($query = &quot;project.id:$projectId AND type:ap&quot;) 
+#set($workitems = $transaction.workItems().search().query(&quot;$query&quot;))
+
+
+&lt;div id=&quot;table&quot;&gt;
+&lt;table border=&quot;2&quot; id=&quot;t&quot;&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;thead&quot;&gt;
+&lt;th &gt;ID&lt;/th&gt;
+&lt;th &gt;Title&lt;/th&gt;
+&lt;th &gt;status&lt;/th&gt;
+&lt;th &gt;Assignee&lt;/th&gt;
+&lt;th &gt;Linkedworkitem&lt;/th&gt;
+&lt;th &gt;Created&lt;/th&gt;
+&lt;th &gt;Last-updated&lt;/th&gt;
+&lt;/tr&gt; 
+&lt;/thead&gt;
+#foreach($wi in $workitems )
+
+&lt;tr class=&quot;thead&quot;&gt;
+&lt;td  &gt;$wi.fields().id().render().withLinks()&lt;/td&gt;
+&lt;td style=&quot;text-align: center;&quot; &gt;$wi.fields().title().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().status().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().assignee().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().linkedWorkItems().render().withLinks()&lt;/td&gt;
+&lt;td &gt;$wi.fields().created().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().updated().render()&lt;/td&gt;
+
+
+&lt;/tr&gt;
+#end
+&lt;/table&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;h1&gt;Security service&lt;/h1&gt;
+
+#set($u = $projectService.getDataService.getSecurityService.getCurrentUser())
+#$u
+&lt;select&gt;
+#set($g = $projectService.getDataService.getSecurityService.getGlobalRoles())
+#foreach($a in $g)
+&lt;option value=&quot;&quot;&gt;$a&lt;/option &gt;and #end
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;/div&gt;</sub>
+      </sub>
+    </span>
+  </div>
+  <div id="polarion_client5" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters"></span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2"></p>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <p id="polarion_hardcoded_3"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+    <field id="title">APITASK</field>
+</rich-page>

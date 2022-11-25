@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">111</field>
+    <field id="created">2022-09-26 16:00:03.508 +0530</field>
+    <field id="priority">50.0</field>
+    <field id="severity">basic</field>
+    <field id="status">draft</field>
+    <field id="title">Test: shahebaj</field>
+    <field id="type">systemtestcase</field>
+</work-item>

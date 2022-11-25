@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">Ashfaq</field>
+    <field id="created">2022-11-01 13:19:44.222 +0000</field>
+    <field id="linkedWorkItems">
+        <list>
+            <struct>
+                <item id="role">relates_to</item>
+                <item id="workItem">RD-3779</item>
+            </struct>
+        </list>
+    </field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">in_draft</field>
+    <field id="testtype" type="enum:csv_testtype">unscripted_error_guessing</field>
+    <field id="title">test Function Req</field>
+    <field id="type">test_script_IQ</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow initial-action="rework" initial-status="draft" prototype="WorkItem">
+    <transitions>
+        <transition action="reject" from="approved" to="rejected"/>
+        <transition action="reject" from="draft" to="rejected"/>
+        <transition action="rework" from="approved" to="draft"/>
+        <transition action="rework" from="rejected" to="draft"/>
+        <transition action="rework" from="reviewed" to="draft"/>
+        <transition action="approve" from="reviewed" to="approved"/>
+        <transition action="reject" from="reviewed" to="rejected"/>
+        <transition action="review" from="draft" to="reviewed"/>
+    </transitions>
+    <actions>
+        <action id="rework" name="Rework">
+            <cleared>
+                <field name="resolution"/>
+            </cleared>
+        </action>
+        <action id="review" name="Review"/>
+        <action id="approve" name="Approve"/>
+        <action id="reject" name="Reject">
+            <required>
+                <field name="resolution"/>
+            </required>
+        </action>
+    </actions>
+</workflow>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document-workflow-signature>
+    <field id="signatureState">done</field>
+    <field id="signatures">
+        <list>
+            <struct>
+                <item id="signedBy">meeran</item>
+                <item id="signedRevision">7</item>
+                <item id="verdict">signed</item>
+                <item id="verdictComment">8_ Master Test Plans#Master Test Plan#1</item>
+                <item id="verdictTime">2020-07-14 13:54:25.136 +0000</item>
+            </struct>
+        </list>
+    </field>
+    <field id="targetStatusId">approved</field>
+    <field id="transitionDataRevision">371</field>
+</document-workflow-signature>

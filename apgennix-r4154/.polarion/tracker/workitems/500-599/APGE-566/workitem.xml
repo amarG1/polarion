@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="assignee">111</field>
+    <field id="author">admin</field>
+    <field id="created">2022-09-16 12:26:06.360 +0530</field>
+    <field id="linkedWorkItems">
+        <list>
+            <struct>
+                <item id="role">parent</item>
+                <item id="workItem">APGE-565</item>
+            </struct>
+        </list>
+    </field>
+    <field id="previousStatus">verified</field>
+    <field id="priority">50.0</field>
+    <field id="severity">should_have</field>
+    <field id="status">open</field>
+    <field id="title">System Administrator:a</field>
+    <field id="type">ap</field>
+</work-item>

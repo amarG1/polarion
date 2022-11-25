@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document-workflow-signature>
+    <field id="signatureState">done</field>
+    <field id="signatures">
+        <list>
+            <struct>
+                <item id="signedBy">admin</item>
+                <item id="signedRevision">2</item>
+                <item id="verdict">signed</item>
+                <item id="verdictTime">2022-10-28 16:42:59.493 +0530</item>
+            </struct>
+        </list>
+    </field>
+    <field id="targetStatusId">published</field>
+    <field id="transitionDataRevision">2</field>
+</document-workflow-signature>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option id="p_u" name="P_user"/>
+    <option id="p_a" name="P_assignable"/>
+    <option id="p_appr" name="P_approver"/>
+    <option id="p_admin" name="P_admin"/>
+</enumeration>

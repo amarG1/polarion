@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>lsampson</author>
+<created>20150925121027</created>
+<title>pageMacros</title>
+<type>content</type>
+<content><![CDATA[##
+## Macro getDocumentsInSpace 
+##
+#macro(getDocumentsInSpace  $r_Documents $p_ProjectId $space)
+  #if ( $space && $p_ProjectId )
+
+   ## Convert the $space (which will be the Space Title) into its corresponding Space Name ($realSpace below)
+   #set( $realSpace = "" )
+   #foreach( $folder in $trackerService.getFolderManager().getFolders($p_ProjectId) )
+    #if ( $folder.getTitle() && $folder.getTitle().equals($space) )
+     #set( $realSpace = $folder.getName() )
+    #elseif ( $folder.getName().equals($space) )
+     #set( $realSpace = $folder.getName() )
+    #end
+   #end
+  #set( $project = $projectService.getProject($p_ProjectId) )
+  #set ( $allModules=[] )
+    #set( $modulesLocation = $project.location.getLocation($realSpace) )
+    #set( $modules = $trackerService.moduleManager.getModules($project,$modulesLocation) )
+    #if ( $modules )
+      #foreach( $module in $modules )
+        #set( $temp = $allModules.add("$space/$module.id") )
+      #end
+      #set( $r_Documents = "" )
+      #foreach( $document in $allModules )
+        ## set($r_Documents="$r_Documents#if($r_Documents.length() > 0),#end$document")
+        #if ( $document.contains("$templatePattern") )
+         #set( $r_Documents="$r_Documents#if($r_Documents.length() > 0),#end$document" )
+        #end
+      #end
+    #end
+  #end
+#end
+
+##
+## Macro getDocumentNamesInSpace 
+##
+#macro(getDocumentNamesInSpace  $r_Documents $p_ProjectId $space)
+    #if ( $space && $p_ProjectId )
+        #set ( $project = $projectService.getProject($p_ProjectId) )
+        #set ( $allModules=[] )
+        #set( $modulesLocation = $project.location.getLocation($space) )
+        #set( $modules = $trackerService.moduleManager.getModules($project,$modulesLocation) )
+        #foreach( $module in $modules )
+            #set( $temp = $allModules.add("$module.id") )
+        #end
+        #set( $r_Documents = "" )
+        #foreach( $document in $allModules )
+            #set( $r_Documents="$r_Documents#if($r_Documents.length() > 0),#end$document" )
+        #end
+    #end
+#end
+##
+
+
+
+
+#macro (showDocuments)
+
+#getDocumentsInSpace  ($foo_Documents $projectId $page.space.getName() )
+
+<table width=100% cellpadding=4px>
+<tr>
+<th>Document Name</th>
+<th>Type</th>
+<th>Version</th>
+<th>Status</th>
+</tr>
+#foreach ($module in $modules)
+
+
+#set ($iconURL = $module.getType().getProperty("iconURL") )
+#set ($typeIcon = "<img src=$iconURL />" )
+#set ($iconURL = $module.getStatus().getProperty("iconURL") )
+#set ($statusIcon = "<img src=$iconURL />" )
+<tr>
+<td>{document:$module.getModuleName()}</td>
+<td>$typeIcon $!module.getType().getName()</td>
+<td>$!module.getCustomField("version")</td>
+<td>$statusIcon $!module.getStatus().getName()</td>
+</tr>
+#end
+</table>
+#end
+
+#macro(getLiveDocument $docNameWithSpace)
+#set( $iproject = $projectService.getProject("$page.project") )
+#set($docsLocation = $iproject.getLocation())
+#set($modLocation = $iproject.getLocation().append($docNameWithSpace))
+#set($relModLoc = $modLocation.getRelativeLocation($iproject.getLocation()))
+#set($selectedDocument = $trackerService.moduleManager.getModule($iproject, $relModLoc))
+ {document:$selectedDocument.getModuleName()}
+
+#end]]></content>
+</wiki-page>

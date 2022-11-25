@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option id="admin" name="Admin"/>
+    <option id="user" name="User"/>
+    <option id="everyone" name="Everyone"/>
+</enumeration>

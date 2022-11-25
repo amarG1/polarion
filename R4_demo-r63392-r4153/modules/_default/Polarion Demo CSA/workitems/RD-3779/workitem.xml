@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">Ashfaq</field>
+    <field id="created">2022-11-01 13:19:06.110 +0000</field>
+    <field id="previousStatus">in_draft</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">in_draft</field>
+    <field id="title">Function Req</field>
+    <field id="type">functional_requirement</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

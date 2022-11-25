@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field id="PatientRisk" name="Patient Risk" required="true" type="enum:Patient_risk"/>
+    <field id="ImplementationMethod" name="Implementation Method" required="true" type="enum:implementationmethod"/>
+    <field default="0" id="RRR" name="Risk Rating" type="string"/>
+    <field default="NA" id="RT" name="Testing Type" type="string"/>
+</fields>

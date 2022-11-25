@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="ImplementationMethod" type="enum:implementationmethod">12</field>
+    <field id="PatientRisk" type="enum:Patient_risk">L</field>
+    <field id="RRR" type="string">1</field>
+    <field id="RT" type="string">Vendor Audit and Assurance</field>
+    <field id="author">jagadishk@complianceg.com</field>
+    <field id="created">2022-09-13 10:41:34.543 +0000</field>
+    <field id="priority">50.0</field>
+    <field id="rel" multi="true" type="enum:rel">
+        <list>
+            <item>rel1</item>
+        </list>
+    </field>
+    <field id="severity">normal</field>
+    <field id="status">in_draft</field>
+    <field id="title">Test notification_test</field>
+    <field id="type">user_requirement</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

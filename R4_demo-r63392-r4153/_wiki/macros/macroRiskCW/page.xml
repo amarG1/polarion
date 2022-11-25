@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>chad.weis</author>
+<created>20150906170522</created>
+<title>macroRiskCW</title>
+<type>content</type>
+<content><![CDATA[#*
+	harmHazardTable renders the ISO 14971 Harm and Hazard Table Wiki Report - 04/13/2015
+*#
+
+
+#macro (harmHazardTable $query $calcType $wiDescription)
+
+
+#set ($iContext = $trackerService.getTrackerProject($page.project).getContextId() )
+#set( $iEnumType = $polarionTool.typeFactory.getEnumType("p2Occurrence") )
+#set ($enum = $trackerService.getDataService().getEnumerationForEnumId($iEnumType,$iContext) )
+#set ($options = $enum.getAllOptions() )
+#set ($pList = [] )
+
+#set ($iChadsCounter =0) ##CWMOD
+#set ($strChadsOptionNames = "Start:") ##CWMOD
+
+
+#foreach ($option in $options)						##Options pulled from custom enum p2Occurrence
+  #set ($icon = $option.getProperty("iconURL") )
+  #set ($foo = $pList.add("<img src=$icon/> $option.getName()") )	##pList contains Occurance Options up to 5-Extreamly Unlikley
+#end
+
+
+	#set ($harmWorkItems = $trackerService.queryWorkItems($query,"id") )
+	#set ($harmColumn = "Harm_CW")
+	#set ($hazardColumn = "Hazardous Situation_CW")		## ori code CWMOD
+	#set ( $projharm = "" )
+	#set ( $harmText = "" )
+	#set ( $lineCounter = 0 )
+	#set ($doubleQuote = '"')
+	##
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+1.1 Ignore this first table.
+
+
+	## Table Definition
+	##
+	<table border=1 cellpadding=4 width=2000px>
+
+
+	##
+	## Table Headers
+	##
+	<tr>
+	##<th>Line</th>						## ori code CWMOD
+	<th width= 1%>Line</th>					## codeCWMOD
+	<th width= 10%>$harmColumn</th>
+	<th width= 10%>$hazardColumn</th>
+	##<th align=center>Severity_CW</th>			## ori code CWMOD
+	<th align=center width=5%>Severity_CW</th>			## ori code CWMOD
+	<th align=center width=2%>P1 (Pre)_CW</th>
+	<th align=center width=2%>HS P2</th>
+	<th align=center width=3%>P (Pre)</th>
+	##<th align=center>Risk Index (pre)</th>		## ori code CWMOD
+	<th align=center width=2%>Risk Index (pre)</th>		## CWMOD
+	<th width=20%>Mitigating Items</th>
+	<th align=center width=3%>P1 (Post)</th>
+	<th align=center width=5%>P (Post)</th>
+	<th align=center>Risk Index (post)</th>
+	<th width= 20%>Verification / Validation Tests</th>
+	</tr>
+	
+
+	##  Harm Definition Loop
+	##
+
+	#foreach ($wi in $harmWorkItems)
+
+		## Retrieve Harm Instance Information
+
+		#set ($harmId = $wi.getId() )
+		#set ($harmTitle = $wi.getTitle() )
+
+		## Determine Harm Instance Display Text
+
+		#set ( $projharm = $wi.getProjectId() )
+		#set ( $harmText = "${harmText}{workitem:${projharm}/${harmId}| display=long|expand=no}<br/>" )
+
+
+
+
+
+	## Retrieve Risk Severity from work item
+
+		#set ($rSeverity = "")
+                #set ($rSeverityURL = "") 
+		#set ($rSeverity = $wi.getCustomField("harmSeverity") )
+		#set ($rSeverityValue = $rSeverity.getId() )
+		#set ($rSeverityURL = $rSeverity.getProperty("iconURL") )
+                #if ($rSeverityURL != "")
+			#set ($rSeverity = "<img src=${rSeverityURL} /> $!rSeverity.getName()" )
+                	#end
+		#set ($hazardWorkItemsStructs = $wi.getLinkedWorkItemsStructsBack() )
+		#set ($firstHarm = 1)
+
+		
+		##
+		##  Hazard Definition Loop
+		##
+
+		#set ($hazardText = "" )
+
+
+
+
+
+###########################################
+	
+		#foreach ($h_wiStruct in $hazardWorkItemsStructs)
+
+			#set ($linkRole = $h_wiStruct.getLinkRole().getId() )
+			#set ($h_wi = $h_wiStruct.getLinkedItem() )
+
+                        #set ($firstHazard = 1 )
+			
+			#set ($occur_pre = "")
+			#set ($occur_post = "")
+			#set ($detect_pre = "")
+			#set ($detect_post = "")
+			#set ($desc = "")
+			#set ($projh = "")
+			#set ($occur_post_text = "")
+			#set ($occur_pre_text = "")
+			#set ($occur_pre_URL = "")
+			#set ($occur_postValue = "")
+			#set ($occur_preValue = "")
+ 			#set ($occur_post_URL = "")
+                        #set ($pText = "" )
+                        #set ($pText_post = "" )
+			#set ($h_wi_id = $h_wi.getId() )
+			#set ($h_wi_title = $h_wi.getTitle() )
+			#set ($occur_pre = $h_wi.getCustomField("prep1") )
+			#set ($occur_post = $h_wi.getCustomField("postp1") )
+
+			#if ($firstHarm == 1)
+			  #set ($firstHarm = 0)
+			#else
+			  #set ($icon = $wi.getType().getProperty("iconURL") )
+			  #set ($harmText = "<font color=grey>&nbsp&nbsp&nbsp&nbsp<img src=$icon> ~~$harmId - $harmTitle~~</font>")
+			#end
+
+			##
+			##  Hazard instance display text
+			##
+
+			#set ( $projh = $h_wi.getProjectId() )
+			#set ( $hazardText = "${hazardText}{workitem:${projh}/${h_wi_id}| display=long}<br/>" )
+			#set ($h_wi_type = $h_wi.getType().getId() )
+			#set ($desc = $h_wi.getDescription()  )
+			#set ($desc = $h_wi.transformDescriptionForUI($desc)  )
+			#set ($hazardDescription = "")
+			#set ($hazardDescription = $h_wi.renderDescription($desc, null).getContent() )
+			#set ($mitigatingItems = $h_wi.getLinkedWorkItemsBack() )
+			#set ($mitigatingText = "")
+
+			#set ($occur_pre_URL = $occur_pre.getProperty("iconURL") )
+			#set ($occur_preValue = $occur_pre.getId() )
+
+			#if ($occur_pre_URL != "")
+				#set ($occur_pre_text = "<img src=${occur_pre_URL} /> $!occur_pre.getName()" )
+			#end
+
+			#set ($occur_post_URL = $occur_post.getProperty("iconURL") )
+			#set ($occur_postValue = $occur_post.getId() )
+
+			#if ($occur_post_URL != "")
+				#set ($occur_post_text = "<img src=${occur_post_URL} /> $!occur_post.getName()" )
+			#end
+
+			#setP2Value($linkRole)
+			#calcRPL ("mitigateTable" $occur_preValue $occur_postValue $occur_p2_text $rSeverityValue )
+			##
+			##  Mitigation definition loop
+			##
+
+			#if ($mitigatingItems.size() > 0) 
+
+				#foreach ($mit_wi in $mitigatingItems)
+
+					#set ( $proj = $mit_wi.getProjectId() )
+					#set ( $id = $mit_wi.getId() )
+					##
+					##  Mitigation instance display text
+					##
+
+					#set ($mitigatingText = "{workitem:${proj}/${id}|display=long|expand=no}<br/>" )
+					#if ($firstHazard == 1) 			
+						#set ($firstHazard = 0)
+					#else
+						#set ($icon = $h_wi.getType().getProperty("iconURL") )
+				  		#set ($hazardText = "<font color=grey>&nbsp&nbsp&nbsp&nbsp<img src=$icon> ~~${h_wi_id} $h_wi.getTitle()~~</font>")
+					#end
+
+					#if ($h_wi_type == $hazardWI)
+						#set ($testText = "")
+						#set ($tests = $mit_wi.getLinkedWorkItemsBack() )					
+						#foreach ($test in $tests)
+ 							#set ($lastTRs = $testManagementService.getLastTestRecords($test,1) )
+							#foreach ($tr in $lastTRs)
+							  #set ($tr = $lastTR.get(0) )
+							  #set ($trResult = $tr.getResult().getName() )
+							#end
+							#if ($trResult == "" || !$trResult)
+								#set ($trResult = "Not Tested")
+							#end
+							#set ($testText = "${testText}{workitem:$test.getId()|display=long} ($!trResult) <br/> " )
+							#set ($trResult = "")
+						#end
+						#set ($lineCounter = $lineCounter + 1)
+
+						#set ($int = 0)
+
+						#if ($pValue == "1") 
+						#set ($pText =  $listTool.get($pList,$int.valueOf("1") ) )
+						#elseif ($pValue == "2") 
+						#set ($pText =  $listTool.get($pList,$int.valueOf("2") ) )
+						#elseif ($pValue == "3") 
+						#set ($pText =  $listTool.get($pList,$int.valueOf("3")) )
+						#elseif ($pValue == "4") 
+						#set ($pText =  $listTool.get($pList,$int.valueOf("4")) )
+						#elseif ($pValue == "5") 
+						#set ($pText =  $listTool.get($pList,$int.valueOf("5")) )
+						#elseif ($pValue == "0") 
+						#set ($pText =  $listTool.get($pList,$int.valueOf("0")) )
+						#end
+
+						#if ($pValue_post == "1") 
+						#set ($pText_post =  $listTool.get($pList,$int.valueOf("1") ) )
+						#elseif ($pValue_post == "2") 
+						#set ($pText_post =  $listTool.get($pList,$int.valueOf("2") ) )
+ 						#elseif ($pValue_post == "3") 
+	 					#set ($pText_post =  $listTool.get($pList,$int.valueOf("3")) )
+						 #elseif ($pValue_post == "4") 
+						 #set ($pText_post =  $listTool.get($pList,$int.valueOf("4")) )
+						#elseif ($pValue_post == "5") 
+						#set ($pText_post =  $listTool.get($pList,$int.valueOf("5")) )
+						#elseif ($pValue_post == "0") 
+						#set ($pText_post =  $listTool.get($pList,$int.valueOf("0")) )
+						#end
+
+						<tr>
+						<td>$lineCounter</td>
+						<td>$harmText</td>
+						<td>$hazardText</td>
+						<td align=center>$!rSeverity</td>
+						<td align=center>$occur_pre_text</td>
+						<td align=center>$p2Text</td>
+						<td align=center>$!pText</td>
+						<td align=center $bgcolor>$!{retRPL}</td>
+						<td>$mitigatingText</td>
+						<td align=center>$occur_post_text</td>
+						<td align=center>$!pText_post</td>
+						<td align=center $bgcolor_post>$!{retRPL_post}</td>
+						<td>$testText</td>
+						</tr>
+					#end  ##  If ($h_wi_type)
+				
+				#end  ##  End Mitigation Loop
+			#else
+			
+				#set ($lineCounter = $lineCounter + 1)
+				<tr>
+				<td>$lineCounter</td>
+				<td>$harmText</td>
+				<td>$hazardText</td>
+				<td align=center>$!rSeverity</td>
+				<td align=center>$occur_pre_text</td>
+				<td align=center>$p2Text</td>
+				<td align=center>$!pText</td>
+				<td align=center $bgcolor>$!{retRPL}</td>
+				<td align=center></td>
+				<td align=center></td>
+				<td align=center></td>
+				<td align=center></td>
+				<td align=center></td>
+				</tr>
+			#end   ## if mitigatingItems.size() > 0
+
+
+			#set ( $hazardText = "" )
+		#end  ##  End Hazard Loop
+
+		#set ( $harmText = "" )	
+
+	#end  ##  End Harm Loop
+	</table>
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+1.1.1 Here's a second table.
+	#set ( $lineCounterT2 = 0 )
+
+
+	## Table Definition
+	##
+	<table border=1 cellpadding=4 width=1000px>
+
+
+	##
+	## Table Headers
+	##
+	<tr>
+	<th>Line</th>	        ##column1
+	<th>Risk Record</th>    ##column2
+	<th>Harm </th>          ##column3
+	<th>Haz Situation</th>  ##column4
+	<th>Mitigation</th>     ##column5
+	
+	## Use these to add text in the table per line
+	#set ( $colm1counter = "" )
+	#set ( $colm2riskRec = "")
+	#set ( $colm3harm = "" )
+	#set ( $colm4hazSit = "" )
+	#set ( $colm5mit = "" )
+
+        #set ($temp_query = "type:riskRecord AND project.id:$page.project")
+	#set($riskRecordWorkItems=$trackerService.queryWorkItems($temp_query,"id"))
+
+	#foreach ($RRwi in $riskRecordWorkItems)                
+		
+		##get ready to start new line item
+                #set ($lineCounterT2 = $lineCounterT2 + 1)
+
+		## Retrieve RR Instance Information
+		#set ($rrID = $RRwi.getId() )
+		#set ($rrTitle = $RRwi.getTitle() )
+		#set ($colm2riskRec = "$rrID - $rrTitle" )
+
+##########################################################
+##########################################################
+
+
+		
+		##
+		#set ($linkedWorkItemsStructs = $RRwi.getLinkedWorkItemsStructsBack() )  ##gets linked WI structurs, including hm and hz types.
+ 		#foreach ($h_wiStruct in $linkedWorkItemsStructs )
+			##set ($linkRole = $h_wiStruct.getLinkRole().getId() )
+			#set ($linkRole = $h_wiStruct.getLinkRole() )
+			#set ($h_wi = $h_wiStruct.getLinkedItem() )
+			#set ($h_wi_ids = $h_wi.getId() )
+			#set ($h_wi_title = $h_wi.getTitle() )
+			#set ($h_wi_type = $h_wi.getType() )
+			#set ($h_wi_typeId = $h_wi.getType().getId() )
+
+
+			rrID = $rrID 
+			<br/>					
+			linkRole = $linkRole
+			<br/>
+			h_wi = $h_wi
+			<br/>
+			h_wi_ids  = $h_wi_ids 
+			<br/>
+			h_wi_title = $h_wi_title
+			<br/>
+			h_wi_type = $h_wi_type
+			<br/>
+			h_wi_typeId = $h_wi_typeId
+			##<br/>
+
+					
+			#if ($h_wi_typeId == "hm")
+				#set ($colm3harm = "$h_wi_ids - $h_wi_title")
+
+
+			#end  ##  If
+
+
+			#if ($h_wi_typeId == "hs")
+				#set ($colm4hazSit = "$h_wi_ids - $h_wi_title")
+
+				#set ($linkedMitigationStructs = $h_wi.getLinkedWorkItemsStructsBack() )  ##currently, only hs haz mitigations linked to them
+
+				##if ($linkedMitigationStructs.size() > 0)  				
+ 				#foreach ($linkedMitigationStruct in $linkedMitigationStructs  )
+					linkMit: $linkedMitigationStruct 
+					#set ($linkRoleMit = $linkedMitigationStruct.getLinkRole() )
+					#set ($linkRoleMitId = $linkedMitigationStruct.getLinkRole().getId() )
+					#set ($mit_wi = $linkedMitigationStruct.getLinkedItem() )	
+					#set ($mit_wi_id = $linkedMitigationStruct.getId() )	
+					<br/>
+					mit_wi = $mit_wi	
+					<br/>
+					mit_wi_id = $mit_wi_id				
+					<br/>
+					linkRoleMit = #$linkRoleMit
+					<br/>	
+					linkRoleMitId = #$linkRoleMitId
+					<br/>		
+					
+				#end  ##  end foreach $linkedMitigationStruct
+				##end  ##  end sizeof $linkedMitigationStruct
+			#end  ##  If    
+
+		#end  ##end for each $h_wiStruct
+
+
+
+##########################################################
+##########################################################
+
+	<tr>
+	<td> $lineCounterT2 </td>
+	<td> $colm2riskRec </td>            ##Risk Record Info
+	<td> $colm3harm </td>               ##Harm Info
+	<td> $colm4hazSit </td>             ##Haz Sit info
+	<td> $colm5mit </td>
+	</tr>
+
+
+	#end 											
+
+	</table> ##table end	
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+##########################################################
+#end  ##macro HarmHazardTable
+
+
+
+##
+##  Sub Macro Definition Section
+##
+
+#macro (calcRPL $w_calcType $p1occur $p1occur_post $p2occur $severity)
+
+		#set ($retRPL = "")
+		#set ($retRPL_post = "")	
+                #set ($pValue = "")
+                #set ($pValue_post = "")
+		#set ($bgcolor = "")
+		#set ($bgcolor_post = "")
+
+        ## Calculate Combined Probability
+
+
+          #if ($p1occur == "1")
+            #if ($p2occur == "1")
+              #set ($pValue = "1")
+            #elseif ($p2occur == "2")
+              #set ($pValue = "1")
+            #elseif ($p2occur == "3")
+              #set ($pValue = "2")
+            #elseif ($p2occur == "4")
+              #set ($pValue = "2")
+            #elseif ($p2occur == "5")
+              #set ($pValue = "3")
+            #end
+          #elseif ($p1occur == "2") 
+            #if ($p2occur == "1")
+              #set ($pValue = "1")
+            #elseif ($p2occur == "2")
+              #set ($pValue = "1")
+            #elseif ($p2occur == "3")
+              #set ($pValue = "2")
+            #elseif ($p2occur == "4")
+              #set ($pValue = "3")
+            #elseif ($p2occur == "5")
+              #set ($pValue = "3")
+            #end
+          #elseif ($p1occur == "3")
+            #if ($p2occur == "1")
+              #set ($pValue = "2")
+            #elseif ($p2occur == "2")
+              #set ($pValue = "2")
+            #elseif ($p2occur == "3")
+              #set ($pValue = "3")
+            #elseif ($p2occur == "4")
+              #set ($pValue = "4")
+            #elseif ($p2occur == "5")
+              #set ($pValue = "4")
+            #end
+          #elseif ($p1occur == "4")
+            #if ($p2occur == "1")
+              #set ($pValue = "3")
+            #elseif ($p2occur == "2")
+              #set ($pValue = "4")
+            #elseif ($p2occur == "3")
+              #set ($pValue = "4")
+            #elseif ($p2occur == "4")
+              #set ($pValue = "5")
+            #elseif ($p2occur == "5")
+              #set ($pValue = "5")
+            #end
+          #elseif ($p1occur == "5")
+            #if ($p2occur == "1")
+              #set ($pValue = "3")
+            #elseif ($p2occur == "2")
+              #set ($pValue = "4")
+            #elseif ($p2occur == "3")
+              #set ($pValue = "5")
+            #elseif ($p2occur == "4")
+              #set ($pValue = "5")
+            #elseif ($p2occur == "5")
+              #set ($pValue = "5")
+            #end
+          #end
+
+
+          #if ($p1occur_post == "1")
+            #if ($p2occur == "1")
+              #set ($pValue_post = "1")
+            #elseif ($p2occur == "2")
+              #set ($pValue_post = "1")
+            #elseif ($p2occur == "3")
+              #set ($pValue_post = "2")
+            #elseif ($p2occur == "4")
+              #set ($pValue_post = "2")
+            #elseif ($p2occur == "5")
+              #set ($pValue_post = "3")
+            #end
+          #elseif ($p1occur_post == "2") 
+            #if ($p2occur == "1")
+              #set ($pValue_post = "1")
+            #elseif ($p2occur == "2")
+              #set ($pValue_post = "1")
+            #elseif ($p2occur == "3")
+              #set ($pValue_post = "2")
+            #elseif ($p2occur == "4")
+              #set ($pValue_post = "3")
+            #elseif ($p2occur == "5")
+              #set ($pValue_post = "3")
+            #end
+          #elseif ($p1occur_post == "3")
+            #if ($p2occur == "1")
+              #set ($pValue_post = "2")
+            #elseif ($p2occur == "2")
+              #set ($pValue_post = "2")
+            #elseif ($p2occur == "3")
+              #set ($pValue_post = "3")
+            #elseif ($p2occur == "4")
+              #set ($pValue_post = "4")
+            #elseif ($p2occur == "5")
+              #set ($pValue_post = "4")
+            #end
+          #elseif ($p1occur_post == "4")
+            #if ($p2occur == "1")
+              #set ($pValue_post = "3")
+            #elseif ($p2occur == "2")
+              #set ($pValue_post = "4")
+            #elseif ($p2occur == "3")
+              #set ($pValue_post = "4")
+            #elseif ($p2occur == "4")
+              #set ($pValue_post = "5")
+            #elseif ($p2occur == "5")
+              #set ($pValue_post = "5")
+            #end
+          #elseif ($p1occur_post == "5")
+            #if ($p2occur == "1")
+              #set ($pValue_post = "3")
+            #elseif ($p2occur == "2")
+              #set ($pValue_post = "4")
+            #elseif ($p2occur == "3")
+              #set ($pValue_post = "5")
+            #elseif ($p2occur == "4")
+              #set ($pValue_post = "5")
+            #elseif ($p2occur == "5")
+              #set ($pValue_post = "5")
+            #end
+          #end
+
+          #if ($severity == "1") 
+            #if ($pValue == "1")
+              #set ($retRPL = "D" )
+            #elseif ($pValue == "2")
+              #set ($retRPL = "D" )
+            #elseif ($pValue == "3")
+              #set ($retRPL = "D" )
+            #elseif ($pValue == "4")
+              #set ($retRPL = "C" )
+            #elseif ($pValue == "5")
+              #set ($retRPL = "C" )
+            #end
+          #elseif ($severity == "2")
+            #if ($pValue == "1")
+              #set ($retRPL = "D" )
+            #elseif ($pValue == "2")
+              #set ($retRPL = "D" )
+            #elseif ($pValue == "3")
+              #set ($retRPL = "C" )
+            #elseif ($pValue == "4")
+              #set ($retRPL = "C" )
+            #elseif ($pValue == "5")
+              #set ($retRPL = "B" )
+            #end
+          #elseif ($severity == "3")
+            #if ($pValue == "1")
+              #set ($retRPL = "C" )
+            #elseif ($pValue == "2")
+              #set ($retRPL = "C" )
+            #elseif ($pValue == "3")
+              #set ($retRPL = "B" )
+            #elseif ($pValue == "4")
+              #set ($retRPL = "B" )
+            #elseif ($pValue == "5")
+              #set ($retRPL = "A" )
+            #end
+          #elseif ($severity == "4")
+            #if ($pValue == "1")
+              #set ($retRPL = "C" )
+            #elseif ($pValue == "2")
+              #set ($retRPL = "B" )
+            #elseif ($pValue == "3")
+              #set ($retRPL = "B" )
+            #elseif ($pValue == "4")
+              #set ($retRPL = "A" )
+            #elseif ($pValue == "5")
+              #set ($retRPL = "A" )
+            #end
+          #elseif ($severity == "5")
+            #if ($pValue == "1")
+              #set ($retRPL = "B" )
+            #elseif ($pValue == "2")
+              #set ($retRPL = "B" )
+            #elseif ($pValue == "3")
+              #set ($retRPL = "A" )
+            #elseif ($pValue == "4")
+              #set ($retRPL = "A" )
+            #elseif ($pValue == "5")
+              #set ($retRPL = "A" )
+            #end        
+          #end
+
+		#if ($retRPL == "D") 
+		  #set ($bgcolor = 'bgcolor="ltgreen"')
+		#elseif ($retRPL == "C")
+		  #set ($bgcolor = 'bgcolor="yellow"')
+		#elseif ($retRPL == "B")
+		  #set ($bgcolor = 'bgcolor="#e8c979"')
+		#elseif ($retRPL == "A")
+		  #set ($bgcolor = 'bgcolor="red"')
+		#else
+		  #set ($bgcolor = "")
+		#end
+
+          #if ($severity == "1") 
+            #if ($pValue_post == "1")
+              #set ($retRPL_post = "D" )
+            #elseif ($pValue_post == "2")
+              #set ($retRPL_post = "D" )
+            #elseif ($pValue_post == "3")
+              #set ($retRPL_post = "D" )
+            #elseif ($pValue_post == "4")
+              #set ($retRPL_post = "C" )
+            #elseif ($pValue_post == "5")
+              #set ($retRPL_post = "C" )
+            #end
+          #elseif ($severity == "2")
+            #if ($pValue_post == "1")
+              #set ($retRPL_post = "D" )
+            #elseif ($pValue_post == "2")
+              #set ($retRPL_post = "D" )
+            #elseif ($pValue_post == "3")
+              #set ($retRPL_post = "C" )
+            #elseif ($pValue_post == "4")
+              #set ($retRPL_post = "C" )
+            #elseif ($pValue_post == "5")
+              #set ($retRPL_post = "B" )
+            #end
+          #elseif ($severity == "3")
+            #if ($pValue_post == "1")
+              #set ($retRPL_post = "C" )
+            #elseif ($pValue_post == "2")
+              #set ($retRPL_post = "C" )
+            #elseif ($pValue_post == "3")
+              #set ($retRPL_post = "B" )
+            #elseif ($pValue_post == "4")
+              #set ($retRPL_post = "B" )
+            #elseif ($pValue_post == "5")
+              #set ($retRPL_post = "A" )
+            #end
+          #elseif ($severity == "4")
+            #if ($pValue_post == "1")
+              #set ($retRPL_post = "C" )
+            #elseif ($pValue_post == "2")
+              #set ($retRPL_post = "B" )
+            #elseif ($pValue_post == "3")
+              #set ($retRPL_post = "B" )
+            #elseif ($pValue_post == "4")
+              #set ($retRPL_post = "A" )
+            #elseif ($pValue_post == "5")
+              #set ($retRPL_post = "A" )
+            #end
+          #elseif ($severity == "5")
+            #if ($pValue_post == "1")
+              #set ($retRPL_post = "B" )
+            #elseif ($pValue_post == "2")
+              #set ($retRPL_post = "B" )
+            #elseif ($pValue_post == "3")
+              #set ($retRPL_post = "A" )
+            #elseif ($pValue_post == "4")
+              #set ($retRPL_post = "A" )
+            #elseif ($pValue_post == "5")
+              #set ($retRPL_post = "A" )
+            #end        
+          #end
+
+		#if ($retRPL_post == "D") 
+		  #set ($bgcolor_post = 'bgcolor="ltgreen"')
+		#elseif ($retRPL_post == "C")
+		  #set ($bgcolor_post = 'bgcolor="yellow"')
+		#elseif ($retRPL_post == "B")
+		  #set ($bgcolor_post = 'bgcolor="#e8c979"')
+		#elseif ($retRPL_post == "A")
+		  #set ($bgcolor_post = 'bgcolor="red"')
+		#else
+		  #set ($bgcolor_post = "")
+		#end
+
+#end  ## macro calcRPL
+
+
+
+
+
+#macro (setP2Value $linkRole)
+        #set ($int = 0 )
+	#if ($linkRole == "p2Cause1") 
+	  #set ($occur_p2_text = "1")
+          #set ($p2Text = $listTool.get($pList,$int.valueOf("1") ) )
+	#elseif ($linkRole == "p2Cause2") 
+	  #set ($occur_p2_text = "2")
+          #set ($p2Text = $listTool.get($pList,$int.valueOf("2") ) )
+	#elseif ($linkRole == "p2Cause3") 
+	  #set  ($occur_p2_text = "3")
+          #set ($p2Text = $listTool.get($pList,$int.valueOf("3") ) )
+	#elseif ($linkRole == "p2Cause4") 
+	  #set ($occur_p2_text = "4")
+          #set ($p2Text = $listTool.get($pList,$int.valueOf("4") ) )
+	#elseif($linkRole == "p2Cause5") 
+	  #set ($occur_p2_text = "5")
+          #set ($p2Text = $listTool.get($pList,$int.valueOf("5") ) )
+	#end
+
+#end  ## macro setP2Value
+
+]]></content>
+</wiki-page>

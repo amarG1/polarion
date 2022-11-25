@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">Kaushik</field>
+    <field id="created">2022-09-01 13:39:53.036 +0000</field>
+    <field id="previousStatus">in_draft</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">in_approval</field>
+    <field id="teststeps" type="struct:TestSteps">
+        <struct>
+            <item id="keys">
+                <list>
+                    <item>testStep</item>
+                    <item>description</item>
+                    <item>expectedResult</item>
+                </list>
+            </item>
+            <item id="steps">
+                <list>
+                    <struct>
+                        <item id="values">
+                            <list>
+                                <item text-type="text/html">1</item>
+                                <item text-type="text/html">test</item>
+                                <item text-type="text/html">pass</item>
+                            </list>
+                        </item>
+                    </struct>
+                </list>
+            </item>
+        </struct>
+    </field>
+    <field id="testtype" type="enum:csv_testtype">robust_scripted</field>
+    <field id="title">TestIQ</field>
+    <field id="type">test_script_IQ</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

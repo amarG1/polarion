@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<planning>
+    <default-estimate>1d</default-estimate>
+    <workitems-query>PLAN:(*) AND NOT HAS_VALUE:resolution</workitems-query>
+    <workitem-splitting>true</workitem-splitting>
+    <dependency-roles/>
+    <parent-roles>
+        <role>parent</role>
+        <role>implements</role>
+    </parent-roles>
+
+</planning>

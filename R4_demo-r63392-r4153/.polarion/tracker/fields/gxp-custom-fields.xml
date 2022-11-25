@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field id="sysName" name="System Name" required="true" type="string"/>
+    <field id="sysType" name="System Type" required="true" type="string"/>
+    <field id="internalExternalUse" name="Internal / External Use" required="true" type="string"/>
+    <field id="hostedIn" name="Hosted In" required="true" type="string"/>
+    <field id="gxpapp" name="GxP Applicability" required="true" type="string"/>
+    <field description="Specifies the amount of users." id="userQuantity" name="User Quantity" required="true" type="enum:numberOfUsers"/>
+    <field id="gxp_q1" name="Does the system control the quality of product during its development, manufacturing, testing, and/or handling processes?" required="true" type="enum:boolean"/>
+    <field id="gxp_q2" name="Does the system create, modify, maintain, archive, retrieve, or transmit data used to prove the safety, efficacy, and quality of the product formulations?" required="true" type="enum:boolean"/>
+    <field id="gxp_q3" name="Does the system provide information of which decisions are made affecting fitness for the purpose of the product?" required="true" type="enum:boolean"/>
+    <field id="gxp_q4" name="Is the computer system involved in the environmental control processes of facilities used for the manufacture, processing, packaging, holding or distribution of products?" required="true" type="enum:boolean"/>
+    <field id="gxp_q5" name="Is the computer system used in the collection, analysis or storage of data from clinical trials?" required="true" type="enum:boolean"/>
+    <field id="gxp_q6" name="Is the computer system used for distribution of information in the event of a commercial product recall, or a patient follow up of clinical trials?" required="true" type="enum:boolean"/>
+    <field id="gxp_q7" name="Does the system, create, modify, maintain, archive, retrieve, or transmit records that must be available for inspection by a regulatory agency?" required="true" type="enum:boolean"/>
+    <field id="gxp_q8" name="Is the computer system used to produce or process data that may be used in regulatory submissions?" required="true" type="enum:boolean"/>
+    <field id="gxp_q9" name="Does the system generate data or reports that are sent to regulatory agencies?" required="true" type="enum:boolean"/>
+    <field id="21cfr_q1" name="Is the system used to create, modify, maintain, archive, retrieve, or transmit electronic records that are used to satisfy a FDA requirement/guidance? " required="true" type="enum:boolean"/>
+    <field id="21cfr_q2" name="Does the system include the use of electronic signatures?" required="true" type="enum:boolean"/>
+    <field id="21cfr_q3" name="Is Audit Trail used in lieu of an electronic signature to track operator identification? " required="true" type="enum:boolean"/>
+    <field id="gxp_q10" name="Is this a GxP system?" required="true" type="enum:boolean"/>
+    <field id="intendedUseStatement" name="intendedUseStatement" required="true" type="text"/>
+</fields>

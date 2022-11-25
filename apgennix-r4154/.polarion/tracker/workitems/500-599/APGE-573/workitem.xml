@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">waiting</item>
+                <item id="user">111</item>
+            </struct>
+        </list>
+    </field>
+    <field id="author">admin</field>
+    <field id="created">2022-09-20 16:04:47.302 +0530</field>
+    <field id="description" text-type="text/html">vrs</field>
+    <field id="parentid" type="string">APGE-580-Test: new one</field>
+    <field id="previousStatus">draft</field>
+    <field id="priority">50.0</field>
+    <field id="severity">should_have</field>
+    <field id="status">reviewed</field>
+    <field id="title">new one</field>
+    <field id="type">systemrequirement</field>
+</work-item>

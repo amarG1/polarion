@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">Ashfaq</field>
+    <field id="created">2022-10-31 13:08:43.042 +0000</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">in_draft</field>
+    <field id="title">Polarion Demo CSA</field>
+    <field id="type">heading</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

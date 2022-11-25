@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">admin</field>
+    <field id="created">2022-09-14 13:49:43.314 +0530</field>
+    <field id="previousStatus">draft</field>
+    <field id="priority">50.0</field>
+    <field id="resolution">done</field>
+    <field id="resolvedOn">2022-09-15 11:17:30.560 +0530</field>
+    <field id="severity">nice_to_have</field>
+    <field id="status">approved</field>
+    <field id="title">ggdc</field>
+    <field id="type">st</field>
+</work-item>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module-comment>
+    <field id="author">meeran</field>
+    <field id="created">2020-07-14 13:54:25.105 +0000</field>
+    <field id="signatureData">
+        <struct>
+            <item id="targetStatusId">approved</item>
+            <item id="verdict">signed</item>
+            <item id="workflowActionId">mark_approved</item>
+            <item id="workflowSignature">subterra:data-service:objects:/default/CSAR3${DocumentWorkflowSignature}{Module}{moduleFolder}8_ Master Test Plans#Master Test Plan#1</item>
+        </struct>
+    </field>
+    <field id="tags">
+        <list>
+            <item>signatures</item>
+        </list>
+    </field>
+    <field id="text" text-type="text/plain">
+        <![CDATA[done
+]]>
+    </field>
+</module-comment>

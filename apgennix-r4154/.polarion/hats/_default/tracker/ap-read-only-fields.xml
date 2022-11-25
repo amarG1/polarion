@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<read-only>
+    <status id="_create">
+        <field id="description"/>
+    </status>
+
+    <status id="verified">
+        <field id="@all"/>
+        <field id="-user"/>
+        <field id="-pr"/>
+        <field id="-gr"/>
+        <field id="-status"/>
+    </status>
+
+</read-only>

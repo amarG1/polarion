@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>aholton</author>
+<created>20170911212501</created>
+<title>improvedDFMEA</title>
+<type>content</type>
+<content><![CDATA[#*
+DFMEA renders the DFMEA Report - 09/01/2017
+*#
+
+#macro (LinkingWorkItemsInTransaction $wi $childrenString $parentString)
+  ## this macro must be called within the context of a transaction
+  ## $childrenString and $parentString should be in the format of "wiId1,linkRole1;wiId2,linkeRole2;..."
+
+  #set ($tProject = $trackerService.getTrackerProject($page.project))
+
+  #set ($childrenArray = $childrenString.split(";"))
+  #set ($parentArray = $parentString.split(";"))
+
+  ## #foreach ($c in $childrenArray)
+  ##   #foreach ($i in $c.split(","))
+  ##     #if ($velocityCount == 1)
+  ##       #set ($target = $i)
+  ##     #elseif ($velocityCount == 2)
+  ##       #set ($role = $i)
+  ##     #end
+  ##   #end
+  ##   #set ($tWi = $trackerService.getWorkItem($page.project, $target))
+  ##   #set ($linkRoleOpt = $tProject.getWorkItemLinkRoleEnum().wrapOption($role))
+  ##   #if ($tWi.addLinkedItem($wi, $linkRoleOpt, $null, false))
+  ##     Linked $tWi.getId() to $wi.getId() with link role $linkRoleOpt.getId() <br>
+  ##     $tWi.save()
+  ##   #else
+  ##     Link not successful <br>
+  ##   #end
+  ## #end
+  #foreach ($p in $parentArray)
+    #foreach ($i in $p.split(","))
+      #if ($velocityCount == 1)
+        #set ($target = $i)
+      #elseif ($velocityCount == 2)
+        #set ($role = $i)
+      #end
+    #end
+    #set ($tWi = $trackerService.getWorkItem($page.project, $target))
+    #set ($linkRoleOpt = $tProject.getWorkItemLinkRoleEnum().wrapOption($role))
+    #if ($wi.addLinkedItem($tWi, $linkRoleOpt, $null, false))
+      $wi.save()
+    #else
+      Link not successful <br>
+    #end
+  #end
+
+#end
+
+#macro (LinkingWorkItemsInForm $wiId $childrenMap $parentMap $submitText)
+  ## this macro must be called inside <form> tags. This also means you can add additional parameters to the form
+  ## $childrenMap and $parentMap should be in the form of Map<wiId, linkeRole>
+  #set ($childrenString = "")
+  #set ($parentString = "")
+  #foreach ($c in $childrenMap.entrySet())
+    #if ($childrenString == "")
+      #set ($childrenString = "$c.getKey(),$c.getValue()")
+    #else
+      #set ($childrenString = "$childrenString;$c.getKey(),$c.getValue()")
+    #end
+  #end
+  #foreach ($p in $parentMap.entrySet())
+    #if ($parentString == "")
+      #set ($parentString = "$p.getKey(),$p.getValue()")
+    #else
+      #set ($parentString = "$parentString;$p.getKey(),$p.getValue()")
+    #end
+  #end
+
+  <input name='wi' type='text' value='$wiId' style='visibility:hidden; display:none;'>
+  <input name='childrenString' type='text' value='$childrenString' style='visibility:hidden; display:none;'>
+  <input name='parentString' type='text' value='$parentString' style='visibility:hidden; display:none;'>
+  <input type='submit' value='$submitText'>
+
+#end
+
+#macro (hasWorkItemOfLinkRole $workItem $lRole $hasWorkItem)
+    #set ($hasWorkItem = "FALSE")
+    #set($directWILinks = $workItem.getLinkedWorkItemsStructsDirect())
+    #foreach($parent in $directWILinks)
+        #if($parent.getLinkRole().getId().equals($lRole))
+            #set ($hasWorkItem = "TRUE")
+        #end
+    #end
+#end
+
+#macro (harmsOptionList)
+  #set ($harms = $trackerService.queryWorkItems("$page.project AND type:harm", "title"))
+  <select name=harm>
+      <option value=""> --- </option>
+    #foreach ($harm in $harms)
+      <option value="$harm.getProject().getId()/$harm.getId()"> $harm.getId() - $harm.getTitle() </option>
+    #end
+  </select>
+#end
+
+#macro (DFMEATable $query $calcType $wiDescription)
+
+    #set ($racLink = "http://40.70.186.4/polarion/#/project/MedicalDevTemplate/wiki/Reports/xFMEA%20Full%20Risk%20Analysis")
+    #set ($textBoxSize = 40)
+
+    #set($iContext = $trackerService.getTrackerProject($page.project).getContextId() )
+    #set($iEnumType = $polarionTool.typeFactory.getEnumType("p2Occurrence") )
+    #set($enum = $trackerService.getDataService().getEnumerationForEnumId($iEnumType,$iContext) )
+    #set($options = $enum.getAllOptions() )
+    #set($p2List = [] )
+
+    #foreach ($option in $options)
+        #set ($icon = $option.getProperty("iconURL") )
+        #set ($foo = $p2List.add("<img src=$icon/> $option.getName()") )
+    #end
+
+    #set($iContext = $trackerService.getTrackerProject($page.project).getContextId() )
+    #set($iEnumType = $polarionTool.typeFactory.getEnumType("pOccurrence") )
+    #set($enum = $trackerService.getDataService().getEnumerationForEnumId($iEnumType,$iContext) )
+    #set($options = $enum.getAllOptions() )
+    #set($pList = [] )
+
+    #foreach ($option in $options)
+        #set ($icon = $option.getProperty("iconURL") )
+        #set ($foo = $pList.add("<img src=$icon/> $option.getName()") )
+    #end
+
+    ##
+    ## Table Definition
+    ##
+    <table border="1" cellpadding="4" width="2000px">
+    ##
+    ## Table Headers
+    ##
+    <tr>
+    <th rowspan="2" style="background-color: #428DA6;" width="200px"><font color="#FFFFFF">DESIGN FUNCTION</font></th>
+    <th rowspan="2" style="background-color: #428DA6;" width="200px"><font color="#FFFFFF">EFFECT</font></th>
+    ##<th rowspan="2" style="background-color: #5D7B9D;" width="200px"><font color="#FFFFFF">ROOT CAUSE(S)</font></th>
+    ##<th rowspan="2" style="background-color: #5D7B9D;" width="200px"><font color="#FFFFFF">MITIGATION / CONTROL</font></th>
+    <th rowspan="2" style="background-color: #5D7B9D;" width="400px"><font color="#FFFFFF">ROOT CAUSE(S) and MITIGATIONS / CONTROLS</font></th>
+    <th colspan="4" style="background-color: #5D7B9D;" align="center"><font color="#FFFFFF">PRE-MITIGATION</font></th>
+    <th colspan="3" style="background-color: #5D7B9D;" align="center"><font color="#FFFFFF">POST-MITIGATION</font></th>
+    </tr>
+
+    <tr>
+    <th style="background-color: #5D7B9D;" width="90px" align="center"><font color="#FFFFFF">SEV</font></th>
+    <th style="background-color: #5D7B9D;" width="90px" align="center"><font color="#FFFFFF">Occurrence</font></th>
+    <th style="background-color: #5D7B9D;" width="90px" align="center"><font color="#FFFFFF">RISK INDEX</font></th>
+    <th style="background-color: #5D7B9D;" width="200px"><font color="#FFFFFF">OCCURRENCE RATIONAL</font></th>
+    <th style="background-color: #5D7B9D;" width="90px" align="center"><font color="#FFFFFF">Occurrence</font></th>
+    <th style="background-color: #5D7B9D;" width="90px" align="center"><font color="#FFFFFF">RISK INDEX</font></th>
+    <th style="background-color: #5D7B9D;" width="200px"><font color="#FFFFFF">OCCURRENCE RATIONAL</font></th>
+    </tr>
+
+    ##
+    ##  User Need Definition Loop
+    ##
+
+    ##  Populate the User Need list
+    #set($int = 0)	
+    #set($unWorkItems = $trackerService.queryWorkItems($query, "id") )
+    #set($projHazard = "")
+    #set($hazardText = "")
+
+    #set($unText = "")
+    #set($l3Role = "analyzed_by")
+    #set ($hsLinkRole = "evaluates")
+    #set($causeLinkRole = "causes")
+    #set ($mitigationLinkRole = "mitigates")
+
+    #foreach ($unWi in $unWorkItems)
+      #set($unText = "")
+      #set($hazardText = "")
+      #set ($causalText = "")
+      #set ($FMEASeverity = "")
+      #set ($FMEAOccurPre_text = "")
+      #set ($mitigatingText = "")
+      #set ($occurrenceRational = "")
+      #set($postOccurrenceRational = "")
+      #set ($FMEAOccurPost_text = "")
+      #set ($retRPL = "")
+      #set ($bgcolor = "")
+      #set ($retRPL_post = "")
+      #set ($bgcolor_post = "")
+      #set ($casualMitigatingText = "")
+      
+      #set ($unText = "{workitem:$unWi.getProject().getId()/$unWi.getId()|display=long|expand=no}<br>")
+
+      #set ($hsItemQuery = "linkedWorkItems:$hsLinkRole=$unWi.getProject().getId()/$unWi.getId()")
+      #set ($hsWorkItems = $trackerService.queryWorkItems($hsItemQuery, "id") )
+      
+      #if ($hsWorkItems.size() > 0)
+        #foreach ($hsWi in $hsWorkItems)
+          #set ($causalText = "")
+          #set ($FMEASeverity = "")
+          #set ($FMEAOccurPre_text = "")
+          #set ($FMEAOccurPost_text = "")
+          #set ($occurrenceRational = "")
+          #set($postOccurrenceRational = "")
+          #set ($mitigatingText = "")
+          #set ($retRPL = "")
+          #set ($bgcolor = "")
+          #set ($retRPL_post = "")
+          #set ($bgcolor_post = "")
+          #set ($causalMitigatingText = "")
+          
+          #set ($hazardText = "{workitem:$hsWi.getProject().getId()/$hsWi.getId()| display=long|expand=no}")
+          #set ($causeQuery = "linkedWorkItems:$causeLinkRole=$hsWi.getProject().getId()/$hsWi.getId()")
+          #set ($causeWorkItems = $trackerService.queryWorkItems($causeQuery, "id"))
+
+          ## getting causes and setting $causalText
+          #foreach ($causeWi in $causeWorkItems)
+            #set ($causalText = "$causalText {workitem:$causeWi.getProject().getId()/$causeWi.getId()|display=long|expand=no}<br/>")
+            #set ($causalMitigatingText = "$causalMitigatingText <tr style='border-bottom: 1px solid #ddd;'> <td> {workitem:$causeWi.getProject().getId()/$causeWi.getId()|display=long|expand=no} </td> <td>")
+
+            #set ($mitigationQuery = "linkedWorkItems:$mitigationLinkRole=$causeWi.getProject().getId()/$causeWi.getId()")
+            #set ($mitigationWorkItems = $trackerService.queryWorkItems($mitigationQuery, "id"))
+            #foreach ($mitigationWi in $mitigationWorkItems)
+              #set ($causalMitigatingText = "$causalMitigatingText {workitem:$mitigationWi.getProject().getId()/$mitigationWi.getId()|display=long|expand=no}<br/>")
+              #set ($mitigatingText = "$mitigatingText {workitem:$mitigationWi.getProject().getId()/$mitigationWi.getId()|display=long|expand=no}<br/>")
+            #end
+            #set ($causalMitigatingText = "$causalMitigatingText </tr>")
+          #end
+
+          ## setting $FMEASeverity
+          #if($hsWi.getValue("FMEASeverity"))
+              #set ($sevEnum = $hsWi.getValue("FMEASeverity"))
+              #if ($sevEnum.getName())
+                #if ($sevEnum.getProperty("iconURL") != "")
+                    #set ($FMEASeverity = "<img src=$sevEnum.getProperty('iconURL') /> $sevEnum.getName()" )
+                #else
+                    #set ($FMEASeverity = "$sevEnum.getName()")
+                #end
+              #else
+                #set ($FMEASeverity = "$sevEnum.getId()")
+              #end
+          #end
+
+          ## setting $FMEAOccurPre
+          #if($hsWi.getValue("FMEAOccurPre"))
+              #set ($preEnum = $hsWi.getValue("FMEAOccurPre"))
+              #if ($preEnum.getName())
+                #if ($preEnum.getProperty("iconURL") != "")
+                    #set ($FMEAOccurPre_text = "<img src=$preEnum.getProperty('iconURL') /> $preEnum.getName()" )
+                #else
+                    #set ($FMEAOccurPre_text = "$preEnum.getName()")
+                #end
+              #else
+                #set ($FMEAOccurPre_text = "$preEnum.getId()")
+              #end
+          #end
+
+          ## setting $retRPL
+          #set ($retRPL = "")
+          #set ($bgcolor = "")
+          #calculateRiskIndex($hsWi.getValue("FMEASeverity").getId() $hsWi.getValue("FMEAOccurPre").getId() $retRPL $bgcolor)
+
+          ## setting $occurrenceRational
+          #set ($occurrenceRational = $hsWi.getValue("occurrenceRational").getContent())
+
+          ## setting $FMEAOccurPost
+          #if($hsWi.getValue("FMEAOccurPost"))
+              #set ($postEnum = $hsWi.getValue("FMEAOccurPost"))
+              #if ($postEnum.getName())
+                #if ($postEnum.getProperty("iconURL") != "")
+                    #set ($FMEAOccurPost_text = "<img src=$postEnum.getProperty('iconURL') /> $postEnum.getName()" )
+                #else
+                    #set ($FMEAOccurPost_text = "$postEnum.getName()")
+                #end
+              #else
+                #set ($FMEAOccurPost_text = "$postEnum.getId()")
+              #end
+          #end
+
+          ## setting $retRPL_post
+          #set ($retRPL_post = "")
+          #set ($bgcolor_post = "")
+          #calculateRiskIndex($hsWi.getValue("FMEASeverity").getId() $hsWi.getValue("FMEAOccurPost").getId() $retRPL_post $bgcolor_post)
+
+          ## setting $postOccurrenceRational
+          #set($postOccurrenceRational = $hsWi.getCustomField("postOccurrenceRational").getContent())
+          
+          <tr>
+          <td>$!unText</td>
+          <td>$!hazardText 
+          <img src="https://partners.polarion.com/polarion/ria/images/control/edit.gif" onclick="toggleDiv('editHsDiv-$unWi.getId()-$hsWi.getId()')" title="Edit Hazardous Situation User Safety Information">
+            <div id="editHsDiv-$unWi.getId()-$hsWi.getId()" style="display:none;">
+              <form method="post">
+              #set ($harmsQuery = "backlinkedWorkItems:causes=$hsWi.getProject().getId()/$hsWi.getId()")
+              #set ($harms = $trackerService.queryWorkItems($harmsQuery, "title"))
+              <table>
+              <tr>
+              <td> Harms: </td>
+              <td>
+              #foreach ($harm in $harms)
+                $harm.getId() - $harm.getTitle() <br>
+              #end
+              #harmsOptionList()
+              </td>
+              </tr>
+              </table> <br>
+              Related to User Safety? 
+              #if ($hsWi.getValue("userSafety").getId() == "1")
+                <input type="checkbox" name="userSafety" checked> <br>
+              #else
+                <input type="checkbox" name="userSafety"> <br>
+              #end
+              <i> Hazardous Situations related to user safety will show up in the <a href="$racLink" target="_blank"> Risk Analysis Report </a></i><br>
+              <input name='hs' type='text' value='$hsWi.getProject().getId()/$hsWi.getId()' style='visibility:hidden; display:none;'>
+              <input type="submit" value="Save">
+              </form>
+            </div>
+          </td>
+          ## <td>
+          ##   $!causalText
+          ##   <img src="https://partners.polarion.com/polarion/ria/images/control/tablePlus.png" onclick="toggleDiv('createCauseDiv-$unWi.getId()-$hsWi.getId()')" title="Create new Root Cause">
+          ##   ## <button onclick="toggleDiv('createHsDiv$unWi.getId()')"> New HS </button>
+          ##   <div id="createCauseDiv-$unWi.getId()-$hsWi.getId()" style="display:none;">
+          ##     <form method="post">
+          ##       #set ($parentMap = $objectFactory.newMap())
+          ##       $!parentMap.put($hsWi.getId(), "causes")
+          ##       Title: <input type="text" name="causeTitle">
+          ##       #LinkingWorkItemsInForm("" $objectFactory.newMap() $parentMap "Create Root Cause")
+          ##     </form>
+          ##   </div>
+          ## </td>
+          ##<td>$!mitigatingText</td>
+          <td><table> 
+            $causalMitigatingText 
+            <tr><td colspan=2>
+              <img src="https://partners.polarion.com/polarion/ria/images/control/tablePlus.png" onclick="toggleDiv('createCauseDiv-$unWi.getId()-$hsWi.getId()')" title="Create new Root Cause">
+              ## <button onclick="toggleDiv('createHsDiv$unWi.getId()')"> New HS </button>
+              <div id="createCauseDiv-$unWi.getId()-$hsWi.getId()" style="display:none;">
+                <form method="post">
+                  #set ($parentMap = $objectFactory.newMap())
+                  $!parentMap.put($hsWi.getId(), "causes")
+                  Title: <input type="text" size=$textBoxSize name="causeTitle">
+                  #LinkingWorkItemsInForm("" $objectFactory.newMap() $parentMap "Create Root Cause")
+                </form>
+              </div>
+            </td></tr>
+          </table></td>
+          <td align="center">$!FMEASeverity</td>
+          <td align="center">$!FMEAOccurPre_text</td>
+          <td align="center" $bgcolor>$!{retRPL}</td>
+          <td>$!occurrenceRational</td>
+          <td align="center">$!FMEAOccurPost_text</td>
+          <td align="center" $bgcolor_post>$!{retRPL_post}</td>
+          <td>$!postOccurrenceRational</td>
+          </tr>	        
+
+          #set ($unText = "")
+        #end
+      #end
+      #set($hazardText = "")
+      #set ($causalText = "")
+      #set ($FMEASeverity = "")
+      #set ($FMEAOccurPre_text = "")
+      #set ($mitigatingText = "")
+      
+        <tr>
+        <td>$!unText</td>
+        <td>
+          <img src="https://partners.polarion.com/polarion/ria/images/control/tablePlus.png" onclick="toggleDiv('createHsDiv-$unWi.getId()')" title="Create new Hazardous Sitaution">
+          ## <button onclick="toggleDiv('createHsDiv$unWi.getId()')"> New Hazard Situation </button>
+          <div id="createHsDiv-$unWi.getId()" style="display:none;">
+            <form method="post">
+            #set ($parentMap = $objectFactory.newMap())
+            $!parentMap.put($unWi.getId(), "evaluates")
+            Title: <input type="text" size=$textBoxSize name="hazardSituationTitle">
+            #LinkingWorkItemsInForm("" $objectFactory.newMap() $parentMap "Create New Hazardous Situation")
+            </form>
+          </div>
+        </td>
+        ##<td>$!causalText</td>
+        ##<td align="center"></td>
+        <td align="center"></td>
+        <td align="center"></td>
+        <td align="center"></td>
+        <td></td>
+        <td></td>
+        <td align="center"></td>
+        <td align="center"></td>
+        <td></td>
+        </tr>	        
+    #end
+
+
+
+
+
+    </table>
+
+#end  ##macro HarmHazardTable
+
+#macro (calculateRiskIndex $severity $pValue $retRPL $color)
+
+	#if ($severity == "1" || $severity == "6" || $severity == "11")
+		#if ($pValue == "1" || $pValue == "6" || $pValue == "11")
+		  #set ($retRPL = "D" )
+		#elseif ($pValue == "2" || $pValue == "7" || $pValue == "12")
+		  #set ($retRPL = "D" )
+		#elseif ($pValue == "3" || $pValue == "8" || $pValue == "13")
+		  #set ($retRPL = "D" )
+		#elseif ($pValue == "4" || $pValue == "9" || $pValue == "14")
+		  #set ($retRPL = "C" )
+		#elseif ($pValue == "5" || $pValue == "10" || $pValue == "15")
+		  #set ($retRPL = "C" )
+		#end
+  #elseif ($severity == "2" || $severity == "7" || $severity == "12")
+    #if ($pValue == "1" || $pValue == "6" || $pValue == "11")
+      #set ($retRPL = "D" )
+		#elseif ($pValue == "2" || $pValue == "7" || $pValue == "12")
+		  #set ($retRPL = "D" )
+    #elseif ($pValue == "3" || $pValue == "8" || $pValue == "13")
+		  #set ($retRPL = "C" )
+    #elseif ($pValue == "4" || $pValue == "9" || $pValue == "14")
+		  #set ($retRPL = "C" )
+    #elseif ($pValue == "5" || $pValue == "10" || $pValue == "15")
+		  #set ($retRPL = "B" )
+		#end
+	#elseif ($severity == "3" || $severity == "8" || $severity == "13")
+		#if ($pValue == "1" || $pValue == "6" || $pValue == "11")
+		  #set ($retRPL = "C" )
+		#elseif ($pValue == "2" || $pValue == "7" || $pValue == "12")
+		  #set ($retRPL = "C" )
+    #elseif ($pValue == "3" || $pValue == "8" || $pValue == "13")
+		  #set ($retRPL = "B" )
+    #elseif ($pValue == "4" || $pValue == "9" || $pValue == "14")
+		  #set ($retRPL = "B" )
+    #elseif ($pValue == "5" || $pValue == "10" || $pValue == "15")
+		  #set ($retRPL = "A" )
+		#end
+  #elseif ($severity == "4" || $severity == "9" || $severity == "14")
+		#if ($pValue == "1" || $pValue == "6" || $pValue == "11")
+		  #set ($retRPL = "C" )
+		#elseif ($pValue == "2" || $pValue == "7" || $pValue == "12")
+		  #set ($retRPL = "B" )
+    #elseif ($pValue == "3" || $pValue == "8" || $pValue == "13")
+		  #set ($retRPL = "B" )
+    #elseif ($pValue == "4" || $pValue == "9" || $pValue == "14")
+		  #set ($retRPL = "A" )
+    #elseif ($pValue == "5" || $pValue == "10" || $pValue == "15")
+		  #set ($retRPL = "A" )
+		#end
+	#elseif ($severity == "5" || $severity == "10" || $severity == "15")
+		#if ($pValue == "1" || $pValue == "6" || $pValue == "11")
+		  #set ($retRPL = "B" )
+		#elseif ($pValue == "2" || $pValue == "7" || $pValue == "12")
+		  #set ($retRPL = "B" )
+    #elseif ($pValue == "3" || $pValue == "8" || $pValue == "13")
+		  #set ($retRPL = "A" )
+    #elseif ($pValue == "4" || $pValue == "9" || $pValue == "14")
+		  #set ($retRPL = "A" )
+    #elseif ($pValue == "5" || $pValue == "10" || $pValue == "15")
+		  #set ($retRPL = "A" )
+		#end
+	#end
+
+	#if ($retRPL == "D")
+		#set ($color = 'bgcolor="#58FF59"')
+	#elseif ($retRPL == "C")
+		#set ($color = 'bgcolor="#57ABFF"')
+	#elseif ($retRPL == "B")
+		#set ($color = 'bgcolor="#FFFF59"')
+	#elseif ($retRPL == "A")
+		#set ($color = 'bgcolor="#FF5959"')
+	#else
+		#set ($color = "")
+	#end
+
+#end  ## macro calcRPL
+
+#macro (tableTransactions)
+
+  #set ($dq = '"')
+  
+  #set ($debugMode = false)
+  #if ($request.getParameter("wi") == "")
+    #set ($tProject = $trackerService.getTrackerProject($page.project))
+  
+    $transactionService.beginTx()
+    #set ($revert = $debugMode)
+    
+    #set ($newWi = $trackerService.createWorkItem($projectService.getProject($page.project)))
+    #if ($request.getParameter("hazardSituationTitle") != "")
+      #set ($existing = $trackerService.queryWorkItems("project.id:$page.project AND type:hazardSituation AND title:$dq$request.getParameter('hazardSituationTitle')$dq", "id"))
+  
+      #if ($existing.size() > 0)
+        #set ($revert = true)
+        The following hazardous situations already exist in this project with the same title: <br>
+        #foreach ($e in $existing)
+          {workitem:$e.getProject().getId()/$e.getId()|display=long} <br>
+        #end
+      #end
+      
+      $!newWi.setTitle($request.getParameter("hazardSituationTitle"))
+      $!newWi.setType($tProject.getWorkItemTypeEnum().wrapOption("hazardSituation"))
+    #elseif ($request.getParameter("causeTitle") != "")
+      #set ($existing = $trackerService.queryWorkItems("project.id:$page.project AND type:failureEffect AND title:$dq$request.getParameter('causeTitle')$dq", "id"))
+      
+      #if ($existing.size() > 0)
+        #set ($revert = true)
+        The following root causes already exist in this project with the same title: <br>
+        #foreach ($e in $existing)
+          {workitem:$e.getProject().getId()/$e.getId()|display=long}
+        #end
+      #end
+  
+      $!newWi.setTitle($request.getParameter("causeTitle"))
+      $!newWi.setType($tProject.getWorkItemTypeEnum().wrapOption("causeEffect"))
+      
+    #else
+      #set ($revert = true)
+      You must enter a title!
+    #end
+    
+    $!newWi.save()
+    #LinkingWorkItemsInTransaction($newWi $request.getParameter("childrenString") $request.getParameter("parentString"))
+    $transactionService.endTx($revert)
+  #end
+  
+  #if ($request.getParameter("hazardSituation") != "")
+    $transactionService.beginTx()
+    #set ($hsWi = $trackerService.findWorkItem("", $request.getParameter("hazardSituation")))
+  
+    #if ($request.getParameter("userSafety") == "on")
+      #if (!$hsWi.getValue("userSafety") || $hsWi.getValue("userSafety").getId() != "1")
+        $hsWi.setValue("userSafety", $hsWi.getEnumerationOptionForField("userSafety", "1"))
+      #end
+    #elseif ($request.getParameter("userSafety") == "" || !$request.getParameter("userSafety"))
+      #if ($hsWi.getValue("userSafety").getId() == "1")
+        $hsWi.setValue("userSafety", $hsWi.getEnumerationOptionForField("userSafety", "2"))
+      #end
+    #end
+  
+    #if ($request.getParameter("harm") != "")
+      #set ($harmWi = $trackerService.findWorkItem("", $request.getParameter("harm")))
+      #set ($tProject = $trackerService.getTrackerProject($page.project))
+      #set ($linkRoleOpt = $tProject.getWorkItemLinkRoleEnum().wrapOption("causes"))
+      #if ($hsWi.addLinkedItem($harmWi, $linkRoleOpt, $null, false))
+        Linked $hsWi.getId() to $harmWi.getId() with link role $linkRoleOpt.getId() <br>
+      #else
+        Link not successful <br>
+      #end
+    #end
+  
+    $hsWi.save()
+    $transactionService.endTx($debugMode)
+  #end
+
+#end
+
+
+<script>
+function toggleDiv(divName) {
+    var x = document.getElementById(divName);
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>]]></content>
+</wiki-page>

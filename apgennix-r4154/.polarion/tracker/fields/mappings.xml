@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+  <mapping id="country_-__states" from="enum:country" to="enum:states" name="country -&gt; states">
+    <item from="2" to="8"/>
+    <item from="2" to="7"/>
+    <item from="1" to="1"/>
+    <item from="3" to="4"/>
+    <item from="3" to="5"/>
+    <item from="3" to="6"/>
+    <item from="1" to="2"/>
+    <item from="1" to="3"/>
+    <item from="2" to="9"/>
+  </mapping>
+</mappings>

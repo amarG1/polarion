@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2022-09-21 10:36:48.820 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">spaces of Project</h1>
+  <div id="polarion_client3" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters"></span>
+  </div>
+  <p id="polarion_hardcoded_1"></p><p id="polarion_1"></p>
+  <div id="polarion_client7" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">&lt;hr&gt;
+#set($projectId =$page.getReference().projectId())
+#set($witype =$pageParameters.WorkItems_Type.toLucene())
+#set($query = &quot;project.id:$projectId AND type:$witype AND HAS_VALUE:linkedWorkItems&quot;) 
+#set($query1 = &quot;project.id:$projectId AND type:ap&quot;) 
+#set($workitems = $transaction.workItems().search().query(&quot;$query&quot;))
+#set($Awi = $transaction.workItems().search().query(&quot;$query1&quot;))
+#set($users = $transaction.users().search().query(&quot;$query&quot;).getBy())
+&lt;!-- #set($LWI = $transaction.workItems().count().query(&quot;$query&quot;).size()) --&gt;
+&lt;style&gt;
+    #table{
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        margin-top: 13px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    tr th{
+        color: aliceblue;
+        background: black;
+        transition:all .2s ease-in-out;
+    }
+    tr th:hover{
+        
+        color:aqua;
+        background: grey;
+        
+    }
+&lt;/style&gt;
+
+##&lt;h1 align=&quot;center&quot;&gt;AllWorkitems in Ap unit:($Awi.size()) &lt;/h1&gt;
+##&lt;h1 align=&quot;center&quot;&gt;LinkedWorkitemspresent:($workitems.size()) &lt;/h1&gt;
+
+&lt;div id=&quot;table&quot;&gt;
+&lt;table border=&quot;2&quot;&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;thead&quot;&gt;
+&lt;th &gt;ID&lt;/th&gt;
+&lt;th &gt;Title&lt;/th&gt;
+&lt;th &gt;status&lt;/th&gt;
+&lt;th &gt;Assignee&lt;/th&gt;
+&lt;th &gt;Linkedworkitem&lt;/th&gt;
+&lt;th &gt;Created&lt;/th&gt;
+&lt;th &gt;Last-updated&lt;/th&gt;
+&lt;/tr&gt; 
+&lt;/thead&gt;
+#foreach($wi in $workitems )
+
+&lt;tr&gt;
+&lt;td  &gt;$wi.fields().id().render()&lt;/td&gt;
+&lt;td style=&quot;text-align: center;&quot; &gt;$wi.fields().title().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().status().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().assignee().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().linkedWorkItems().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().created().render()&lt;/td&gt;
+&lt;td &gt;$wi.fields().updated().render()&lt;/td&gt;
+
+
+&lt;/tr&gt;
+#end
+&lt;/table&gt;
+
+&lt;/div&gt;
+
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_client5"></p>
+  <div id="polarion_client6" class="polarion-rp-widget-part" data-widget="com.polarion.pageParametersForm">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title">Workitems</sub>
+      <sub id="content">
+        <sub>WorkItems_Type</sub>
+      </sub>
+      <sub id="width">500</sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_client1"></p>
+  <div id="polarion_client2" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">
+&lt;style&gt;
+    .main{
+        background-color: antiquewhite;
+        margin-top: 15px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .label{
+        padding: 12px;
+        background-color: aquamarine;
+        border-radius: 20px;
+    }
+    select{
+        cursor: pointer;
+        color: cyan;
+        background-color: black;
+        border-radius: 10px;
+        padding: 2px;
+    }
+    
+&lt;/style&gt;
+&lt;div class=&quot;main&quot;&gt;
+&lt;div class=&quot;label&quot;&gt;   
+&lt;label &gt;Spaces:&lt;/label&gt;
+&lt;select &gt;
+    &lt;option &gt;--------&lt;/option&gt;
+    &lt;option &gt;#Allspaces&lt;/option&gt;
+    
+&lt;/select&gt;
+&lt;/div&gt; 
+
+
+
+&lt;div class=&quot;label&quot;&gt;
+&lt;label for=&quot;&quot;&gt;Document:&lt;/label&gt;
+&lt;select name=&quot;&quot; id=&quot;&quot;&gt;
+    &lt;option &gt;--------&lt;/option&gt;
+    &lt;option value=&quot;&quot;&gt;#Alldocuments&lt;/option&gt;
+
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+
+
+ 
+#macro(Allspaces)
+#set($pid = $page.getReference.projectId())
+#set($spaces = $trackerService.getFolderManager().getFolders($pid))
+#foreach($s in $spaces)
+&lt;option value=&quot;&quot;&gt;$s.getName()&lt;/option&gt;
+
+#end
+#end
+
+#macro(Alldocuments)
+#set($pid = $page.getReference.projectId())
+#set($spaces = $trackerService.getFolderManager().getFolders($pid))
+#foreach($s in $spaces)
+
+#set($loc=$s.getName())
+
+#set($p = $projectService.getProject($pid))
+#set($l = $p.location.getLocation($loc))
+ 
+#set($Document = $trackerService.getModuleManager().getModules($p, $l))
+#foreach($d in $Document)
+&lt;option value=&quot;&quot;&gt;$d.getModuleName()&lt;/option&gt;
+    
+#end
+#end
+#end
+
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2"></p>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <p id="polarion_hardcoded_3"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<span id="polarion-rp-parameters">
+  <sub id="WorkItems_Type" data-label="WorkItems Type" data-type="Enumeration">
+    <sub id="values">
+      <sub>st</sub>
+      <sub>softwaretestcase</sub>
+      <sub>ap</sub>
+      <sub>changerequest</sub>
+      <sub>issue</sub>
+      <sub>risk</sub>
+      <sub>ss</sub>
+      <sub>softwarerequirement</sub>
+      <sub>sr</sub>
+      <sub>systemrequirement</sub>
+      <sub>systemtestcase</sub>
+      <sub>task</sub>
+      <sub>testcase</sub>
+      <sub>unittestcase</sub>
+      <sub>workpackage</sub>
+    </sub>
+    <sub id="enumId">workitem-type</sub>
+    <sub id="allowNoValue">false</sub>
+    <sub id="allowMultipleValues">true</sub>
+    <sub id="loadForAllTypes">true</sub>
+  </sub>
+</span>]]>
+    </field>
+    <field id="title">spaces of Project</field>
+</rich-page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option id="application" name="Application"/>
+    <option id="backend_process" name="Backend Process"/>
+    <option id="database" name="Database"/>
+    <option id="desktop_Client_software" name="Desktop/Client Software"/>
+    <option id="hardware" name="Hardware"/>
+    <option id="interface" name="Interface"/>
+    <option id="security" name="Security"/>
+    <option id="tOther" name="Other"/>
+</enumeration>

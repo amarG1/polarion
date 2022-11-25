@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-run-workflow-signature>
+    <field id="signatureState">done</field>
+    <field id="signatures">
+        <list>
+            <struct>
+                <item id="signedBy">admin</item>
+                <item id="signedRevision">692</item>
+                <item id="verdict">signed</item>
+                <item id="verdictTime">2022-09-15 15:12:49.803 +0530</item>
+            </struct>
+        </list>
+    </field>
+    <field id="targetStatusId">passed</field>
+    <field id="transitionDataRevision">692</field>
+</test-run-workflow-signature>

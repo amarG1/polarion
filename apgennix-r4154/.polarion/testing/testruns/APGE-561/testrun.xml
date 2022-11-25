@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-run>
+    <field id="author">admin</field>
+    <field id="created">2022-09-15 13:33:43.143 +0530</field>
+    <field id="description" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 26 Z&amp;aacute;ř 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;span style="font-style: italic;"&gt;Click "Properties" and provide a short description of the software being tested and the test design itself.&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="environmentDescription" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 27 Sep 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;hello&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="finishedOn">2022-09-15 15:12:49.802 +0530</field>
+    <field id="goal" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 26 Z&amp;aacute;ř 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;span style="font-style: italic;"&gt;Describe the hi-level goals of this test and pass/fail criteria.&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="groupId">1.0</field>
+    <field id="platform" type="enum:platform">windows</field>
+    <field id="query">type:testcase AND status:active</field>
+    <field id="records">
+        <list>
+            <struct>
+                <item id="comment" text-type="text/html">passed</item>
+                <item id="duration">33.0</item>
+                <item id="executed">2022-09-15 13:37:34.640 +0530</item>
+                <item id="executedBy">admin</item>
+                <item id="result">passed</item>
+                <item id="signed">true</item>
+                <item id="testCase">APGE-536</item>
+                <item id="testCaseRevision">490</item>
+                <item id="testStepResults">
+                    <list>
+                        <struct>
+                            <item id="comment" text-type="text/html">passed</item>
+                            <item id="result">passed</item>
+                        </struct>
+                    </list>
+                </item>
+            </struct>
+            <struct>
+                <item id="comment" text-type="text/html">passed</item>
+                <item id="duration">22.0</item>
+                <item id="executed">2022-09-15 13:38:19.609 +0530</item>
+                <item id="executedBy">admin</item>
+                <item id="result">passed</item>
+                <item id="signed">true</item>
+                <item id="testCase">APGE-535</item>
+                <item id="testCaseRevision">491</item>
+                <item id="testStepResults">
+                    <list>
+                        <struct>
+                            <item id="comment" text-type="text/html">passed</item>
+                            <item id="result">passed</item>
+                        </struct>
+                    </list>
+                </item>
+            </struct>
+            <struct>
+                <item id="comment" text-type="text/html">passed</item>
+                <item id="duration">22.0</item>
+                <item id="executed">2022-09-15 13:41:19.540 +0530</item>
+                <item id="executedBy">admin</item>
+                <item id="result">passed</item>
+                <item id="signed">true</item>
+                <item id="testCase">APGE-561</item>
+                <item id="testCaseRevision">687</item>
+                <item id="testStepResults">
+                    <list>
+                        <struct>
+                            <item id="comment" text-type="text/html">passed</item>
+                            <item id="result">passed</item>
+                        </struct>
+                    </list>
+                </item>
+            </struct>
+        </list>
+    </field>
+    <field id="selectTestCasesBy">dynamicQueryResult</field>
+    <field id="status">passed</field>
+    <field id="template">Release Test</field>
+    <field id="testParameters">
+        <struct>
+            <item id="parameterDefinitions">
+                <list>
+                    <struct>
+                        <item id="name">Email</item>
+                    </struct>
+                </list>
+            </item>
+            <item id="parameters">
+                <list>
+                    <struct>
+                        <item id="name">Email</item>
+                        <item id="rawValue">nj</item>
+                    </struct>
+                </list>
+            </item>
+        </struct>
+    </field>
+    <field id="title">new one for ap unit</field>
+    <field id="type">manual</field>
+    <field id="useReportFromTemplate">true</field>
+</test-run>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field description="name of supplier" id="name" name="SName" type="text"/>
+    <field description="Countries" id="country" name="Country" type="enum:country"/>
+    <field dependsOn="country" description="States" id="state" mapping="country_-__states" name="State" type="enum:states"/>
+    <field id="addr" name="address" type="text"/>
+</fields>

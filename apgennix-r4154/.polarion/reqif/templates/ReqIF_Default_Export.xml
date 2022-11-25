@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<specificationTemplate>
+    <forImport>false</forImport>
+    <forRIF>false</forRIF>
+    <mappingConfiguration>
+        <mappingGroups direction="EXPORT" polarionType="heading" reqIfType="CREATE-TYPE-FOR-heading">
+            <fieldMappings reqIfAttribute="Relations"/>
+            <fieldMappings polarionField="title" reqIfAttribute="ReqIF.ChapterName"/>
+            <fieldMappings polarionField="author" reqIfAttribute="ReqIF.ForeignCreatedBy"/>
+            <fieldMappings polarionField="created" reqIfAttribute="ReqIF.ForeignCreatedOn"/>
+            <fieldMappings polarionField="id" reqIfAttribute="ReqIF.ForeignID"/>
+            <fieldMappings polarionField="description" reqIfAttribute="ReqIF.Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="systemrequirement" reqIfType="CREATE-TYPE-FOR-systemrequirement">
+            <fieldMappings reqIfAttribute="Relations"/>
+            <fieldMappings polarionField="title" reqIfAttribute="ReqIF.ChapterName"/>
+            <fieldMappings polarionField="author" reqIfAttribute="ReqIF.ForeignCreatedBy"/>
+            <fieldMappings polarionField="created" reqIfAttribute="ReqIF.ForeignCreatedOn"/>
+            <fieldMappings polarionField="id" reqIfAttribute="ReqIF.ForeignID"/>
+            <fieldMappings polarionField="description" reqIfAttribute="ReqIF.Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="systemtestcase" reqIfType="CREATE-TYPE-FOR-systemtestcase">
+            <fieldMappings reqIfAttribute="Relations"/>
+            <fieldMappings polarionField="title" reqIfAttribute="ReqIF.ChapterName"/>
+            <fieldMappings polarionField="author" reqIfAttribute="ReqIF.ForeignCreatedBy"/>
+            <fieldMappings polarionField="created" reqIfAttribute="ReqIF.ForeignCreatedOn"/>
+            <fieldMappings polarionField="id" reqIfAttribute="ReqIF.ForeignID"/>
+            <fieldMappings polarionField="description" reqIfAttribute="ReqIF.Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="softwarerequirement" reqIfType="CREATE-TYPE-FOR-softwarerequirement">
+            <fieldMappings reqIfAttribute="Relations"/>
+            <fieldMappings polarionField="title" reqIfAttribute="ReqIF.ChapterName"/>
+            <fieldMappings polarionField="author" reqIfAttribute="ReqIF.ForeignCreatedBy"/>
+            <fieldMappings polarionField="created" reqIfAttribute="ReqIF.ForeignCreatedOn"/>
+            <fieldMappings polarionField="id" reqIfAttribute="ReqIF.ForeignID"/>
+            <fieldMappings polarionField="description" reqIfAttribute="ReqIF.Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="softwaretestcase" reqIfType="CREATE-TYPE-FOR-softwaretestcase">
+            <fieldMappings reqIfAttribute="Relations"/>
+            <fieldMappings polarionField="title" reqIfAttribute="ReqIF.ChapterName"/>
+            <fieldMappings polarionField="author" reqIfAttribute="ReqIF.ForeignCreatedBy"/>
+            <fieldMappings polarionField="created" reqIfAttribute="ReqIF.ForeignCreatedOn"/>
+            <fieldMappings polarionField="id" reqIfAttribute="ReqIF.ForeignID"/>
+            <fieldMappings polarionField="description" reqIfAttribute="ReqIF.Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="risk" reqIfType="CREATE-TYPE-FOR-risk">
+            <fieldMappings reqIfAttribute="Relations"/>
+            <fieldMappings polarionField="title" reqIfAttribute="ReqIF.ChapterName"/>
+            <fieldMappings polarionField="author" reqIfAttribute="ReqIF.ForeignCreatedBy"/>
+            <fieldMappings polarionField="created" reqIfAttribute="ReqIF.ForeignCreatedOn"/>
+            <fieldMappings polarionField="id" reqIfAttribute="ReqIF.ForeignID"/>
+            <fieldMappings polarionField="description" reqIfAttribute="ReqIF.Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="changerequest" reqIfType="CREATE-TYPE-FOR-changerequest">
+            <fieldMappings reqIfAttribute="Relations"/>
+            <fieldMappings polarionField="title" reqIfAttribute="ReqIF.ChapterName"/>
+            <fieldMappings polarionField="author" reqIfAttribute="ReqIF.ForeignCreatedBy"/>
+            <fieldMappings polarionField="created" reqIfAttribute="ReqIF.ForeignCreatedOn"/>
+            <fieldMappings polarionField="id" reqIfAttribute="ReqIF.ForeignID"/>
+            <fieldMappings polarionField="description" reqIfAttribute="ReqIF.Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="workpackage" reqIfType="CREATE-TYPE-FOR-workpackage">
+            <fieldMappings reqIfAttribute="Relations"/>
+            <fieldMappings polarionField="title" reqIfAttribute="ReqIF.ChapterName"/>
+            <fieldMappings polarionField="author" reqIfAttribute="ReqIF.ForeignCreatedBy"/>
+            <fieldMappings polarionField="created" reqIfAttribute="ReqIF.ForeignCreatedOn"/>
+            <fieldMappings polarionField="id" reqIfAttribute="ReqIF.ForeignID"/>
+            <fieldMappings polarionField="description" reqIfAttribute="ReqIF.Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="task" reqIfType="CREATE-TYPE-FOR-task">
+            <fieldMappings reqIfAttribute="Relations"/>
+            <fieldMappings polarionField="title" reqIfAttribute="ReqIF.ChapterName"/>
+            <fieldMappings polarionField="author" reqIfAttribute="ReqIF.ForeignCreatedBy"/>
+            <fieldMappings polarionField="created" reqIfAttribute="ReqIF.ForeignCreatedOn"/>
+            <fieldMappings polarionField="id" reqIfAttribute="ReqIF.ForeignID"/>
+            <fieldMappings polarionField="description" reqIfAttribute="ReqIF.Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="issue" reqIfType="CREATE-TYPE-FOR-issue">
+            <fieldMappings reqIfAttribute="Relations"/>
+            <fieldMappings polarionField="title" reqIfAttribute="ReqIF.ChapterName"/>
+            <fieldMappings polarionField="author" reqIfAttribute="ReqIF.ForeignCreatedBy"/>
+            <fieldMappings polarionField="created" reqIfAttribute="ReqIF.ForeignCreatedOn"/>
+            <fieldMappings polarionField="id" reqIfAttribute="ReqIF.ForeignID"/>
+            <fieldMappings polarionField="description" reqIfAttribute="ReqIF.Text"/>
+        </mappingGroups>
+        <mappingGroups direction="EXPORT" polarionType="unittestcase" reqIfType="CREATE-TYPE-FOR-unittestcase">
+            <fieldMappings reqIfAttribute="Relations"/>
+            <fieldMappings polarionField="title" reqIfAttribute="ReqIF.ChapterName"/>
+            <fieldMappings polarionField="author" reqIfAttribute="ReqIF.ForeignCreatedBy"/>
+            <fieldMappings polarionField="created" reqIfAttribute="ReqIF.ForeignCreatedOn"/>
+            <fieldMappings polarionField="id" reqIfAttribute="ReqIF.ForeignID"/>
+            <fieldMappings polarionField="description" reqIfAttribute="ReqIF.Text"/>
+        </mappingGroups>
+    </mappingConfiguration>
+</specificationTemplate>

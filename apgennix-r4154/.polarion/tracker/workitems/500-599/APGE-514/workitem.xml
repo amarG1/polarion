@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">approved</item>
+                <item id="user">111</item>
+            </struct>
+            <struct>
+                <item id="status">approved</item>
+                <item id="user">shbj</item>
+            </struct>
+            <struct>
+                <item id="status">approved</item>
+                <item id="user">admin</item>
+            </struct>
+        </list>
+    </field>
+    <field id="assignee">111</field>
+    <field id="author">admin</field>
+    <field id="created">2022-09-06 22:43:54.592 +0530</field>
+    <field id="description" text-type="text/html">abdf bvsvfgdgfd</field>
+    <field id="previousStatus">inprogress</field>
+    <field id="priority">50.0</field>
+    <field id="severity">should_have</field>
+    <field id="status">done</field>
+    <field id="title">Shahebaj</field>
+    <field id="type">ss</field>
+</work-item>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu>
+	<item label="Refined System Requirement" role="refines" type="systemrequirement"/>
+	<item label="Refined Software Requirement" role="refines" type="softwarerequirement"/>
+	<item label="Refined Change Request" role="refines" type="changerequest"/>
+	<item label="Related" role="relates_to"/>
+</menu>

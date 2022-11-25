@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">approved</item>
+                <item id="user">111</item>
+            </struct>
+        </list>
+    </field>
+    <field id="assignee">111</field>
+    <field id="author">admin</field>
+    <field id="categories">
+        <list>
+            <item>authentication</item>
+        </list>
+    </field>
+    <field id="created">2022-09-13 12:30:58.436 +0530</field>
+    <field id="previousStatus">active</field>
+    <field id="priority">50.0</field>
+    <field id="severity">basic</field>
+    <field id="status">draft</field>
+    <field id="testCaseID" type="string">121</field>
+    <field id="testSteps" type="struct:TestSteps">
+        <struct>
+            <item id="keys">
+                <list>
+                    <item>step</item>
+                    <item>description</item>
+                    <item>expectedResult</item>
+                </list>
+            </item>
+            <item id="steps">
+                <list>
+                    <struct>
+                        <item id="values">
+                            <list>
+                                <item text-type="text/html">1</item>
+                                <item text-type="text/html">1st test</item>
+                                <item text-type="text/html">passed</item>
+                            </list>
+                        </item>
+                    </struct>
+                </list>
+            </item>
+        </struct>
+    </field>
+    <field id="testType" type="enum:testtype">manual</field>
+    <field id="title">new test linked WI</field>
+    <field id="type">testcase</field>
+</work-item>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option color="#844883" description="A functional or behavioral requirement to be fulfilled." iconURL="/polarion/icons/default/enums/type_purple_spec.png" id="systemrequirement" name="System Requirement" sortOrder="3"/>
+    <option color="#D9C6D8" description="A description of what needs to be tested." iconURL="/polarion/icons/default/enums/type_purple_testcase.png" id="systemtestcase" name="System Test Case" sortOrder="5"/>
+    <option color="#497596" description="A software requirement to be fulfilled." iconURL="/polarion/icons/default/enums/type_blue_spec.png" id="softwarerequirement" name="Software Requirement" sortOrder="6"/>
+    <option color="#CAD7E0" description="A description of what needs to be tested." iconURL="/polarion/icons/default/enums/type_blue_testcase.png" id="softwaretestcase" name="Software Test Case" sortOrder="8"/>
+    <option color="#A30000" description="A specification of a possible negative event." iconURL="/polarion/icons/default/enums/type_risk.gif" id="risk" name="Risk" sortOrder="15"/>
+    <option color="#F1ED92" description="A set of actions that need to be taken to fulfill a goal." iconURL="/polarion/icons/default/enums/type_userstory.gif" id="workpackage" name="Work Package" sortOrder="17"/>
+    <option color="#909B9F" default="true" description="A task that needs to be done." iconURL="/polarion/icons/default/enums/type_task.gif" id="task" name="Task" sortOrder="18"/>
+    <option color="#89B68C" description="A request for change of appearance of functionality." iconURL="/polarion/icons/default/enums/type_changerequest.gif" id="changerequest" name="Change Request" sortOrder="19"/>
+    <option color="#B9888A" description="An issue that needs to be fixed." iconURL="/polarion/icons/default/enums/type_bug.gif" id="issue" name="Issue" sortOrder="20"/>
+    <option color="#B3B661" description="A description of what needs to be tested." iconURL="/polarion/icons/default/enums/type_test.gif" id="testcase" name="Test Case" sortOrder="21"/>
+    <option color="#BABBC2" description="A description of what needs to be tested." iconURL="/polarion/icons/default/enums/type_unit_testcase.png" id="unittestcase" name="Unit Test Case" sortOrder="22"/>
+    <option description="A simple workitem" iconURL="/polarion/icons/default/enums/type_businesscase.gif" id="ap" name="Ap Unit" sortOrder="23"/>
+    <option description="workitem" iconURL="/polarion/icons/default/enums/type_test.gif" id="ss" name="Shahebaj unit" sortOrder="24"/>
+    <option description="A supplier" iconURL="/polarion/icons/default/enums/type_work_package.png" id="sr" name="Supplier Requirement" sortOrder="25"/>
+    <option description="status" iconURL="/polarion/icons/default/enums/type_improvement.gif" id="st" name="Status check" sortOrder="26"/>
+</enumeration>

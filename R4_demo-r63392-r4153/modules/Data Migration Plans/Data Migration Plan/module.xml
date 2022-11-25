@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">sameeullas@complianceg.com</field>
+    <field id="created">2021-11-11 14:59:17.281 +0000</field>
+    <field id="crossReferenceMappingData">BMRAM/CSV-229=johnsonandjohnson/CSA-3727,BMRAM/CSV-227=johnsonandjohnson/CSA-3725,BMRAM/CSV-249=johnsonandjohnson/CSA-3734,BMRAM/CSV-228=johnsonandjohnson/CSA-3726,BMRAM/CSV-236=johnsonandjohnson/CSA-3719,BMRAM/CSV-225=johnsonandjohnson/CSA-3723,BMRAM/CSV-226=johnsonandjohnson/CSA-3724,BMRAM/CSV-223=johnsonandjohnson/CSA-3721,BMRAM/CSV-234=johnsonandjohnson/CSA-3732,BMRAM/CSV-224=johnsonandjohnson/CSA-3722,BMRAM/CSV-235=johnsonandjohnson/CSA-3733,BMRAM/CSV-232=johnsonandjohnson/CSA-3730,BMRAM/CSV-222=johnsonandjohnson/CSA-3720,BMRAM/CSV-233=johnsonandjohnson/CSA-3731,BMRAM/CSV-230=johnsonandjohnson/CSA-3728,BMRAM/CSV-231=johnsonandjohnson/CSA-3729</field>
+    <field id="headingSidebarFields">severity,status</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=CSA-3719"></h1><p id="polarion_2">
+  <span style="font-weight: bold;font-size: 14pt;line-height: 1.5;">Table of Contents</span>
+</p><div id="polarion_wiki macro name=toc"></div><p id="polarion_4">
+  <span style="text-decoration: underline;color: #0000FF;">Table 1:</span><span style="font-size: 11pt;line-height: 1.5;">    </span><span style="text-decoration: underline;color: #0000FF;">Abbreviations, Acronyms, Terms, and Definitions</span>    5
+</p><p id="polarion_5" style="text-align: center;"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3720"></h2><p id="polarion_8" style="margin-left: 0px;">
+  <span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">This document represents the Data Migration &amp; Verification Plan (DMVP) for data migrated into the </span><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">[System Name]</span><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #FF0000;line-height: 1.5;"> </span><span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">system. This DMVP will document the approach to be taken for each object in order to plan and understand how the data will be migrated and verified. </span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3721"></h2><p id="polarion_9" style="margin-left: 0px;">
+  <span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">The purpose of the DMVP is to define the activities that will take place to migrate data into the </span><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">[System Name]</span><span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;"> system, as well as to define the activities that will take place to verify the integrity and correctness of that data.  </span>
+</p><p id="polarion_10" style="margin-left: 0px;">
+  <span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">This document covers the full scope of data verification, including the sampling method, process, and tools that will be used.</span>
+</p><p id="polarion_11" style="margin-left: 0px;">
+  <span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Any related deviations and corrective actions which will not be corrected prior to implementation into the production environment will be identified within the project’s Validation Report.</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3722"></h2><p id="polarion_12" style="margin-left: 0px;">
+  <span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">The scope of this plan includes data that will be migrated to the </span><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">[System]</span><span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;"> as part of the </span><span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;"><span style="font-style: italic;">[Project Name]</span><span> </span></span><span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">project.  Data to be migrated will consist of </span><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">[describe data to be migrated]</span><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #000000;line-height: 1.5;">.</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3723"></h2><p id="polarion_13" style="margin-left: 0px;">
+  <span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Performing data migration and verification is the process of verifying the data extracted from the old system, migrating the data from the old system to the new system, and then verifying the data loaded into the new system.</span>
+</p><p id="polarion_14" style="margin-left: 0px;">
+  <span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">To prepare for migration and verification, certain tasks need to be performed by the project and business teams, namely:</span>
+</p><ul id="polarion_15">
+  <li><span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Identify the migration method and tools that will be used to extract the data from the old system and load the data into the new system.</span></li>
+  <li><span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Understand the new system into which data will be loaded.</span></li>
+  <li><span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Understand the data conversion rules to determine if data will be loaded correctly.</span></li>
+  <li><span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Identify the sampling method that will be used to verify the data.</span></li>
+  <li><span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Identify reports, displays, and other tools (i.e., Excel) that will be used to verify both the data extracted from the old system and the data loaded into the new system.</span></li>
+</ul><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3724"></h2><p id="polarion_16" style="margin-left: 0px;">
+  <span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">This section defines the abbreviations, acronyms, terms and definitions that are specific to this document.</span>
+</p><p id="polarion_17" style="margin-left: 40px;">
+  <span style="font-weight: bold;">Abbreviations, Acronyms, Terms, and Definitions</span>
+</p><table id="polarion_18" style="width: 464pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <td style="background-color: #E6E6E6;vertical-align: top;width: 144pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Abbreviations, Acronyms and Terms</span> 
+        </div>
+        </td>
+      <td style="background-color: #E6E6E6;vertical-align: top;width: 320pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Definition</span> 
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;width: 144pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="color: #33CCFF;"><span style="font-style: italic;">[CFR]</span><br/>
+          </span></td>
+      <td style="vertical-align: middle;width: 320pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="color: #33CCFF;"><span style="font-style: italic;">[Code of Federal Regulations]</span><br/>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 144pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="color: #33CCFF;"><span style="font-style: italic;">[GMP]</span><br/>
+          </span></td>
+      <td style="vertical-align: top;width: 320pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="color: #33CCFF;"><span style="font-style: italic;">[Good Manufacturing Practice]</span><br/>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 144pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="color: #33CCFF;"><span style="font-style: italic;">[SOP]</span><br/>
+          </span></td>
+      <td style="vertical-align: top;width: 320pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="color: #33CCFF;"><span style="font-style: italic;">[Standard Operating Procedure]</span><br/>
+          </span></td>
+    </tr>
+  </tbody>
+</table><p id="polarion_19" style="margin-left: 0px;">
+  <br/>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3725"></h2><p id="polarion_20" style="margin-left: 0px;" data-keep-next="true">
+  <span style="font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">The following documents were used in the development of this Data Migration &amp; Verification Plan: [</span><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Adjust the list of Referenced documents to reflect the proper controlling authority.]</span>
+</p><table id="polarion_21" style="width: 459pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <td style="background-color: #E6E6E6;vertical-align: top;width: 153pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Document #</span> 
+        </div>
+        </td>
+      <td style="background-color: #E6E6E6;vertical-align: top;width: 306pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Title</span> 
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 153pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 306pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 153pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 306pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+    </tr>
+  </tbody>
+</table><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3726"></h2><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3727"></h3><p id="polarion_22" style="margin-left: 40px;">
+  <span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">[Briefly describe the old and new systems, as well as the data to be migrated]</span>
+</p><p id="polarion_23" style="margin-left: 40px;">
+  <span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">[Example: “The new SOP system has been designed to create, store, route, and manage SOPs and their attachments in a validated and controlled environment. UDL Rockford currently manages SOPs, work instructions, and forms in the old eSOP system as scanned documents.  The original documents exist as signed paper originals.  To transition to the new SOP system, documents will be migrated and verified in the new SOP system prior to general release to users.  All documents to be migrated will be exported from the old eSOP system.  At the discretion of the UDL Rockford team, some documents that currently reside in the old eSOP system may not be migrated to the new SOP system.]</span>
+</p><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3728"></h3><p id="polarion_24" style="margin-left: 40px;">
+  <span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">[Describe the process for migration, including any tools to be used.]</span>
+</p><p id="polarion_25" style="margin-left: 40px;">
+  <span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">[Example: “An Excel spreadsheet will be created using file names and document properties from the documents in the old eSOP system to prepare for migration.  Additional document properties required in the new SOP system will be added to the spreadsheet, and the UDL Rockford team will be responsible for providing the required information.  This process permits each file to be migrated to the new SOP system with its associated information.  The Documentum team will export the scanned files from the old eSOP system into a controlled Documentum environment, accessible only to the Documentum team, and will then migrate the documents into the SOP system utilizing the migration spreadsheet.]</span>
+</p><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3729"></h3><p id="polarion_26" style="margin-left: 40px;">
+  <span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">[Describe the process for verification, including any reports/displays/tools to be used.  Also, identify the sampling method to be used.]</span>
+</p><p id="polarion_27" style="margin-left: 40px;">
+  <span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">[Example: “The verification process will ensure the accuracy of each Effective document and a percentage of Retired documents prior to full release.  The UDL Rockford team will follow these verification steps:</span>
+</p><h4 id="polarion_wiki macro name=module-workitem;params=id=CSA-3730"></h4><ul id="polarion_28">
+  <ul>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Open the document within the new SOP system to verify that the file opens correctly.</span></li>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Verify the following properties against the migration spreadsheet:</span></li>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Document Name</span></li>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Title</span></li>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Status</span></li>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Version Number</span></li>
+  </ul>
+</ul><h4 id="polarion_wiki macro name=module-workitem;params=id=CSA-3731"></h4><ul id="polarion_29">
+  <ul>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Open the document within the new SOP system and compare to the controlled paper original.</span></li>
+  </ul>
+</ul><h4 id="polarion_wiki macro name=module-workitem;params=id=CSA-3732"></h4><ul id="polarion_30">
+  <ul>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Verify the following properties against the migration spreadsheet:</span></li>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Document Name</span></li>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Title</span></li>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Status</span></li>
+    <li><span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">Version Number</span></li>
+  </ul>
+</ul><p id="polarion_31" style="margin-left: 40px;">
+  <span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;line-height: 1.5;">If no issues are found, the individual verifying the document will indicate that it is verified and acceptable for full release on the migration spreadsheet.  For Retired documents that are not being verified, the team will indicate that verification is not applicable.  Documents that are found to have an issue will be identified and brought to the attention of the Documentum team.  The Documentum team will work with the UDL Rockford team to address any issues found during the verification process.]</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3733"></h2><p id="polarion_32" style="margin-left: 0px;">
+  <span style="font-style: italic;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;color: #33CCFF;background-color: #FFFFFF;line-height: 1.5;">[List attachments or mark as NA]</span>
+</p><p id="polarion_1"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3734"></h2><div id="polarion_editor_html_block2" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div><p id="polarion_3"></p><p id="polarion_6"></p>]]>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">Data Migration Plan</field>
+    <field id="type">data_migration_plan</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<read-only>
+    <status id="_default">
+        <field id="@all"/>
+        <field id="-approvals"/>
+        <field id="-comments"/>
+    </status>
+
+    <status id="_create">
+        <field id="qualificationReport"/>
+        <field id="timeSpentOnTools"/>
+    </status>
+
+    <status id="approved">
+        <field id="@all"/>
+        <field id="-status"/>
+    </status>
+
+    <status id="in_draft">
+        <field id="sysName"/>
+        <field id="systemGAMPCategorization"/>
+        <field id="bc"/>
+        <field id="sc"/>
+        <field id="srr"/>
+        <field id="approvals"/>
+    </status>
+
+</read-only>

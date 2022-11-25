@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+            
+    
+    <option iconURL="/polarion/icons/default/enums/document_software_requirement2.png" id="gxp" name="GxP Applicability Assessment" sortOrder="0"/>
+            
+    
+    <option default="true" iconURL="/polarion/icons/default/enums/type_feature.gif" id="toolchain" name="System Risk Assesment" sortOrder="1"/>
+            
+    
+    <option iconURL="/polarion/icons/default/enums/type_businesscase.gif" id="user_requirement" name="User Requirement" sortOrder="2"/>
+            
+    
+    <option iconURL="/polarion/icons/default/enums/type_feature2.gif" id="functional_requirement" name="Functional Requirement" sortOrder="3"/>
+            
+    
+    <option iconURL="/polarion/icons/default/enums/type_green_spec.png" id="designspecification" name="Design Specification" sortOrder="4"/>
+            
+    
+    <option iconURL="/polarion/icons/default/enums/type_test.gif" id="test_script_IQ" name="Test Script IQ" sortOrder="5"/>
+            
+    
+    <option iconURL="/polarion/icons/default/enums/type_blue_testcase.png" id="test_script_OQ" name="Test Script OQ" sortOrder="6"/>
+            
+    
+    <option iconURL="/polarion/icons/default/enums/document_electrical_testcase.png" id="test_script_UAT" name="Test Script UAT" sortOrder="7"/>
+            
+    
+    <option description="A defect that needs to be fixed." iconURL="/polarion/icons/default/enums/type_bug.gif" id="defect" name="Defect" sortOrder="8"/>
+            
+    
+    <option description="A request for change of appearance of functionality." iconURL="/polarion/icons/default/enums/type_changerequest.gif" id="changerequest" name="Change Request" sortOrder="9"/>
+            
+    
+    <option iconURL="/polarion/icons/default/enums/document_task.png" id="document" name="Document" sortOrder="10"/>
+            
+    
+    <option iconURL="/polarion/icons/default/enums/type_test.gif" id="unscriptedTest" name="Unscripted Test Case" sortOrder="11"/>
+            
+    
+    <option iconURL="/polarion/icons/default/enums/type_safety.png" id="project" name="Project"/>
+        
+
+</enumeration>

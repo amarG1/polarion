@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">sindhus</field>
+    <field id="created">2021-10-20 09:55:28.425 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">Comprehensive User requirement Statistics</h1>
+  <p id="polarion_hardcoded_1">This Page has no content yet</p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2"></p>
+  <div id="polarion_client1" class="polarion-rp-widget-part" data-widget="com.polarion.pageParametersForm">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title">Project List</sub>
+      <sub id="content">
+        <sub>prjId</sub>
+      </sub>
+      <sub id="width">500</sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <p id="polarion_hardcoded_3"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_client3"></p>
+  <div id="polarion_client4" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">&lt;style&gt;
+    #projects {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #projects td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #projects tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #projects tr:hover {
+        background-color: #ddd;
+    }
+
+    #projects th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #005F87;
+        color: white;
+    }
+
+    .highcharts-figure,
+    .highcharts-data-table table {
+        min-width: 400px;
+        max-width: 800px;
+        margin: 1em auto;
+    }
+
+    .highcharts-data-table table {
+        font-family: Verdana, sans-serif;
+        border-collapse: collapse;
+        border: 1px solid #EBEBEB;
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .highcharts-data-table caption {
+        padding: 1em 0;
+        font-size: 1.2em;
+        color: #555;
+    }
+
+    .highcharts-data-table th {
+        font-weight: 600;
+        padding: 0.5em;
+    }
+
+    .highcharts-data-table td,
+    .highcharts-data-table th,
+    .highcharts-data-table caption {
+        padding: 0.5em;
+    }
+
+    .highcharts-data-table thead tr,
+    .highcharts-data-table tr:nth-child(even) {
+        background: #f8f8f8;
+    }
+
+    .highcharts-data-table tr:hover {
+        background: #f1f7ff;
+    }
+
+    input[type=&quot;number&quot;] {
+        min-width: 50px;
+    }
+&lt;/style&gt;
+#set($baseQuery=&quot;*:*&quot;)
+&lt;class=&quot;highcharts-figure&quot;&gt;
+    &lt;div id=&quot;container&quot;&gt;&lt;/div&gt;
+    #set($projectArr = [])
+    #set($workItemCountArr = [])
+    &lt;table id=&quot;projects&quot;&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Project&lt;/th&gt;
+            &lt;th&gt;WorkItem Count&lt;/th&gt;
+        &lt;/tr&gt;
+        #set($projectId=$pageParameters.prjId.values())
+        #foreach($p in $projectId)
+        &lt;tr&gt;
+            #set($projectName = $p.label())
+            #set($void = $projectArr.add($projectName))
+            &lt;td&gt;$projectName&lt;/td&gt;
+            #set($projectId=$pageParameters.prjId.toLucene())
+            ##set($wiType=$pageParameters.wiTypes.toLucene())
+            #set($query =&quot;project.id:$projectId AND type:user_requirement&quot;)
+            ##set($count=$transaction.workItems().count().query(&quot;$query&quot;).result())
+            #set($count=$trackerService.DataService.getInstancesCount(&quot;WorkItem&quot;,&quot;$query AND project.id:$p.id&quot;))
+            #set($void = $workItemCountArr.add($count))
+            &lt;td&gt;$count&lt;/td&gt;
+            #end
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;script&gt;
+        var my = &quot;${projectArr}&quot;;
+        var count = &quot;${workItemCountArr}&quot;;
+
+        my = my.replaceAll(&quot; &quot;, &quot;&quot;);
+        my = my.substring(1, my.length - 1);
+        my = my.split(&quot;,&quot;);
+
+        count = count.replaceAll(&quot; &quot;, &quot;&quot;);
+        count = count.substring(1, count.length - 1);
+        count = count.split(&quot;,&quot;);
+
+        var intCount = [];
+        for (var j = 0; j &lt; count.length; j++) {
+            intCount.push(parseInt(count[j]));
+        }
+
+        var chartData = [];
+        for (var i = 0; i &lt; my.length; i++) {
+            chartData.push({
+                y: intCount[i],
+                name: my[i]
+            });
+        }
+        Highcharts.chart(&#39;container&#39;, {
+            chart: {
+                type: &#39;pie&#39;
+            },
+            title: {
+                text: &#39;User Requirement by project&#39;
+            },
+            tooltip: {
+                pointFormat: &#39;{series.name}: &lt;b&gt;{point.y}&lt;/b&gt;&#39;
+            },
+          
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: &#39;pointer&#39;,
+                    dataLabels: {
+                        enabled: true,
+                    }
+                }
+            },
+            series: [{
+                colorByPoint: true,
+                name: &#39;WorkItems&#39;,
+                data: chartData
+            }]
+        });
+    &lt;/script&gt;</sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<span id="polarion-rp-parameters">
+  <sub id="prjId" data-label="Select Project" data-type="Enumeration">
+    <sub id="values">
+      <sub>CAMSTARMES</sub>
+      <sub>BMRAM</sub>
+      <sub>FLEX_CSA</sub>
+      <sub>PHSFL</sub>
+      <sub>VeevaEDC</sub>
+    </sub>
+    <sub id="enumId">@project</sub>
+    <sub id="allowNoValue">false</sub>
+    <sub id="allowMultipleValues">true</sub>
+    <sub id="loadForAllTypes">true</sub>
+  </sub>
+</span>]]>
+    </field>
+    <field id="title">Comprehensive User requirement Statistics</field>
+</rich-page>

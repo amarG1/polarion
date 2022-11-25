@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">Ashfaq</field>
+    <field id="change_approach" type="enum:change_approach">emergency</field>
+    <field id="change_severity" type="enum:change_severity">major</field>
+    <field id="change_type" type="enum:change_type">infrastructure_change</field>
+    <field id="created">2022-11-02 13:10:35.125 +0000</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">in_draft</field>
+    <field id="title">test</field>
+    <field id="type">changerequest</field>
+    <field id="version" type="string">1</field>
+</work-item>

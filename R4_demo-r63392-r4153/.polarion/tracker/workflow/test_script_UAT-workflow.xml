@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow initial-action="rework" initial-status="in_draft" prototype="WorkItem">
+    <transitions>
+        <transition action="reject" from="pre_approval" to="rejected"/>
+        <transition action="mark_as_obsolete" from="in_draft" to="obsolete"/>
+        <transition action="new_revision" from="post_approved" to="in_draft"/>
+        <transition action="rework" from="rejected" to="in_draft"/>
+        <transition action="new_revision" from="obsolete" to="in_draft"/>
+        <transition action="mark_as_obsolete" from="rejected" to="obsolete"/>
+        <transition action="mark_postapproved" from="pre_approval" to="post_approved"/>
+        <transition action="reject" from="in_draft" to="rejected"/>
+        <transition action="reject" from="obsolete" to="rejected"/>
+        <transition action="mark_as_obsolete" from="post_approved" to="obsolete"/>
+        <transition action="send_for_preapproval" from="in_approval" to="pre_approval"/>
+        <transition action="send_for_approval" from="in_draft" to="in_approval"/>
+    </transitions>
+    <actions>
+        <action id="rework" name="Rework">
+            <cleared>
+                <field name="approvals"/>
+            </cleared>
+        </action>
+        <action id="new_revision" name="New Revision">
+            <functions>
+                <function name="ScriptFunction">
+                    <param name="engine" value="JavaScript"/>
+                    <param name="script" value="incrementIntegerVersionWF.js"/>
+                </function>
+            </functions>
+        </action>
+        <action id="reject" name="Reject"/>
+        <action id="send_for_preapproval" name="Send for Pre Approval"/>
+        <action id="mark_postapproved" name="Mark As Post Approved"/>
+        <action id="mark_as_obsolete" name="Mark As Obsolete"/>
+        <action id="send_for_approval" name="Send for Approval">
+            <conditions>
+                <condition name="ScriptCondition">
+                    <param name="engine" value="JavaScript"/>
+                    <param name="script" value="testWF.js"/>
+                </condition>
+            </conditions>
+        </action>
+    </actions>
+</workflow>

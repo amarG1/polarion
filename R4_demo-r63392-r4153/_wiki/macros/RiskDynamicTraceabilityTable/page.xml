@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>lsampson</author>
+<created>20140805160049</created>
+<type>content</type>
+<content><![CDATA[#includeMacros("macros.ExtensibleTraceabilityTable")
+#if($debug)
+Included macros.RiskDynamicTraceabilityTable
+#end
+#set($parameterPrefix = "${page.space.id}_${page.name}_")
+{pre}
+<script>
+function removeLevel() {
+  var levels = updateCommon(false);
+  var removeRow = document.getElementById("levelRow" + levels);
+  removeRow.parentNode.removeChild(removeRow);
+  if(levels > 2)
+    setActionImageVisibility(levels - 1, "visible");
+}
+function addLevel() {
+  var levels = updateCommon(true);
+  var lastLevelRow = document.getElementById("levelRow" + levels);
+  var newLevelRow = document.getElementById("newLevelRow");
+  var toInsertRow = lastLevelRow.cloneNode(true);
+  toInsertRow.setAttribute("id", "levelRow" + (levels + 1));
+  var toInsertHeading = toInsertRow.getElementsByTagName("th")[0];
+  var toInsertInput = toInsertRow.getElementsByTagName("input")[0];
+  var newLevelInput = newLevelRow.getElementsByTagName("input")[0];
+  toInsertInput.value = newLevelInput.value;
+  toInsertInput.name = "${parameterPrefix}query" + (levels + 1);
+  newLevelInput.value = "";
+  newLevelRow.parentNode.insertBefore(toInsertRow,newLevelRow);
+  toInsertHeading.removeChild(toInsertHeading.lastChild);
+  toInsertHeading.appendChild(document.createTextNode("Level " + (levels + 1)));
+  setActionImageVisibility(levels, "hidden")
+}
+function updateCommon(add) {
+  var levelsInput = document.getElementById("levelsInput");
+  var levels = levelsInput.getAttribute("value") - 1 + 1;
+  if(add) {
+    levelsInput.setAttribute("value", levels + 1);
+  } else {
+    levelsInput.setAttribute("value", levels - 1);
+  }
+  return levels;
+}
+function setActionImageVisibility(level,visibility) {
+  var img = document.getElementById("levelRow" + level).getElementsByTagName("img")[0];
+  img.style.visibility = visibility;
+}
+function checkNewLevelRow() {
+  var newQuery = document.getElementById("newLevelRow").getElementsByTagName("input")[0].value;
+  if(newQuery.length > 1)
+    addLevel();
+}
+
+</script>
+{/pre}
+
+
+
+#macro(loadParameter $id)
+  #set($_id = "$parameterPrefix$id")
+  #set($parameter = false)
+  #set($parameter = $request.getParameter($_id))
+  #if(!$request.getParameter("renderWiki") && !$parameter)
+    #set($parameter = $request.getSession().getAttribute($_id))
+  #elseif($parameter)
+    $request.getSession().setAttribute($_id,$parameter)
+  #end
+#end
+
+#macro(RiskDynamicTraceabilityTable $defaultQueries $fields)
+	#loadParameter("levels")
+        #set($levels = $parameter)
+	#loadParameter("fields")
+	#set($fieldsParam = $parameter)
+
+        #set($reload = !$levels || $fields != $fieldsParam)
+	#if($reload)
+	  #set($parameters = "?renderWiki&${parameterPrefix}levels=$defaultQueries.size()&${parameterPrefix}fields=$fields")
+	  #foreach($query in $defaultQueries)
+		#set($parameters = "$parameters&${parameterPrefix}query$velocityCount=$query")
+	  #end
+	  #if($debug)
+		<a href="$request.getRequestURI()$parameters">$request.getRequestURI()$parameters</a>
+	  #else
+		$response.sendRedirect("$request.getRequestURI()$parameters")
+	  #end
+	#else
+	  #set($int = 0)
+	  #set($levels = $int.valueOf($levels))
+          #set($fields = $fieldsParam)
+	  #showTable()
+	#end
+#end
+
+#macro(showTable)
+	#loadParameter("fields")
+	#set($fields = $parameter)
+
+	#if($debug)
+Levels: $levels
+Fields: $fields
+        #end
+
+	#set($queries = [])
+	#set($linkRoles = [])
+	#set($sorts = [])
+
+	1 Risk Analysis Trace Matrix
+
+	<form action="$doc.getURL()" method="post">
+	<input type="hidden" name="renderWiki" value="true"></input>
+	<input id="levelsInput" type="hidden" name="${parameterPrefix}levels" value="$levels"></input>
+        <input type="hidden" name="${parameterPrefix}fields" value="$fields"></input>
+	<table cellpadding="0" id="configTable">
+	<tr><td></td><th  style="border-width:1px;border-style:solid;padding:1px">Query</th><td></td></tr>
+	#foreach($level in [1..$levels])
+	  #loadParameter("query$level")
+	  <tr id="levelRow$level">
+		<th style="border-width:1px;border-style:solid;padding:1px">Level $level</th>
+		<td style="border-width:1px;border-style:solid;padding:1px"><input style="border-style:none" name="${parameterPrefix}query$level" type="text" size="50" #if($parameter)value="$parameter.replaceAll('"','\\"')#end"></input></td>
+		<td  style="vertical-align:middle;text-align:center;">
+		  <img src="/polarion/ria/images/control/minus.gif" alt="Remove" title="Remove" style="cursor:pointer#if($velocityCount != $levels);visibility:hidden#end" onclick="removeLevel()" id="removeImg$level"></img>
+		</td>
+	  </tr>
+	  #if($parameter)#set($void = $queries.add($parameter))#end
+	  #set($void = $linkRoles.add([]))
+	  #set($void = $sorts.add("id"))
+	#end
+	  <tr id="newLevelRow">
+		<th style="border-width:1px;border-style:solid;padding:1px"></th>
+		<td style="border-width:1px;border-style:solid;padding:1px"><input style="border-style:none" name="newQuery" type="text" size="50"</input></td>
+		<td style="vertical-align:middle;text-align:center;">
+		  <img src="/polarion/ria/images/control/plus.gif" alt="Add" title="Add" style="cursor:pointer" onclick="addLevel()"></img>
+		</td>
+	  </tr>
+	</table>
+	<button type="submit" onclick="checkNewLevelRow()">Refresh Table</button>
+	</form>
+
+	#if($debug){pre}Queries: $queries{/pre}#end
+
+	#TraceabilityTable($queries $linkRoles $sorts)
+
+#end
+
+
+#macro(renderHeader $query $roles $sort)
+$query
+#end
+
+#macro(renderItem $item $level)
+  {workitem:$item.getContextId().getContextName()/$item.getObjectId().getLocalId().getObjectName()|fields=$fields}
+#end
+
+#if($page.name == "RiskDynamicTraceabilityTable")
+
+#set($h = '#')
+
+#info("This page contains a macro to display a traceability table that allows adding and removing columns dynamically.\\ *ATTENTION*: you should make the __first query as detailed as possible__. \\ *RECOMMENDATION:*: Always add the project scope to first query, otherwise calculation is done on repository scope which will take some time. For large queries make sure you have enough memory on the server for the java process.")
+
+1.1 How to Use
+1.1.1 Syntax
+*Include the macro on your page:*
+<div class="code"><pre>
+${h}includeMacros("macros.RiskDynamicTraceabilityTable")
+</pre></div>
+*Use:*
+{code}
+#RiskDynamicTraceabilityTable($defaultQueries $fields)
+{code}
+*Parameters:*
+* *defaultQueries*: Must contain a list of *URL encoded* queries (at least one) that are used if the user doesn't specify other queries.
+* *fields*: Comma separated list of fields to display for the items in the table.
+
+
+1.1.1 Example
+{code}
+#set($defaultQuery1 = "type:userstory%20AND%20project.id:$page.space.projectId")
+#set($defaultQuery2 = "type:testcase")
+#set($defaultQuery3 = "type:defect")
+
+#RiskDynamicTraceabilityTable([$defaultQuery1,$defaultQuery2,$defaultQuery3] "status,severity" )
+{code}
+#end
+]]></content>
+</wiki-page>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wiki-page>
+<author>sameeullas@complianceg.com</author>
+<created>20220121092655</created>
+<title>Polarion User Report</title>
+<type>content</type>
+<content><![CDATA[## Polarion Users Report
+## POL-15960
+
+
+
+<i>Polarion users as of  $calendarTool.getCalendarInstance().getTime() </i>
+
+<h1>Polarion Users</h2> 
+
+<i>The Global Role "everyone" is not listed in this report.</i>
+
+## Retrieve All Users
+#set ($allUsers = $trackerService.getDataService().searchInstances("User","HAS_VALUE:id","name",5000) )
+
+{pre}
+
+## Set up User Display Table to reflect itemsTable Class
+<table class=itemsTable border=2>
+<tr>
+  <td style="background-color:#005F87;color:white;">Status</td>
+  <td style="background-color:#005F87;color:white;">Id</td>
+  <td style="background-color:#005F87;color:white;">Name</td>
+  <td style="background-color:#005F87;color:white;">Email</td>
+  <td style="background-color:#005F87;color:white;">Roles</td>
+  <td style="background-color:#005F87;color:white;">Created On</td>
+</tr>
+
+#set ($pContext =  $trackerService.getTrackerProject($page.project).getContextId() )
+
+#foreach ($user in $allUsers)
+  ## Get the first user record for created date
+  ##set ( $objHistory = $trackerService.getDataService().getObjectHistory($user) )
+  ##set ( $first = $objHistory.get($mathTool.sub($objHistory.size(),1) ) )
+  ## Get the revision object for this user revision
+  ##set ($revision = $trackerService.getDataService().getRevision("default",$first.getLastRevision() ) )
+  ## Get all roles assigned to the current revision of user object
+  #set ($userRoles = $trackerService.getDataService().getSecurityService().getRolesForUser($user.getId()) )
+
+  #set ($userRoles = $trackerService.getDataService().getSecurityService().getContextRolesForUser( $user.getId(), $pContext) )
+
+  #set ($thisRole = "")
+  ## If the user is only a member of "everyone" or no roles at all, then the user is disabled
+  ## Note - this works now, but really should look at least one role has the right to log in
+  #if ($userRoles.size() > 1)
+    #set ($roleArray = $userRoles.toArray() )
+    #foreach ($userRole in $roleArray )
+      #if ($userRole != "everyone")
+        #set ($thisRole = "${thisRole}${userRole}  ")
+      #end
+    #end
+  #else
+    #set ($thisRole = "disabled")
+  #end
+
+  #if ($thisRole != "disabled")
+  <tr> 
+  <td>Active</td>
+  <td>$user.getId()</td>
+  <td>$user.getName()</td>
+  <td>$!user.getEmail()</td>
+  <td>$thisRole</td>
+  ##<td>$revision.getCreated()</td>
+  </tr>
+ #end
+#end
+
+</table>
+<h2>Polarion Roles</h2>
+
+  #set ($pRoles = $trackerService.getDataService().getSecurityService().getContextRoles($pContext) )
+
+<table class=itemsTable border=2>
+<tr><td style="background-color:#005F87;color:white;"">Role</td>
+    <td style="background-color:#005F87;color:white;"">Users</td></tr>
+
+  #foreach ($role in $pRoles)
+
+  #set ($users = $trackerService.getDataService().getSecurityService().getUsersForContextRole( $role, $pContext) )
+  #set ($userText = "")
+  #foreach ($user in $users)
+  #set ($userName = $trackerService.getTrackerUser($user).getId() )
+  #set ($userText = "${userText}${userName} (${user})<br/>")
+  #end
+
+  <tr>
+
+   <td>$role</td>
+   <td>$userText</td>
+
+
+  </tr>
+
+
+  #end
+</table>
+
+{/pre}]]></content>
+</wiki-page>

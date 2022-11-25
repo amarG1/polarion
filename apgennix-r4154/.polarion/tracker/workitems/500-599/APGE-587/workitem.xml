@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">111</field>
+    <field id="created">2022-10-19 11:18:03.170 +0530</field>
+    <field id="description" text-type="text/html">dv</field>
+    <field id="priority">50.0</field>
+    <field id="severity">should_have</field>
+    <field id="status">draft</field>
+    <field id="tc" type="enum:technicalComponents">tOther</field>
+    <field id="testingReqOther" type="string">gccgc hgn</field>
+    <field id="title">Amar test</field>
+    <field id="type">changerequest</field>
+</work-item>

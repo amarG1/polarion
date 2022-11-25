@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<enumeration>
+    <option default="true" id="functional" name="Functional" sortOrder="1"/>
+    <option id="nonfunctional" name="Nonfunctional" sortOrder="2"/>
+</enumeration>

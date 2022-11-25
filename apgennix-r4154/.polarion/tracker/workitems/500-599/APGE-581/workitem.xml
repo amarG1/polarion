@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">waiting</item>
+                <item id="user">111</item>
+            </struct>
+        </list>
+    </field>
+    <field id="author">111</field>
+    <field id="created">2022-09-28 11:35:07.972 +0530</field>
+    <field id="noSoftwareCoverage" type="boolean">true</field>
+    <field id="previousStatus">draft</field>
+    <field id="priority">50.0</field>
+    <field id="severity">should_have</field>
+    <field id="status">reviewed</field>
+    <field id="title">Test Script</field>
+    <field id="type">systemrequirement</field>
+</work-item>

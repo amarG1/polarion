@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <field id="active">true</field>
+    <field id="description" text-type="text/plain">Welcome to CSAR4 Template.</field>
+    <field id="lead">Ashfaq</field>
+    <field id="name">R4 Demo</field>
+    <field id="start">2022-07-04</field>
+    <field id="trackerPrefix">RD</field>
+</project>

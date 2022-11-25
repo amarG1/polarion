@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formLayout xmlns="http://polarion.com/schema/WorkItems/FormLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://polarion.com/schema/WorkItems/FormLayout">
+    <horizontal>
+        <vertical>
+            <section>
+                <field id="type"/>
+                <field id="project"/>
+                <field id="author"/>
+                <field id="severity"/>
+            </section>
+        </vertical>
+        <vertical>
+            <section>
+                <field id="initialEstimate"/>
+                <field id="timeSpent"/>
+                <field id="remainingEstimate"/>
+                <field id="status"/>
+                <field id="resolution"/>
+            </section>
+        </vertical>
+        <vertical>
+            <section>
+                <field id="dueDate"/>
+                <field id="assignee"/>
+                <field id="qualificationReport"/>
+                <field id="useNotRecommendedMethod"/>
+            </section>
+        </vertical>
+    </horizontal>
+    <extension id="velocity_form" label="Advanced Information" script="CSV_method_KIA_advancedInformation.vm"/>
+    <field id="description"/>
+    <field id="comments"/>
+    <field id="workRecords"/>
+    <field id="approvals"/>
+    <field id="linkedRevisions"/>
+    <field id="linkedWorkItems"/>
+    <field id="hyperlinks"/>
+    <field id="attachments"/>
+    <field id="watches"/>
+</formLayout>

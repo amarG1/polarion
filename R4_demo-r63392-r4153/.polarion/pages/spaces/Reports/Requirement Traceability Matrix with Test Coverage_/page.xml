@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">meeran</field>
+    <field id="created">2021-11-08 12:07:02.475 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">Requirement Traceability Matrix with Test Coverage</h1>
+  <p id="polarion_hardcoded_1"></p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <div id="polarion_client1" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">########################### GLOBALS STARTS #########################
+#set($projectId = $page.getReference().projectId())
+#set($userRequirements = $transaction.workItems().search().query(&quot;project.id:$projectId AND type:user_requirement&quot;))
+#set($testRuns = $transaction.testRuns().search().query(&quot;project.id:$projectId&quot;))
+#set($testRunIds = &quot;&quot;)
+#set($sq = &quot;&#39;&quot;)
+#set($passedTestCasesList = [])
+#set($failedTestCasesList = [])
+#set($dsList = [])
+#set($tcList = [])
+#set($verdictList = [])
+########################### GLOBALS ENDS #########################
+
+########################### MACRO STARTS #########################
+#macro(getRenderingVersion $pid $wid $renderedVersion)
+    #set($renderedVersion = $transaction.workItems().search().query(&quot;project.id:$pid AND id:$wid&quot;).toArrayList().get(0))
+#end
+########################### MACRO ENDS #########################
+
+&lt;style&gt;
+
+    .textbox{
+    	position: relative;
+        width: 25%;
+        box-sizing: border-box;
+        font-size: 1em;
+        line-height: 2em;
+        padding-left: 1em;
+        border: 1px solid #e7e7e7;
+        color: #6d7072;
+        background-color: white;
+        height: 50px;
+    }
+    
+    .textbox:focus{
+    	border-color: #005F87;
+    }
+
+    .button-custom{
+        font-size: 16px;
+        border-radius: 4px;
+        transition: all 0.5s;
+        font-weight: bold;
+        color: #717171;
+        text-shadow: 1px 1px 0px white;
+        border: 1px solid #C5C5C5;
+        background: #e5e5e5;
+        cursor: pointer;
+        height: 50px;
+        width: 100px;
+    }
+
+    .table-wrapper-L1 {
+        width: 100%;
+        font-family: &quot;Segoe UI&quot;, &quot;Selawik&quot;, &quot;Open Sans&quot;, Arial, sans-serif;
+    }
+
+    .table-wrapper {
+        position: relative;
+        padding-top: 60px;
+        background-color: #fff;
+    }
+
+    .table-wrapper.main {
+        overflow: hidden;
+    }
+
+    .table-wrapper.main th {
+        font-weight: bold;
+        font-size: 18px;
+        color: #fff;
+        background-color: #005F87;
+    }
+
+    .table-wrapper.main td {
+        font-size: 15px;
+        color: gray;
+        line-height: 1.4;
+    }
+
+
+    .table-wrapper-head th {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    
+    .table-wrapper-body tr:nth-child(even) {
+        background-color: #f8f6ff;
+    }
+
+    .column1 {
+        width: 30%;
+        padding-left: 30px;
+    }
+
+    .column2 {
+        width: 29%;
+    }
+
+    .column3 {
+        width: 29%;
+    }
+
+    .column4 {
+        width: 12%;
+    }
+
+    .table-wrapper-body {
+        max-height: 600px;
+        overflow-y: scroll;
+        padding-top:10px;
+    }
+
+    .table-wrapper-body td {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    ::placeholder {
+        color: black;
+        opacity: 1;
+      }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+&lt;/style&gt;
+
+###################### BUSINESS LOGICS STARTS ######################
+#foreach($tr in $testRuns)
+    #if($testRunIds.isEmpty())
+        #set($testRunIds = &quot;$sq$tr.getReference().id()$sq,&quot;)
+    #else
+        #set($testRunIds = &quot;$testRunIds$sq$tr.getReference().id()$sq,&quot;)
+    #end
+#end
+
+#set($lastIndex = $testRunIds.length() - 0)
+#set($testRunIds = $testRunIds.substring(0, $lastIndex))
+
+#set($failedTestCasesQuery = &quot;select distinct TRR.FK_URI_TESTCASE,TRR.C_RESULT from STRUCT_TESTRUN_RECORDS TRR where TRR.FK_URI_P_TESTRUN in (select C_URI from TESTRUN TR where TR.C_ID in ($testRunIds) and TR.FK_PROJECT in (select C_PK from PROJECT PR where PR.C_ID IN (&#39;$projectId&#39;)) and TRR.C_RESULT=&#39;failed&#39;)&quot;)
+#set($failedTestCases = $transaction.workItems().search().query(&quot;SQL:($failedTestCasesQuery)&quot;))
+#foreach($ftc in $failedTestCases)
+    #set($void = $failedTestCasesList.add($ftc.fields().id().get()))
+#end
+
+#set($passedTestCasesQuery = &quot;select distinct TRR.FK_URI_TESTCASE,TRR.C_RESULT from STRUCT_TESTRUN_RECORDS TRR where TRR.FK_URI_P_TESTRUN in (select C_URI from TESTRUN TR where TR.C_ID in ($testRunIds) and TR.FK_PROJECT in (select C_PK from PROJECT PR where PR.C_ID IN (&#39;$projectId&#39;)) and TRR.C_RESULT=&#39;passed&#39;)&quot;)
+#set($passedTestCases = $transaction.workItems().search().query(&quot;SQL:($passedTestCasesQuery)&quot;))
+#foreach($ptc in $passedTestCases)
+    #set($void = $passedTestCasesList.add($ptc.fields().id().get()))
+#end
+
+&lt;div id=&quot;main-report&quot;&gt;
+    &lt;div&gt;
+        &lt;input id=&quot;search-inp&quot; class=&quot;textbox&quot; type=&quot;text&quot; name=&quot;name&quot; placeholder=&quot;Search in table...&quot; autocomplete=&quot;off&quot; style=&quot;display: inline;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;table_data_div&quot; class=&quot;table-wrapper-L1&quot; style=&quot;margin-top: 5px;&quot;&gt;
+        &lt;div class=&quot;table-wrapper main&quot;&gt;
+            &lt;div class=&quot;table-wrapper-head&quot;&gt;
+                &lt;table id=&quot;main-table-head&quot; style=&quot;width: 100%;border-collapse: collapse;&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th class=&quot;column1&quot; style=&quot;text-align: left;font-weight: unset;padding-right: 10px;&quot;&gt;User Requirements&lt;/th&gt;
+                            &lt;th class=&quot;column2&quot; style=&quot;text-align: left;font-weight: unset;padding-right: 10px;&quot;&gt;Functional Requirement&lt;/th&gt;
+                            &lt;th class=&quot;column3&quot; style=&quot;text-align: left;font-weight: unset;padding-right: 10px;&quot;&gt;Test Cases&lt;/th&gt;
+                            &lt;th class=&quot;column4&quot; style=&quot;text-align: left;font-weight: unset;padding-right: 10px;&quot;&gt;Verdict&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;table-wrapper-body&quot;&gt;
+                &lt;table id=&quot;main-table&quot; style=&quot;width: 100%;border-collapse: collapse;&quot;&gt;
+                    &lt;tbody&gt;
+                        ## Iterate all of the User Requirements and create new Rows usign &lt;tr&gt; tag.
+                        #foreach($ur in $userRequirements)
+                            ## Clear the list and store the new objects as per iteration
+                            #set($dsList = [])
+                            #set($tcList = [])
+                            #set($verdictList = [])
+                            &lt;tr class=&quot;main&quot;&gt;
+                                ## Print the User Requirements Data
+                                &lt;td class=&quot;column1&quot; style=&quot;font-weight: unset;padding-right: 10px;&quot;&gt;$ur.fields().id().render().withLinks() - $ur.fields().title().render()&lt;/td&gt;
+                                ## Get the back linked workItems of User Requirements
+                                #set($urBackLinkedWItems = $ur.fields().linkedWorkItems().back())
+                                #foreach($urBackLinkedWI in $urBackLinkedWItems)
+                                    ## Check if the current back linked workItem has link role &quot;relates_to&quot; and the type is &quot;designspecification&quot;
+									#set($urBackLinkedWIType = $urBackLinkedWI.getOldApi().getLinkedItem().getType().getId())
+                                    #if($urBackLinkedWIType.equals(&quot;designspecification&quot;) || $urBackLinkedWIType.equals(&quot;functional_requirement&quot;) )
+                                        ## Convert the object of Open API to Rendering API
+                                        #getRenderingVersion($projectId $urBackLinkedWI.getOldApi().getLinkedItem().getId() $renderedVersion)
+                                        ## Add the converted object of DS to the list
+                                        #set($void = $dsList.add($renderedVersion))
+                                        ## Get the back linked workItems of Design Specification
+                                        #set($dsBackLinkedWItems = $renderedVersion.fields().linkedWorkItems().back())
+                                        #foreach($dsBackLinkedWI in $dsBackLinkedWItems)
+                                            #set($linkedItemType = $dsBackLinkedWI.getOldApi().getLinkedItem().getType().getId())
+                                            ## Check if the current back linked workItem has link role &quot;relates_to&quot; and the type is &quot;IO&quot; or &quot;OQ&quot; or &quot;UAT&quot;
+                                            #if($linkedItemType.equals(&quot;test_script_IQ&quot;) || $linkedItemType.equals(&quot;test_script_OQ&quot;) || $linkedItemType.equals(&quot;test_script_UAT&quot;))
+                                                ## Convert the object of Open API to Rendering API
+                                                #getRenderingVersion($projectId $dsBackLinkedWI.getOldApi().getLinkedItem().getId() $renderedVersion)
+                                                ## Add the converted object of TC to the list
+                                                #set($void = $tcList.add($renderedVersion))
+                                                #if($failedTestCasesList.contains($renderedVersion.fields().id().get()))
+                                                    #set($void = $verdictList.add(&quot;Failed&quot;))
+                                                #elseif($passedTestCasesList.contains($renderedVersion.fields().id().get()))
+                                                    #set($void = $verdictList.add(&quot;Passed&quot;))
+                                                #else
+                                                    #set($void = $verdictList.add(&quot;Blocked&quot;))
+                                                #end
+                                            #end
+                                        #end
+									#elseif($urBackLinkedWIType.equals(&quot;test_script_IQ&quot;) || $urBackLinkedWIType.equals(&quot;test_script_OQ&quot;) || $urBackLinkedWIType.equals(&quot;test_script_UAT&quot;))
+										## Convert the object of Open API to Rendering API
+										#getRenderingVersion($projectId $urBackLinkedWI.getOldApi().getLinkedItem().getId() $renderedVersion)
+										## Add the converted object of TC to the list
+										#set($void = $tcList.add($renderedVersion))
+                                        #if($urBackLinkedWI.getOldApi().getLinkedItem().getStatus().getId() == &quot;rejected&quot;)
+											#set($void = $verdictList.add(&quot;Failed&quot;))
+                                         #elseif($urBackLinkedWI.getOldApi().getLinkedItem().getStatus().getId() == &quot;post_approved&quot;)
+                                        #set($void = $verdictList.add(&quot;Passed&quot;))
+                                        #else
+										#*#elseif($passedTestCasesList.contains($renderedVersion.fields().id().get()))
+											#set($void = $verdictList.add(&quot;Passed&quot;))
+										#else*#
+											#set($void = $verdictList.add(&quot;No Verdict Found&quot;))
+										#end
+                                        #*
+										#if($failedTestCasesList.contains($renderedVersion.fields().id().get()))
+											#set($void = $verdictList.add(&quot;Failed&quot;))
+										#elseif($passedTestCasesList.contains($renderedVersion.fields().id().get()))
+											#set($void = $verdictList.add(&quot;Passed&quot;))
+										#else
+											#set($void = $verdictList.add(&quot;Blocked&quot;))
+										#end *#
+                                           
+                                    #end
+                                #end
+                                &lt;td class=&quot;column2&quot; style=&quot;font-weight: unset;padding-right: 10px;&quot;&gt;
+                                    ## If the list is empty then print N/A else print all of the objects stored in the list
+                                    #if($dsList.size() == 0)
+                                        &lt;p&gt;No Functional Requirement Found&lt;/p&gt;
+                                    #else
+                                        #foreach($ds in $dsList)
+                                            &lt;p&gt;$ds.fields().id().render().withLinks() - $ds.fields().title().render()&lt;/p&gt;
+                                        #end
+                                    #end
+                                &lt;/td&gt;
+                                &lt;td class=&quot;column3&quot; style=&quot;font-weight: unset;padding-right: 10px;&quot;&gt;
+                                    ## If the list is empty then print N/A else print all of the objects stored in the list
+                                    #if($tcList.size() == 0)
+                                        &lt;p&gt;No Test Case Found&lt;/p&gt;
+                                    #else
+                                        #foreach($tc in $tcList)
+                                            &lt;p&gt;$tc.fields().id().render().withLinks() - $tc.fields().title().render()&lt;/p&gt;
+                                            
+                                        #end
+                                    #end
+                                &lt;/td&gt;
+                                &lt;td class=&quot;column4&quot; style=&quot;border: none; text-align: center;font-weight: unset;padding-right: 10px; &quot;&gt;
+                                    ## If the list is empty then print N/A else print all of the objects stored in the list
+                                    #if($verdictList.size() == 0)
+                                        &lt;p&gt;No Verdict Found&lt;/p&gt;
+                                    #else
+                                        #foreach($vl in $verdictList)
+                                            &lt;p&gt;$vl&lt;/p&gt;
+                                        #end
+                                    #end
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        #end
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+        $(document).ready(function(){
+            $(&quot;#main-report&quot;).find(&quot;.polarion-Hyperlink&quot;).each(function(){
+                var hostURL = window.location.origin;
+                var link = $(this).attr(&quot;href&quot;);
+                var linkToOpen = hostURL + link;
+                $(this).click(function(e){
+                    e.preventDefault();
+                    window.open(linkToOpen, &quot;_blank&quot;);
+                });
+            });
+            $(&quot;#main-table tbody tr&quot;).each(function(){
+				var td = $(this).find(&quot;td:nth-child(4)&quot;);
+                td.find(&quot;p&quot;).each(function(){
+                 	$(this).css(&quot;margin&quot;, &quot;5px&quot;);
+                    $(this).css(&quot;padding&quot;, &quot;10px&quot;);
+                    var tdText = $(this).text().trim();
+                    if(tdText === &quot;Passed&quot;){
+                        $(this).css(&quot;background&quot;, &quot;#CCFFCC&quot;);                       
+                    } else if(tdText === &quot;Failed&quot;){
+                         $(this).css(&quot;background&quot;, &quot;#FFEBEB&quot;);
+                    } else if(tdText === &quot;No Verdict Found&quot;){
+                         $(this).css(&quot;background&quot;, &quot;#D8D8D8&quot;);
+                    }
+                });
+			});
+                      $(&quot;#main-table tbody tr&quot;).each(function(){
+				var td = $(this).find(&quot;td:nth-child(3)&quot;);
+                td.find(&quot;p&quot;).each(function(){
+                 	$(this).css(&quot;margin&quot;, &quot;0px&quot;);
+                    $(this).css(&quot;padding&quot;, &quot;10px&quot;);
+                });
+			});
+            $(&quot;#search-inp&quot;).on(&quot;keyup&quot;, function () {
+                var value = $(this).val().toLowerCase();
+                $(&quot;#main-table tr&quot;).filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) &gt; -1)
+                });
+            });
+        });
+    &lt;/script&gt;
+&lt;/div&gt;</sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+    <field id="title">Requirement Traceability Matrix with Test Coverage</field>
+</rich-page>

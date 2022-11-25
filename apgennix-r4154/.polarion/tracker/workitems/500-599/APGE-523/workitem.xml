@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="a" type="float">55.0</field>
+    <field id="assignee">111</field>
+    <field id="author">111</field>
+    <field id="b" type="float">5.0</field>
+    <field id="created">2022-09-08 13:46:13.365 +0530</field>
+    <field id="description" text-type="text/html">Hello, everyone this is our WI</field>
+    <field id="gr" multi="true" type="enum:gr">
+        <list>
+            <item>user</item>
+        </list>
+    </field>
+    <field id="mail" type="string">vsfv</field>
+    <field id="phone" type="integer">55</field>
+    <field id="pr" multi="true" type="enum:pr">
+        <list>
+            <item>p_appr</item>
+        </list>
+    </field>
+    <field id="previousStatus">reopened</field>
+    <field id="priority">50.0</field>
+    <field id="resolution">done</field>
+    <field id="resolvedOn">2022-09-23 12:12:41.273 +0530</field>
+    <field id="severity">should_have</field>
+    <field id="status">done</field>
+    <field id="title">amar poddar:dfdvsf</field>
+    <field id="type">ap</field>
+    <field id="user" type="enum:user">athrava</field>
+</work-item>

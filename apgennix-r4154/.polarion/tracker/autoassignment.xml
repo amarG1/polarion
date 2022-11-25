@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autoassignment>
+    <rule>
+        <condition>
+            <field id="phone">
+                <expression><![CDATA[*11*]]></expression>
+            </field>
+
+        </condition>
+
+        <assignee>
+            <user id="shbj"/>
+            <user id="111"/>
+        </assignee>
+
+    </rule>
+
+</autoassignment>

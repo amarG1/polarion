@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2022-10-26 12:37:08.866 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">Openapi</h1>
+  <p id="polarion_client1"></p>
+  <div id="polarion_client2" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">#set($project = &quot;apgennix&quot;)
+#set($query = &quot;project.id:$project AND type:ap&quot;)
+
+#set($ts1 = $trackerService.queryWorkItems($query, &quot;id&quot;))
+&lt;table border=&quot;1&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;th&gt;STATUS&lt;/th&gt;
+&lt;th&gt;TITLES &lt;/th&gt;
+&lt;th&gt;LW &lt;/th&gt;
+
+
+&lt;/tr&gt;
+&lt;/thead&gt;
+#foreach($w in $ts1)
+#set($l = $w.getLocation())
+#set($li = $w.getLinkedWorkItems())
+
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt; $w.getId()&lt;/td&gt;
+&lt;td&gt;$w.getStatus().getId()&lt;/td&gt;
+&lt;td&gt;$w.getTitle()&lt;/td&gt;
+#foreach($l in $li)
+&lt;td&gt;$l.getId() - $l.getTitle() - $l.getType().getName()&lt;/td&gt;
+#end
+
+
+
+
+&lt;/tr&gt;
+&lt;/tbody&gt;
+
+#end
+&lt;/table&gt;
+
+        </sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_hardcoded_1"></p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2"></p>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <p id="polarion_hardcoded_3"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+    <field id="title">openapi</field>
+</rich-page>

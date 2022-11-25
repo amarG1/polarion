@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option description="Optimizing - Stable and Flexible." id="cmmi5" name="CMMI5" sortOrder="1"/>
+    <option description="Quantitavely Managed - Measured and controlled." id="cmmi4" name="CMMI4" sortOrder="2"/>
+    <option description="Defined - Proactive, rather than reactive." id="cmmi3" name="CMMI3" sortOrder="3"/>
+    <option description="Managed - Managed on the project level." id="cmmi2" name="CMMI2" sortOrder="4"/>
+    <option description="Initial - Unpredictable and reactive." id="cmmi1" name="CMMI1" sortOrder="5"/>
+</enumeration>

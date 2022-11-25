@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2017-06-22 15:40:01.649 +0200</field>
+    <field id="homePageContent" text-type="text/html"><![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">FMEA Worksheet</h1>
+  <p id="polarion_1">
+    <span class="polarion-rp-inline-widget" data-widget="com.polarion.scriptInline">
+      <span class="polarion-rp-widget-parameters" style="display: none;">
+        <sub id="script">
+          <sub id="script" style="white-space:pre;">## Reported By
+#set($infoText = &quot;Reported by $transaction.users().getBy().id($securityService.getCurrentUser()).render()&lt;br/&gt;$date.long&quot;)
+#if($widgetContext.target().isEditor())
+	&lt;div style=&quot;color: grey; text-align: left;&quot;&gt;$infoText&lt;div&gt;
+#elseif($widgetContext.target().isPdf())
+	&lt;div style=&quot;color: grey; text-align: right; position: absolute; top: 22px; right: 10px;&quot;&gt;$infoText&lt;div&gt;
+#elseif($widgetContext.target().isPrint())		
+	&lt;div style=&quot;text-align: right; position: absolute; top: 35px; right: 10px;&quot;&gt;$infoText&lt;div&gt;
+#end</sub>
+        </sub>
+      </span>
+    </span>
+  </p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <ul id="polarion_client2">
+    <li>Open <span class="polarion-rp-inline-widget" data-widget="enumerationrenderer">
+        <span class="polarion-rp-widget-parameters" style="display: none;">
+          <sub id="scope"></sub><sub id="type"></sub>
+          <sub id="enum">
+            <sub id="values">
+              <sub>@richPage</sub>
+            </sub>
+          </sub>
+          <sub id="enumOpt">
+            <sub id="values">
+              <sub>Risks / FMEAWorksheet</sub>
+            </sub>
+          </sub>
+          <sub id="render">
+            <sub id="renderModelObject">true</sub>
+            <sub id="withBaselineIcon">true</sub>
+            <sub id="withColor">false</sub>
+            <sub id="withIcon">true</sub>
+            <sub id="withLinks">true</sub>
+            <sub id="withRevisionIcon">true</sub>
+            <sub id="withText">true</sub>
+          </sub>
+          <sub id="customization">
+            <sub id="textBefore">&lt;span&gt;</sub>
+            <sub id="textAfter">&lt;/span&gt; as a table</sub>
+            <sub id="customLinkTarget">
+              <sub id="values">
+                <sub>_top</sub>
+              </sub>
+            </sub>
+            <sub id="customLink">
+              <sub id="script" style="white-space:pre;">#set($projectId = $page.getReference().projectId())
+#set($query = &#39;type:risk AND document.title:&quot;Risk Specification&quot;&#39;)
+$transaction.context().createPortalLink().project(&quot;$projectId&quot;).workItems().query(&quot;$query&quot;).tab(&quot;table&quot;).toEncodedRelativeUrl()</sub>
+            </sub>
+          </sub>
+        </span>
+      </span> for Excel export</li>
+    <li>Open <span class="polarion-rte-link" data-type="document" id="fake" data-item-name="Risk Specification" data-space-name="Risks" data-option-id="default"></span> Document</li>
+  </ul>
+  <p id="polarion_client3"></p>
+  <div id="polarion_client4" class="polarion-rp-widget-part" data-widget="com.polarion.table">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="subtype">risk</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;">document.title:&quot;Risk Specification&quot;</sub>
+        <sub id="children">
+          <sub id="columns">
+            <sub>
+              <sub id="id">id</sub>
+            </sub>
+            <sub>
+              <sub id="id">title</sub>
+            </sub>
+            <sub>
+              <sub id="id">status</sub>
+            </sub>
+            <sub>
+              <sub id="id">description</sub>
+            </sub>
+            <sub>
+              <sub id="id">severityRating</sub>
+            </sub>
+            <sub>
+              <sub id="id">causes</sub>
+            </sub>
+            <sub>
+              <sub id="id">occurrenceRating</sub>
+            </sub>
+            <sub>
+              <sub id="id">controls</sub>
+            </sub>
+            <sub>
+              <sub id="id">detectionRating</sub>
+            </sub>
+            <sub>
+              <sub id="id">rpn</sub>
+            </sub>
+            <sub>
+              <sub id="id">recommendedActions</sub>
+            </sub>
+            <sub>
+              <sub id="id">severityRatingNew</sub>
+            </sub>
+            <sub>
+              <sub id="id">occurrenceRatingNew</sub>
+            </sub>
+            <sub>
+              <sub id="id">detectionRatingNew</sub>
+            </sub>
+            <sub>
+              <sub id="id">takenActions</sub>
+            </sub>
+          </sub>
+          <sub id="sortBy"></sub>
+        </sub>
+      </sub>
+      <sub id="propertiesSidebarFields">
+        <sub>
+          <sub id="id">assignee</sub>
+        </sub>
+        <sub>
+          <sub id="id">severity</sub>
+        </sub>
+        <sub>
+          <sub id="id">status</sub>
+        </sub>
+        <sub>
+          <sub id="id">resolution</sub>
+        </sub>
+        <sub>
+          <sub id="id">detectionRating</sub>
+        </sub>
+        <sub>
+          <sub id="id">occurrenceRating</sub>
+        </sub>
+        <sub>
+          <sub id="id">severityRating</sub>
+        </sub>
+        <sub>
+          <sub id="id">rpn</sub>
+        </sub>
+        <sub>
+          <sub id="id">detectionRatingNew</sub>
+        </sub>
+        <sub>
+          <sub id="id">occurrenceRatingNew</sub>
+        </sub>
+        <sub>
+          <sub id="id">severityRatingNew</sub>
+        </sub>
+        <sub>
+          <sub id="id">rpnNew</sub>
+        </sub>
+        <sub>
+          <sub id="id">causes</sub>
+        </sub>
+        <sub>
+          <sub id="id">recommendedActions</sub>
+        </sub>
+        <sub>
+          <sub id="id">takenActions</sub>
+        </sub>
+        <sub>
+          <sub id="id">linkedWorkItems</sub>
+        </sub>
+      </sub>
+      <sub id="advanced">
+        <sub id="top">50</sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>]]></field>
+    <field id="title">FMEA Worksheet</field>
+</rich-page>

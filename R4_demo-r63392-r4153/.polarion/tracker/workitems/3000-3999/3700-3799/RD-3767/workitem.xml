@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="21cfr_q1" type="enum:boolean">yes</field>
+    <field id="21cfr_q2" type="enum:boolean">yes</field>
+    <field id="21cfr_q3" type="enum:boolean">yes</field>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="secureApprovalCommentId">1</item>
+                <item id="status">approved</item>
+                <item id="user">Ashfaq</item>
+            </struct>
+        </list>
+    </field>
+    <field id="author">Ashfaq</field>
+    <field id="confElecRec" type="string">Yes</field>
+    <field id="confElecSig" type="string">No</field>
+    <field id="created">2022-10-31 13:04:52.473 +0000</field>
+    <field id="gxp_q1" type="enum:boolean">no</field>
+    <field id="gxp_q2" type="enum:boolean">no</field>
+    <field id="gxp_q3" type="enum:boolean">no</field>
+    <field id="gxp_q4" type="enum:boolean">no</field>
+    <field id="gxp_q5" type="enum:boolean">no</field>
+    <field id="gxp_q6" type="enum:boolean">no</field>
+    <field id="gxp_q7" type="enum:boolean">no</field>
+    <field id="gxp_q8" type="enum:boolean">no</field>
+    <field id="gxp_q9" type="enum:boolean">no</field>
+    <field id="gxpapp" type="string">No</field>
+    <field id="hostedIn" type="string">On-Premise</field>
+    <field id="intendedUseStatement" text-type="text/html" type="text">requirement and risk management</field>
+    <field id="internalExternalUse" type="string">Internal Use</field>
+    <field id="linkedWorkItems">
+        <list>
+            <struct>
+                <item id="role">tool_chain</item>
+                <item id="workItem">RD-3766</item>
+            </struct>
+        </list>
+    </field>
+    <field id="previousStatus">approved</field>
+    <field id="priority">50.0</field>
+    <field id="questionnaire" type="string">{"question_title":"Polarion","question_version":22,"question_intended_use":"requirement and risk management ","question_automates_system":"Enterprise standalone software system","question_hosted_system":"On-Premise","question_number_of_users":"10_100","internal_external":"Internal Use","question_System_GAMP_Categorization":"Infrastructure (GAMP Category 1)"}</field>
+    <field id="severity">normal</field>
+    <field id="status">in_draft</field>
+    <field id="sysName" type="string">Polarion</field>
+    <field id="sysType" type="string">Enterprise standalone software system</field>
+    <field id="title">Polarion</field>
+    <field id="type">gxp</field>
+    <field id="userQuantity" type="enum:numberOfUsers">10_100</field>
+    <field id="validReq" type="string">No</field>
+    <field id="version" type="string">23.0</field>
+</work-item>

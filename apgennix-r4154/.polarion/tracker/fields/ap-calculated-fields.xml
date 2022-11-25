@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calculated-fields>
+    <calculated-field id="res">
+        <multiply>
+            <field><![CDATA[a]]></field>
+            <field><![CDATA[b]]></field>
+        </multiply>
+
+    </calculated-field>
+
+</calculated-fields>

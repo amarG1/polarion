@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">Ashfaq</field>
+    <field id="created">2022-11-02 13:04:11.672 +0000</field>
+    <field id="phase" type="enum:phase">oqv</field>
+    <field id="priority">50.0</field>
+    <field id="sev" type="enum:severity">normal</field>
+    <field id="severity">normal</field>
+    <field id="status">in_draft</field>
+    <field id="title">test</field>
+    <field id="type">defect</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

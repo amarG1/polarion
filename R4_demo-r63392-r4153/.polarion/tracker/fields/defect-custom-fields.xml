@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field id="phase" name="Phase" type="enum:phase"/>
+    <field id="resolu" name="Resolution" type="string"/>
+    <field id="sev" name="Severity" type="enum:severity"/>
+    <field id="defectCategory" name="Defect Category" type="string"/>
+</fields>

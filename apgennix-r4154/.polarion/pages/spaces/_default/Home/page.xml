@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2017-01-16 18:22:21.667 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <div id="polarion_client11" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub style="white-space:pre;" id="script">&lt;h1&gt;Welcome to the &lt;i&gt;$page.fields.project.render.withIcon(false)&lt;/i&gt; Project&lt;/h1&gt;</sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_1"></p>
+  <div id="polarion_client4" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">&lt;div style=&quot;background:cyan; padding:10px;&quot;&gt;&lt;h1&gt;Amar poddar&lt;/h1&gt;
+&lt;p&gt;polarion dev.&lt;/p&gt;&lt;/div&gt;
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2">
+    <span style="font-weight: bold;"> </span>
+  </p>
+  <div id="polarion_client10" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters" style="display: none;">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">###############################################################################
+##
+## Velocity Context - following objects are in the velocity context
+##
+## com.polarion.alm.shared.api.transaction.ReadOnlyTransaction $transaction
+## com.polarion.alm.shared.api.model.rp.RichPage $page
+## com.polarion.alm.shared.api.model.rp.widget.RichPageWidgetRenderingContext $widgetContext
+##
+
+###############################################################################
+##
+## Macros
+##
+#macro(spaceInfo $title $link $text $imgLink)
+	&lt;tr&gt;
+		&lt;td style=&quot;width: 150px; padding: 2px;&quot;&gt;
+			&lt;img src=&quot;$imgLink&quot; style=&quot;width: 80px; padding: 24px 20px 5px 40px;&quot; alt=&quot;$title&quot; title=&quot;$title&quot; /&gt;
+		&lt;/td&gt;
+		&lt;td style=&quot;padding: 12px 5% 12px 0;&quot;&gt;
+			&lt;a href=&quot;$link&quot; target=&quot;_top&quot;&gt;&lt;span style=&quot;font-size: 125%;&quot;&gt;$title&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;
+			$text
+		&lt;/td&gt;
+	&lt;/tr&gt;
+#end
+
+###############################################################################
+##
+## Render
+##
+#set($projectId = $page.getReference().projectId())
+#set($tableStyle = &quot;width: 100%; margin-left: auto; margin-right: auto; empty-cells: show; border-collapse: collapse; vertical-align: middle; text-align: justify;&quot;)
+&lt;table style=&quot;$tableStyle&quot;&gt;
+	&lt;tr&gt;
+		&lt;td style=&quot;width: 300px; padding: 2px;&quot;&gt;
+			&lt;img src=&quot;/polarion/page-attachment/$projectId/_default/Home/home.png&quot; style=&quot;width: 250px; padding: 15px 20px 12px 0;&quot; alt=&quot;Home Page&quot; title=&quot;Home Page&quot;&gt;
+		&lt;/td&gt;
+		&lt;td style=&quot;padding: 12px 5% 12px 0;&quot;&gt;
+			$page.fields().project().get().fields().description().render()
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+#set($projectId = $page.getReference().projectId())
+&lt;table style=&quot;$tableStyle&quot;&gt;
+	## Dashboard
+	#set($link = $transaction.context().createPortalLink().project(&quot;$projectId&quot;).richPage(&quot;&quot;, &quot;Dashboard&quot;).toEncodedRelativeUrl())
+	#set($text = &quot;&lt;ul&gt;&lt;li&gt;See a high-level overview of the current status of all activities.&lt;/li&gt;&lt;/ul&gt;&quot;)
+	#set($imgLink = &quot;/polarion/page-attachment/$projectId/_default/Home/dashboard.png&quot;)
+	#spaceInfo(&quot;Dashboard&quot; $link $text $imgLink)
+
+	## Requirements
+	#set($link = $transaction.context().createPortalLink().project(&quot;$projectId&quot;).richPage(&quot;Requirements&quot;, &quot;Home&quot;).toEncodedRelativeUrl())
+	#set($text = &quot;&lt;ul&gt;&lt;li&gt;Refine the Project Scope into System Requirement Specifications.&lt;/li&gt;&lt;li&gt;Prepare System Test Specification documents and manage System Verifications.&lt;/li&gt;&lt;li&gt;Learn how to create System Requirements.&lt;/li&gt;&lt;/ul&gt;&quot;)
+	#set($imgLink = &quot;/polarion/page-attachment/$projectId/_default/Home/requirements.png&quot;)
+	#spaceInfo(&quot;Requirements&quot; $link $text $imgLink)
+ 
+	## Design
+	#set($link = $transaction.context().createPortalLink().project(&quot;$projectId&quot;).richPage(&quot;Design&quot;, &quot;Home&quot;).toEncodedRelativeUrl())
+	#set($text = &quot;&lt;ul&gt;&lt;li&gt;Cover System Requirements with Software Requirements in the Software Requirement Specifications.&lt;/li&gt;&lt;li&gt;Cover Software Requirements with Software Test Cases in the Software Test Case Specifications.&lt;/li&gt;&lt;li&gt;Manage Software Verifications.&lt;/li&gt;&lt;li&gt;Learn how to design Software Requirements.&lt;/li&gt;&lt;/ul&gt;&quot;)
+	#set($imgLink = &quot;/polarion/page-attachment/$projectId/_default/Home/design.png&quot;)
+	#spaceInfo(&quot;Design&quot; $link $text $imgLink)
+ 
+	## Risks
+	#set($link = $transaction.context().createPortalLink().project(&quot;$projectId&quot;).richPage(&quot;Risks&quot;, &quot;Home&quot;).toEncodedRelativeUrl())
+	#set($text = &quot;&lt;ul&gt;&lt;li&gt;Use Failure Modes and Effects Analysis to specify all possible risks.&lt;/li&gt;&lt;li&gt;Assess the consequences of failures in the Risk Specification document.&lt;/li&gt;&lt;li&gt;Learn how to perform an FMEA Analysis.&lt;/li&gt;&lt;/ul&gt;&quot;)
+	#set($imgLink = &quot;/polarion/page-attachment/$projectId/_default/Home/risks.png&quot;)
+	#spaceInfo(&quot;Risks&quot; $link $text $imgLink)
+	
+	## Development
+	#set($link = $transaction.context().createPortalLink().project(&quot;$projectId&quot;).richPage(&quot;Development&quot;, &quot;Home&quot;).toEncodedRelativeUrl())
+	#set($text = &quot;&lt;ul&gt;&lt;li&gt;Manage unplanned items.&lt;/li&gt;&lt;li&gt;Review ongoing and finished operations.&lt;/li&gt;&lt;li&gt;Display planned Versions and their statistics.&lt;/li&gt;&lt;li&gt;Describe the Development Environment.&lt;/li&gt;&lt;li&gt;Learn how to target items to Versions.&lt;/li&gt;&lt;/ul&gt;&quot;)
+	#set($imgLink = &quot;/polarion/page-attachment/$projectId/_default/Home/development.png&quot;)
+	#spaceInfo(&quot;Development&quot; $link $text $imgLink)
+ 
+	## Testing
+	#set($link = $transaction.context().createPortalLink().project(&quot;$projectId&quot;).richPage(&quot;Testing&quot;, &quot;Home&quot;).toEncodedRelativeUrl())
+	#set($text = &quot;&lt;ul&gt;&lt;li&gt;Manage Test Specifications.&lt;/li&gt;&lt;li&gt;Display the Test Case Coverage and review Tests statistics.&lt;/li&gt;&lt;li&gt;Learn how to properly test your work.&lt;/li&gt;&lt;/ul&gt;&quot;)
+	#set($imgLink = &quot;/polarion/page-attachment/$projectId/_default/Home/testing.png&quot;)
+	#spaceInfo(&quot;Testing&quot; $link $text $imgLink)
+ 
+	## Maintenance
+	#set($link = $transaction.context().createPortalLink().project(&quot;$projectId&quot;).richPage(&quot;Maintenance&quot;, &quot;Home&quot;).toEncodedRelativeUrl())
+	#set($text = &quot;&lt;ul&gt;&lt;li&gt;Manage Issue and Change Request Backlogs.&lt;/li&gt;&lt;li&gt;Review Issue, Test and Change Request statistics.&lt;/li&gt;&lt;li&gt;Learn how to maintain the development.&lt;/li&gt;&lt;/ul&gt;&quot;)
+	#set($imgLink = &quot;/polarion/page-attachment/$projectId/_default/Home/maintenance.png&quot;)
+	#spaceInfo(&quot;Maintenance&quot; $link $text $imgLink)
+&lt;/table&gt;
+ </sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_client3" style="text-align: left;">
+    <span style="font-style: italic;color: #999999;"><br/>
+      </span>
+  </p>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <h2 id="polarion_client7">Project Overview</h2>
+  <p id="polarion_client16" style="margin-left: 0px;">
+    <span class="polarion-rp-inline-widget" data-widget="com.polarion.scriptInline">
+      <span class="polarion-rp-widget-parameters">
+        <sub id="script">
+          <sub id="script" style="white-space:pre;">&lt;b&gt;Lead:&lt;/b&gt;  $page.fields.project.get().fields().lead().render()</sub>
+        </sub>
+      </span>
+    </span>
+  </p>
+  <p id="polarion_client5" style="margin-left: 0px;">
+    <span class="polarion-rp-inline-widget" data-widget="com.polarion.scriptInline">
+      <span class="polarion-rp-widget-parameters">
+        <sub id="script">
+          <sub id="script" style="white-space:pre;">#set($fields=$page.fields.project.get().fields())
+#if ($fields.finish().get())
+	#set($finish =$fields.finish().render())
+#else
+  	#set($finish =&quot;--&quot;)
+#end
+&lt;b&gt;Start/Finish:&lt;/b&gt; $fields.start().render() / $finish</sub>
+        </sub>
+      </span>
+    </span>
+  </p>
+  <p id="polarion_client9" style="margin-left: 0px;">
+    <span class="polarion-rp-inline-widget" data-widget="com.polarion.scriptInline">
+      <span class="polarion-rp-widget-parameters">
+        <sub id="script">
+          <sub id="script" style="white-space:pre;">&lt;b&gt;Active:&lt;/b&gt; $page.fields.project.get.fields().active().render</sub>
+        </sub>
+      </span>
+    </span>
+  </p>
+  <p id="polarion_client14" style="margin-left: 40px;"></p>
+  <h2 id="polarion_client2">Activities</h2>
+  <div id="polarion_client1" class="polarion-rp-widget-part" data-widget="com.polarion.activityStream">
+    <span class="polarion-rp-widget-parameters"></span>
+  </div>
+  <p id="polarion_client6"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+</rich-page>

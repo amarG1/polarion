@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <customset id="WorkItem_InApproval_OR_Approved_Workitems" title="InApproval OR Approved Workitems">com.polarion.persistence.object.WorkItem(status:in_approval OR status:approved)</customset>
+    <customset id="Module_InApproval_OR_Approved_Documents" title="InApproval OR Approved Documents">com.polarion.persistence.object.Module(status:in_approval OR status:approved)</customset>
+    <permission name="com.polarion">
+        <role name="pol_user">
+            <deny permission="@WorkItem_InApproval_OR_Approved_Workitems.modify"/>
+        </role>
+        <role name="project_assignable">
+            <deny permission="@Module_InApproval_OR_Approved_Documents.modifyContent"/>
+            <deny permission="tracker.WorkItem.resetApprovals"/>
+            <deny permission="persistence.object.WorkItem.key.approvals.modify"/>
+            <deny permission="persistence.object.Module.sign"/>
+            <deny permission="persistence.object.WorkItem.delete"/>
+            <deny permission="persistence.object.Module.delete"/>
+        </role>
+        <role name="project_admin">
+            <deny permission="@Module_InApproval_OR_Approved_Documents.delete"/>
+            <grant permission="@Module_InApproval_OR_Approved_Documents.modifyContent"/>
+            <deny permission="persistence.object.Project.delete"/>
+        </role>
+        <role name="csv_project_assignable">
+            <grant permission="persistence.object.Project.read"/>
+            <grant permission="persistence.object.WorkItem.key.approvals.modify"/>
+        </role>
+        <role name="project_approver">
+            <grant permission="@Module_InApproval_OR_Approved_Documents.sign"/>
+            <grant permission="tracker.WorkItem.resetApprovals"/>
+            <grant permission="persistence.object.Module.manageSignatures"/>
+            <deny permission="persistence.object.WorkItem.key.approvals.modify"/>
+            <deny permission="persistence.object.Module.sign"/>
+        </role>
+    </permission>
+</permissions>

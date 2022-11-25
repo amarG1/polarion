@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fields>
+    <field description="Select Target Version for the Work Package" id="targetVersion" name="Target Version" type="enum:version"/>
+</fields>

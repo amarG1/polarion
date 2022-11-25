@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<permissions>
+    <customset id="Module_Requirement_Specifications_in_Process" title="Requirement Specifications in Process">com.polarion.persistence.object.Module(type:(systemReqSpecification softwareReqSpecification) AND NOT status:draft)</customset>
+    <permission name="com.polarion">
+        <role name="project_admin">
+            <grant permission="persistence.object.ModuleComment(.module:(@Module_Requirement_Specifications_in_Process)).create"/>
+            <deny permission="@Module_Requirement_Specifications_in_Process.modifyContent"/>
+        </role>
+        <role name="project_assignable">
+            <grant permission="persistence.object.ModuleComment(.module:(@Module_Requirement_Specifications_in_Process)).create"/>
+            <deny permission="@Module_Requirement_Specifications_in_Process.modifyContent"/>
+        </role>
+    </permission>
+</permissions>

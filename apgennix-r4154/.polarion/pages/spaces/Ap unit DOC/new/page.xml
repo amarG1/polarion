@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2022-10-26 13:24:16.837 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">new</h1>
+  <p id="polarion_hardcoded_1"></p><p id="polarion_client1"></p>
+  <div id="polarion_client4" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">
+
+
+#set($projectid=$page.getReference().projectId())
+#set($f=$pageParameters.ap.values())
+#set($dem=$f.toArrayList())
+#set($test =&quot;&quot;)
+#foreach($d in $dem)
+#set($test = $d)
+#end
+
+
+#set($query=&quot;project.id:$projectid AND type:ss&quot;)
+#set($custom=$transaction.workItems().search().query($query))
+
+
+&lt;table border=1&gt;
+&lt;tr&gt;
+&lt;th&gt;Workitem Id&lt;/th&gt;
+&lt;th&gt;Custom Fields&lt;/th&gt;
+##&lt;th&gt;Categories&lt;/th&gt;
+##&lt;th&gt;Author&lt;/th&gt;
+&lt;/tr&gt;
+#foreach($cus in $custom)
+&lt;tr&gt;
+&lt;td&gt;$cus.getOldApi().getId()&lt;/td&gt;
+&lt;td&gt;$!cus.getOldApi().getCustomField($test).getName()&lt;/td&gt;
+##&lt;td&gt;$cus.getOldApi().getCustomField($f).geName()&lt;/td&gt;
+##&lt;td&gt;$cus.getOldApi().getAuthor().getName()&lt;/td&gt;
+&lt;/tr&gt;
+#end
+
+
+&lt;/table&gt;
+
+        </sub>
+      </sub>
+    </span>
+  </div>
+  <div id="polarion_client3" class="polarion-rp-widget-part" data-widget="com.polarion.pageParametersForm">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title">Amar poddar</sub>
+      <sub id="content">
+        <sub>ap</sub>
+      </sub>
+      <sub id="width">500</sub>
+    </span>
+  </div>
+  <div id="polarion_client2" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">##set($wi = &quot;ap&quot;) ## some WorkItem ID
+##set($project = $trackerService.getTrackerProject(&quot;apgennix&quot;))
+##set($workItem = $project.getWorkItem($wi))
+
+## get all linked items
+##set($linkedWorkItems = $workItem.getLinkedWorkItems())
+
+
+## Get project object
+#set($projectId =&quot;apgennix&quot;)
+#set($project = $projectService.getProject(&quot;apgennix&quot;))
+
+## Using Old API to get Work Items
+#set($sys = $trackerService.queryWorkItems($project, &quot;type:ap&quot;, &quot;id&quot;))
+#foreach($w in $sys)
+#set($title = $w.getTitle())
+$transaction.workItems().getBy().oldApiObject($w).render().withLinks()&lt;br&gt;
+#end
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2"></p>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <p id="polarion_hardcoded_3"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<span id="polarion-rp-parameters">
+  <sub id="ap" data-label="ap" data-type="CustomEnumeration">
+    <sub id="values">
+      <sub>user</sub>
+    </sub>
+    <sub id="enumerations">
+      <sub>
+        <sub id="itemValue">user</sub>
+        <sub id="itemName">Username</sub>
+      </sub>
+    </sub>
+    <sub id="allowNoValue">true</sub>
+    <sub id="allowMultipleValues">false</sub>
+  </sub>
+</span>]]>
+    </field>
+    <field id="title">new</field>
+</rich-page>

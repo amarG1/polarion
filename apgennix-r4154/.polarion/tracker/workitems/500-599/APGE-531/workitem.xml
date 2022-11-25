@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">waiting</item>
+                <item id="user">111</item>
+            </struct>
+        </list>
+    </field>
+    <field id="assignee">111</field>
+    <field id="author">111</field>
+    <field id="created">2022-09-09 12:37:01.433 +0530</field>
+    <field id="previousStatus">reviewed</field>
+    <field id="priority">50.0</field>
+    <field id="resolution">wontdo</field>
+    <field id="resolvedOn">2022-09-13 11:35:42.346 +0530</field>
+    <field id="severity">should_have</field>
+    <field id="status">rejected</field>
+    <field id="title">approve test</field>
+    <field id="type">st</field>
+</work-item>

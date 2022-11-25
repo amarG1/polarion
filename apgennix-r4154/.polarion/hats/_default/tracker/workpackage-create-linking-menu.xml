@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu>
+	<item copyFields="categories" label="Implementing Task" role="implements" titlePrefix="Implement: " type="task"/>
+	<item copyFields="categories" label="Implementing Issue" role="implements" type="issue"/>
+	<item copyFields="categories" label="Verifying Test Case" role="verifies" titlePrefix="Test: " type="testcase"/>
+	<separator/>
+	<item label="Dependent Work Package" role="depends_on" type="workpackage"/>
+	<item label="Related" role="relates_to"/>
+</menu>

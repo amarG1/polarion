@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">admin</field>
+    <field id="created">2022-11-03 18:57:38.435 +0530</field>
+    <field id="description" text-type="text/html">chal jaayega (updates)</field>
+    <field id="hyperlinks">
+        <list>
+            <struct>
+                <item id="role">ref_ext</item>
+                <item id="uri">http://localhost:8087/browse/JIRA-10</item>
+            </struct>
+        </list>
+    </field>
+    <field id="linkedRevisions">
+        <list>
+            <struct>
+                <item id="repositoryName">default</item>
+                <item id="revision">1</item>
+            </struct>
+        </list>
+    </field>
+    <field id="priority">50.0</field>
+    <field id="severity">should_have</field>
+    <field id="status">To Do</field>
+    <field id="title">apgenix</field>
+    <field id="type">ap</field>
+</work-item>

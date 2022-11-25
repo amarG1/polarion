@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">Ashfaq</field>
+    <field id="bc" type="string">High</field>
+    <field id="bc1" type="enum:boolean">yes</field>
+    <field id="bc2" type="enum:boolean">no</field>
+    <field id="bc3" type="enum:boolean">no</field>
+    <field id="created">2022-10-31 13:04:52.348 +0000</field>
+    <field id="previousStatus">approved</field>
+    <field id="priority">50.0</field>
+    <field id="sc" type="string">Custom</field>
+    <field id="sc1" type="enum:boolean">yes</field>
+    <field id="sc2" type="enum:boolean">no</field>
+    <field id="severity">normal</field>
+    <field id="srr" type="string">High</field>
+    <field id="status">in_draft</field>
+    <field id="sysName" type="string">Polarion</field>
+    <field id="systemGAMPCategorization" type="string">Infrastructure (GAMP Category 1)</field>
+    <field id="title">Polarion</field>
+    <field id="type">toolchain</field>
+    <field id="version" type="string">2.0</field>
+</work-item>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">111</field>
+    <field id="created">2022-09-08 11:42:10.243 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=APGE-516"></h1>
+<div id="polarion_wiki macro name=module-workitem;params=id=APGE-518|layout=1"></div>
+<p id="polarion_1"></p>
+<div id="polarion_wiki macro name=module-workitem;params=id=APGE-519|layout=1"></div>
+<p id="polarion_2"></p>
+<div id="polarion_wiki macro name=module-workitem;params=id=APGE-525|layout=1"></div>
+<div id="polarion_wiki macro name=module-workitem;params=id=APGE-534|layout=1"></div>
+<div id="polarion_editor_html_block1" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div>
+<p id="polarion_3"></p>
+<div id="polarion_wiki macro name=module-workitem;params=id=APGE-583|layout=1">APGE-583</div>
+]]>
+    </field>
+    <field id="renderingLayouts">
+        <list>
+            <struct>
+                <item id="label">Task</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                            <item id="value">id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                            <item id="value">status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">severity,status</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">task</item>
+            </struct>
+            <struct>
+                <item id="label">Supplier Requirement</item>
+                <item id="layouter">section</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                            <item id="value">id,author,project</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                            <item id="value">name,country,state,addr</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEndAsTable</item>
+                            <item id="value">true</item>
+                        </struct>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">id,name,country,state,addr,author,project</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">sr</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">published</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">Ap unit</field>
+    <field id="type">generic</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

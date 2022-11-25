@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">sameeullas@complianceg.com</field>
+    <field id="created">2021-11-10 07:14:11.919 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">Release Dashboard</h1>
+  <p id="polarion_hardcoded_1"></p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <h2 id="polarion_client1">User Requirement By Release 1</h2>
+  <div id="polarion_client4" class="polarion-rp-widget-part" data-widget="itemsbystatustiles">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="subtype">user_requirement</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;">rel.KEY:rel1</sub>
+      </sub>
+      <sub id="displayChart">true</sub>
+      <sub id="align">
+        <sub id="values">
+          <sub>left</sub>
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <h2 id="polarion_client9">User Requirement By Release 2</h2>
+  <div id="polarion_client11" class="polarion-rp-widget-part" data-widget="itemsbystatustiles">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="subtype">user_requirement</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;">rel.KEY:rel2</sub>
+      </sub>
+      <sub id="displayChart">true</sub>
+      <sub id="align">
+        <sub id="values">
+          <sub>left</sub>
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <h2 id="polarion_client16">User Requirement By Release 3</h2>
+  <div id="polarion_client14" class="polarion-rp-widget-part" data-widget="itemsbystatustiles">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="subtype">user_requirement</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;">rel.KEY:rel3</sub>
+      </sub>
+      <sub id="displayChart">true</sub>
+      <sub id="align">
+        <sub id="values">
+          <sub>left</sub>
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <h2 id="polarion_client21">User Requirement By Release 4</h2>
+  <p id="polarion_client18"></p>
+  <div id="polarion_client19" class="polarion-rp-widget-part" data-widget="itemsbystatustiles">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="subtype">user_requirement</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;">rel.KEY:rel4</sub>
+      </sub>
+      <sub id="displayChart">true</sub>
+      <sub id="align">
+        <sub id="values">
+          <sub>left</sub>
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <h2 id="polarion_client26">User Requirement By Release 5</h2>
+  <p id="polarion_client23"></p>
+  <div id="polarion_client24" class="polarion-rp-widget-part" data-widget="itemsbystatustiles">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="dataSet">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="subtype">user_requirement</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;">rel.KEY:rel5</sub>
+      </sub>
+      <sub id="displayChart">true</sub>
+      <sub id="align">
+        <sub id="values">
+          <sub>left</sub>
+        </sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+    <field id="title">Release Dashboard</field>
+</rich-page>

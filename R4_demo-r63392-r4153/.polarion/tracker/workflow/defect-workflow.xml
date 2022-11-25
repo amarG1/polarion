@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow initial-status="in_draft" prototype="WorkItem">
+    <transitions>
+        <transition action="mark_as_deferred" from="in_draft" to="deferred"/>
+        <transition action="new_revision" from="in_approval" to="in_draft"/>
+        <transition action="new_revision" from="closed" to="in_draft"/>
+        <transition action="new_revision" from="deferred" to="in_draft"/>
+        <transition action="mark_as_deferred" from="closed" to="deferred"/>
+        <transition action="mark_approved" from="in_approval" to="approved"/>
+        <transition action="send_for_approval" from="in_draft" to="in_approval"/>
+        <transition action="mark_as_closed" from="in_approval" to="closed"/>
+        <transition action="mark_as_closed" from="approved" to="closed"/>
+    </transitions>
+    <actions>
+        <action id="new_revision" name="Re-Test">
+            <cleared>
+                <field name="approvals"/>
+            </cleared>
+            <functions>
+                <function name="ScriptFunction">
+                    <param name="engine" value="JavaScript"/>
+                    <param name="script" value="incrementIntegerVersionWF.js"/>
+                </function>
+            </functions>
+        </action>
+        <action id="resolved" name="Resolved"/>
+        <action id="send_for_approval" name="Send for Approval">
+            <cleared>
+                <field name="approvals"/>
+            </cleared>
+        </action>
+        <action id="mark_approved" name="Mark As Resolved"/>
+        <action id="mark_as_closed" name="Mark As Closed"/>
+        <action id="mark_as_deferred" name="Mark As Deferred"/>
+        <action id="closed" name="Closed"/>
+    </actions>
+</workflow>

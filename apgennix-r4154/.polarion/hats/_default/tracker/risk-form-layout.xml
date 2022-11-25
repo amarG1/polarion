@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<formLayout xmlns="http://polarion.com/schema/WorkItems/FormLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://polarion.com/schema/WorkItems/FormLayout">
+	<horizontal>
+		<vertical>
+			<section>
+				<field id="type"/>
+				<field id="author"/>
+				<field id="project"/>
+				<field id="categories"/>
+			</section>
+		</vertical>
+		<vertical>
+			<section>
+				<field id="status"/>
+				<field id="resolution"/>
+			</section>
+			<section>
+				<field id="rpn"/>
+			</section>
+		</vertical>
+	</horizontal>
+	<panel description="Effects of Failure and their Severity Rating">
+		<field id="description"/>
+		<field id="severityRating"/>
+	</panel>
+	<panel description="Cause(s) and their Occurence Rating">
+		<field id="causes"/>
+		<field id="occurrenceRating"/>
+	</panel>
+	<panel description="Controls and their Detection Rating">
+		<field id="controls"/>
+		<field id="detectionRating"/>
+	</panel>
+	<panel description="Next Actions">
+		<field id="recommendedActions"/>
+	</panel>
+	<panel description="Taken Actions"> 
+		<field id="takenActions"/>
+		<field id="severityRatingNew"/>
+		<field id="occurrenceRatingNew"/>
+		<field id="detectionRatingNew"/>
+		<field id="rpnNew"/>
+	</panel>
+	<field id="comments"/>
+	<field id="linkedWorkItems"/>
+	<field id="hyperlinks"/>
+	<field id="attachments"/>
+	<field id="watches"/>
+</formLayout>

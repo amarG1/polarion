@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">meeran</field>
+    <field id="created">2021-10-08 11:56:20.972 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=CSA-3138"></h1>
+<p id="polarion_template_0" style="margin-left: 40px;">
+  <span style="font-weight: bold;font-size: 14pt;line-height: 1.5;">Table of Contents</span>
+</p>
+<div id="polarion_wiki macro name=toc"></div>
+<p id="polarion_18"></p>
+<div id="polarion_wiki macro name=page_break|uid=polarion_14" contentEditable="false" data-is-landscape="false"></div>
+<p id="polarion_20"></p>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3139"></h2>
+<p id="polarion_2" style="margin-left: 40px;">System Risk Assessment is determined using a two step process described below.</p>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3140"></h3>
+<p id="polarion_3" style="margin-left: 40px;">This step determines whether the system has any impact on Patient Safety, Product Quality or Regulatory Submission. Select the appropriate dropdown  from Determine Business Criticality section in the System Risk Assessment work item. Based on the selections, the system automatically assigns a Business Criticality rating using the following rationale:</p>
+<p id="polarion_16">
+  <img src="attachment:attachment_5-screenshot-20210825-141719.png" style="width: 605px;height: 228px;"/>
+</p>
+<p id="polarion_5"></p>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3141"></h3>
+<p id="polarion_6" style="margin-left: 40px;">
+  <span style="font-family: Arial, Helvetica, sans-serif;">This step determines the System Complexity based on its type of build. i.e. Out of the box vs Configured vs Custom Developed. Select the appropriate dropdown values from Determine System Complexity section in the System Risk Assessment work item. Based on the selections, the system assigns a System Complexity value using the following rationale:</span>
+</p>
+<p id="polarion_7" style="text-align: center;"></p>
+<p id="polarion_17"></p>
+<p id="polarion_8"></p>
+<p id="polarion_9" style="margin-left: 40px;">
+  <img src="attachment:attachment_6-screenshot-20210825-141719.png" style="width: 605px;height: 274px;"/>
+</p>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3142"></h3>
+<p id="polarion_10" style="margin-left: 40px;">Depending on the selections from Step #1 and Step #2, the system automatically determines the System Risk Level using the table below.</p>
+<p id="polarion_1" style="margin-left: 40px;"></p>
+<table id="polarion_4" style="width: 482pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th colspan="4" style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 482pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;">System Risk Classification</span><br/>
+      </th>
+    </tr>
+    <tr>
+      <td rowspan="2" style="background-color: #C4BC96;vertical-align: top;width: 143pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;color: #000000;">Business Criticality</span>
+        </div>
+      </td>
+      <td colspan="3" style="background-color: #BFBFBF;vertical-align: top;width: 339pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;color: #000000;">System Complexity</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 117pt;height: 38pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Custom</span><br/>
+      </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 111pt;height: 38pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Configured</span><br/>
+      </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 111pt;height: 38pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Out of Box</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 143pt;height: 37pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">High</span><br/>
+      </td>
+      <td style="background-color: #FF0000;vertical-align: top;width: 117pt;height: 37pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">High</span><br/>
+      </td>
+      <td style="background-color: #FF0000;vertical-align: top;width: 111pt;height: 37pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">High</span><br/>
+      </td>
+      <td style="background-color: #FFFF00;vertical-align: top;width: 111pt;height: 37pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Medium</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 143pt;height: 38pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Medium</span><br/>
+      </td>
+      <td style="background-color: #FF0000;vertical-align: top;width: 117pt;height: 38pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">High</span><br/>
+      </td>
+      <td style="background-color: #FFFF00;vertical-align: top;width: 111pt;height: 38pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Medium</span><br/>
+      </td>
+      <td style="background-color: #00B050;vertical-align: top;width: 111pt;height: 38pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Low</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 143pt;height: 37pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Low</span><br/>
+      </td>
+      <td style="background-color: #FFFF00;vertical-align: top;width: 117pt;height: 37pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Medium</span><br/>
+      </td>
+      <td style="background-color: #00B050;vertical-align: top;width: 111pt;height: 37pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Low</span><br/>
+      </td>
+      <td style="background-color: #00B050;vertical-align: top;width: 111pt;height: 37pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: Arial, Helvetica, sans-serif;color: #000000;">Low</span><br/>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p id="polarion_19"></p>
+<div id="polarion_wiki macro name=page_break|uid=polarion_21" contentEditable="false" data-is-landscape="false"></div>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3143"></h2>
+<p id="polarion_13" style="margin-left: 40px;">The following table summarizes the System Risk Assessment ratings based on selections in &quot;Business Criticality&quot; and &quot;System Complexity&quot; sections.</p>
+<p id="polarion_22">
+  <br/>
+</p>
+<p id="polarion_23">
+  <br/>
+</p>
+<p id="polarion_12"></p>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3145"></h2>
+<p id="polarion_15"></p>
+<p id="polarion_24"></p>
+<div id="polarion_editor_html_block1" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div>
+<p id="polarion_11"></p>
+]]>
+    </field>
+    <field id="renderingLayouts">
+        <list>
+            <struct>
+                <item id="label">System Risk Assesment</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                            <item id="value">id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                            <item id="value">severity</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">toolchain</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">System Risk Assessment</field>
+    <field id="type">system_risk_assessment</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

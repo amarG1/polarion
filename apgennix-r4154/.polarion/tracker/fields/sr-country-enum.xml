@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option default="true" iconURL="/polarion/icons/default/enums/enum_generic.gif" id="1" name="INDIA" sortOrder="1"/>
+    <option iconURL="/polarion/icons/default/enums/document_changerequest.png" id="2" name="INDONESIA" sortOrder="2"/>
+    <option iconURL="/polarion/icons/default/enums/document_electrical_requirement.png" id="3" name="CHINA" sortOrder="3"/>
+</enumeration>

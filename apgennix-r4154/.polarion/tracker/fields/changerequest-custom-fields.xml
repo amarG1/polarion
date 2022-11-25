@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field id="tc" name="Technical Components Affected" required="true" type="enum:technicalComponents"/>
+    <field id="testingReqOther" name="Other" type="string"/>
+</fields>

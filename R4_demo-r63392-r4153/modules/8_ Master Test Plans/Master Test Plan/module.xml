@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">chaitranc</field>
+    <field id="created">2019-06-19 05:18:16.148 +0000</field>
+    <field id="crossReferenceMappingData">362a8f30-0a000004-67ec8359-67a5bb4d=PHS/PHS-1014,362f127b-0a000004-67ec8359-870a1c18=PHS/PHS-1016,362a8f30-0a000004-67ec8359-91f22448=PHS/PHS-1017,362c6828-0a000004-67ec8359-038af528=PHS/PHS-1018</field>
+    <field id="headingSidebarFields">severity,status</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<p id="polarion_2" style="text-align: center;"></p><h1 id="polarion_wiki macro name=module-workitem;params=id=CSV-215"></h1><p id="polarion_16" style="text-align: center;">
+  <span style="font-weight: bold;font-size: 14pt;line-height: 1.5;">Table of Contents</span>
+</p><div id="polarion_wiki macro name=toc"></div><div id="polarion_wiki macro name=page_break|uid=polarion_1" contentEditable="false"></div><h2 id="polarion_wiki macro name=module-workitem;params=id=PHS-954"></h2><p id="polarion_3" style="margin-left: 0px;">
+  <span style="font-size: 10pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">The purpose of this Installation and Operational Qualification (IOQ) protocol is to define the test procedures, documentation, and acceptance criteria to verify that Trackwise CAPA Management system is properly installed and operates as per user requirement specification.</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-190"></h2><p id="polarion_4" style="margin-left: 0px;">
+  <span style="font-size: 10pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">The scope of this IOQ protocol applies to Trackwise CAPA Management system.</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=PHS-934"></h2><p id="polarion_46" style="margin-left: 0px;">
+  <span style="font-size: 10pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Trackwise CAPA Management system follows a risk-based testing strategy. All the user requirements have been assessed for risk and appropriate testing types have been determined based on the risk rating of the individual user requirements. This risk based strategy as well as the detailed risk report are available in the following live report - Risk-Based Test Strategy Report. </span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=PHS-952"></h2><p id="polarion_1">
+  <span style="font-size: 10pt;line-height: 1.5;">Traceability Matrix is available as a live report - please click the link below to go to trace matrix. </span>
+</p><p id="polarion_8">
+  <span style="font-size: 10pt;line-height: 1.5;"><a href="http://40.70.186.4/polarion/#/project/PHS/wiki/Reports/Requirements%20Traceability%20Matrix" target="_top" class="descriptionLink">Requirement Traceability Matrix</a> </span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=PHS-960"></h2><p id="polarion_5">
+  <span style="font-size: 10pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">All individuals participating in the execution and/or review of this protocol are trained on the protocol. This is acknowledge by participants through the electronic signature of protocol artifacts.</span><span style="font-size: 10pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;"> </span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-198"></h2><p id="polarion_41">
+  <span style="font-size: 10pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">The installation qualification will be considered acceptable upon meeting the acceptance criteria in each of the test cases listed below:</span>
+</p><ol id="polarion_42">
+  <li><span style="font-size: 10pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Section 12, System Documentation Verification</span></li>
+  <li><span style="font-size: 10pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Section 13, Component Identification Verification</span></li>
+  <li><span style="font-size: 10pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Section 14, System Work Plan Verification</span></li>
+</ol><h2 id="polarion_wiki macro name=module-workitem;params=id=PHS-1021"></h2><p id="polarion_110" style="margin-left: 0px;">
+  <span style="font-size: 10pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">The operational qualification will be considered acceptable upon meeting the acceptance criteria in the test cases listed below:</span>
+</p><ul id="polarion_111">
+  <ul>
+    <li><span style="font-size: 10pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">System Verification</span></li>
+  </ul>
+</ul><p id="polarion_132">
+  <span style="font-size: 10pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;"> </span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-248"></h2><div id="polarion_editor_html_block138" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div><p id="polarion_139" style="text-align: center;">
+  <span style="font-weight: bold;">END OF DOCUMENT</span>
+</p>]]>
+    </field>
+    <field id="renderingLayouts">
+        <list>
+            <struct>
+                <item id="label">Test Script IQ</item>
+                <item id="layouter">titleDescTestSteps</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEndAsTable</item>
+                        </struct>
+                        <struct>
+                            <item id="key">hidden</item>
+                        </struct>
+                        <struct>
+                            <item id="key">noPageBreak</item>
+                        </struct>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">severity,status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">typeNotInProject</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">test_script_IQ</item>
+            </struct>
+            <struct>
+                <item id="label">Test Script OQ</item>
+                <item id="layouter">titleDescTestSteps</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEndAsTable</item>
+                        </struct>
+                        <struct>
+                            <item id="key">hidden</item>
+                        </struct>
+                        <struct>
+                            <item id="key">noPageBreak</item>
+                        </struct>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">severity,status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">typeNotInProject</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">test_script_OQ</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">Validation Protocol</field>
+    <field id="type">test_plan</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

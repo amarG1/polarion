@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">meeran</field>
+    <field id="created">2019-12-15 14:01:55.802 +0000</field>
+    <field id="homePageContent" text-type="text/html"><![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">Impact Analysis - Change Control</h1>
+  <div id="polarion_client1" class="polarion-rp-widget-part" data-widget="Impact_Analysis">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="workItems">
+        <sub id="prototype">WorkItem</sub>
+        <sub id="queryType">lucene</sub>
+        <sub id="luceneQuery" style="white-space:pre;">type:(user_requirement functional_requirement designspecification test_script_IQ test_script_OQ defect changerequest)</sub>
+      </sub>
+      <sub id="outputFormat">
+        <sub id="values">
+          <sub>table</sub>
+        </sub>
+      </sub>
+      <sub id="treeSize">
+        <sub id="width">1300</sub>
+        <sub id="height">1300</sub>
+      </sub>
+      <sub id="zoomcenter">
+        <sub id="values">
+          <sub>mouseCursor</sub>
+        </sub>
+      </sub>
+      <sub id="displayOptionParam">
+        <sub id="values">
+          <sub>WorkItemIDTitle</sub>
+        </sub>
+      </sub>
+      <sub id="nodeTitleTruncation">20</sub>
+      <sub id="linkRole">
+        <sub id="values">
+          <sub>relates_to</sub>
+          <sub>duplicates</sub>
+          <sub>is_parent_of</sub>
+          <sub>parent</sub>
+          <sub>system_risk</sub>
+          <sub>triggered_by</sub>
+          <sub>verifies</sub>
+          <sub>system_assesment</sub>
+        </sub>
+      </sub>
+      <sub id="direction">
+        <sub id="values">
+          <sub>both</sub>
+        </sub>
+      </sub>
+      <sub id="level">
+        <sub id="values">
+          <sub>7</sub>
+        </sub>
+      </sub>
+      <sub id="configrules">
+        <sub id="values">
+          <sub>title</sub>
+          <sub>Id</sub>
+          <sub>direction</sub>
+          <sub>output</sub>
+          <sub>flipGraph</sub>
+          <sub>depth</sub>
+          <sub>zoomcenter</sub>
+        </sub>
+      </sub>
+      <sub id="enableautocomplete">false</sub>
+      <sub id="qry2exclude"></sub>
+      <sub id="useSuspectLinks">false</sub>
+      <sub id="roleColors">
+        <sub id="blueColor">
+          <sub id="values">
+            <sub>parent</sub>
+          </sub>
+        </sub>
+        <sub id="redColor">
+          <sub id="values">
+            <sub>triggered_by</sub>
+          </sub>
+        </sub>
+        <sub id="greenColor">
+          <sub id="values">
+            <sub>verifies</sub>
+          </sub>
+        </sub>
+        <sub id="orangeColor">
+          <sub id="values">
+            <sub>relates_to</sub>
+          </sub>
+        </sub>
+        <sub id="magentaColor">
+          <sub id="values">
+            <sub>is_parent_of</sub>
+          </sub>
+        </sub>
+        <sub id="lightgreenColor"></sub><sub id="lightblueColor"></sub><sub id="dottedblueColor"></sub><sub id="dottedredColor"></sub><sub id="dottedgreenColor"></sub><sub id="dottedorangeColor"></sub><sub id="dottedmagentaColor"></sub><sub id="dottedlightgreenColor"></sub><sub id="dottedlightblueColor"></sub>
+      </sub>
+      <sub id="columns">
+        <sub id="elements">
+          <sub></sub>
+        </sub>
+      </sub>
+      <sub id="displayLegend">false</sub>
+      <sub id="export2Excel">false</sub>
+      <sub id="export2Pdf">false</sub>
+      <sub id="export2PdfTree">false</sub>
+      <sub id="flipGraph">
+        <sub id="values">
+          <sub>parent-children</sub>
+        </sub>
+      </sub>
+    </span>
+  </div>
+  <p id="polarion_hardcoded_1"></p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2"></p>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <p id="polarion_hardcoded_3"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>]]></field>
+    <field id="title">Impact Analysis - Change Control</field>
+</rich-page>

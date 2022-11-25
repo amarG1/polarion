@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">sameeullas@complianceg.com</field>
+    <field id="created">2021-11-10 07:33:10.169 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">Release Statistics</h1>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <p id="polarion_hardcoded_2"></p>
+  <div id="polarion_client2" class="polarion-rp-widget-part" data-widget="com.polarion.multiSetPieChart">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title">Release Statistics</sub>
+      <sub id="sectors">
+        <sub id="elements">
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">rel.KEY:rel1</sub>
+            <sub id="children">
+              <sub id="sectorName">Release 1</sub>
+              <sub id="sectorColor">#218a04</sub>
+            </sub>
+          </sub>
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">rel.KEY:rel2</sub>
+            <sub id="children">
+              <sub id="sectorName">Release 2</sub>
+              <sub id="sectorColor">#3aff03</sub>
+            </sub>
+          </sub>
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">rel.KEY:rel3</sub>
+            <sub id="children">
+              <sub id="sectorName">Release 3</sub>
+              <sub id="sectorColor">#fff426</sub>
+            </sub>
+          </sub>
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">rel.KEY:rel4</sub>
+            <sub id="children">
+              <sub id="sectorName">Release 4</sub>
+              <sub id="sectorColor">#ffa303</sub>
+            </sub>
+          </sub>
+          <sub>
+            <sub id="prototype">WorkItem</sub>
+            <sub id="queryType">lucene</sub>
+            <sub id="luceneQuery" style="white-space:pre;">rel.KEY:rel5</sub>
+            <sub id="children">
+              <sub id="sectorName">Release 5</sub>
+              <sub id="sectorColor">#ff0303</sub>
+            </sub>
+          </sub>
+        </sub>
+      </sub>
+      <sub id="showDataLabels">true</sub>
+      <sub id="showZeroValues">false</sub>
+      <sub id="advanced">
+        <sub id="height"></sub><sub id="width"></sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>]]>
+    </field>
+    <field id="title">Release Statistics</field>
+</rich-page>

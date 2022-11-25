@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">admin</field>
+    <field id="created">2022-11-03 14:39:13.229 +0530</field>
+    <field id="occurredInVersion" type="string">2</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">open</field>
+    <field id="title">test ap</field>
+    <field id="type">issue</field>
+</work-item>

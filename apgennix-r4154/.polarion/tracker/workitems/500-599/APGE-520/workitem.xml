@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="a" type="float">20.0</field>
+    <field id="assignee">111</field>
+    <field id="author">111</field>
+    <field id="b" type="float">20.0</field>
+    <field id="created">2022-09-08 13:23:31.941 +0530</field>
+    <field id="description" text-type="text/html">dgdvg</field>
+    <field id="gr" multi="true" type="enum:gr">
+        <list>
+            <item>user</item>
+        </list>
+    </field>
+    <field id="mail" type="string">vdfv</field>
+    <field id="phone" type="integer">555</field>
+    <field id="pr" multi="true" type="enum:pr">
+        <list>
+            <item>p_appr</item>
+        </list>
+    </field>
+    <field id="previousStatus">open</field>
+    <field id="priority">50.0</field>
+    <field id="severity">should_have</field>
+    <field id="status">inprogress</field>
+    <field id="title">amar poddar:_create read_only Field test</field>
+    <field id="type">ap</field>
+    <field id="user" type="enum:user">mohan</field>
+</work-item>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+        
+    <field id="author">saratb</field>
+        
+    <field id="created">2019-06-18 23:00:01.215 +0000</field>
+        
+    <field id="previousStatus">in_approval</field>
+        
+    <field id="priority">50.0</field>
+        
+    <field id="severity">normal</field>
+        
+    <field id="status">in_draft</field>
+        
+    <field id="title">System Configuration / Design Specification</field>
+        
+    <field id="type">heading</field>
+    
+</work-item>

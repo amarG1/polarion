@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">111</field>
+    <field id="created">2022-09-27 16:56:12.052 +0530</field>
+    <field id="linkedWorkItems">
+        <list>
+            <struct>
+                <item id="role">verifies</item>
+                <item id="workItem">APGE-573</item>
+            </struct>
+        </list>
+    </field>
+    <field id="priority">50.0</field>
+    <field id="severity">basic</field>
+    <field id="status">draft</field>
+    <field id="title">Test: new one</field>
+    <field id="type">systemtestcase</field>
+</work-item>

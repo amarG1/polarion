@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option description="Self use only." id="author" name="Author/User" sortOrder="1"/>
+    <option description="Controlled base and skill levels." id="limited" name="Limited Distribution" sortOrder="2"/>
+    <option description="Variety of skill levels." id="widespread" name="Widespread Distribution" sortOrder="3"/>
+</enumeration>

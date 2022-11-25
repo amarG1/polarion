@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-run>
+    <field id="author">admin</field>
+    <field id="created">2022-09-13 12:52:14.408 +0530</field>
+    <field id="description" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 26 Z&amp;aacute;ř 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;span style="font-style: italic;"&gt;Click "Properties" and provide a short description of the software being tested and the test design itself.&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="environmentDescription" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 27 Sep 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;a&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="finishedOn">2022-09-13 15:50:37.591 +0530</field>
+    <field id="goal" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 26 Z&amp;aacute;ř 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;span style="font-style: italic;"&gt;Describe the hi-level goals of this test and pass/fail criteria.&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="groupId">121</field>
+    <field id="platform" type="enum:platform">windows</field>
+    <field id="projectSpan">
+        <list>
+            <item>apgennix</item>
+        </list>
+    </field>
+    <field id="query">type:testcase AND status:active</field>
+    <field id="records">
+        <list>
+            <struct>
+                <item id="comment" text-type="text/html">
+                    <![CDATA[2nd test<br/>
+<span style="font-weight: bold;">Retest comment:</span><br/>
+passed]]>
+                </item>
+                <item id="duration">31.0</item>
+                <item id="executed">2022-09-13 13:06:57.509 +0530</item>
+                <item id="executedBy">admin</item>
+                <item id="result">passed</item>
+                <item id="signed">true</item>
+                <item id="testCase">APGE-535</item>
+                <item id="testCaseRevision">469</item>
+                <item id="testStepResults">
+                    <list>
+                        <struct>
+                            <item id="comment" text-type="text/html">passed</item>
+                            <item id="result">passed</item>
+                        </struct>
+                    </list>
+                </item>
+            </struct>
+            <struct>
+                <item id="testCase">APGE-536</item>
+            </struct>
+        </list>
+    </field>
+    <field id="selectTestCasesBy">dynamicQueryResult</field>
+    <field id="status">passed</field>
+    <field id="template">Release Test</field>
+    <field id="title">Another test</field>
+    <field id="type">manual</field>
+    <field id="useReportFromTemplate">true</field>
+</test-run>

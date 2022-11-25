@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="a" type="float">2.0</field>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">approved</item>
+                <item id="user">111</item>
+            </struct>
+        </list>
+    </field>
+    <field id="assignee">111</field>
+    <field id="author">111</field>
+    <field id="b" type="float">2.0</field>
+    <field id="created">2022-09-08 13:44:29.888 +0530</field>
+    <field id="description" text-type="text/html">vsvfvsvdvcd</field>
+    <field id="gr" multi="true" type="enum:gr">
+        <list>
+            <item>user</item>
+            <item>everyone</item>
+        </list>
+    </field>
+    <field id="linkedWorkItems">
+        <list>
+            <struct>
+                <item id="role">relates_to</item>
+                <item id="workItem">APGE-535</item>
+            </struct>
+        </list>
+    </field>
+    <field id="mail" type="string">srv</field>
+    <field id="phone" type="integer">33</field>
+    <field id="pr" multi="true" type="enum:pr">
+        <list>
+            <item>p_a</item>
+        </list>
+    </field>
+    <field id="previousStatus">done</field>
+    <field id="priority">50.0</field>
+    <field id="resolution">wontdo</field>
+    <field id="resolvedOn">2022-09-16 17:14:53.315 +0530</field>
+    <field id="severity">should_have</field>
+    <field id="status">rejected</field>
+    <field id="title">amar poddar:sdvsf</field>
+    <field id="type">ap</field>
+    <field id="user" type="enum:user">shahebaj</field>
+</work-item>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field default="1" id="version" name="Document Version" type="string"/>
+</fields>

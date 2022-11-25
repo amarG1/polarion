@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="addr" text-type="text/plain" type="text">Kuch bi..</field>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">waiting</item>
+                <item id="user">111</item>
+            </struct>
+        </list>
+    </field>
+    <field id="assignee">111</field>
+    <field id="author">111</field>
+    <field id="country" type="enum:country">1</field>
+    <field id="created">2022-09-28 12:59:08.613 +0530</field>
+    <field id="name" text-type="text/plain" type="text">Kuch bhi</field>
+    <field id="previousStatus">open</field>
+    <field id="priority">50.0</field>
+    <field id="resolution">wontdo</field>
+    <field id="resolvedOn">2022-10-17 12:29:47.043 +0530</field>
+    <field id="severity">should_have</field>
+    <field id="state" type="enum:states">2</field>
+    <field id="status">done</field>
+    <field id="title">vxvfb</field>
+    <field id="type">sr</field>
+</work-item>

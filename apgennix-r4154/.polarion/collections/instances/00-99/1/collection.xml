@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<baseline-collection>
+    <field id="author">admin</field>
+    <field id="created">2022-09-23 11:51:13.077 +0530</field>
+    <field id="elements">
+        <list>
+            <struct>
+                <item id="object">{Module}{moduleFolder}newoneapgenix#Amar</item>
+            </struct>
+            <struct>
+                <item id="object">{Module}{moduleFolder}Ap unit DOC#Ap</item>
+            </struct>
+        </list>
+    </field>
+    <field id="name">Collection 1st</field>
+</baseline-collection>

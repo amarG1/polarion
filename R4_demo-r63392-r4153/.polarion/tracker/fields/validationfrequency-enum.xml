@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option description="Any update now matter how small." id="minor" name="Every Minor Update" sortOrder="1"/>
+    <option description="Regularly released updates." id="service" name="Every Service Update" sortOrder="2"/>
+    <option description="Only new major versions." id="major" name="Every Major Update" sortOrder="3"/>
+</enumeration>

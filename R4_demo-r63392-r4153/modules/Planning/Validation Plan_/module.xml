@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">meeran</field>
+    <field id="created">2021-10-08 11:58:24.553 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=CSA-3146"></h1><p id="polarion_1">
+  <span style="font-weight: bold;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Table of Contents</span>
+</p><div id="polarion_wiki macro name=toc"></div><p id="polarion_2"></p><div id="polarion_wiki macro name=page_break|uid=polarion_72" contentEditable="false" data-is-landscape="false"></div><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3147"></h2><p id="polarion_4">
+  This Validation Plan (VP) serves to identify the activities required for validating the following Siemens Polarion initiatives in <span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt;</span>:
+</p><p id="polarion_5" style="margin-left: 40px;">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> New Polarion implementation for <span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt;</span>
+</p><p id="polarion_7">Specifically, this document describes:</p><p id="polarion_8">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> <span style="font-weight: bold;font-style: italic;">WHAT</span> documentation/deliverables will be generated as part of this effort
+</p><p id="polarion_9">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> <span style="font-weight: bold;font-style: italic;">WHO</span> will be responsible for completion, review, and approval of validation deliverables
+</p><p id="polarion_10">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> <span style="font-weight: bold;font-style: italic;">HOW</span> this documentation will be produced/created
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3148"></h2><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3149"></h3><p id="polarion_11">
+  The scope of this validation effort is limited to validating Polarion’s intended use for <span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt;</span>. Specifically, this effort includes validation of the following high-level functionalities in Polarion:
+</p><p id="polarion_12">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> Requirements Management
+</p><p id="polarion_13">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> Risk Analysis and Risk Management
+</p><p id="polarion_14">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> Test and Test methods validation
+</p><p id="polarion_15">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> Production Control Plan
+</p><p id="polarion_16">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> e-signatures for review and approval of tasks
+</p><p id="polarion_19"> </p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3150"></h2><p id="polarion_20">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> FDA Code of Federal Regulations (CFR) Title 21 Part 11
+</p><p id="polarion_22">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> ISPE GAMP Good Practice Guide – Data Integrity by Design<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3151"></h2><p id="polarion_23"></p><table id="polarion_24" style="width: 474pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #DEEAF6;text-align: left;vertical-align: top;width: 144pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Acronym / Term</span>
+        </div>
+      </th>
+      <th style="background-color: #DEEAF6;text-align: left;vertical-align: top;width: 330pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Definition</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 144pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">ALM</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 330pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Application Lifecycle Management</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 144pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">FDA</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 330pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Food and Drug Administration</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 144pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Polarion</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 330pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Off the shelf Application Lifecycle Management software manufactured by Siemens</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 144pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">SISW</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 330pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Siemens Industries Software</span><br/>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_25"> </p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3152"></h2><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3153"></h3><p id="polarion_26">Polarion is a 21 CFR Part 11 compliant ALM system with wide adoption in Medical Device industry. It is developed by industry leading software manufacturer Siemens Digital Industries Software (SISW). As a software manufacturer, SISW has numerous quality and security certifications including but not limited to:</p><p id="polarion_27">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> ISO 9001
+</p><p id="polarion_28">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> ISO 14001
+</p><p id="polarion_29">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> ISO 45001
+</p><p id="polarion_30">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> IEC 62443-4-1
+</p><p id="polarion_31">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> ISO 26262
+</p><p id="polarion_32">
+  A risk-based approach, based on FDA’s draft guidance “Computer Software Assurance” and ISPE GAMP Good Practice Guide – Data Integrity by Design, shall be leveraged to validate Polarion for <span style="font-weight: bold;color: #00B050;">&lt;Company Name &gt;</span>.
+</p><p id="polarion_33">
+  <br/>
+</p><p id="polarion_34">
+  <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;"> </span>
+</p><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3154"></h3><p id="polarion_35">
+  Polarion is a GAMP 5 Category 4 configurable system. Most of the system is out of the box and / or configured with a few elements which may be customized to meet <span style="font-weight: bold;color: #00B050;">&lt;Company Name&gt;</span>requirements. Per the Computer Software Assurance approach, system functionalities in Polarion shall be assessed for functional risk. Validation testing shall then be commensurate to the level of risk associated to system functionalities.
+</p><p id="polarion_37">This industry standard risk-based approach is detailed below:</p><p id="polarion_38">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> <span style="font-weight: bold;">Step 1</span> – Determine test rating of the component using the table below:
+</p><p id="polarion_39"> </p><table id="polarion_40" style="width: 387pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th rowspan="2" style="background-color: #C4BC96;text-align: left;vertical-align: top;width: 99pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Patient / Product Quality Impact</span>
+        </div>
+      </th>
+      <th colspan="3" style="background-color: #BFBFBF;text-align: left;vertical-align: top;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Test Rating Method</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 81pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Out of the Box</span><br/>
+      </td>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 77pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Configured</span><br/>
+      </td>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Custom</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 99pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Direct</span><br/>
+      </td>
+      <td style="background-color: #FFC000;vertical-align: top;width: 81pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">3</span><br/>
+      </td>
+      <td style="background-color: #E36C0A;vertical-align: top;width: 77pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">4</span><br/>
+      </td>
+      <td style="background-color: #FF0000;vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">5</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 99pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Indirect</span><br/>
+      </td>
+      <td style="background-color: #FFFF00;vertical-align: top;width: 81pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">2</span><br/>
+      </td>
+      <td style="background-color: #FFC000;vertical-align: top;width: 77pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">3</span><br/>
+      </td>
+      <td style="background-color: #FFC000;vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">3</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 99pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">None</span><br/>
+      </td>
+      <td style="background-color: #92D050;vertical-align: top;width: 81pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">1</span><br/>
+      </td>
+      <td style="background-color: #92D050;vertical-align: top;width: 77pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">1</span><br/>
+      </td>
+      <td style="background-color: #FFFF00;vertical-align: top;width: 131pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">2</span><br/>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_41"> </p><p id="polarion_42">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> <span style="font-weight: bold;">Step 2</span> – Determine testing type of the component based on its test rating. Following table identifies the testing type matrix:
+</p><table id="polarion_43" style="width: 383pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th colspan="2" style="background-color: #BFBFBF;text-align: left;vertical-align: top;width: 383pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">FUNCTIONAL TESTING TYPE</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="background-color: #8EAADB;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Test Rating</span><br/>
+      </td>
+      <td style="background-color: #8EAADB;vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Testing Types</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #FF0000;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">5</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Functionality validated through Scripted Testing with positive and negative conditions (see Testing Definitions below)</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #E36C0A;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">4</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Functionality validated through Scripted Testing with normal operational test scenarios (no positive and negative conditions required)</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFC000;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">3</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Functionality validated through Unscripted Testing with exploratory scenarios</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #FFFF00;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">2</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Functionality validated through Functionality Certification</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #92D050;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">1</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 311pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Relies on vendor audit and assurance based on market use of the tool</span><br/>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_44">
+  <br/>
+</p><p id="polarion_45"> </p><p id="polarion_46">Following table includes definitions of testing types referenced above:</p><p id="polarion_47"></p><table id="polarion_48" style="margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th colspan="4" style="background-color: #DEEAF6;text-align: left;vertical-align: top;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">TESTING TYPE DEFINITIONS</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="background-color: #DEEAF6;vertical-align: top;width: 82pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Testing Type</span>
+        </div>
+      </td>
+      <td style="background-color: #DEEAF6;vertical-align: top;width: 144pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Test Case Components</span>
+        </div>
+      </td>
+      <td style="background-color: #DEEAF6;vertical-align: top;width: 110pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Test Results</span>
+        </div>
+      </td>
+      <td style="background-color: #DEEAF6;vertical-align: top;width: 133pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Record</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 82pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">Scripted Testing</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 144pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Test objectives</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Test cases (step-by-step procedure)</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Expected results</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Approval of test cases and quality team review.</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 110pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Pass/fail for test case</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Actual results</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Details regarding any failures/deviations found and disposition regarding fails</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 133pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Result for each test case (only indication of pass/fail)</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Issues found and disposition</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Conclusion statement</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 82pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">Unscripted Testing</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 144pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Establish high level test objectives for features and functions (No step-by-step procedure is necessary)</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 110pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Pass/fail for each test objective</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Details regarding any failures/deviations found</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 133pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Summary description of features and functions tested</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Result for each test objective – only indication of pass/fail</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Issues found and disposition</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Conclusion statement</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 82pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">Functionality Certification</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 144pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Functionality / Component name being certified</span>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Name of the developer / SME</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 110pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Certification by system developer and / or SME confirming that the functionality meets established requirements</span>
+        </div>
+      </td>
+      <td style="vertical-align: top;width: 133pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span><span style="font-size: 11pt;line-height: 1.5;"> Record of who performed certification and date</span>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_49"> </p><p id="polarion_50">
+  <br/>
+</p><p id="polarion_51">
+  <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;"> </span>
+</p><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3155"></h3><p id="polarion_52">The following deliverables shall be created in support of this validation effort. Changes, if any, to this list of deliverables shall be documented in the Validation Summary Report.</p><h4 id="polarion_wiki macro name=module-workitem;params=id=CSA-3156"></h4><table id="polarion_53" style="width: 435pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #DEEAF6;text-align: left;vertical-align: top;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Deliverable / Activity</span><br/>
+      </th>
+      <th style="background-color: #DEEAF6;text-align: left;vertical-align: top;width: 296pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Comments</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Validation Plan</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Validation Plan (this document) for governing the validation of Polarion in </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt;</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Requirements Specification</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Requirements Specification for identifying the requirements for Polarion implementation</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">System Risk Assessment</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">System Level Risk Assessment for calculating the overall risk level of the system</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">21 CFR Part 11 Assessment</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">21 CFR Part 11 Assessment for assessing and identifying 21 CFR Part 11 controls of Polarion</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Design Specification, as required, for custom components</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Design document that includes the design elements for custom components in Polarion modules</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Functional Risk Assessment </span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Functional Risk Assessment for identifying the risk level of individual functionalities. Risk ratings from this assessment shall be used to drive the level of functional testing. Functional risk ratings are included within the requirement level and Risk-based Test Strategy report.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Design Review Summary Report</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">A document that summarizes the review and initial acceptance of system design by Business Representatives as meeting the system specifications.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Risk Based Test Strategy Report</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">A live report in Polarion which includes a summary of requirements and their associated risk ratings and testing types.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Qualification Protocol</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;"> </span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Qualification Protocol defines test strategy and environments with rationale of how the extent of testing is determined based on Functional Risk Assessment.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Installation Qualification (IQ) test cases </span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">IQ test cases for verifying the installation of Polarion</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Operation Qualification (OQ) test cases</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">OQ test cases for testing the functionality of Polarion. </span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Performance Qualification (PQ) / UAT test cases</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">PQ / UAT test cases for testing high level end to end use case scenarios for the implementation.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Defects, as applicable</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;"> </span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Logging, tracking and closing defects that occur during validation test execution.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Traceability Matrix</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Traceability Matrix for mapping requirements to the corresponding design documents and test cases. This will be a live report in Polarion.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Validation Summary Report</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 296pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Validation Summary Report for summarizing the validation</span><br/>
+      </td>
+    </tr>
+  </tbody>
+</table><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3157"></h3><p id="polarion_56"> </p><table id="polarion_57" style="width: 437pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #DEEAF6;text-align: left;vertical-align: top;width: 140pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Role</span>
+        </div>
+      </th>
+      <th style="background-color: #DEEAF6;text-align: left;vertical-align: top;width: 297pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Responsibilities</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Siemens Technical Architect</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 297pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Support system validation by providing necessary technical inputs throughout the course of the project</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Draft and execute Installation Qualification (IQ)</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Review and approve system deliverables created during the SDLC lifecycle </span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Siemens Project Manager</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 297pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Create, maintain and drive project schedule</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Review and approve system deliverables created during the SDLC lifecycle</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Compliance Group Validation / Quality Lead</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 297pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Provide IT system &amp; validation Subject Matter Expertise (SME) and oversight on project validation</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Author, review and approve end to end system validation deliverables listed in Project Deliverables section</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> </span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Compliance Group Validation Analyst</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 297pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Author and execute test cases for </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name&gt;</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Perform dry run testing of test cases</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Log defects and perform retesting as necessary</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Update Validation Summary Report with test results and defect dispositions</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;color: #00B050;">&lt;Company Name &gt;</span><span style="font-size: 11pt;line-height: 1.5;">Analyst</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 297pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Author and execute test cases for </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name &gt;</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Perform dry run testing of test cases</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Log defects and perform retesting as necessary</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;color: #00B050;">&lt;Company Name &gt;</span><span style="font-size: 11pt;line-height: 1.5;"> IT Validation Lead</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 297pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Provide oversight on project validation</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Review validation deliverables listed in Project Deliverables section</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Review and approve Validation Plan (this document) and Validation Summary Report</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 140pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;color: #00B050;">&lt;Company Name &gt;</span><span style="font-size: 11pt;line-height: 1.5;"> GxP SME</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 297pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Ensure the validation approach will meet the applicable regulatory requirements</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Provide guidance, instruction, and direction regarding validation strategy and risk assessment, critical activities, and qualification standards when requested by the Project team, stakeholders, or IT Validation</span><br/>
+        <span style="font-size: 11pt;line-height: 1.5;">·</span><span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">  </span><span style="font-size: 11pt;line-height: 1.5;"> Review and approve Validation Plan (this document) and Validation Summary Report</span><br/>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_58"> </p><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3158"></h3><p id="polarion_59"> </p><table id="polarion_60" style="width: 459pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #DEEAF6;text-align: left;vertical-align: top;width: 107pt;height: 12pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Environments</span>
+        </div>
+      </th>
+      <th style="background-color: #DEEAF6;text-align: left;vertical-align: top;width: 352pt;height: 12pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Development / Validation Activities</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 107pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Development Environment</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 352pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Development environment is utilized to support end to end development activities including creation of prototypes and configuring / customizing the system per </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name &gt;</span><span style="font-size: 11pt;line-height: 1.5;"> requirements.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 107pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Test / QA Environment</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 352pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Test / QA environment is utilized to support validation activities including generation / execution / approval of end to end validation deliverables in Polarion CSA template. This environment is also used to execute OQ and UAT / PQ Testing.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 107pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Production Environment</span><br/>
+      </td>
+      <td style="vertical-align: top;width: 352pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-size: 11pt;line-height: 1.5;">Production Environment is utilized to support the business usage of the system. Upon issuance of Validation Summary Report, this environment shall be released for production usage by business users.</span><br/>
+      </td>
+    </tr>
+  </tbody>
+</table><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3159"></h3><p id="polarion_61">This Validation Plan (VP) may be closed through a Validation Summary Report (VSR) once the following conditions are satisfied:</p><p id="polarion_62">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> All validation deliverables identified in this Validation Plan have been completed and approved. Any exceptions and / or clarifications have been documented appropriately in Validation Summary Report.
+</p><p id="polarion_63">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> All test cases have been executed and reviewed for accuracy and approved.
+</p><p id="polarion_64">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> All defects are resolved, retesting performed as necessary and approved.
+</p><p id="polarion_65">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> All training materials have been created and user training is complete
+</p><p id="polarion_66">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> All standard operating procedures and work instructions have been written and approved
+</p><p id="polarion_67">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> The IT Change Management Work Instruction is being followed for this implementation
+</p><p id="polarion_68">
+  ·<span style="font-size: 8pt;font-family: &#39;Times New Roman&#39;, Times, serif;line-height: 1.5;">      </span> The Validation Summary Report (VSR) has been written and approved with justifications and / or rationale for fit for intended use, as applicable.
+</p><div id="polarion_wiki macro name=page_break|uid=polarion_73" contentEditable="false" data-is-landscape="false"></div><p id="polarion_70"></p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3160"></h2><p id="polarion_71"></p><p id="polarion_74"></p><div id="polarion_editor_html_block1" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div><p id="polarion_3"></p><p id="polarion_69" style="text-align: center;">
+  <span style="font-weight: bold;">END OF DOCUMENT</span>
+</p><p id="polarion_78"></p><p id="polarion_template_2"></p>]]>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">Validation Plan</field>
+    <field id="type">generic</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

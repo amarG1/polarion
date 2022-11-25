@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">admin</field>
+    <field id="created">2022-09-14 13:48:29.554 +0530</field>
+    <field id="previousStatus">approved</field>
+    <field id="priority">50.0</field>
+    <field id="severity">nice_to_have</field>
+    <field id="status">draft</field>
+    <field id="title">admin: gde</field>
+    <field id="type">st</field>
+    <field id="version" type="float">1.0</field>
+</work-item>

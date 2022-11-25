@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option id="custom" name="Custom" sortOrder="1"/>
+    <option id="configured" name="Configured" sortOrder="2"/>
+    <option id="oob" name="OOB" sortOrder="3"/>
+</enumeration>

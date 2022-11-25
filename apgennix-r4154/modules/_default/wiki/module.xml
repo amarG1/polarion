@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">111</field>
+    <field id="baseline" type="string">tyfgbgfbfggr</field>
+    <field id="created">2022-11-14 12:07:12.876 +0530</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=APGE-620"></h1><p id="polarion_template_0">
+  <br/>
+</p><div id="polarion_editor_html_block2" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#set($b = &quot; &quot;)
+#set($base = &quot;project.id:$document.projectId AND(baseObject:${b}document/$document.relativePath)&quot;)
+#set($sort = &quot;baseRevision&quot;)
+#set($baseline = $transaction.baselines().search().query($base).sort($sort))
+{style:color=green  }
+{table:bold=2}
+Revision | Name | Description | Version | created | User | Link | project
+#foreach($b in $baseline)
+$b.fields().baseRevision().render() |$b.fields().name().render() | $b.fields().description().render()| $!b.getOldApi().getBaseObject().getValue(&quot;version&quot;)|$b.getOldApi().getBaseRevisionObject().getCreated() | $b.fields().author().render() |$b.fields.baseObject.render.withLinks | $document.getProject().getId()
+#end
+{table}
+{style}</pre>
+</div><p id="polarion_2"></p>]]>
+    </field>
+    <field id="renderingLayouts">
+        <list>
+            <struct>
+                <item id="label">Task</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                            <item id="value">id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                            <item id="value">status</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">task</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">published</field>
+    <field id="structureLinkRole">duplicates</field>
+    <field id="title">wiki</field>
+    <field id="type">generic</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option description="Highest Team Confidence Level." iconURL="/polarion/widget-resource/global/tqktraceabilitytable/resources/ALMAS_Icon_1.png" id="tcl1" name="TCL1" sortOrder="1"/>
+    <option description="Medium Team Confidence Level." iconURL="/polarion/widget-resource/global/tqktraceabilitytable/resources/ALMAS_Icon_2.png" id="tcl2" name="TCL2" sortOrder="2"/>
+    <option description="Lowest Team Confidence Level." iconURL="/polarion/widget-resource/global/tqktraceabilitytable/resources/ALMAS_Icon_3.png" id="tcl3" name="TCL3" sortOrder="3"/>
+</enumeration>

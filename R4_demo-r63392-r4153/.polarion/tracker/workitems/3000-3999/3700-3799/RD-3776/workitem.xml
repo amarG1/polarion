@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="secureApprovalCommentId">1</item>
+                <item id="status">approved</item>
+                <item id="user">Ashfaq</item>
+            </struct>
+        </list>
+    </field>
+    <field id="author">Ashfaq</field>
+    <field id="created">2022-10-31 13:23:54.661 +0000</field>
+    <field id="previousStatus">in_approval</field>
+    <field id="priority">50.0</field>
+    <field id="sev" type="enum:severity">normal</field>
+    <field id="severity">normal</field>
+    <field id="status">approved</field>
+    <field id="title">test</field>
+    <field id="type">defect</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

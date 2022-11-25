@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<baseline>
+    <field id="author">admin</field>
+    <field id="baseDataRevision">3314</field>
+    <field id="baseObject">{Module}{moduleFolder}Ap unit DOC#Ap</field>
+    <field id="description" text-type="text/plain">Created automatically by a workflow transition</field>
+    <field id="name">Ap_polished_breeze</field>
+</baseline>

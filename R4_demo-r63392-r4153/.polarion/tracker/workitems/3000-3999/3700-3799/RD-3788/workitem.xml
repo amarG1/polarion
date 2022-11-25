@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">anuragk@complianceg.com</field>
+    <field id="created">2022-11-07 20:09:58.865 +0000</field>
+    <field id="previousStatus">in_draft</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">in_approval</field>
+    <field id="teststeps" type="struct:TestSteps">
+        <struct>
+            <item id="keys">
+                <list>
+                    <item>testStep</item>
+                    <item>description</item>
+                    <item>expectedResult</item>
+                </list>
+            </item>
+            <item id="steps">
+                <list>
+                    <struct>
+                        <item id="values">
+                            <list>
+                                <item text-type="text/html">Login to Polarion</item>
+                                <item text-type="text/html">Logged to polarion</item>
+                                <item text-type="text/html">Will see the UI</item>
+                            </list>
+                        </item>
+                    </struct>
+                    <struct>
+                        <item id="values">
+                            <list>
+                                <item text-type="text/html">Open Your Project</item>
+                                <item text-type="text/html">you see your project </item>
+                                <item text-type="text/html">Will see &lt;span style="font-weight: bold;"&gt;Hi, welcome to your project&lt;/span&gt;</item>
+                            </list>
+                        </item>
+                    </struct>
+                    <struct>
+                        <item id="values">
+                            <list>
+                                <item text-type="text/html">Click on workitems</item>
+                                <item text-type="text/html">List of workitems will open</item>
+                                <item text-type="text/html">Table view of work items will open</item>
+                            </list>
+                        </item>
+                    </struct>
+                    <struct>
+                        <item id="values">
+                            <list>
+                                <item text-type="text/html">create a work item</item>
+                                <item text-type="text/html">Workitem is created</item>
+                                <item text-type="text/html">New workitem is created</item>
+                            </list>
+                        </item>
+                    </struct>
+                </list>
+            </item>
+        </struct>
+    </field>
+    <field id="testtype" type="enum:csv_testtype">limited_scripted</field>
+    <field id="title">Demo Test case</field>
+    <field id="type">test_script_OQ</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

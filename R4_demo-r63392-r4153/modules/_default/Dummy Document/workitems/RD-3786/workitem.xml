@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">anuragk@complianceg.com</field>
+    <field id="created">2022-11-07 16:30:04.312 +0000</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">in_draft</field>
+    <field id="title">Dummy Document</field>
+    <field id="type">heading</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

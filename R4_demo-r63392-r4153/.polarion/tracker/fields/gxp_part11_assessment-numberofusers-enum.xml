@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option id="1_10" name="1-10" sortOrder="1"/>
+    <option id="10_100" name="10-100" sortOrder="2"/>
+    <option id="100_more" name="More than 100" sortOrder="3"/>
+</enumeration>

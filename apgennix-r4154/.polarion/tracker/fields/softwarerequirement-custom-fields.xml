@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fields>
+    <field description="Select the Target Version for the planned Requirement" id="targetVersion" name="Target Version" type="enum:version"/>
+    <field id="reqType" name="Requirement Type" type="enum:subtype"/>
+</fields>

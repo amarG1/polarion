@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">trinadhb</field>
+    <field id="created">2019-06-10 20:45:42.414 +0000</field>
+    <field id="headingSidebarFields">severity,status</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=CSV-127"></h1><p id="polarion_12">
+  <span style="font-weight: bold;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Table of Contents</span>
+</p><div id="polarion_wiki macro name=toc"></div><div id="polarion_wiki macro name=page_break;params=uid=1" contentEditable="false" data-is-landscape="false"></div><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-257"></h2><p id="polarion_35" style="margin-left: 0.25in;" class="MsoNormal">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">This Validation Plan (VP) serves to identify the activities required for validating <span style="font-weight: bold;"> &lt;Company Name or Site Name&gt; Polarion Implementation specifically (Company workflow),</span> per Computer System Validation (CSV)  SOP CG-CSV-01.</span>
+</p><p id="polarion_38" style="margin-left: 0.25in;" class="MsoNormal">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Specifically, this document describes:</span>
+</p><p id="polarion_39" style="margin-left: 0.75in;" class="MsoListParagraphCxSpFirst">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">·       <span style="font-weight: bold;font-style: italic;">WHAT</span> documentation/deliverables will be generated and/or updated as part of this effort</span>
+</p><p id="polarion_40" style="margin-left: 0.75in;" class="MsoListParagraphCxSpMiddle">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">·       <span style="font-weight: bold;font-style: italic;">WHO</span> will be responsible for completion, review, and approval of validation deliverables?</span>
+</p><p id="polarion_41" style="margin-left: 0.75in;" class="MsoListParagraphCxSpLast">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">·       <span style="font-weight: bold;font-style: italic;">HOW</span> this documentation will be produced/created.</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-259"></h2><p id="polarion_42" style="margin-left: 0.25in;" class="MsoNormal">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">The scope of this validation effort is to ensure the validation package of &lt;Company Name or Site Name&gt;</span>
+</p><p id="polarion_7" style="margin-left: 0.25in;" class="MsoNormal">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Polarion Implementation specifically (Company workflow),  is compliant with Compliance Group&#39;s CSV SOP CG-CSV-01.  </span>
+</p><p id="polarion_3"></p><p id="polarion_5" style="margin-left: 40px;">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">The following primary Business processes are identified as inscope for this implementation:</span>
+</p><ul id="polarion_6">
+  <ul>
+    <ul>
+      <li style="font-weight: normal;font-style: normal;color: #000000;">Requirements Management<br/>
+        </li>
+      <li style="font-weight: normal;font-style: normal;color: #000000;">Risk Analysis and Risk Management<br/>
+        </li>
+      <li style="font-weight: normal;font-style: normal;color: #000000;">Test and Test methods validation<br/>
+        </li>
+      <li style="font-weight: normal;font-style: normal;color: #000000;">Production Control Plan using the Process FMEA<br/>
+        </li>
+      <li style="font-weight: normal;font-style: normal;color: #000000;">Re-use data &amp; information amongst family of Products<br/>
+        </li>
+      <li style="font-weight: normal;font-style: normal;color: #000000;">Create Projects and organization of data, users, tasks in the project.<br/>
+        </li>
+      <li style="font-weight: normal;font-style: normal;color: #000000;">Enable e-signatures for review and approval tasks.<br/>
+        </li>
+    </ul>
+  </ul>
+</ul><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-261"></h2><p id="polarion_44" style="margin-left: 21.75pt;" class="MsoNormal">
+  <span style="font-style: normal;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;">List all the applicable documents/references used as guidance in creation of this document are listed below: </span>
+</p><p id="polarion_1" style="text-align: center;" data-keep-next="true" class="polarion-rte-caption-paragraph">
+  <span style="font-weight: bold;font-size: 8pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Table <span data-sequence="Table" class="polarion-rte-caption">#</span> References</span>
+</p><table id="polarion_wiki macro name=table;params=uid=1|width=62.59%" class="polarion-Document-table" style="width: 62.59%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 130px;height: 22px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> 
+          <div style="text-align: center;"> Document Number  </div>
+          </span></th>
+      <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 319px;height: 22px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> 
+          <div style="text-align: center;"> Document Title  </div>
+          </span></th>
+    </tr>
+    <tr>
+      <td style="text-align: left;vertical-align: top;width: 130px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> 
+          <div style="text-align: center;"> CG-CSV-01</div>
+          </span></td>
+      <td style="text-align: center;vertical-align: top;width: 319px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Computer System Validation procedure<br/>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;vertical-align: top;width: 130px;height: 28px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> CG-CCM-01<br/>
+          </span></td>
+      <td style="text-align: center;vertical-align: top;width: 319px;height: 28px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Computer System Change Control Management procedure<br/>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;vertical-align: top;width: 130px;height: 28px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;line-height: 1.5;">CG-CSV-02</span></td>
+      <td style="text-align: center;vertical-align: top;width: 319px;height: 28px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;line-height: 1.5;">Computer System Risk-based Approach</span></td>
+    </tr>
+  </tbody>
+</table><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-262"></h2><p id="polarion_46" style="margin-left: 0.25in;" class="MsoNormal">
+  <span style="font-style: normal;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;">Definitions specific to the system being Validated and those definitions that haven’t been defined in the Computer System Validation procedure CG-CSV-01 are defined below:</span>
+</p><p id="polarion_4" style="text-align: center;" data-keep-next="true" class="polarion-rte-caption-paragraph">
+  <span style="font-weight: bold;font-size: 8pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Table <span data-sequence="Table" class="polarion-rte-caption">#</span> Definitions</span>
+</p><table id="polarion_wiki macro name=table;params=uid=1|width=62.61%" class="polarion-Document-table" style="width: 62.61%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="font-weight: bold;background-color: #F0F0F0;text-align: center;vertical-align: top;width: 136px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> Acronyms/ Term<br/>
+          </span></th>
+      <th style="font-weight: bold;background-color: #F0F0F0;text-align: center;vertical-align: top;width: 313px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> Definition<br/>
+          </span></th>
+    </tr>
+    <tr>
+      <td style="text-align: center;vertical-align: top;width: 136px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">&lt;Acronym&gt;</span></td>
+      <td style="text-align: center;vertical-align: top;width: 313px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> &lt;Company Name or Site Name&gt;<br/>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;vertical-align: top;width: 136px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> Polarion<br/>
+          </span></td>
+      <td style="text-align: center;vertical-align: top;width: 313px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Out of the box software that will be configured and customized<br/>
+          </span></td>
+    </tr>
+  </tbody>
+</table><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-263"></h2><h3 id="polarion_wiki macro name=module-workitem;params=id=CSV-264"></h3><p id="polarion_49">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">The following deliverables shall be created and / or updated in support of this validation effort: </span>
+</p><p id="polarion_2" style="text-align: center;" data-keep-next="true" class="polarion-rte-caption-paragraph">
+  <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Table <span data-sequence="Table" class="polarion-rte-caption">#</span> List of Deliverables</span>
+</p><table id="polarion_wiki macro name=table;params=uid=5" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="font-weight: bold;background-color: #F0F0F0;text-align: center;vertical-align: top;width: 426px;height: 24px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"><span style="font-style: normal;">List of Computer System Validation Deliverables</span><span style="font-style: italic;"><br/>
+            </span></span></th>
+      <th style="font-weight: bold;background-color: #F0F0F0;text-align: center;vertical-align: top;width: 155px;height: 24px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-style: normal;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;"> Yes/ No <br/>
+          </span></th>
+    </tr>
+    <tr>
+      <td style="text-align: left;vertical-align: top;width: 426px;height: 27px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;"><span style="font-style: italic;"> </span><span style="font-style: normal;">Validation Plan (VP)</span><span style="font-style: italic;"><br/>
+            </span></span></td>
+      <td style="text-align: left;vertical-align: top;width: 155px;height: 27px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-style: italic;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;"> 
+          <div style="text-align: center;"> </div>
+          
+          <div style="text-align: center;">
+            <span style="font-style: normal;">Yes</span> 
+          </div>
+          
+          <div style="text-align: center;"> </div>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="text-align: left;vertical-align: top;width: 426px;height: 26px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;"><span style="font-style: normal;">User Requirements Specification (URS)</span><span style="font-style: italic;"><br/>
+            </span></span></td>
+      <td style="text-align: left;vertical-align: top;width: 155px;height: 26px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-style: italic;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;"> 
+          <div style="text-align: center;"> </div>
+          
+          <div style="text-align: center;">
+            <span style="font-style: normal;">Yes</span> 
+          </div>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="text-align: left;vertical-align: top;width: 426px;height: 26px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;line-height: 1.5;">Functional Specification (FS)</span></td>
+      <td style="text-align: center;vertical-align: top;width: 155px;height: 26px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;line-height: 1.5;">Yes<br/>
+          </span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="text-align: left;vertical-align: top;width: 426px;height: 27px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;"><span style="font-style: italic;"> </span><span style="font-style: normal;">Configuration / Design Specification (CSDS)</span><span style="font-style: italic;"><br/>
+            </span></span></td>
+      <td style="text-align: left;vertical-align: top;width: 155px;height: 27px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-style: italic;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;"> 
+          <div style="text-align: center;"> </div>
+          
+          <div style="text-align: center;">
+            <span style="font-style: normal;">Yes</span> 
+          </div>
+          
+          <div style="text-align: center;"> </div>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="text-align: left;vertical-align: top;width: 426px;height: 28px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;line-height: 1.5;">Qualification / Test Plan</span></td>
+      <td style="text-align: left;vertical-align: top;width: 155px;height: 28px;border: 1px solid #CCCCCC;padding: 5px;">                   <span style="font-size: 11pt;line-height: 1.5;">Yes</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: left;vertical-align: top;width: 426px;height: 26px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;"><span style="font-style: italic;"> </span><span style="font-style: normal;">Validation Summary Report(s)<br/>
+            <br/>
+            - Installation and Operational Qualification (IOQ) Report<br/>
+            </span></span><span style="font-weight: normal;font-style: normal;text-decoration: none;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;background-color: #FFFFFF;line-height: 1.5;">- Installation and Performance Qualification (IPQ) Report</span></td>
+      <td style="text-align: center;vertical-align: top;width: 155px;height: 26px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-style: italic;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;"> <br/>
+          <span style="font-style: normal;"><br/>
+            Yes</span> <br/>
+          <br/>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="text-align: left;vertical-align: top;width: 426px;height: 29px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-style: normal;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;">Validation Final Report (VFR)<br/>
+          </span></td>
+      <td style="text-align: left;vertical-align: top;width: 155px;height: 29px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-style: normal;font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;line-height: 1.5;"> 
+          <div style="text-align: center;"> Yes </div>
+          </span></td>
+    </tr>
+  </tbody>
+</table><h3 id="polarion_wiki macro name=module-workitem;params=id=CSV-265"></h3><h4 id="polarion_wiki macro name=module-workitem;params=id=CSV-266"></h4><p id="polarion_50">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">This section defines the functional areas associated with computer system validation. Specific responsibilities for each major functional area or discipline involved in this validation are outlined in the table below:  </span>
+</p><p id="polarion_37" style="text-align: center;" data-keep-next="true" class="polarion-rte-caption-paragraph">
+  <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Table <span data-sequence="Table" class="polarion-rte-caption">#</span> Roles and Responsibilities</span>
+</p><table id="polarion_wiki macro name=table;params=uid=1" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="font-weight: bold;background-color: #F0F0F0;text-align: center;vertical-align: top;width: 119px;height: 29px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 12pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Functional Area</span></th>
+      <th style="font-weight: bold;background-color: #F0F0F0;text-align: center;vertical-align: top;width: 198px;height: 29px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 12pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Role</span></th>
+      <th style="font-weight: bold;background-color: #F0F0F0;text-align: center;vertical-align: top;width: 253px;height: 29px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 12pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">Responsibilities<div style="margin-left: 12.95pt;"></div><div style="margin-left: 12.95pt;"></div> </span></th>
+    </tr>
+    <tr>
+      <td style="text-align: center;vertical-align: top;width: 119px;height: 133px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;"><br/>
+           <br/>
+          Technical</span></td>
+      <td style="text-align: center;vertical-align: top;width: 198px;height: 133px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;"><br/>
+          <br/>
+          System Owner</span></td>
+      <td style="text-align: left;vertical-align: top;width: 253px;height: 133px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;"><div style="margin-left: 12.95pt;"></div><div style="margin-left: 12.95pt;"></div><span style="font-size: 11pt;line-height: 1.5;"> 
+            <div style="margin-left: 12.95pt;">·   Support computer system validation activities by providing SME insight</div>
+            
+            <div style="margin-left: 12.95pt;">·   Review and approve deliverables updated / created during validation</div>
+            </span><div style="margin-left: 12.95pt;"></div><div style="margin-left: 12.95pt;"></div></span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;vertical-align: top;width: 119px;height: 149.64px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> <br/>
+          <br/>
+          <br/>
+          Business<br/>
+          </span></td>
+      <td style="text-align: center;vertical-align: top;width: 198px;height: 149.64px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> <br/>
+          <br/>
+          <br/>
+          Business Process Owner<br/>
+          </span></td>
+      <td style="text-align: left;vertical-align: top;width: 253px;height: 149.64px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> 
+          <div style="margin-left: 12.95pt;"> ·   Review and provide feedback on assessment gaps </div>
+          
+          <div style="margin-left: 12.95pt;">·   Review and provide feedback on Validation Plan</div>
+          
+          <div style="margin-left: 12.95pt;">·   Review and approve deliverables updated / created during validation</div>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;vertical-align: top;width: 119px;height: 333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          Validation<br/>
+          </span></td>
+      <td style="text-align: center;vertical-align: top;width: 198px;height: 333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"><br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          Validation Consultant<br/>
+          </span></td>
+      <td style="text-align: left;vertical-align: top;width: 253px;height: 333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> 
+          <div style="margin-left: 12.95pt;">·   Author the Validation Plan</div>
+          
+          <div style="margin-left: 12.95pt;">·   Collaborate with cross functional groups to author / update deliverables during validation</div>
+          
+          <div style="margin-left: 12.95pt;"> ·   Coordinate with Validation Analyst / Tester(s), Developers and Quality to drive testing and defect resolution </div>
+          
+          <div style="margin-left: 12.95pt;"> ·   Author and execute Test Cases </div>
+          
+          <div style="margin-left: 12.95pt;"> ·   Perform dry run testing of Test Cases </div>
+          
+          <div style="margin-left: 12.95pt;"> ·   Log Defects and perform retesting as necessary </div>
+          
+          <div style="margin-left: 12.95pt;"> ·   Update Validation Summary Reports with Test Results and Defect dispositions </div>
+          </span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;vertical-align: top;width: 119px;height: 321.64px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          Quality<br/>
+          </span></td>
+      <td style="text-align: center;vertical-align: top;width: 198px;height: 321.64px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          Quality Reviewer<br/>
+          </span></td>
+      <td style="text-align: left;vertical-align: top;width: 253px;height: 321.64px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> 
+          <div style="margin-left: 12.95pt;"> ·   Provide Quality review and oversight on the project along with IT Validation Lead </div>
+          
+          <div style="margin-left: 12.95pt;">·   Review and approve Validation Plan</div>
+          
+          <div style="margin-left: 12.95pt;">·   Provide quality governance to ensure all deliverables in Validation Plan are met </div>
+          
+          <div style="margin-left: 12.95pt;">·   Review and approve deliverables updated / created during validation</div>
+          
+          <div style="margin-left: 12.95pt;"> ·    Ensure company policies and standards are met and be the last signatory on all documents </div>
+          </span></td>
+    </tr>
+  </tbody>
+</table><h4 id="polarion_wiki macro name=module-workitem;params=id=PHS-1011"></h4><p id="polarion_51">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">This section describes the environment(s) within which the Validation Plan will be executed. The following environments are listed below:</span>
+</p><ol id="polarion_34">
+  <li><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">A Validation environment shall be used for execution of the Installation, Operational Qualification and Performance Qualification.</span></li>
+  <li><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">A Production environment shall be used for execution of Installation Qualification.</span></li>
+</ol><h3 id="polarion_wiki macro name=module-workitem;params=id=CSV-258"></h3><p id="polarion_53">
+  <span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">This Validation Plan (VP), which encompasses all validation and testing deliverables, may be closed once the following conditions are satisfied:</span>
+</p><ul id="polarion_54">
+  <li><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">All validation deliverables identified in this Validation Plan have been completed, approved, and on file.</span></li>
+  <li><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">All test cases have been executed and all corresponding test scripts and/or data collection sheets have been filled out, reviewed for accuracy, and approved.</span></li>
+  <li><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">All deviations from approved test plans are properly documented and resolved.</span></li>
+  <li><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;"> All individual test acceptance criteria are met or discrepancies have been researched, resolved (including retesting, if necessary), and documented.</span></li>
+  <li><span style="font-size: 11pt;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;line-height: 1.5;">The Validation Final Report (VFR) has been written and approved with justifications and / or rationale for fit for intended use, as applicable.</span></li>
+</ul><h2 id="polarion_wiki macro name=module-workitem;params=id=CSV-244"></h2><div id="polarion_editor_html_block35" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div><p id="polarion_48" style="text-align: center;">
+  <span style="font-weight: bold;">END OF DOCUMENT</span>
+</p>]]>
+    </field>
+    <field id="renderingLayouts">
+        <list>
+            <struct>
+                <item id="label">User Requirement</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEndAsTable</item>
+                        </struct>
+                        <struct>
+                            <item id="key">hidden</item>
+                        </struct>
+                        <struct>
+                            <item id="key">noPageBreak</item>
+                        </struct>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">severity,status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">typeNotInProject</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">user_requirement</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">Validation Plan Template</field>
+    <field id="type">generic</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

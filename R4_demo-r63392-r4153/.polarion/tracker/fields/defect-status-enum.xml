@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option iconURL="/polarion/icons/default/enums/status_inactive.gif" id="in_draft" name="Open" sortOrder="1"/>
+    <option iconURL="/polarion/icons/default/enums/status_assigned.gif" id="in_approval" name="In Approval" sortOrder="2"/>
+    <option iconURL="/polarion/icons/default/enums/status_active.gif" id="approved" name="Approved" sortOrder="3"/>
+    <option iconURL="/polarion/icons/default/enums/testcase_failed.gif" id="closed" name="Closed" sortOrder="4"/>
+    <option iconURL="/polarion/icons/default/enums/req_status_verified.gif" id="deferred" name="Deferred" sortOrder="5"/>
+</enumeration>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<read-only>
+    <status id="_default">
+        <field id="qualificationReport"/>
+        <field id="testCaseSpecification"/>
+        <field id="testRun"/>
+    </status>
+
+    <status id="_create">
+        <field id="testRun"/>
+    </status>
+
+</read-only>

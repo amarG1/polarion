@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">sameeullas@complianceg.com</field>
+    <field id="created">2021-11-11 14:51:59.876 +0000</field>
+    <field id="crossReferenceMappingData">BMRAM/CSV-179=johnsonandjohnson/CSA-3683,BMRAM/CSV-188=johnsonandjohnson/CSA-3676,BMRAM/CSV-177=johnsonandjohnson/CSA-3681,BMRAM/CSV-178=johnsonandjohnson/CSA-3682,BMRAM/CSV-175=johnsonandjohnson/CSA-3679,BMRAM/CSV-186=johnsonandjohnson/CSA-3690,BMRAM/CSV-176=johnsonandjohnson/CSA-3680,BMRAM/CSV-173=johnsonandjohnson/CSA-3678,BMRAM/CSV-184=johnsonandjohnson/CSA-3688,BMRAM/CSV-185=johnsonandjohnson/CSA-3689,BMRAM/CSV-251=johnsonandjohnson/CSA-3691,BMRAM/CSV-182=johnsonandjohnson/CSA-3686,BMRAM/CSV-172=johnsonandjohnson/CSA-3677,BMRAM/CSV-183=johnsonandjohnson/CSA-3687,BMRAM/CSV-180=johnsonandjohnson/CSA-3684,BMRAM/CSV-181=johnsonandjohnson/CSA-3685</field>
+    <field id="headingSidebarFields">severity,status</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=CSA-3676"></h1>
+<p id="polarion_2">
+  <span style="font-weight: bold;font-size: 14pt;line-height: 1.5;">Table of Contents</span>
+</p>
+<div id="polarion_wiki macro name=toc"></div>
+<div id="polarion_wiki macro name=page_break;params=uid=1" contentEditable="false"></div>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3677"></h2>
+<p id="polarion_9" style="margin-left: 0px;">
+  <span style="font-size: 10pt;line-height: 1.5;">The purpose of this Validation Final Report (VFR) is to summarize the validation activities and results of &lt;system name&gt;. Furthermore, this VFR also provides the conclusion that &lt;system name&gt; has been validated and meets its documented requirements. </span>
+</p>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3678"></h2>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3679"></h2>
+<table id="polarion_10" style="margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Document #</span> 
+        </div>
+        </th>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Document Name</span> 
+        </div>
+        </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3680"></h2>
+<table id="polarion_11" style="margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Acronym/ Term</span> 
+        </div>
+        </th>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Definition</span> 
+        </div>
+        </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">SRS</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Software Requirements Specification</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">RTM</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Requirements Traceability Matrix</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">FS</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Functional Specification</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">CFR</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Code of Federal Regulations</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">cGMP</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Current Good Manufacturing Practices</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">FDA</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Unites States Food and Drug Administration</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">OTS</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Off-the-Shelf</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">SME</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Subject Matter Expert</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">QA</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Quality Assurance</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">VP</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Validation Plan</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 112pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">VFR</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 252pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Validation Final Report</span><br/>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3681"></h2>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3682"></h3>
+<p id="polarion_12" style="margin-left: 40px;">
+  <span style="font-size: 10pt;line-height: 1.5;">The validation activities for &lt;system name&gt; have been performed in accordance with Company’s Computerized System Validation Procedure (xxx). This encompasses all validation activities for the computer system to ensure proper installation and operation according to predefined acceptance criteria.</span>
+</p>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3683"></h3>
+<table id="polarion_14" style="width: 486pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th colspan="6" style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 486pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Deviation Summary Table</span> 
+        </div>
+        </th>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 78pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-size: 10pt;line-height: 1.5;">Deviation #</span> 
+        </div>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 80pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-size: 10pt;line-height: 1.5;">Protocol (IQ/OQ/PQ)</span> 
+        </div>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 83pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-size: 10pt;line-height: 1.5;">Deviation Description</span> 
+        </div>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 128pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-size: 10pt;line-height: 1.5;">Resolution/ Corrective Action</span> 
+        </div>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 54pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-size: 10pt;line-height: 1.5;">Severity</span> 
+        </div>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-size: 10pt;line-height: 1.5;">Status</span> 
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;width: 78pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 80pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 83pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 128pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: middle;width: 54pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;width: 78pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 80pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 83pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 128pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: middle;width: 54pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3684"></h3>
+<table id="polarion_16" style="width: 479pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th colspan="8" style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 479pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Protocol Results Summary</span> 
+        </div>
+        </th>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Protocol</span><br/>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 74pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Approved Date</span><br/>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 71pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Execution Start Date</span><br/>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 71pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Execution End Date</span><br/>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 53pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Minor Deviation Count</span><br/>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 53pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Moderate Deviation Count</span><br/>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 53pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Major Deviation Count</span><br/>
+        </td>
+      <td style="background-color: #9CC2E5;vertical-align: top;width: 58pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Total # of Deviations</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-size: 10pt;line-height: 1.5;">IQ</span> 
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 74pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 71pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 71pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 53pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 53pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 53pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 58pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-size: 10pt;line-height: 1.5;">OPQ</span> 
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 74pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 71pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 71pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 53pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 53pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 53pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: top;width: 58pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3685"></h3>
+<p id="polarion_18" style="margin-left: 40px;">
+  <span style="font-size: 10pt;line-height: 1.5;">This section lists all the documents included in the validation package, as defined in the Validation Plan.</span>
+</p>
+<h4 id="polarion_wiki macro name=module-workitem;params=id=CSA-3686"></h4>
+<table id="polarion_19" style="width: 473pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: middle;width: 207pt;height: 22pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Deliverable</span> 
+        </div>
+        </th>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: middle;width: 83pt;height: 22pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Document #</span> 
+        </div>
+        </th>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: middle;width: 85pt;height: 22pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Revision</span> 
+        </div>
+        </th>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: middle;width: 98pt;height: 22pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Submitted/ Approved Date</span> 
+        </div>
+        </th>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Software Requirements Specification (SRS)</span><br/>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">GxP Validation Assessment</span><br/>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Validation Plan (VP)</span><br/>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 29pt;border-top: 1px none #000000;border-bottom: 1px none #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Validation Protocol(s)</span><br/>
+        
+        <ul>
+          <li><span style="font-size: 10pt;line-height: 1.5;">Installation Qualification (IQ)</span></li>
+        </ul>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 29pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 29pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 29pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px none #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <ul>
+          <li><span style="font-size: 10pt;line-height: 1.5;">Operational and Performance Qualification (OPQ)</span></li>
+        </ul>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 22pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Requirements Traceability Matrix (RTM)</span><br/>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px none #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Validation Protocol Report(s)</span><br/>
+        
+        <ul>
+          <li><span style="font-size: 10pt;line-height: 1.5;">Installation Qualification (IQ)</span></li>
+        </ul>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px none #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <ul>
+          <li><span style="font-size: 10pt;line-height: 1.5;">Operational and Performance Qualification (OPQ)</span></li>
+        </ul>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 22pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Protocol Deviation Reports</span><br/>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 22pt;border-top: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Test Supporting Documentation</span><br/>
+        
+        <ul>
+          <li><span style="font-size: 10pt;line-height: 1.5;">Installation Qualification (IQ)</span></li>
+        </ul>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 22pt;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <ul>
+          <li><span style="font-size: 10pt;line-height: 1.5;">Operational and Performance Qualification (OPQ)</span></li>
+        </ul>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 22pt;border-top: 1px none #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px none #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <td style="background-color: #9CC2E5;vertical-align: middle;width: 207pt;height: 22pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Validation Final Report (VFR)</span><br/>
+        </td>
+      <td style="vertical-align: middle;width: 83pt;height: 22pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 85pt;height: 22pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+      <td style="vertical-align: middle;width: 98pt;height: 22pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="polarion_wiki macro name=module-workitem;params=id=CSA-3687"></h4>
+<p id="polarion_21" style="margin-left: 80px;">
+  <span style="font-size: 10pt;line-height: 1.5;">Not Applicable</span>
+</p>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3688"></h3>
+<p id="polarion_22" style="margin-left: 40px;">
+  <span style="font-size: 10pt;line-height: 1.5;">The following acceptance criteria have been satisfied:</span>
+</p>
+<ul id="polarion_23">
+  <ul>
+    <li><span style="font-size: 10pt;line-height: 1.5;">The validation activities were performed in accordance with Company’s </span><span style="font-style: italic;font-size: 10pt;line-height: 1.5;">Computerized System Validation Procedure (xxx)</span><span style="font-size: 10pt;line-height: 1.5;">.</span></li>
+    <li><span style="font-size: 10pt;line-height: 1.5;">The validation deliverables identified in the Validation Deliverables Matrix have been reviewed and approved.  Testing is considered to be adequate, sufficient, and complete.  Testing has shown that the computerized system is accurate, consistent, and reliable.</span></li>
+    <li><span style="font-size: 10pt;line-height: 1.5;">All deviations experienced during protocol execution have been resolved through correction of the protocol, retesting, transfer of an unresolved deviation to change control, procedural workaround, or in another approved manner.</span>  </li>
+  </ul>
+</ul>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3689"></h3>
+<table id="polarion_25" style="width: 522pt;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th colspan="4" style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 522pt;height: 19pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Conclusion</span> 
+        </div>
+        
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        
+        <div style="text-align: center;">
+          <span style="font-size: 10pt;line-height: 1.5;">Based on the test results and supporting system documentation within the validation package:</span> 
+        </div>
+        
+        <div style="text-align: center;">
+          <br/>
+          
+        </div>
+        </th>
+    </tr>
+    <tr>
+      <td colspan="2" style="vertical-align: top;width: 270pt;height: 40pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">The system functions as specified.  It is the recommendation that the &lt;system name&gt;</span><br/>
+        <span style="font-size: 10pt;line-height: 1.5;">system be certified for continued operational use.</span><br/>
+        <br/>
+        <span style="font-size: 10pt;line-height: 1.5;">The system is ready for release:     ☒</span><br/>
+        <span style="font-size: 10pt;line-height: 1.5;">     </span><br/>
+        </td>
+      <td colspan="2" style="vertical-align: top;width: 252pt;height: 40pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">The system does not function as specified.  It is the recommendation that the &lt;system name&gt; </span><span style="font-weight: bold;font-style: italic;text-decoration: underline;font-size: 10pt;line-height: 1.5;">NOT</span><span style="font-size: 10pt;line-height: 1.5;"> be certified for operational use.</span><br/>
+        <br/>
+        <span style="font-size: 10pt;line-height: 1.5;">The system cannot be released:     ☐</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 139pt;height: 19pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Executed By (Name):</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 131pt;height: 19pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 59pt;height: 19pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Date:</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 194pt;height: 19pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">06/11/2019</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 139pt;height: 19pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Reviewed By (Name): </span><br/>
+        </td>
+      <td style="vertical-align: top;width: 131pt;height: 19pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br/>
+        </td>
+      <td style="vertical-align: top;width: 59pt;height: 19pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Date:</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 194pt;height: 19pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">06/11/2019</span><br/>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3690"></h3>
+<p id="polarion_27" style="margin-left: 40px;">
+  <span style="font-size: 10pt;line-height: 1.5;">Once the system has been accepted and released for use, there is a need to maintain compliance and fitness for intended use throughout its operational life.  </span>
+</p>
+<p id="polarion_28" style="margin-left: 40px;">
+  <span style="font-size: 10pt;line-height: 1.5;">Operational Controls present practical and relevant guidance to ensure that areas relating to maintaining compliance and fitness for intended use of GxP regulated computerized systems throughout their life cycle are covered.</span>
+</p>
+<div id="polarion_wiki macro name=page_break;params=uid=2" contentEditable="false"></div>
+<p id="polarion_29" style="margin-left: 40px;">
+  <span style="font-size: 10pt;line-height: 1.5;">The following processes shall be utilized to maintain that the computerized system stays within a state of compliance:</span>
+</p>
+<table id="polarion_32" style="width: 103.87%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 98px;height: 15pt;border: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Process</span> 
+        </div>
+        </th>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 340px;height: 15pt;border: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Description</span> 
+        </div>
+        </th>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 133px;height: 15pt;border: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">SOP</span> 
+        </div>
+        </th>
+      <th style="background-color: #9CC2E5;text-align: left;vertical-align: top;width: 199px;height: 15pt;border: 1px solid #000000;"> 
+        <div style="text-align: center;">
+          <span style="font-weight: bold;">Company Process Document</span> 
+        </div>
+        </th>
+    </tr>
+    <tr>
+      <td style="text-align: left;vertical-align: top;width: 98px;height: 25pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Change Management</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 340px;height: 25pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Change Management is the process of controlling the life cycle of changes.  The primary objective of change management is to enable beneficial changes to be made, without compromising regulated processes or records and with minimum disruption to services.</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 133px;height: 25pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">SOP Change Management</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 199px;height: 25pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">IT Change Management Policy (IT00-00250)</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 98px;height: 25pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Backup and Restore</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 340px;height: 25pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Backup is the process of copying records, data and software to protect against loss of integrity or availability of the original. <br/>
+          Restore is the subsequent restoration of records, data, or software when required.</span><br/>
+        <br/>
+        </td>
+      <td style="vertical-align: top;width: 133px;height: 25pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">SOP Backup and Restore</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 199px;height: 25pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">IT Back Up Policy (IT00-00001) &amp; COMPANY Server Back Up and Monitoring (IT00-00023)</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 98px;height: 50pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Document Management</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 340px;height: 50pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Management of documentation includes preparation, review, approval, issue, change, withdrawal, and storage.</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 133px;height: 50pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">SOP Document Management</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 199px;height: 50pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">General Document Authoring Fundamentals (DC00-00019) &amp; Good Documentation Practices (IS.RC.012)</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 98px;height: 50pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Training</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 340px;height: 50pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Training is the process that ensures that persons who develop, maintain, or use computerized systems have the education, training, and experience to perform their assigned tasks.</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 133px;height: 50pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">SOP Employee Training</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 199px;height: 50pt;border: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Personnel Training (GP00-00008)</span><br/>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<div id="polarion_wiki macro name=page_break;params=uid=3" contentEditable="false"></div>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3691"></h2>
+<div id="polarion_editor_html_block1" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div>
+<p id="polarion_3"></p>
+<p id="polarion_34">
+  <br/>
+</p>
+<p id="polarion_35" style="text-align: center;">
+  <span style="font-weight: bold;">END OF DOCUMENT</span>
+</p>
+]]>
+    </field>
+    <field id="renderingLayouts">
+        <list>
+            <struct>
+                <item id="label">System Risk</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                            <item id="value">id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                            <item id="value">severity</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEndAsTable</item>
+                        </struct>
+                        <struct>
+                            <item id="key">hidden</item>
+                        </struct>
+                        <struct>
+                            <item id="key">noPageBreak</item>
+                        </struct>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">severity,status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">typeNotInProject</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">system_risk</item>
+            </struct>
+            <struct>
+                <item id="label">User Requirement</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEndAsTable</item>
+                        </struct>
+                        <struct>
+                            <item id="key">hidden</item>
+                        </struct>
+                        <struct>
+                            <item id="key">noPageBreak</item>
+                        </struct>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">severity,status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">typeNotInProject</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">user_requirement</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">Validation Final Report</field>
+    <field id="type">validation_plan</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

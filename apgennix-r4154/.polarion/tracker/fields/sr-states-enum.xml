@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enumeration>
+    <option iconURL="/polarion/icons/default/enums/document_bug.png" id="1" name="TELANGANA" sortOrder="1"/>
+    <option iconURL="/polarion/icons/default/enums/document_feature_model.png" id="2" name="KARNATAKA " sortOrder="2"/>
+    <option iconURL="/polarion/icons/default/enums/document_generic.png" id="3" name="DELHI" sortOrder="3"/>
+    <option id="4" name="HENAN " sortOrder="4"/>
+    <option id="5" name="ZHEJIANG" sortOrder="5"/>
+    <option id="6" name="SHANXI" sortOrder="6"/>
+    <option id="7" name="BALI" sortOrder="7"/>
+    <option id="8" name="PAPUA" sortOrder="8"/>
+    <option id="9" name="ACEH" sortOrder="9"/>
+</enumeration>

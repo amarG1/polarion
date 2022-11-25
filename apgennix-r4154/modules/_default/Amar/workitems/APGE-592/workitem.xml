@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="addr" text-type="text/plain" type="text">Indo</field>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">approved</item>
+                <item id="user">admin</item>
+            </struct>
+        </list>
+    </field>
+    <field id="assignee">111</field>
+    <field id="author">111</field>
+    <field id="country" type="enum:country">2</field>
+    <field id="created">2022-10-21 13:15:36.572 +0530</field>
+    <field id="linkedWorkItems">
+        <list>
+            <struct>
+                <item id="revision">2986</item>
+                <item id="role">duplicates</item>
+                <item id="workItem">APGE-525</item>
+            </struct>
+        </list>
+    </field>
+    <field id="name" text-type="text/plain" type="text">D2E</field>
+    <field id="previousStatus">inprogress</field>
+    <field id="priority">50.0</field>
+    <field id="resolution">done</field>
+    <field id="resolvedOn">2022-10-25 18:26:26.434 +0530</field>
+    <field id="severity">should_have</field>
+    <field id="state" type="enum:states">9</field>
+    <field id="status">done</field>
+    <field id="title">Another test for doc</field>
+    <field id="type">sr</field>
+</work-item>

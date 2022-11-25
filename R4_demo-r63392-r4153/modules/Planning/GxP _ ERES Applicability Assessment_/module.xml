@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">meeran</field>
+    <field id="created">2021-10-08 09:20:03.370 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<h1 id="polarion_wiki macro name=module-workitem;params=id=CSA-3082"></h1>
+<p id="polarion_1"></p>
+<p id="polarion_3" style="margin-left: 280px;">
+  <span style="font-weight: bold;font-size: 14pt;line-height: 1.5;">Table of Contents</span>
+</p>
+<div id="polarion_wiki macro name=toc"></div>
+<p id="polarion_2"></p>
+<div id="polarion_wiki macro name=page_break|uid=polarion_10" contentEditable="false" data-is-landscape="false"></div>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3083"></h2>
+<table id="polarion_wiki macro name=table;params=uid=4|width=80%" style="width: 80%;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 110pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Attribute<br/>
+        </th>
+      <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 325pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Description<br/>
+        </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 110pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">System Name<br/>
+        </td>
+      <td style="vertical-align: top;width: 325pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Polarion </span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 110pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">System Software Version<br/>
+        </td>
+      <td style="vertical-align: top;width: 325pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">21 R1</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 110pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Intended use of the system<br/>
+        </td>
+      <td style="vertical-align: top;width: 325pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">• Requirements Management</span><br/>
+        <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">• Risk Analysis and Risk Management</span><br/>
+        <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">• Test and Test methods validation</span><br/>
+        <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">• Production Control Plan using the Process FMEA</span><br/>
+        <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">• Re-use data &amp; information amongst family of Products</span><br/>
+        <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">• Create Projects and organization of data, users, tasks in the project.</span><br/>
+        <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">• Enable e-signatures for review and approval tasks.</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 110pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Internal / External use<br/>
+        </td>
+      <td style="vertical-align: top;width: 325pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Internal Use - this system is only intended to support internal business activities. </span><br/>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<div id="polarion_wiki macro name=page_break;params=uid=2" contentEditable="false" data-is-landscape="false"></div>
+<p id="polarion_5"></p>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3084"></h2>
+<p id="polarion_6">GxP and ERES Applicability questionnaire is completed in the GxP Assessment work item. Per the selected answers, this system has been classified as a GxP System with ERES applicability. See below for a summary of GxP and ERES Applicability Assessment:</p>
+<p id="polarion_12">Work item can be accessed using the link below.</p>
+<p id="polarion_15">
+  <br/>
+</p>
+<p id="polarion_16"></p>
+<div id="polarion_wiki macro name=page_break;params=uid=1" contentEditable="false" data-is-landscape="false"></div>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3086"></h2>
+<p id="polarion_9">
+  <span style="color: #000000;">This section identifies which ERES controls are applicable to the system.</span>
+</p>
+<table id="polarion_wiki macro name=table;params=width=100%|uid=10" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 494pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Question</span><br/>
+        </th>
+      <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 55pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Yes/No/NA</span><br/>
+        </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Electronic Records</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system have the ability to generate accurate and complete copies of records in human readable form for inspection, review, and copying? </span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system have the ability to protect records to enable their accurate and ready retrieval throughout the life-cycle of the system and records retention period? </span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Are the system’s date and time protected from unauthorized changes?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Electronic Signatures – Mark this section as N/A if “Electronic Signatures” are not applicable </span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Are the system’s electronic signatures executed to electronic records linked to their respective electronic records?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Are electronic signatures unique to individuals and not re-used by, or re-assigned to anyone else?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system protect linked signatures from deletion, copying or transfer?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Do the system’s electronic signatures contain at least two distinct identification components, such as a user ID and password?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Do the system’s signed electronic records contain the printed name (minimal first initial and full family name) of the signer?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Do the system’s electronic signatures inherit the system’s date and time for a linked date and time stamp?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system require the meaning of the signature (e.g. approved, reviewed, rejected)? </span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system require the use of all signature components (e.g. user ID and password) for each signing, when multiple signings are executed during a continuous period of system access?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Audit Trail </span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Does the system provide a secure, computer-generated, time-stamped audit trail to independently record the unique user, along with date and time stamps of operator actions that create, modify or delete electronic records?<br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 13pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<p id="polarion_11"></p>
+<div id="polarion_wiki macro name=page_break|uid=polarion_14" contentEditable="false" data-is-landscape="false"></div>
+<p id="polarion_13"></p>
+<table id="polarion_wiki macro name=table;params=width=100%|uid=12" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;">Question</span><br/>
+        </th>
+      <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><br/>
+        </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system feature an audit trail that ensures the original record, along with the initial date and time stamp, is not lost and that the record, along with the date and time stamp of any and all modifications, is preserved and recorded with a reason for the change?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system prevent modification or deletion of audit trail records?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system generate the audit trail automatically?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system prevent disabling of the entire audit trail?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Security </span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system authenticate users and allow only authorized users to access the system?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Are all Administrative/support users authenticated prior to accessing the application and/or data?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system provide role based security authorization? </span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system log users off after set minutes of inactivity, requiring the users to re-supply user credentials (login ID and password) to gain system access? </span><br/>
+        <br/>
+        <span style="font-size: 11pt;line-height: 1.5;">Is the system access automatically denied when a user exceeds certain login attempts to access the system?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">N/A – achieved through AD SSO</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system display the authentication password in encrypted symbols on the screen when entered?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system require passwords to be encrypted?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Yes</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system prevent users from saving passwords for the intent of bypassing future log-ins (e.g. save password check box)?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">No – AD SSO is enabled</span><br/>
+        </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 494pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">Does the system ensure that passwords contain a sufficient number of characters and contain a combination of letters, numbers, and a special character?</span><br/>
+        </td>
+      <td style="vertical-align: top;width: 55pt;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;line-height: 1.5;">N/A – maintained through AD</span><br/>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<p id="polarion_4"></p>
+<div id="polarion_wiki macro name=page_break;params=uid=5" contentEditable="false" data-is-landscape="false"></div>
+<p id="polarion_7"></p>
+<h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3087"></h2>
+<div id="polarion_editor_html_block8" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div>
+<p id="polarion_14"></p>
+<p id="polarion_17"></p>
+]]>
+    </field>
+    <field id="renderingLayouts">
+        <list>
+            <struct>
+                <item id="label">GxP Applicability Assessment</item>
+                <item id="layouter">paragraph</item>
+                <item id="properties">
+                    <list>
+                        <struct>
+                            <item id="key">fieldsAtStart</item>
+                            <item id="value">id</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEnd</item>
+                        </struct>
+                        <struct>
+                            <item id="key">sidebarWorkItemFields</item>
+                            <item id="value">status</item>
+                        </struct>
+                        <struct>
+                            <item id="key">fieldsAtEndAsTable</item>
+                            <item id="value">false</item>
+                        </struct>
+                    </list>
+                </item>
+                <item id="type">gxp</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">GxP &amp; ERES Applicability Assessment</field>
+    <field id="type">gxp_part11_assessment</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

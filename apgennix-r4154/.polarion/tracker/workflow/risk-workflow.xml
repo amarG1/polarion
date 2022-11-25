@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<workflow initial-action="init" initial-status="draft" prototype="WorkItem">
+    <transitions>
+        <transition action="reject" from="draft" to="rejected"/>
+        <transition action="rework" from="analyzed" to="draft"/>
+        <transition action="rework" from="actionspending" to="draft"/>
+        <transition action="rework" from="actionstaken" to="draft"/>
+        <transition action="rework" from="verified" to="draft"/>
+        <transition action="rework" from="rejected" to="draft"/>
+        <transition action="analyze" from="draft" to="analyzed"/>
+        <transition action="plan_actions" from="analyzed" to="actionspending"/>
+        <transition action="take_actions" from="actionspending" to="actionstaken"/>
+        <transition action="verify" from="actionstaken" to="verified"/>
+        <transition action="reject" from="analyzed" to="rejected"/>
+        <transition action="reject" from="actionspending" to="rejected"/>
+        <transition action="reject" from="actionstaken" to="rejected"/>
+    </transitions>
+    <actions>
+        <action id="init" name="Initialization">
+            <cleared>
+                <field name="resolution"/>
+            </cleared>
+        </action>
+        <action id="analyze" name="Analyze"/>
+        <action id="plan_actions" name="Plan Actions">
+            <required>
+                <field name="recommendedActions"/>
+            </required>
+        </action>
+        <action id="take_actions" name="Take Actions">
+            <required>
+                <field name="severityRatingNew"/>
+                <field name="occurrenceRatingNew"/>
+                <field name="detectionRatingNew"/>
+                <field name="takenActions"/>
+            </required>
+        </action>
+        <action id="rework" name="Rework">
+            <cleared>
+                <field name="resolution"/>
+            </cleared>
+        </action>
+        <action id="reject" name="Reject">
+            <required>
+                <field name="resolution"/>
+            </required>
+        </action>
+        <action id="verify" name="Verify">
+            <required>
+                <field name="resolution"/>
+                <field name="takenActions"/>
+            </required>
+        </action>
+    </actions>
+</workflow>

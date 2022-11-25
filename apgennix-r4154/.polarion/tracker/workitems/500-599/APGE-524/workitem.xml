@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="a" type="float">5.0</field>
+    <field id="assignee">
+        <list>
+            <item>shbj</item>
+            <item>111</item>
+        </list>
+    </field>
+    <field id="author">111</field>
+    <field id="b" type="float">8.0</field>
+    <field id="created">2022-09-08 15:50:39.754 +0530</field>
+    <field id="gr" multi="true" type="enum:gr">
+        <list>
+            <item>user</item>
+            <item>everyone</item>
+        </list>
+    </field>
+    <field id="mail" type="string">aaa</field>
+    <field id="phone" type="integer">11</field>
+    <field id="pr" multi="true" type="enum:pr">
+        <list>
+            <item>p_appr</item>
+            <item>p_admin</item>
+        </list>
+    </field>
+    <field id="previousStatus">open</field>
+    <field id="priority">50.0</field>
+    <field id="resolution">done</field>
+    <field id="resolvedOn">2022-09-23 12:17:07.182 +0530</field>
+    <field id="severity">should_have</field>
+    <field id="status">verified</field>
+    <field id="title">amar poddar:Another test</field>
+    <field id="type">ap</field>
+    <field id="user" type="enum:user">akash</field>
+</work-item>

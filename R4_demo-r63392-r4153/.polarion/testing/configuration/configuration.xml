@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsConfiguration>
+  <testCaseTemplate/>
+  <defectWorkItemType>defect</defectWorkItemType>
+  <fieldsToCopyFromTestCaseToDefect>
+    <entry>
+      <string>categories</string>
+      <string>categories</string>
+    </entry>
+    <entry>
+      <string>linkedOslcResources</string>
+      <string>linkedOslcResources</string>
+    </entry>
+  </fieldsToCopyFromTestCaseToDefect>
+  <fieldsToCopyFromTestRunToLinkedDefect/>
+  <fieldsToCopyFromTestRunToNewDefect>
+    <entry>
+      <string>groupId</string>
+      <string>occurredInVersion</string>
+    </entry>
+  </fieldsToCopyFromTestRunToNewDefect>
+  <maxCreatedDefects>200</maxCreatedDefects>
+  <maxCreatedDefectsPercent>90</maxCreatedDefectsPercent>
+  <resultErrorEnumId>blocked</resultErrorEnumId>
+  <resultFailedEnumId>failed</resultFailedEnumId>
+  <resultPassedEnumId>passed</resultPassedEnumId>
+  <statusErrorEnumId>failed</statusErrorEnumId>
+  <statusFailedEnumId>failed</statusFailedEnumId>
+  <statusOkEnumId>passed</statusOkEnumId>
+  <summaryDefectSeverity>blocker</summaryDefectSeverity>
+  <testCaseIdCustomField>testCaseID</testCaseIdCustomField>
+  <testCaseWorkItemType>test_script_IQ</testCaseWorkItemType>
+  <defectAutoAssignementEnabled>true</defectAutoAssignementEnabled>
+  <retestAllowed>true</retestAllowed>
+  <testCasePlanningQuery>type:test_script_IQ OR type:test_script_OQ OR type:test_script_UAT</testCasePlanningQuery>
+  <testRunsDeleteEnabled>true</testRunsDeleteEnabled>
+  <testRunsDeleteQuery>type:automated AND finishedOn:[19700101 TO $today-30d$]</testRunsDeleteQuery>
+  <testRunsGeneratedIdEnabled>true</testRunsGeneratedIdEnabled>
+<defectTemplate/>
+    <defectReuseType>always</defectReuseType>
+</testsConfiguration>

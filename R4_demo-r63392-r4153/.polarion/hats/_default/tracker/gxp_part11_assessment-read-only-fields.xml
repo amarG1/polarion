@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<read-only>
+    <status id="_default">
+        <field id="toolConfidenceLevel"/>
+        <field id="qualificationReport"/>
+        <field id="useCaseSpecification"/>
+        <field id="timeSpentOnMethods"/>
+    </status>
+
+    <status id="_create">
+        <field id="toolConfidenceLevel"/>
+        <field id="timeSpentOnMethods"/>
+    </status>
+
+</read-only>

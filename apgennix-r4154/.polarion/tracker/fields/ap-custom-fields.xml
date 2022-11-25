@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field description="add-title" id="user" name="Username" type="enum:user"/>
+    <field description="add-email" id="mail" name="Email" type="string"/>
+    <field description="add-phone" id="phone" name="Phone" type="integer"/>
+    <field description="add-timenow" id="created" name="Joined" type="date-time"/>
+    <field description="A value" id="a" name="A:" type="float"/>
+    <field description="B value" id="b" name="B" type="float"/>
+    <field description="rsults" id="res" name="Result" type="float"/>
+    <field id="gr" multi="true" name="Global roles " type="enum:gr"/>
+    <field id="pr" multi="true" name="Project roles" type="enum:pr"/>
+</fields>

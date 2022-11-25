@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="secureApprovalCommentId">1</item>
+                <item id="status">approved</item>
+                <item id="user">Ashfaq</item>
+            </struct>
+        </list>
+    </field>
+    <field id="author">Ashfaq</field>
+    <field id="created">2022-10-31 13:17:04.806 +0000</field>
+    <field id="previousStatus">in_approval</field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">pre_approval</field>
+    <field id="teststeps" type="struct:TestSteps">
+        <struct>
+            <item id="keys">
+                <list>
+                    <item>testStep</item>
+                    <item>description</item>
+                    <item>expectedResult</item>
+                </list>
+            </item>
+            <item id="steps">
+                <list>
+                    <struct>
+                        <item id="values">
+                            <list>
+                                <item text-type="text/html">1</item>
+                                <item text-type="text/html">Go to www.gmail.com</item>
+                                <item text-type="text/html">same as expected</item>
+                            </list>
+                        </item>
+                    </struct>
+                </list>
+            </item>
+        </struct>
+    </field>
+    <field id="testtype" type="enum:csv_testtype">robust_scripted</field>
+    <field id="title">Test IQ</field>
+    <field id="type">test_script_IQ</field>
+    <field id="version" type="string">1.0</field>
+</work-item>

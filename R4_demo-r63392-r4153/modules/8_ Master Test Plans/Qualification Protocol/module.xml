@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <field id="author">meeran</field>
+    <field id="created">2021-10-08 11:46:42.298 +0000</field>
+    <field id="homePageContent" text-type="text/html">
+        <![CDATA[<p id="polarion_2" style="text-align: center;"></p><h1 id="polarion_wiki macro name=module-workitem;params=id=CSA-3115"></h1><p id="polarion_16" style="text-align: center;">
+  <span style="font-weight: bold;font-size: 14pt;line-height: 1.5;">Table of Contents</span>
+</p><div id="polarion_wiki macro name=toc"></div><div id="polarion_wiki macro name=page_break|uid=polarion_1" contentEditable="false" data-is-landscape="false"></div><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3116"></h2><p id="polarion_6">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">This Qualification Protocol describes the activities required to qualify the system setup Siemens Polarion initiatives in </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt;</span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">: </span>
+</p><p id="polarion_9">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       New Polarion implementation for </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt;</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3117"></h2><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3118"></h3><p id="polarion_11">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The scope of this Qualification Protocol is limited to qualifying the Polarion implementation for </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name or Site Name&gt;</span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">. Qualification activities are comprised of:</span>
+</p><p id="polarion_12">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;"> </span>
+</p><p id="polarion_13">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       An Application Installation Qualification (IQ): Verifies the application is installed per design / configuration in both the Qualification and Production Environments.</span>
+</p><p id="polarion_14">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       An Operational Qualification (OQ): Verifies the system functions as defined in the System Requirement Specification document to demonstrate the system meets the business needs The OQ shall be executed in the Qualification environment.</span>
+</p><p id="polarion_15">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       The User Acceptance Tests (UAT’s) will be performed to verify the system meets the business intended use as defined in the System Requirements Specification. The User Acceptance test The OQ shall be executed in the Qualification environment.</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3119"></h2><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3120"></h3><p id="polarion_17">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Siemens Polarion initiatives in </span><span style="font-weight: bold;color: #00B050;">&lt;Company Name&gt; </span><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">will be comprised of out of the box functionality and design / configurations to meet Business processes.</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3121"></h2><p id="polarion_18">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Refer to the Polarion Validation Plan, for the system Roles and Responsibilities.</span>
+</p><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3122"></h2><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3123"></h3><p id="polarion_19">
+  The activities defined in this document will provide the objective evidence necessary to assure that Polarion <span style="font-weight: bold;color: #00B050;">&lt;Company Name &gt; </span>is/are correctly installed in the Qualification and Production environments and meets the intended use as defined in the System Requirements Specification.
+</p><h4 id="polarion_wiki macro name=module-workitem;params=id=CSA-3124"></h4><p id="polarion_20">
+  Qualification requirements and test strategy for the Polarion <span style="font-weight: bold;color: #00B050;">&lt;Company Name &gt; </span>are documented in the Test Strategy / Requirements Section of this document.<span style="font-size: 11pt;line-height: 1.5;"> </span>
+</p><p id="polarion_22"></p><p id="polarion_4">
+  <br/>
+</p><table id="polarion_23" style="margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;width: 135pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Deliverable</span>
+        </div>
+      </th>
+      <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;width: 92pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Applicability</span>
+        </div>
+      </th>
+      <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;width: 329pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Template / Rationale if Not Applicable</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 135pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Installation Qualification (IQ) Test Cases – QA Environment</span><br/>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;width: 92pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Yes</span>
+        </div>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;width: 329pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">IQ testing in the Qualification environment confirms the system is installed and configured per specifications.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 135pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Operational Qualification (OQ) Test Cases – QA Environment</span><br/>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;width: 92pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Yes</span>
+        </div>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;width: 329pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">OQ testing in the Qualification environment confirms functional behaviors operate as expected to satisfy the business needs.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 135pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">User Acceptance Test (UAT) Test Cases – QA Environment</span><br/>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;width: 92pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Yes</span>
+        </div>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;width: 329pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">UAT testing in the Qualification environment confirms the system is performing as expected.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 135pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Installation Qualification (IQ) Test Cases – Production Environment</span><br/>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;width: 92pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Yes</span>
+        </div>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;width: 329pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">IQ testing in the Production environment confirms the system is installed and configured per specifications.</span><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 135pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Deviations</span><br/>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;width: 92pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Yes</span>
+        </div>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;width: 329pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Any issues that occur during this validation activities must be investigated and resolved.</span><br/>
+      </td>
+    </tr>
+  </tbody>
+</table><p id="polarion_24">
+  <span style="font-size: 11pt;line-height: 1.5;"> </span><span style="font-weight: bold;font-size: 11pt;line-height: 1.5;"> </span>
+</p><h4 id="polarion_wiki macro name=module-workitem;params=id=CSA-3125"></h4><p id="polarion_26" style="margin-left: 40px;">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">o   Upon completion of the IQ, OQ and UAT testing in the Qualification environment; and successful completion of the Production IQ testing in the Production environment, the Report will be issued.  The Validation Summary Report shall be issued to summarize all Qualification activities including Production environment testing and officially close this implementation.</span>
+</p><p id="polarion_27" style="margin-left: 40px;">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">o   Approval of this report shall provide authorization to continue normal usage of the Production environment.</span>
+</p><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3126"></h3><p id="polarion_29">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Polarion will be migrated from an older Siemens Cloud instance to a new Siemens Cloud instance.</span>
+</p><p id="polarion_30">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">A dedicated tunnel will be established to facilitated migration of data and files. Once all databases are completely moved, mounted and remapped, the entire application and ancillary functions including reporting will be verified.</span>
+</p><p id="polarion_31">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The following steps describe the process followed during the migration:</span>
+</p><p id="polarion_32">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">1)    svnadmin dump is from Prod Clone environment</span>
+</p><p id="polarion_33">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">2)    Upload the dump file to the SVN Server 1 from Prod Clone</span>
+</p><p id="polarion_34">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">3)    Back up access, passwd, passwd_credential, repo on SVN Server 1</span>
+</p><p id="polarion_35">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">4)    svnadmin load is executed on SVN Server 1 (local storage device) Then we move it to the shared network drive (/opt/data/repo/)</span>
+</p><p id="polarion_36">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">5)    Upload the extension from Prod Clone to Node 1 Server, Node 2 Server and  Node 3 Server</span>
+</p><p id="polarion_37">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">6)    UI Customization file is moved from Prod Clone to Coordinator Server &lt;Polarion folder&gt;/data/workspace/cluster-data/&lt;Cluster-ID&gt;/ui-data.</span>
+</p><p id="polarion_38">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">7)    Compare polarion.properties from clone and polarion.properties from cluster. Merge the polarion.properties on SVN Server1 and Server2</span>
+</p><p id="polarion_39">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">8)    Back up polarion trial license file on coordinator server</span>
+</p><p id="polarion_40">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">9)    Move image file (testrunsVal2) from clone server to  /opt/polarion/polarion/plugins/com.polarion.alm.ui_3.21.1/webapp/ria/images/topicIcons/testrunsVal2</span>
+</p><p id="polarion_43">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">10) Reindex Node1, Node2 and Node 3</span>
+</p><h4 id="polarion_wiki macro name=module-workitem;params=id=CSA-3127"></h4><p id="polarion_44">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Polarion is only under the scope of this migration to new instance. The following items are considered for the migration:</span>
+</p><p id="polarion_45">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       Scripts</span>
+</p><p id="polarion_47">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       Extensions</span>
+</p><p id="polarion_48">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       Data</span>
+</p><p id="polarion_49">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       Custom images</span>
+</p><h4 id="polarion_wiki macro name=module-workitem;params=id=CSA-3128"></h4><p id="polarion_50">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">As both instances are hosted on Siemens Cloud and will be sharing identical mirrored images, combined with simplicity to reverse the migration cutover, plus considering system can readily recover from unforeseen downtime, the risk is minimal or Low. No new risks were identified.</span>
+</p><p id="polarion_51">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Additional risks:</span>
+</p><p id="polarion_52">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       Lack of access to all the necessary instances</span>
+</p><p id="polarion_53">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       Slow I/O speed could impact the needed time to load the data into the new instance</span>
+</p><p id="polarion_54">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       Slow network speed could impact the needed time to move the dump file into the new instance</span>
+</p><h4 id="polarion_wiki macro name=module-workitem;params=id=CSA-3129"></h4><p id="polarion_55">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Testing will be performed to verify the migration installation, connectivity, migration verification and if any error logging. Validation Summary Report issued to summarize qualification testing activities will also include Data migration verification testing.</span>
+</p><h3 id="polarion_wiki macro name=module-workitem;params=id=CSA-3130"></h3><p id="polarion_56">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Qualification Requirements are determined using Functional Risk Assessment.</span>
+</p><table id="polarion_59" style="margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;width: 115pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Deliverable</span>
+        </div>
+      </th>
+      <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Applicability</span>
+        </div>
+      </th>
+      <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;width: 287pt;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-weight: bold;font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Template / Rationale if Not Applicable</span>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;width: 115pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">Functional Risk Assessment</span><br/>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">Yes</span>
+        </div>
+      </td>
+      <td style="background-color: #FFFFFF;vertical-align: top;width: 287pt;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
+        <div style="text-align: center;">
+          <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;color: #000000;">A Functional Risk Assessment is executed against the system’s User Requirements. It examines a requirement’s potential to impact patient safety, product quality and data integrity. This is then compared to the function’s complexity (out-of-the-box, configured or custom) to determine the test validation level.</span>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3131"></h2><p id="polarion_61">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">The acceptance criteria for testing performed in the Qualification(QA) Environment and Production Environment include:</span>
+</p><p id="polarion_62">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       All test cases have been executed and reviewed for accuracy and approved.</span>
+</p><p id="polarion_63">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       All defects are resolved, retesting performed as necessary and approved.</span>
+</p><p id="polarion_64">
+  <span style="font-family: &#39;Segoe UI&#39;, Selawik, &#39;Open Sans&#39;, sans-serif;">·       The Validation Summary Report (VSR) has been written and approved with justifications and / or rationale for fit for intended use, as applicable.</span>
+</p><div id="polarion_wiki macro name=page_break|uid=polarion_3" contentEditable="false" data-is-landscape="false"></div><ul id="polarion_5">
+  <ul>
+    <li> </li>
+  </ul>
+</ul><h2 id="polarion_wiki macro name=module-workitem;params=id=CSA-3132"></h2><div id="polarion_editor_html_block1" class="polarion-dle-wiki-block">
+  <div id="polarion_editor_html_block_content" contentEditable="false"></div><pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contentEditable="false">#documentPanel(true &quot;approved&quot;)</pre>
+</div><p id="polarion_3"></p><p id="polarion_10">
+  <span style="font-weight: bold;">END OF DOCUMENT</span>
+</p>]]>
+    </field>
+    <field id="status">in_draft</field>
+    <field id="structureLinkRole">parent</field>
+    <field id="title">Qualification Protocol</field>
+    <field id="type">qualification_documentation</field>
+    <field id="usesOutlineNumbering">true</field>
+    <field id="version" type="string">1.0</field>
+</module>

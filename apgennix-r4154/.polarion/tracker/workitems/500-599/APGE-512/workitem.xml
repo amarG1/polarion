@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="a" type="float">32.0</field>
+    <field id="approvals">
+        <list>
+            <struct>
+                <item id="status">approved</item>
+                <item id="user">111</item>
+            </struct>
+        </list>
+    </field>
+    <field id="assignee">shbj</field>
+    <field id="author">admin</field>
+    <field id="b" type="float">54.0</field>
+    <field id="created">2022-09-06 17:48:03.342 +0530</field>
+    <field id="description" text-type="text/html">
+        <![CDATA[<br/>
+Hello, welcome to my project you can check what is available]]>
+    </field>
+    <field id="gr" multi="true" type="enum:gr">
+        <list>
+            <item>admin</item>
+            <item>everyone</item>
+            <item>user</item>
+        </list>
+    </field>
+    <field id="mail" type="string">a@gmail</field>
+    <field id="phone" type="integer">11</field>
+    <field id="pr" multi="true" type="enum:pr">
+        <list>
+            <item>p_admin</item>
+            <item>p_appr</item>
+            <item>p_u</item>
+            <item>p_a</item>
+        </list>
+    </field>
+    <field id="previousStatus">rejected</field>
+    <field id="priority">50.0</field>
+    <field id="severity">should_have</field>
+    <field id="status">open</field>
+    <field id="title">System Administrator:All fields test...</field>
+    <field id="type">ap</field>
+    <field id="user" type="enum:user">amar</field>
+</work-item>
